@@ -1,0 +1,30 @@
+<section class="announcements" aria-labelledby="announcements-title" role="region">
+  <div class="container">
+    <div class="ann-head">
+      <h2 id="announcements-title" style="text-align: center;">Announcement</h2>
+    </div>
+
+    <ul class="ann-list" role="list">
+      <li *ngFor="let a of announcements" class="ann-item" [attr.data-highlight]="a.highlight ? 'true' : 'false'">
+        <a
+          class="ann-link"
+          [href]="a.href || '#'"
+          [target]="isExternal(a.href) ? '_blank' : '_self'"
+          rel="noopener"
+          (click)="a.href === '#' && $event.preventDefault()"
+        >
+          <div class="ann-body">
+            <div class="ann-left">
+              <span class="ann-title">{{ a.title }}</span>
+            </div>
+
+            <div class="ann-right" aria-hidden="true">
+              <span class="ann-date">{{ a.date || '' }}</span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+

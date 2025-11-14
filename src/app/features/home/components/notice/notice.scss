@@ -1,0 +1,144 @@
+// Notice component styles (tweak colors if you want)
+$notice-bg: #0171ab; /* deep-teal/navy to match header */
+$notice-accent: #f7fafc; /* light text */
+$notice-cta: #ffd9d9; /* subtle maroon-ish accent for CTA background if desired */
+$container-max: 1200px;
+
+.notice {
+  background: linear-gradient(#0171ab);
+  color: $notice-accent;
+  border-bottom: 4px solid rgba(255,255,255,0.04);
+  font-family: inherit;
+  .container {
+    max-width: $container-max;
+    margin: 0 auto;
+    padding: 8px 16px;
+  }
+
+  .notice-inner {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    min-height: 56px;
+  }
+
+  .notice-left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+
+    .notice-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,0.06);
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+
+    .lbl {
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  /* ticker (scrolling area) */
+  .ticker {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    min-width: 0; /* important for flex overflow */
+
+    .ticker-body {
+      display: inline-flex;
+      gap: 20px;
+      align-items: center;
+      white-space: nowrap;
+      /* animation controlled via CSS var set from component */
+      animation: scroll var(--scroll-duration, 18s) linear infinite;
+      will-change: transform;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .item {
+      display: inline-block;
+      padding: 6px 0;
+    }
+
+    .sep {
+      opacity: 0.55;
+      padding: 0 6px;
+    }
+  }
+
+  .notice-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+
+    .btn.pause {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: $notice-accent;
+      padding: 7px 10px;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .notice-cta {
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.06);
+      color: $notice-accent;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+  }
+}
+
+/* animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%); /* because we duplicated the content */
+  }
+}
+
+/* accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ticker-body {
+    animation: none !important;
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .notice .notice-inner {
+    min-height: 64px;
+    flex-wrap: nowrap;
+  }
+  .notice .lbl { display: none; } /* compact on small devices */
+  .notice .notice-icon { width: 36px; height: 36px; }
+  .notice .ticker-body { font-size: 14px; }
+  .notice .notice-actions .notice-cta { display: none; } /* hide CTA on tiny screens */
+}
+
+.notice-link {
+  color: #ffd966; // gold accent to stand out
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+  &:hover {
+    color: #fff;
+  }
+}

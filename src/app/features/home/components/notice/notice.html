@@ -1,0 +1,72 @@
+<section class="notice" role="complementary" aria-label="Notice board">
+  <div class="container notice-inner">
+    <div class="notice-left">
+      <span class="notice-icon" aria-hidden="true">📢</span>
+      <strong class="lbl">NOTICE: </strong>
+    </div>
+
+    <div
+      #ticker
+      class="ticker"
+      role="status"
+      aria-live="polite"
+      (mouseenter)="pause()"
+      (mouseleave)="resume()"
+      (focusin)="pause()"
+      (focusout)="resume()"
+      tabindex="0"
+    >
+      <div class="ticker-body" aria-hidden="true">
+        <!-- Duplicate for infinite scroll effect -->
+        <ng-container *ngFor="let m of messages">
+          <ng-container *ngIf="m.url; else plainText">
+            <!-- If URL provided -->
+            <a
+              *ngIf="m.url.startsWith('/'); else externalLink"
+              [routerLink]="m.url"
+              [attr.target]="m.newTab ? '_blank' : null"
+              rel="noopener noreferrer"
+              class="notice-link"
+            >
+              {{ m.text }}
+            </a>
+            <ng-template #externalLink>
+              <a
+                [href]="m.url"
+                [attr.target]="m.newTab ? '_blank' : null"
+                rel="noopener noreferrer"
+                class="notice-link"
+              >
+                {{ m.text }}
+              </a>
+            </ng-template>
+          </ng-container>
+          <ng-template #plainText>
+            <span class="item">{{ m.text }}</span>
+          </ng-template>
+          <span class="sep" aria-hidden="true">•</span>
+        </ng-container>
+
+        <!-- Duplicate again for smooth loop -->
+        <ng-container *ngFor="let m of messages">
+          <span class="item">{{ m.text }}</span>
+          <span class="sep" aria-hidden="true">•</span>
+        </ng-container>
+      </div>
+    </div>
+
+    <div class="notice-actions">
+      <!-- <button
+        class="btn pause"
+        (click)="toggle()"
+        [attr.aria-pressed]="isPaused"
+        aria-label="Pause or resume notices"
+        title="Pause / Resume"
+      >
+        {{ isPaused ? 'Resume' : 'Pause' }}
+      </button> -->
+
+      <a class="notice-cta" href="/notices" title="View all notices">View All</a>
+    </div>
+  </div>
+</section>

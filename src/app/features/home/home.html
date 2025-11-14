@@ -1,0 +1,154 @@
+<!-- sticky header STARTS -->
+<!-- <header class="header" role="banner"> -->
+  <!-- COMMENT Menu Options - Hamburger (visible on small screens) -->
+  <!-- <div>
+    <button
+      class="hamburger"
+      aria-label="Toggle navigation"
+      aria-expanded="{{ mobileMenuOpen }}"
+      (click)="toggleMenu()"
+    >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button> -->
+
+    <!--COMMENT: nav: toggles open on mobile, inline on desktop -->
+    <!-- <nav class="nav" [class.open]="mobileMenuOpen" aria-label="Main navigation">
+      <ul>
+        <li *ngFor="let item of menu">
+          <a href="#" (click)="closeMenu()">{{ item }}</a>
+        </li>
+      </ul>
+    </nav>
+ 
+  </div>
+</header> -->
+<!-- sticky header ENDS  -->
+
+<!-- header / brand block -->
+<div class="brand-header" role="banner" aria-label="Ilkal Co-operative Bank">
+  <img class="brand-logo" src="/assets/logo_128.png" alt="Ilkal Co-operative Bank Logo" />
+
+  <div class="brand-text">
+    <div class="brand-title">Ilkal Co-operative Bank Ltd.</div>
+    <div class="brand-sub">Serving the Community Since 1915</div>
+  </div>
+</div>
+
+<!-- Bank title End -->
+
+<!-- HERO -->
+<section class="hero" role="region" aria-label="Hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Trusted Banking Partner for Every Citizen</h1>
+      <p>
+        Secure, reliable and modern banking — digital solutions and personal service for all your
+        financial needs.
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#">Explore Services</a>
+        <a class="btn-outline" href="#">Locate Branch</a>
+      </div>
+    </div>
+
+    <div class="hero-image" aria-hidden="true">
+      <img
+        src="assets/hero-480.jpg"
+        srcset="assets/hero-480.jpg 480w, assets/hero-800.jpg 800w, assets/hero-800.jpg 1200w"
+        sizes="(max-width:480px) 100vw, (max-width:900px) 50vw, 600px"
+        alt=""
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- NOTICE -->
+<!-- <section class="notice" role="complementary" aria-label="Notice board">
+  <div class="container notice-inner">
+    <strong class="lbl">Notice:</strong>
+    <div class="ticker" aria-live="polite">
+      <div class="ticker-body">{{ notice }}</div>
+    </div>
+    <a class="notice-cta" href="#">View All</a>
+  </div>
+</section> -->
+<app-notice></app-notice>
+
+<!-- ABOUT -->
+<section class="about" role="region" aria-label="About Ilkal Co-operative Bank">
+  <div class="container about-inner">
+    <h2>About Us</h2>
+    <p>
+      Ilkal Co-operative Bank Ltd. has served the local community for over a century with trusted
+      banking products and digital services. We focus on transparent pricing, fast service and local
+      empowerment.
+    </p>
+  </div>
+</section>
+
+<!--ANNOUNCEMENTS STARTS-->
+<app-announcements></app-announcements>
+<!-- <app-announcements [announcements]="myAnnouncements"></app-announcements> -->
+
+<!--ANNOUNCEMENTS ENDS-->
+
+<!-- SERVICES -->
+<section class="services" role="region" aria-label="Services">
+  <div class="container">
+    <h2>Our Services</h2>
+
+    <!-- mobile-first: horizontal scroll with snap -->
+    <div class="services-strip" role="list" aria-label="Quick services">
+      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
+        <div class="icon" aria-hidden="true">🏦</div>
+        <div class="meta">
+          <div class="title">Loans</div>
+          <div class="desc">Agriculture, personal & business loans with competitive rates.</div>
+        </div>
+      </a>
+
+      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
+        <div class="icon" aria-hidden="true">💰</div>
+        <div class="meta">
+          <div class="title">Deposits</div>
+          <div class="desc">Fixed, recurring & savings accounts to help you save better.</div>
+        </div>
+      </a>
+
+      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
+        <div class="icon" aria-hidden="true">📱</div>
+        <div class="meta">
+          <div class="title">Digital Banking</div>
+          <div class="desc">Mobile & Internet banking for fast, secure transactions.</div>
+        </div>
+      </a>
+
+      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
+        <div class="icon" aria-hidden="true">🔐</div>
+        <div class="meta">
+          <div class="title">Locker Facility</div>
+          <div class="desc">Secure locker services for your valuables.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER STARTS -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer-inner">
+    <div class="contact">
+      <h3>Contact</h3>
+      <p>
+        Main Branch, Ilkal — Karnataka 587125<br />Phone: 08351-XXXXXX | Email:
+        info@ilkalcoopbank.com
+      </p>
+    </div>
+    <div class="legal">© {{ currentYear }} Ilkal Co-operative Bank Ltd. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- FOOTER ENDS -->
