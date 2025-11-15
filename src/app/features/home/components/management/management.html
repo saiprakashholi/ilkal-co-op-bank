@@ -1,0 +1,52 @@
+<!-- wrapper listens for wheel and touch events (touch handlers for swipe) -->
+<div
+  class="management-wrapper"
+  (mouseenter)="onHover()"
+  (mouseleave)="onLeave()"
+  (wheel)="onWheel($event)"
+  (touchstart)="onTouchStart($event)"
+  (touchmove)="onTouchMove($event)"
+  (touchend)="onTouchEnd($event)"
+  [style.--fade-duration]="fadeMs + 'ms'"
+>
+  <h2 class="title">
+    <span class="accent">
+    Management Team 
+    <br><br>
+  </span>
+</h2>
+
+  <div class="content">
+    
+    <!-- left: slides container (positioned, all slides present for fade) -->
+    <div class="slides">
+      <div
+        class="slide"
+        *ngFor="let m of members; let i = index"
+        [class.active]="i === currentIndex"
+        [attr.aria-hidden]="i === currentIndex ? 'false' : 'true'"
+      >
+        <img class="photo" [src]="m.image || placeholder" [alt]="m.name || 'member photo'" (error)="handleImgError($event)" />
+        <h3 class="name">{{ m.name }}</h3>
+        <p class="role">{{ m.role }}</p>
+      </div>
+    </div>
+
+    <!-- right: about & description -->
+    <div class="right">
+      <h4 class="about-title">{{ currentMember.aboutTitle }}</h4>
+      <p class="about-text">{{ currentMember.aboutText }}</p>
+      <p class="member-desc">{{ currentMember.description }}</p>
+    </div>
+
+  </div>
+
+   <!-- ⭐ Thumbnails moved here (bottom center) -->
+  <div class="thumbnails" *ngIf="members.length > 1">
+    <div class="thumb" *ngFor="let m of members; let i = index"
+         [class.active]="i === currentIndex"
+         (click)="goTo(i)">
+      <img [src]="m.image || placeholder" [alt]="m.name" />
+    </div>
+  </div>
+</div>

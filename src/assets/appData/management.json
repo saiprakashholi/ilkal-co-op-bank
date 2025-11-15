@@ -1,0 +1,23 @@
+{
+    "title": "Management Team",
+    "aboutTitle": "About APEX Bank",
+    "aboutText": "The Bank was registered on 10th November 1915 under the name and style of “The Mysore Provincial Cooperative Bank Limited,” ...",
+    "members": [
+        {
+            "id": 1,
+            "name": "Sri Belli Prakash, BE., LLB., Ex. MLA.",
+            "role": "President",
+            "profileUrl": "#",
+            "image": "assets/images/prakash.jpg",
+            "description": "Short bio text for Sri Belli Prakash. Add longer description if needed."
+        },
+        {
+            "id": 2,
+            "name": "Mrs. Example Name",
+            "role": "Vice President",
+            "profileUrl": "#",
+            "image": "assets/images/example2.jpg",
+            "description": "Short bio for second member."
+        }
+    ]
+}

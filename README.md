@@ -57,3 +57,20 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+<!-- Client suggestions  -->
+
+#### Management team photos:
+Image Requirements for Management Team Section
+
+Please provide the main photos in the following size:
+
+900 × 520 pixels (minimum)
+
+JPG or PNG format
+
+Maintain a wide landscape ratio (around 16:9 to 2:1)
+
+Keep file size below 300 KB after compression
+
+These photos will automatically adapt to desktop and mobile layouts in our application.
