@@ -37,21 +37,31 @@ export class ManagementComponent implements OnInit, OnDestroy {
     },
     {
       id: 2,
-      name: 'Mrs. Example Name',
+      name: 'Sri Manjunath',
       role: 'Vice President',
       image: 'assets/managementImages/sai.jpg',
-      aboutTitle: 'About Sri Belli Prakash',
-      aboutText: 'Sri Belli Prakash is the Ex. MLA of Ilkal Constituency and currently serving as the President of APEX Bank. With a strong background in public service and community development, he brings a wealth of experience to his role at the bank.',
+      aboutTitle: 'About Sri Manjunath',
+      aboutText: 'Sri Manjunath is a MLC of Ilkal Constituency and currently serving as the President of APEX Bank. With a strong background in public service and community development, he brings a wealth of experience to his role at the bank.',
       description: 'Mrs. Example brings extensive leadership and administrative experience.'
     },
     { id: 3, 
       name: 'Mr. Anand Kumar', 
       role: 'General Manager', 
       image: 'assets/managementImages/prakash.jpeg', 
-      aboutTitle: 'About Sri Belli Prakash',
+      aboutTitle: 'About Mr. Anand Kumar',
+      aboutText: 'Mr. Anand Kumar is the Ex. MLA of Ilkal Constituency and currently serving as the President of APEX Bank. With a strong background in public service and community development, he brings a wealth of experience to his role at the bank.',
+     
+      description: 'Mr. Anand oversees strategic planning and operations.' 
+    },
+    { id: 4, 
+      name: 'Mr. Ramesh Krishna', 
+      role: 'General Manager', 
+      image: 'assets/managementImages/prakash.jpeg', 
+      aboutTitle: 'About Mr. Ramesh Krishna',
       aboutText: 'Sri Belli Prakash is the Ex. MLA of Ilkal Constituency and currently serving as the President of APEX Bank. With a strong background in public service and community development, he brings a wealth of experience to his role at the bank.',
      
-      description: 'Mr. Anand oversees strategic planning and operations.' }
+      description: 'Mr. Ramesh Krishna oversees strategic planning and operations.' 
+    },
   ];
 
   // aboutTitle = 'About APEX Bank';

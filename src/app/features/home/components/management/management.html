@@ -17,6 +17,7 @@
 </h2>
 
   <div class="content">
+    
     <!-- left: slides container (positioned, all slides present for fade) -->
     <div class="slides">
       <div
@@ -36,13 +37,16 @@
       <h4 class="about-title">{{ currentMember.aboutTitle }}</h4>
       <p class="about-text">{{ currentMember.aboutText }}</p>
       <p class="member-desc">{{ currentMember.description }}</p>
+    </div>
 
-      <!-- thumbnails -->
-      <div class="thumbnails" *ngIf="members.length > 1">
-        <div class="thumb" *ngFor="let m of members; let i = index" [class.active]="i === currentIndex" (click)="goTo(i)">
-          <img [src]="m.image || placeholder" [alt]="m.name" (error)="handleImgError($event)" />
-        </div>
-      </div>
+  </div>
+
+   <!-- ⭐ Thumbnails moved here (bottom center) -->
+  <div class="thumbnails" *ngIf="members.length > 1">
+    <div class="thumb" *ngFor="let m of members; let i = index"
+         [class.active]="i === currentIndex"
+         (click)="goTo(i)">
+      <img [src]="m.image || placeholder" [alt]="m.name" />
     </div>
   </div>
 </div>
