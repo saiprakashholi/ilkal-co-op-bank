@@ -2,15 +2,15 @@ import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { AnnouncementsComponent } from "./components/announcements/announcements.component";
-import { Header } from '../../core/header/header';
 import { NoticeComponent } from './components/notice/notice';
-
+import { ManagementComponent } from './components/management/management';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, AnnouncementsComponent, NoticeComponent],
+  imports: [CommonModule, RouterModule, AnnouncementsComponent, NoticeComponent, ManagementComponent],
   templateUrl: './home.html',
-  styleUrls: ['./home.scss']
+  styleUrls: ['./home.scss'],
+  
 })
 export class Home {
   public notice = 'Introduced Mobile Banking App. | Bank is Live on IMPS & UPI';
