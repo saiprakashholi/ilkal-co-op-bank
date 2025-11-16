@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/ilkal-co-op-bank/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
