@@ -1,0 +1,101 @@
+<footer
+  class="bank-footer"
+  [style.background-color]="brandColor"
+  role="contentinfo"
+  aria-label="Site footer"
+>
+  <div class="footer-inner">
+    <!-- Top columns -->
+    <div class="footer-grid">
+      <!-- Column 1: Quick links / About -->
+      <div class="col">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="/about/presidents">List of the Presidents</a></li>
+          <li><a href="/about/mds">List of MDs / CEOs</a></li>
+          <li><a href="/about/board">Board of Directors</a></li>
+          <li><a href="/about/key-personnel">Key Personnel</a></li>
+          <li><a href="/about/financials">Financials</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Products -->
+      <div class="col">
+        <h4>Retail Banking</h4>
+        <ul>
+          <li><a href="/products/savings">Savings Bank Account</a></li>
+          <li><a href="/products/term-deposit">Term Deposits</a></li>
+          <li><a href="/products/current">Current Account</a></li>
+          <li><a href="/products/locker">Safe Deposit Lockers</a></li>
+          <li><a href="/products/rtgs-neft">RTGS / NEFT</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Services / Info -->
+      <div class="col">
+        <h4>Agriculture Finance</h4>
+        <ul>
+          <li><a href="/agri/introduction">Introduction</a></li>
+          <li><a href="/agri/subvention">Interest Subvention</a></li>
+          <li><a href="/agri/faqs">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Social + Store + QR -->
+      <div class="col col-right">
+        <div class="social-row">
+          <a aria-label="Facebook" href="#" class="social-icon">f</a>
+          <a aria-label="X" href="#" class="social-icon">x</a>
+          <a aria-label="Instagram" href="#" class="social-icon">ig</a>
+          <a aria-label="LinkedIn" href="#" class="social-icon">in</a>
+          <!-- <a aria-label="YouTube" href="#" class="social-icon">yt</a> -->
+        </div>
+
+        <!-- Play store and app store starts -->
+        <div class="store-buttons">
+          <a
+            class="store-btn"
+            href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ilkal Bank app on Google Play"
+          >
+            <img src="/assets/playstore.png" alt="Get it on Google Play" />
+            <div class="store-text">Ilkal bank app in Google store</div>
+          </a>
+        </div>
+        <!-- Play store and app store ends -->
+
+        <!-- DICGC logo and qr starts -->
+        <div class="cert-qr">
+          <img src="/assets/dicgc.jpg" alt="DICGC Logo" class="cert-logo" />
+          <div class="qr">
+            <img src="/assets/dicgc-qr.jpeg" alt="DICGC QR Code" />
+          </div>
+        </div>
+        <!-- DICGC logo and qr ends -->
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="footer-divider" role="separator" aria-hidden="true"></div>
+
+    <!-- Bottom row -->
+    <div class="footer-bottom">
+      <div class="left">
+        <nav class="legal-links" aria-label="Legal">
+          <a href="/terms">Terms & Conditions</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/sitemap">Sitemap</a>
+        </nav>
+        <div class="small-note">Site best viewed in modern browsers at 1024x768 or higher</div>
+      </div>
+
+      <div class="right">
+        <div class="copyright">
+          Copyright © 2006-{{ today | date : 'yyyy' }} Ilkal Co-Operative Bank Ltd.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
