@@ -22,9 +22,9 @@ export class Header {
   public menu: MenuItem[] = [
     { label: 'Home', url: '/' },
     { label: 'About Us', url: '/about-us' },
-    // { label: 'Agriculture Finance', url: '/agri' },
-    // { label: 'Corporate Banking', url: '/corporate' },
-    // { label: 'Retail Banking', url: '/retail' },
+    { label: 'Reports', url: '/agm' },
+    { label: 'Deposits', url: '/deposits' },
+    { label: 'Loans', url: '/loans' },
     // { label: 'Mobile Banking', url: '/mobile-banking' },
     { label: 'Gallery', url: '/gallery' },
     { label: 'Locations', url: '/locations' },
