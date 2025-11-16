@@ -1,40 +1,13 @@
-<!-- sticky header STARTS -->
-<!-- <header class="header" role="banner"> -->
-<!-- COMMENT Menu Options - Hamburger (visible on small screens) -->
-<!-- <div>
-    <button
-      class="hamburger"
-      aria-label="Toggle navigation"
-      aria-expanded="{{ mobileMenuOpen }}"
-      (click)="toggleMenu()"
-    >
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button> -->
-
-<!--COMMENT: nav: toggles open on mobile, inline on desktop -->
-<!-- <nav class="nav" [class.open]="mobileMenuOpen" aria-label="Main navigation">
-      <ul>
-        <li *ngFor="let item of menu">
-          <a href="#" (click)="closeMenu()">{{ item }}</a>
-        </li>
-      </ul>
-    </nav>
- 
-  </div>
-</header> -->
-<!-- sticky header ENDS  -->
-
-<!-- header / brand block -->
-<div class="brand-header" role="banner" aria-label="Ilkal Co-operative Bank">
+<!-- Bank Title -->
+<!-- <div class="brand-header" role="banner" aria-label="Ilkal Co-operative Bank">
   <img class="brand-logo" src="/assets/logo_128.png" alt="Ilkal Co-operative Bank Logo" />
 
   <div class="brand-text">
     <div class="brand-title">Ilkal Co-operative Bank Ltd.</div>
     <div class="brand-sub">Serving the Community Since 1915</div>
   </div>
-</div>
+</div> -->
+<app-bank-brand></app-bank-brand>
 
 <!-- Bank title End -->
 
@@ -75,7 +48,10 @@
     <a class="notice-cta" href="#">View All</a>
   </div>
 </section> -->
-<app-notice></app-notice>
+
+<section>
+  <app-notice></app-notice>
+</section>
 
 <!-- ABOUT -->
 <section class="about" role="region" aria-label="About Ilkal Co-operative Bank">
@@ -142,7 +118,7 @@
 </section>
 
 <!-- FOOTER STARTS -->
-<footer class="footer" role="contentinfo">
+<!-- <footer class="footer" role="contentinfo">
   <div class="container footer-inner">
     <div class="contact">
       <h3>Contact</h3>
@@ -153,6 +129,8 @@
     </div>
     <div class="legal">© {{ currentYear }} Ilkal Co-operative Bank Ltd. All rights reserved.</div>
   </div>
-</footer>
+</footer> -->
+
+<app-footer></app-footer>
 
 <!-- FOOTER ENDS -->

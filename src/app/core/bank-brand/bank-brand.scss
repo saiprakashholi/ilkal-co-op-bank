@@ -1,0 +1,101 @@
+.bank-brand {
+    display: flex;
+    align-items: center; // <-- KEY: vertically aligns everything
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: #fff;
+}
+
+
+.left-section {
+    display: flex;
+    align-items: center; // <-- aligns logo + title at same height
+    gap: 16px;
+}
+
+// .bank-logo {
+//   height: 64px;
+//   width: auto;
+// }
+.bank-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.founder-photo {
+    height: 90px; // recommended sweet spot
+    margin-top: 2px;
+    object-fit: contain;
+    margin-bottom: 4px;
+}
+
+
+
+.bank-info {
+
+    .bank-title {
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0;
+
+        letter-spacing: 0.8px;
+
+        background: linear-gradient(90deg, #7a0000, #b82323);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .bank-sub {
+        margin-top: 4px;
+        font-size: 14px;
+        color: #555;
+        text-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Founder Photo Right Section */
+.founder-wrapper {
+    display: block;
+    margin-top: -10px; // optional small lift
+}
+
+
+/* Hide founder photo on mobile */
+@media (max-width: 768px) {
+    .founder-wrapper {
+        display: none !important;
+    }
+
+    .bank-brand {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .bank-logo {
+        height: 60px;
+    }
+
+    .bank-title {
+        font-size: 20px !important;
+    }
+}
+
+
+.founder-text {
+    text-align: center;
+    margin-top: 6px;
+
+    .founder-name {
+        font-size: 13px;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .founder-title {
+        font-size: 11px;
+        color: #777;
+        margin-top: 2px;
+    }
+}

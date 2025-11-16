@@ -4,10 +4,13 @@ import { RouterModule } from '@angular/router';
 import { AnnouncementsComponent } from "./components/announcements/announcements.component";
 import { NoticeComponent } from './components/notice/notice';
 import { ManagementComponent } from './components/management/management';
+import { BankBrand } from "../../core/bank-brand/bank-brand";
+import { Footer } from '../../core/footer/footer';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, AnnouncementsComponent, NoticeComponent, ManagementComponent],
+  imports: [CommonModule, RouterModule, AnnouncementsComponent,
+     NoticeComponent, ManagementComponent, BankBrand, Footer],
   templateUrl: './home.html',
   styleUrls: ['./home.scss'],
   
