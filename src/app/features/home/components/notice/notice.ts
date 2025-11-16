@@ -29,7 +29,11 @@ export class NoticeComponent implements OnInit, OnDestroy {
   @Input() notices: (NoticeItem | string)[] = [
     'Introduced Mobile Banking App.',
     'Bank is Live on IMPS & UPI',
-    { text: 'Hiring Staff for New Branches. Apply Now!', url: '/careers', newTab: true },
+    {
+      text: 'Hiring Staff for New Branches. Apply Now!',
+      // url: '/careers',
+      newTab: true
+    },
   ];
 
   @Input() speed = 18;
@@ -43,7 +47,7 @@ export class NoticeComponent implements OnInit, OnDestroy {
   public messages: NoticeItem[] = [];
   public isPaused = false;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
   ngOnInit(): void {
     // Normalize: convert strings to { text } objects
