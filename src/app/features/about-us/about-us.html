@@ -1,1 +1,70 @@
-<p>about-us works!</p>
+<div class="about-root">
+  <!-- Hero header -->
+  <header class="hero">
+    <div class="hero-left">
+      <div class="hero-top">
+        <!-- Mobile hamburger -->
+        <button class="hamburger" (click)="toggleSidebar()" aria-label="Toggle menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <h1>List of the Presidents</h1>
+      </div>
+      <nav class="breadcrumb">About Us / Executives / List of the Presidents</nav>
+    </div>
+
+    <div class="hero-right">
+      <!-- Use provided local image path -->
+      <img src="/assets/about-us-bgm.png" alt="hero" />
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar: becomes off-canvas on mobile -->
+    <aside class="sidebar" [class.open]="sidebarOpen" [attr.aria-hidden]="!sidebarOpen">
+      <div class="card">
+        <h3>About Us</h3>
+
+        <ul class="menu">
+          <!-- Executives (accordion on mobile) -->
+          <li class="menu-section">
+            <button class="menu-toggle" (click)="toggleExecutives()" [attr.aria-expanded]="execExpanded">
+              Executives
+              <span class="chev" [class.open]="execExpanded">▸</span>
+            </button>
+
+            <ul class="submenu" [class.expanded]="execExpanded">
+              <li><a routerLink="/about-us/presidents" routerLinkActive="active">List of the Presidents</a></li>
+              <li><a routerLink="/about-us/mds" routerLinkActive="active">List of MD's / CEO's</a></li>
+              <li><a routerLink="/about-us/board" routerLinkActive="active">Board of Directors</a></li>
+              <li><a routerLink="/about-us/key-personnel" routerLinkActive="active">Key Personnel</a></li>
+            </ul>
+          </li>
+
+          <!-- Financials -->
+          <li class="menu-section">
+            <button class="menu-toggle" (click)="toggleFinancials()" [attr.aria-expanded]="financialsExpanded">
+              Financials
+              <span class="chev" [class.open]="financialsExpanded">▸</span>
+            </button>
+
+            <ul class="submenu" [class.expanded]="financialsExpanded">
+              <li><a routerLink="/about-us/financials/indicators" routerLinkActive="active">Key Indicators of the Apex Bank</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </aside>
+
+    <!-- overlay behind drawer on mobile -->
+    <div class="overlay" *ngIf="isMobile() && sidebarOpen" (click)="toggleSidebar()"></div>
+
+    <!-- main content area -->
+    <main class="content">
+      <h2 class="section-title">List of the Presidents of the Bank are as under</h2>
+      <div class="cards-wrap">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </div>
+</div>
