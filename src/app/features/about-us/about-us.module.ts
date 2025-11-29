@@ -5,6 +5,7 @@ import { PresidentsList } from './presidents-list/presidents-list';
 import { AboutUs } from './about-us';
 import { DirectorsList } from './directors-list/directors-list';
 import { FoundersList } from './founders-list/founders-list';
+import { FinKeyIndicators } from './fin-key-indicators/fin-key-indicators';
 
 // import { AboutUsComponent } from './about-us.component';
 // import { ExecutivesComponent } from './executives/executives.component';
@@ -33,16 +34,17 @@ import { FoundersList } from './founders-list/founders-list';
           // { path: 'presidents', component: PresidentsList },
           { path: 'directors', component: DirectorsList },
           { path: 'founders', component: FoundersList },
-        //   { path: 'executives', component: ExecutivesComponent, children: [
-        //       { path: 'presidents', component: PresidentsListComponent },
-        //       { path: 'mds', component: MdListComponent },
-        //       { path: 'board', component: BoardComponent },
-        //       { path: 'key-personnel', component: KeyPersonnelComponent }
-        //     ]
-        //   }
+          { path: 'financials', component: FinKeyIndicators }
+          //   { path: 'executives', component: ExecutivesComponent, children: [
+          //       { path: 'presidents', component: PresidentsListComponent },
+          //       { path: 'mds', component: MdListComponent },
+          //       { path: 'board', component: BoardComponent },
+          //       { path: 'key-personnel', component: KeyPersonnelComponent }
+          //     ]
+          //   }
         ]
       }
     ])
   ]
 })
-export class AboutUsModule {}
+export class AboutUsModule { }
