@@ -28,40 +28,23 @@ export class ManagementComponent implements OnInit, OnDestroy {
   members: Member[] = [
     {
       id: 1,
-      name: 'Sri Belli Prakash, Ex. MLA.',
+      name: 'Sri Satish Sapparad',
       role: 'President',
-      image: 'assets/managementImages/prakash.jpeg',
-      aboutTitle: 'About Sri Belli Prakash',
-      aboutText: 'Sri Belli Prakash is the Ex. MLA of Ilkal Constituency and currently serving as the President of APEX Bank. With a strong background in public service and community development, he brings a wealth of experience to his role at the bank.',
-      description: 'Sri Belli Prakash is a respected leader with a vision for cooperative banking.'
+      image: 'assets/managementImages/1.Satish.Sapparad.(President).jpg',
+      aboutTitle: 'About Sri Satish Sapparad',
+      aboutText: 'Sri Satish Sapparad is currently serving as the President of Ilkal Co-Operative Bank Ltd. With a strong background in public service and community development, he brings a wealth of experience to the bank.',
+      description: 'Sri Satish Sapparad is a respected leader with a clear vision for cooperative banking.'
+
     },
     {
       id: 2,
-      name: 'Sri Manjunath',
+      name: 'Sri Mahantesh Kampli',
       role: 'Vice President',
-      image: 'assets/managementImages/sai.jpg',
-      aboutTitle: 'About Sri Manjunath',
-      aboutText: 'Sri Manjunath is a MLC of Ilkal Constituency and currently serving as the President of APEX Bank. With a strong background in public service and community development, he brings a wealth of experience to his role at the bank.',
-      description: 'Mrs. Example brings extensive leadership and administrative experience.'
-    },
-    { id: 3, 
-      name: 'Mr. Anand Kumar', 
-      role: 'General Manager', 
-      image: 'assets/managementImages/prakash.jpeg', 
-      aboutTitle: 'About Mr. Anand Kumar',
-      aboutText: 'Mr. Anand Kumar is the Ex. MLA of Ilkal Constituency and currently serving as the President of APEX Bank. With a strong background in public service and community development, he brings a wealth of experience to his role at the bank.',
-     
-      description: 'Mr. Anand oversees strategic planning and operations.' 
-    },
-    { id: 4, 
-      name: 'Mr. Ramesh Krishna', 
-      role: 'General Manager', 
-      image: 'assets/managementImages/prakash.jpeg', 
-      aboutTitle: 'About Mr. Ramesh Krishna',
-      aboutText: 'Sri Belli Prakash is the Ex. MLA of Ilkal Constituency and currently serving as the President of APEX Bank. With a strong background in public service and community development, he brings a wealth of experience to his role at the bank.',
-     
-      description: 'Mr. Ramesh Krishna oversees strategic planning and operations.' 
-    },
+      image: 'assets/managementImages/2.Mahantesh.Kampli(Vice-President).jpg',
+      aboutTitle: 'About Sri Mahantesh Kampli',
+      aboutText: 'Sri Mahantesh Kampli is currently serving as the Vice President of Ilkal Co-Operative Bank Ltd. Known for his dedication to public service and community development, he contributes significantly to the bank’s growth and strategic initiatives.',
+      description: 'Sri Mahantesh Kampli is a committed leader with strong administrative and cooperative banking experience.'
+    }
   ];
 
   // aboutTitle = 'About APEX Bank';
