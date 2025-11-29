@@ -9,4 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class BankBrand{
   @Input() showFounder = true;   // default is ON for desktop
+
+  bankStartedYear = 1965;
 }

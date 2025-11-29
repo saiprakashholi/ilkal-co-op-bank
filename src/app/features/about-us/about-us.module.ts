@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { PresidentsList } from './presidents-list/presidents-list';
 import { AboutUs } from './about-us';
+import { DirectorsList } from './directors-list/directors-list';
+import { FoundersList } from './founders-list/founders-list';
 
 // import { AboutUsComponent } from './about-us.component';
 // import { ExecutivesComponent } from './executives/executives.component';
@@ -27,8 +29,10 @@ import { AboutUs } from './about-us';
         path: '',
         component: AboutUs,
         children: [
-          { path: '', redirectTo: 'presidents', pathMatch: 'full' },
-          { path: 'presidents', component: PresidentsList },
+          { path: '', redirectTo: 'founders', pathMatch: 'full' },
+          // { path: 'presidents', component: PresidentsList },
+          { path: 'directors', component: DirectorsList },
+          { path: 'founders', component: FoundersList },
         //   { path: 'executives', component: ExecutivesComponent, children: [
         //       { path: 'presidents', component: PresidentsListComponent },
         //       { path: 'mds', component: MdListComponent },
