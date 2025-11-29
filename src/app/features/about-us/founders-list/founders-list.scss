@@ -1,0 +1,211 @@
+/* founders-list.scss - COMPLETE FILE */
+
+/* Make the component span the full width inside parent .cards-wrap grid */
+:host {
+  display: block;
+  grid-column: 1 / -1;
+  box-sizing: border-box;
+}
+
+/* Root wrapper */
+.founders-wrap {
+  background: #ffffff;
+  padding: 20px 0 50px;
+  color: #234f2a;
+  box-sizing: border-box;
+}
+
+/* Remove internal container width limits so component fills main area */
+.founders-wrap .container {
+  width: 100%;
+  max-width: none;
+  padding: 0 18px; /* match page gutters */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Heading + paragraph stacked vertically */
+.heading-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.title {
+  margin: 0;
+  color: #2b7a2b;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.intro {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+/* Founders grid: responsive, auto-fit columns */
+.founders-grid {
+  display: grid;
+  gap: 22px;
+
+  /* Default: 1 column (mobile) */
+  grid-template-columns: repeat(1, 1fr);
+
+  justify-items: center;
+  align-items: start;
+}
+/* Tablet */
+@media (min-width: 600px) {
+  .founders-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop / Laptop */
+@media (min-width: 992px) {
+  .founders-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+
+/* Card: image top, text below; allow hover lift */
+.founder-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(18, 52, 71, 0.06);
+  overflow: hidden;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  box-sizing: border-box;
+}
+
+.founder-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(18, 52, 71, 0.10);
+}
+
+/* Portrait container with elegant white inner frame */
+.photo {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* portrait ratio */
+  position: relative;
+  overflow: hidden;
+  background: #ffffff; /* white frame background */
+  padding: 12px; /* inner white boundary */
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fallback for browsers without aspect-ratio */
+.photo::before {
+  content: "";
+  display: block;
+  padding-top: 133.3333%; /* (4/3)*100% */
+}
+
+/* Image: use contain so full scan fits inside white frame.
+   If you prefer crop-to-fill use object-fit: cover (but contain preserves full image) */
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;         /* shows whole scan inside the white frame */
+  object-position: 50% 15%;    /* lift the crop slightly up so face sits nicely */
+  display: block;
+  border-radius: 6px;          /* inner rounding to separate from frame */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* subtle inner shadow */
+  transition: transform 260ms ease;
+}
+
+/* Optional subtle inner zoom on hover (keeps inside frame) */
+.founder-card:hover .photo img {
+  transform: scale(1.02);
+}
+
+/* Text/info area below image */
+.info {
+  padding: 14px 12px 18px;
+  box-sizing: border-box;
+}
+
+.name {
+  margin: 6px 0 4px;
+  font-size: 1.02rem;
+  color: #1f5f1f;
+  font-weight: 600;
+}
+
+.designation {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #5f715f;
+}
+
+/* Responsive tweaks */
+
+/* Small tablets and up: slightly larger padding and intro width */
+@media (min-width: 600px) {
+  .founders-wrap .container {
+    padding: 0 24px;
+  }
+  .intro {
+    max-width: 700px;
+  }
+}
+
+/* Desktop: increase title size and spacing but keep stacked heading */
+@media (min-width: 992px) {
+  .founders-wrap .container {
+    padding: 0 40px;
+  }
+  .heading-row {
+    gap: 14px;
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 1.75rem;
+  }
+}
+
+/* Large screens: slightly taller portrait if desired */
+@media (min-width: 1400px) {
+  .photo {
+    aspect-ratio: 3 / 5;
+  }
+  .photo::before {
+    padding-top: 166.6667%; /* (5/3)*100% */
+  }
+}
+
+/* Mobile polish */
+@media (max-width: 479.98px) {
+  .founders-wrap {
+    padding: 16px 0 36px;
+  }
+  .founders-wrap .container {
+    padding: 0 14px;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .intro {
+    font-size: 0.95rem;
+  }
+  .info {
+    padding: 12px 10px 14px;
+  }
+}

@@ -15,7 +15,7 @@ export class ManagementService {
 
   private fallback: ManagementData = {
     title: 'Management Team',
-    aboutTitle: 'About APEX Bank',
+    aboutTitle: 'About Co Op Bank',
     aboutText: 'Fallback about text...',
     members: [
       { id: 1, name: 'Fallback Name', role: 'President', image: 'assets/images/prakash.jpg', profileUrl: '#', description: 'Fallback bio' }

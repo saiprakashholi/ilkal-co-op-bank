@@ -197,16 +197,16 @@ $muted: #f6f7f6;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 200px;
+  // min-height: 200px;
   display: flex;
   align-items: center;
-  padding: 24px 20px;
+  // padding: 24px 20px;
   color: white;
 }
 
 @media (max-width: 900px) {
   .hero {
-    min-height: 160px;
+    // min-height: 160px;
     padding: 16px 12px;
   }
 }

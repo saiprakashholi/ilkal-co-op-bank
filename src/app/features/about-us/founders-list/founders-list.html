@@ -1,0 +1,25 @@
+<section class="founders-wrap">
+  <div class="container">
+    <div class="heading-row">
+      <h2 class="title">Founders Who Laid the Foundation of Our Bank</h2>
+
+      <p class="intro">
+        {{ description }}
+      </p>
+    </div>
+
+    <!-- Responsive Grid -->
+    <div class="founders-grid">
+      <article class="founder-card" *ngFor="let f of founders">
+        <div class="photo">
+          <img loading="lazy" [src]="f.photo" [alt]="f.name" (error)="onImgError($event)" />
+        </div>
+
+        <div class="info">
+          <h3 class="name">{{ f.name }}</h3>
+          <p class="designation" *ngIf="f.designation">{{ f.designation }}</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
