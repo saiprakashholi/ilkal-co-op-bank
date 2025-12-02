@@ -24,7 +24,7 @@ export class DirectorsList {
     { id: 2, name: 'Mahantesh Kampli', photo: 'assets/managementImages/2.Mahantesh.Kampli(Vice-President).jpg', designation: 'Vice President' },
     { id: 3, name: 'Pampapati Kalagi', photo: 'assets/managementImages/3 Pampapati Kalagi .jpg', designation: 'Director' },
     { id: 4, name: 'Lachamayya Guram', photo: 'assets/managementImages/4 Lachamayya Guram.jpg', designation: 'Director' },
-    { id: 5, name: 'Gautam Bora', photo: 'assets/managementImages/5 Goutam Bora.jpg', designation: 'Director' },
+    { id: 5, name: 'Goutham Bora', photo: 'assets/managementImages/5 Goutam Bora.jpg', designation: 'Director' },
     { id: 6, name: 'Mahantappa Angadi', photo: 'assets/managementImages/6 Mahantappa Angadi.jpg', designation: 'Director' },
     { id: 7, name: 'Vijay Giraddi', photo: 'assets/managementImages/7 Vijay Giraddi.jpg', designation: 'Director' },
     { id: 8, name: 'Mallikarjun Agni', photo: 'assets/managementImages/8 Mallikarjun Agni.jpg', designation: 'Director' },
@@ -36,8 +36,8 @@ export class DirectorsList {
     { id: 14, name: 'Shantkumar Surpur', photo: 'assets/managementImages/14 Shantkumar Surpur.jpg', designation: 'Director' },
     { id: 15, name: 'Dr.Aruna Akki', photo: 'assets/managementImages/15 Dr.Aruna Akki.jpg', designation: 'Director' },
     { id: 16, name: 'Lata Herur', photo: 'assets/managementImages/16 Lata Herur.jpg', designation: 'Director' },
-    { id: 17, name: 'Lata Herur', photo: 'assets/managementImages/Nagaraj Kutagamari (General Manager).jpg', designation: 'General Manager' },
-    { id: 18, name: 'ADs Directors', photo: 'assets/managementImages/ADs Directors.psd', designation: 'Director' },
+    { id: 17, name: 'Nagaraj Kutagamari', photo: 'assets/managementImages/Nagaraj Kutagamari (General Manager).jpg', designation: 'General Manager' },
+    // { id: 18, name: 'ADs Directors', photo: 'assets/managementImages/ADs Directors.psd', designation: 'Director' },
 
   ];
 

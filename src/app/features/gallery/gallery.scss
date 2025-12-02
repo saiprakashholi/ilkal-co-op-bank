@@ -1,0 +1,235 @@
+/* gallery.scss - improved overlap + vertical mobile scroll */
+
+/* theme variables */
+:root{
+  --card-radius: 14px;
+  --accent: #0b5fff;
+  --muted: #667085;
+  --shadow: 0 10px 30px rgba(10,15,30,0.08);
+}
+
+/* Page */
+.gallery-page{
+  padding: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #0f1724;
+  box-sizing: border-box;
+}
+
+.gallery-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:20px;
+  gap:12px;
+
+  h1{ font-size:28px; margin:0; }
+  p{ margin:0; color:var(--muted); }
+  .btn{
+    background:var(--accent); color:white; border:none;
+    padding:10px 14px; border-radius:10px; font-weight:600; cursor:pointer;
+    box-shadow:0 8px 20px rgba(11,95,255,0.12);
+  }
+}
+
+/* grid - desktop */
+.cards-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* card */
+.big-card{
+  background:#fff;
+  border-radius: var(--card-radius);
+  overflow:hidden;
+  cursor:pointer;
+  box-shadow: var(--shadow);
+  transition: transform .18s cubic-bezier(.2,.9,.2,1), box-shadow .18s;
+  min-height: 360px;
+  display:flex;
+  flex-direction:column;
+
+  &:hover, &:focus{
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 20px 42px rgba(10,15,30,0.14);
+    outline:none;
+  }
+}
+
+/* COVER TWO - improved overlap */
+.cover-two{
+  position: relative;
+  height: 220px;
+  display:flex;
+  align-items:flex-end;
+  padding: 16px;
+  box-sizing:border-box;
+  background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.04));
+}
+
+/* Layout uses flex so overlap is controlled with negative margin */
+.cover-left,
+.cover-right{
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+/* left: smaller, rotated, slightly behind */
+.cover-left{
+  width: 48%;
+  height: calc(100% - 20px);
+  transform: rotate(-3deg) translateY(6px);
+  box-shadow: 0 14px 30px rgba(10,15,30,0.08);
+  z-index: 1;
+  margin-left: 6px;
+  border: 2px solid rgba(255,255,255,0.9);
+  filter: saturate(0.96) contrast(0.98);
+}
+
+/* right: dominant image, appears on top */
+.cover-right{
+  width: 64%;
+  height: calc(100% - 8px);
+  margin-left: -28%;
+  z-index: 2;
+  box-shadow: 0 20px 48px rgba(10,15,30,0.12);
+  border-radius: 14px;
+  border: 5px solid rgba(255,255,255,0.95);
+  transform-origin: center right;
+}
+
+/* This ensures the visible area is neat (clip overflow) */
+.cover-two::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 12px;
+  box-shadow: inset 0 -30px 60px rgba(0,0,0,0.06);
+}
+
+/* top-right badge */
+.cover-top{
+  position: absolute;
+  right: 18px;
+  top: 12px;
+  z-index: 6;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* count badge */
+.badge{
+  background: linear-gradient(135deg,#fff,#f7f9ff);
+  color: var(--accent);
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-weight:700;
+  box-shadow: 0 8px 22px rgba(11,95,255,0.08);
+  font-size: 13px;
+}
+
+/* card body */
+.card-body{
+  padding: 18px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  flex: 1 1 auto;
+}
+
+.card-title{
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.05;
+}
+
+.card-desc{
+  margin:0;
+  color:var(--muted);
+  font-size: 14px;
+}
+
+/* small thumbnail row */
+.thumb-row{
+  display:flex;
+  gap:8px;
+  img{
+    width:64px;
+    height:48px;
+    object-fit:cover;
+    border-radius:8px;
+    border:2px solid #fff;
+    box-shadow: 0 10px 24px rgba(10,15,30,0.06);
+  }
+}
+
+/* -----------------------
+   RESPONSIVE: MOBILE - vertical scrolling (stacked)
+   ----------------------- */
+@media (max-width: 880px){
+  .gallery-page { padding: 16px; }
+
+  /* stacked single column */
+  .cards-grid{
+    grid-template-columns: 1fr;  /* single column stack */
+    gap: 18px;
+  }
+
+  .big-card{
+    min-height: 320px;
+    border-radius: 12px;
+  }
+
+  /* make cover area more compact and stack the two images attractively */
+  .cover-two{
+    height: auto;
+    padding: 12px;
+    display: block; /* switch to block for stacked flow */
+  }
+
+  /* On mobile, show right as full width, left as a small "peek" overlapping top-left */
+  .cover-right{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    margin-left: 0;
+    border-radius: 12px;
+    border-width: 4px;
+    box-shadow: 0 18px 36px rgba(10,15,30,0.12);
+  }
+
+  .cover-left{
+    position: relative;
+    width: 36%;
+    height: 92px;
+    display: block;
+    margin: -44px 0 8px 14px; /* upward overlap over the right image */
+    transform: rotate(-2deg);
+    border-width: 3px;
+    z-index: 3;
+    background-color: #fff;
+  }
+
+  .cover-two::after{ box-shadow: inset 0 -14px 30px rgba(0,0,0,0.05); }
+
+  .cover-top{ right: 14px; top: 8px; }
+
+  .card-body{ padding: 14px; }
+  .card-title{ font-size: 18px; }
+  .thumb-row img{ width:56px; height:40px; }
+}
+
+/* very small screens */
+@media (max-width: 420px){
+  .big-card { min-height: 300px; }
+  .cover-right { height: 150px; }
+  .cover-left { width: 40%; height: 84px; margin-top: -40px; transform: rotate(-2deg); }
+  .badge{ padding:6px 8px; font-size:12px; }
+}

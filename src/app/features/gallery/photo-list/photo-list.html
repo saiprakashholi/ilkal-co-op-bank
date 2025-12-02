@@ -1,0 +1,5 @@
+<h2>{{ group?.name }}</h2>
+
+<div class="photos-grid">
+  <img *ngFor="let p of group?.photos" [src]="p" />
+</div>
