@@ -1,1 +1,48 @@
-<p>gallery works!</p>
+<section class="gallery-page">
+
+  <header class="gallery-header">
+    <div class="left">
+      <h1>Gallery</h1>
+      <br>
+      <p>Explore photos of events, activities and memorable moments.</p>
+      <br>
+    </div>
+    <!-- <div class="cta">
+      <button class="btn">View All</button>
+    </div> -->
+  </header>
+
+  <div class="cards-grid">
+    <article
+      class="big-card"
+      *ngFor="let g of groups"
+      (click)="openGroup(g)"
+      role="button"
+      tabindex="0"
+      [attr.aria-label]="g.name + ', ' + g.photos.length + ' photos'">
+
+      <div class="cover-two">
+        <div class="cover-left"
+     [style.backgroundImage]="'url(' + getEncoded(getCoverLeft(g)) + ')'">
+</div>
+
+<div class="cover-right"
+     [style.backgroundImage]="'url(' + getEncoded(getCoverRight(g)) + ')'">
+</div>
+
+        <div class="cover-top">
+          <div class="badge">{{ g.photos.length }}</div>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <h3 class="card-title">{{ g.name }}</h3>
+        <p class="card-desc" *ngIf="g.description">{{ g.description }}</p>
+
+        <!-- <div class="thumb-row" *ngIf="g.photos.length > 2">
+          <img *ngFor="let t of g.photos.slice(0,3)" [src]="t" loading="lazy" alt="{{ g.name }}" />
+        </div> -->
+      </div>
+    </article>
+  </div>
+</section>
