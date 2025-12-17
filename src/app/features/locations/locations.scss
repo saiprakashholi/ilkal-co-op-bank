@@ -1,0 +1,115 @@
+.locations-section {
+  padding: 48px 20px;
+  background: #f8fbff;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0b5e8e;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 36px;
+}
+
+/* GRID LAYOUT */
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+  /* <-- centers last row cards */
+}
+
+/* CARD */
+.location-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE FIX */
+.image-wrapper {
+  height: 200px;
+  background: #f2f4f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /* ✅ FULL image visible */
+}
+
+/* CONTENT */
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0b5e8e;
+  margin-bottom: 8px;
+}
+
+.address {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 6px;
+  white-space: pre-line;
+}
+
+.phone {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+/* BUTTON */
+.call-btn {
+  display: inline-block;
+  background: #0b5e8e;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.call-btn:hover {
+  background: #094b73;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .image-wrapper {
+    height: 180px;
+  }
+}

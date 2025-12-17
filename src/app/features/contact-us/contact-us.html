@@ -1,1 +1,67 @@
-<p>contact-us works!</p>
+<div class="contact-root">
+  <!-- Header -->
+  <div class="contact-header">
+    <h1>Contact Us</h1>
+    <p>We’re here to help you. Reach out to our head office anytime.</p>
+  </div>
+
+  <!-- Content -->
+  <div class="contact-container">
+    <!-- Left: Details -->
+    <div class="contact-card">
+      <h2>{{ bank.name }}</h2>
+      <div class="place">{{ bank.place }}</div>
+
+      <div class="info-block">
+        <strong>Address</strong>
+        <p class="address">{{ bank.address }}</p>
+      </div>
+
+      <div class="info-block">
+        <strong>Mobile Numbers</strong>
+        <p *ngFor="let m of bank.mobiles">
+          <a href="tel:{{ m }}">{{ m }}</a>
+        </p>
+      </div>
+
+      <div class="info-block" *ngIf="bank.landline">
+        <strong>Landline</strong>
+        <p>
+          <a href="tel:{{ bank.landline }}">{{ bank.landline }}</a>
+        </p>
+      </div>
+      <div class="info-block working-hours">
+        <strong>Bank Working Hours</strong>
+
+        <p>
+          <span class="label">Monday – Friday:</span>
+          {{ workingHours.weekdays }}
+        </p>
+
+        <p>
+          <span class="label">Saturday:</span>
+          {{ workingHours.saturday }}
+        </p>
+      </div>
+      <div class="info-block">
+        <strong>Holidays:</strong>
+        <div *ngFor="let h of workingHours.holidays">
+          <p class="address">{{ h }}</p>
+        </div>
+      </div>
+
+      <a class="map-link" [href]="bank.mapLink" target="_blank" rel="noopener noreferrer">
+        📍 View on Google Maps
+      </a>
+    </div>
+
+    <!-- Right: Map -->
+    <div class="map-card">
+      <iframe
+        [src]="mapSafeUrl"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+.page {
+  padding: 16px;
+}
+
+h1 {
+  color: #b71c1c;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.table-card {
+  overflow-x: auto;
+  background: #fffdf5;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #c62828;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.highlight {
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+@media (max-width: 768px) {
+  th, td {
+    font-size: 13px;
+    padding: 8px;
+  }
+}

@@ -1,1 +1,26 @@
-<p>locations works!</p>
+<section class="locations-section">
+  <h2 class="title">Our Branch Locations</h2>
+  <p class="subtitle">
+    Find your nearest Ilkal Co-Operative Bank branch for trusted banking services.
+  </p>
+
+  <div class="locations-grid">
+    <div class="location-card" *ngFor="let branch of branches">
+      <div class="image-wrapper">
+        <img [src]="branch.image" [alt]="branch.name" loading="lazy" />
+      </div>
+
+      <div class="card-content">
+        <h3>{{ branch.name }}</h3>
+
+        <p class="address" *ngIf="branch.address">
+          {{ branch.address }}
+        </p>
+
+        <p class="phone" *ngIf="branch.phone">📞 {{ branch.phone }}</p>
+
+        <a *ngIf="branch.phone" class="call-btn" [href]="'tel:' + branch.phone"> Call Branch </a>
+      </div>
+    </div>
+  </div>
+</section>
