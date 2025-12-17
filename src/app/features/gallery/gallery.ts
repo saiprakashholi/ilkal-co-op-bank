@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { PhotoListComponent } from "./photo-list/photo-list";
 
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, PhotoListComponent],
   templateUrl: './gallery.html',
   styleUrl: './gallery.scss',
 })
@@ -44,7 +45,7 @@ export class Gallery {
       description: 'Inauguration of our new branch with esteemed guests and community members.',
       // cover: '/assets/gallery/1/1.gm.jpeg',
       photos: [
-         '/assets/gallery/2/Good Performance Prize.jpg',
+        '/assets/gallery/2/Good Performance Prize.jpg',
         '/assets/gallery/1/1.gm.jpeg',
         '/assets/gallery/1/2.gm.jpeg',
 
@@ -57,10 +58,10 @@ export class Gallery {
       // cover: '/assets/gallery/1/1.gm.jpeg',
       photos: [
         '/assets/gallery/2/Good Performance Prize.jpg',
-         '/assets/gallery/1/3.gm.jpeg',
+        '/assets/gallery/1/3.gm.jpeg',
         '/assets/gallery/1/1.gm.jpeg',
         '/assets/gallery/1/2.gm.jpeg',
-       
+
       ]
     }
   ];
@@ -84,9 +85,15 @@ export class Gallery {
   }
 
 
+  selectedGroup: any = null;
+
   openGroup(group: any) {
-    // we will build this page next
-    console.log('open group', group);
+    console.log('Opening group:', group);
+    this.selectedGroup = group;
+  }
+
+  closeModal() {
+    this.selectedGroup = null;
   }
 
 }

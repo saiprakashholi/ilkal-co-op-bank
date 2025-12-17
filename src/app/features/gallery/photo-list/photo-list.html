@@ -1,5 +1,28 @@
-<h2>{{ group?.name }}</h2>
+<div class="modal-backdrop" (click)="close.emit()">
+  <div class="modal" (click)="$event.stopPropagation()">
+    <!-- Close -->
+    <button class="close-btn" (click)="close.emit()">✕</button>
 
-<div class="photos-grid">
-  <img *ngFor="let p of group?.photos" [src]="p" />
+    <!-- Title -->
+    <h3 class="title">{{ group.name }}</h3>
+
+    <!-- FIXED VIEWER -->
+    <div class="viewer" (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">
+      <!-- Left arrow -->
+      <button class="nav left" (click)="prev()" [disabled]="index === 0">‹</button>
+
+      <!-- Image container (fixed size) -->
+      <div class="image-frame">
+        <img [src]="group.photos[index]" [alt]="group.name" loading="lazy" />
+      </div>
+
+      <!-- Right arrow -->
+      <button class="nav right" (click)="next()" [disabled]="index === group.photos.length - 1">
+        ›
+      </button>
+    </div>
+
+    <!-- Counter -->
+    <div class="counter">{{ index + 1 }} / {{ group.photos.length }}</div>
+  </div>
 </div>

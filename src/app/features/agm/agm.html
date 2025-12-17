@@ -1,1 +1,39 @@
-<p>agm works!</p>
+<section class="page">
+  <h1>10 Years Bank Performance</h1>
+  <p class="subtitle">Financial growth overview</p>
+
+  <div class="table-card">
+    <table>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Members</th>
+          <th>Total Deposits (₹)</th>
+          <th>Total Loans (₹)</th>
+          <th>Net Profit (₹)</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let row of reports">
+          <td>{{ row.year }}</td>
+          <td>{{ row.members }}</td>
+          <td>{{ row.deposits }}</td>
+          <td>{{ row.loans }}</td>
+          <td class="highlight">{{ row.profit }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Reference Chart -->
+<div class="image-section">
+  <h2>Visual Performance Summary</h2>
+  <br />
+  <img src="assets/finance/10 Years Bank Profit Chart.jpg" alt="10 Years Bank Profit Chart" />
+
+  <p class="note">*This chart is provided for reference and transparency.</p>
+</div>
+<br />
+<br />

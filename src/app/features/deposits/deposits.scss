@@ -1,0 +1,33 @@
+.page {
+    padding: 16px;
+}
+
+h1 {
+    color: #1b5e20;
+}
+
+.rate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.rate-card {
+    background: #e8f5e9;
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.rate-card h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.rate {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2e7d32;
+}

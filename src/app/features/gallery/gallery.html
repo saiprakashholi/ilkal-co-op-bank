@@ -1,11 +1,10 @@
 <section class="gallery-page">
-
   <header class="gallery-header">
     <div class="left">
       <h1>Gallery</h1>
-      <br>
+      <br />
       <p>Explore photos of events, activities and memorable moments.</p>
-      <br>
+      <br />
     </div>
     <!-- <div class="cta">
       <button class="btn">View All</button>
@@ -19,16 +18,18 @@
       (click)="openGroup(g)"
       role="button"
       tabindex="0"
-      [attr.aria-label]="g.name + ', ' + g.photos.length + ' photos'">
-
+      [attr.aria-label]="g.name + ', ' + g.photos.length + ' photos'"
+    >
       <div class="cover-two">
-        <div class="cover-left"
-     [style.backgroundImage]="'url(' + getEncoded(getCoverLeft(g)) + ')'">
-</div>
+        <div
+          class="cover-left"
+          [style.backgroundImage]="'url(' + getEncoded(getCoverLeft(g)) + ')'"
+        ></div>
 
-<div class="cover-right"
-     [style.backgroundImage]="'url(' + getEncoded(getCoverRight(g)) + ')'">
-</div>
+        <div
+          class="cover-right"
+          [style.backgroundImage]="'url(' + getEncoded(getCoverRight(g)) + ')'"
+        ></div>
 
         <div class="cover-top">
           <div class="badge">{{ g.photos.length }}</div>
@@ -46,3 +47,10 @@
     </article>
   </div>
 </section>
+
+<!-- Photo list modal -->
+<app-photo-list
+  *ngIf="selectedGroup"
+  [group]="selectedGroup"
+  (close)="closeModal()">
+</app-photo-list>

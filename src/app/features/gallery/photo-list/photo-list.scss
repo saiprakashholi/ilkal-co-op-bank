@@ -1,0 +1,154 @@
+/* Backdrop */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Modal shell */
+.modal {
+  position: relative;
+  width: 90%;
+  max-width: 960px;
+  background: #000;
+  border-radius: 16px;
+  padding: 18px 18px 14px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, .45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Close */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Title */
+.title {
+  color: #fff;
+  margin: 4px 0 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ======================
+   FIXED VIEWER AREA
+   ====================== */
+.viewer {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  /* 🔒 FIXED HEIGHT */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image frame keeps size consistent */
+.image-frame {
+  width: 100%;
+  height: 100%;
+  max-width: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image adapts INSIDE frame */
+.image-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /* ✅ key fix */
+  border-radius: 12px;
+}
+
+/* Arrows stay STATIC */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, .15);
+  border: none;
+  color: #fff;
+  font-size: 38px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav.left {
+  left: 14px;
+}
+
+.nav.right {
+  right: 14px;
+}
+
+.nav:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* Counter */
+.counter {
+  margin-top: 10px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+/* ======================
+   MOBILE
+   ====================== */
+@media (max-width: 600px) {
+  .modal {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding-top: 42px;
+  }
+
+  .viewer {
+    height: 60vh;
+    /* responsive but FIXED */
+  }
+
+  .nav {
+    font-size: 28px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* 🔥 HARD FIX: Mobile close button */
+@media (max-width: 600px) {
+  .close-btn {
+    position: fixed;
+    /* <-- KEY CHANGE */
+    top: calc(env(safe-area-inset-top, 0px) + 10px);
+    right: calc(env(safe-area-inset-right, 0px) + 10px);
+
+    z-index: 10001;
+    font-size: 26px;
+    padding: 8px;
+    line-height: 1;
+
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+}
