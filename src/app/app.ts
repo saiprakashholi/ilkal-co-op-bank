@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Header } from './core/header/header';
 import { Footer } from "./core/footer/footer";
 import { BankBrand } from "./core/bank-brand/bank-brand";
+import { EmergencyNoticeComponent } from "./core/emergency-notice/emergency-notice";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import { BankBrand } from "./core/bank-brand/bank-brand";
     CommonModule,
     Header,
     Footer,
-    BankBrand
+    BankBrand,
+    EmergencyNoticeComponent
 ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

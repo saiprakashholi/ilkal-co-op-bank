@@ -1,0 +1,20 @@
+<div class="overlay" *ngIf="show">
+  <div class="notice-card">
+    <button class="close-btn" (click)="close()">✕</button>
+
+    <div class="icon">{{ getIcon() }}</div>
+
+    <h2>{{ notice.title }}</h2>
+
+    <p>{{ notice.message }}</p>
+
+    <div class="time" *ngIf="notice.showValidity">
+      Valid from
+      <strong>{{ notice.startTime | date : 'medium' }}</strong>
+      to
+      <strong>{{ notice.endTime | date : 'medium' }}</strong>
+    </div>
+
+    <button class="ok-btn" (click)="close()">OK, I Understand</button>
+  </div>
+</div>
