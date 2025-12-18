@@ -1,0 +1,40 @@
+<svg
+  width="800"
+  height="600"
+  viewBox="0 0 800 600"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f7fa" />
+      <stop offset="100%" stop-color="#e8edf3" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" rx="20" fill="url(#bg)" />
+
+  <!-- Image placeholder icon -->
+  <g transform="translate(250 180)">
+    <!-- frame -->
+    <rect
+      x="0"
+      y="0"
+      width="300"
+      height="200"
+      rx="14"
+      fill="#ffffff"
+      stroke="#cfd6df"
+      stroke-width="4"
+    />
+
+    <!-- mountains -->
+    <polygon
+      points="40,160 120,90 190,150 250,110 260,160"
+      fill="#c5ccd6"
+    />
+
+    <!-- sun -->
+    <circle cx="220" cy="50" r="16" fill="#c5ccd6" />
+  </g>
+</svg>

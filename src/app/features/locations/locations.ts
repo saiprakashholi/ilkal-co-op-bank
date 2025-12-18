@@ -22,32 +22,44 @@ export class Locations {
       address: `Near Basavangudi Ilkal - 587125 
     Dist: Bagalakot, 
     Karnataka, India`,
-      phone: '+91 8351295325',
+      phone: '+91 95388 68030',
       image: 'assets/branches/HeadOffice.jpg',
     },
     {
       name: 'SVM College Branch',
-      address: 'Near Bus Stand, Ilkal',
-      phone: '08352 245678',
+      address: `1st cross,
+      Behind Bus Stand, Ilkal`,
+      phone: '+91 91412 77102',
       image: 'assets/branches/SVMCollegeBranch.jpg',
     },
     {
       name: 'APMC Yard Branch',
-      address: 'Station Road, Ilkal. ',
+      address: 'APMC Yard, Ilkal. ',
       image: 'assets/branches/APMCYardBranch.jpg',
-      phone: '08352 245678',
-    },
-    {
-      name: 'Kushtagi Branch',
-      address: '',
-      image: 'assets/branches/KusthagiBranch.jpg',
-      phone: '08350 220999',
+      phone: '+91 91415 58106',
     },
     {
       name: 'Gudur Branch',
-      address: '',
+      address: `Near Bus Stand,
+      Gudur S C`,
       image: 'assets/branches/GudurSCBranch.jpg',
-      phone: '08350 220999',
+      phone: '+91 91412 66103',
     },
+    {
+      name: 'Kudala Sangam Branch',
+      address: `Basaveshwara Circle,
+      Kudala Sangam`,
+      // image: 'assets/branches/KudalaSangamBranch.jpg',
+      phone: '+91 91419 42104',
+    },
+    {
+      name: 'Kushtagi Branch',
+      address: `Maruthi circle, 
+      Bus Stand road, Kushtagi`,
+      image: 'assets/branches/KusthagiBranch.jpg',
+      phone: '+91 91412 68105',
+    },
+
+    
   ];
 }

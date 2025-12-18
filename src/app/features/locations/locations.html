@@ -7,7 +7,7 @@
   <div class="locations-grid">
     <div class="location-card" *ngFor="let branch of branches">
       <div class="image-wrapper">
-        <img [src]="branch.image" [alt]="branch.name" loading="lazy" />
+        <img [src]="branch.image || 'assets/image-backup.svg'" [alt]="branch.name" loading="lazy" />
       </div>
 
       <div class="card-content">

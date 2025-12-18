@@ -10,9 +10,9 @@
 
     <div class="time" *ngIf="notice.showValidity">
       Valid from
-      <strong>{{ notice.startTime | date : 'medium' }}</strong>
+      <strong>{{ notice.effectiveStartTime | date : 'medium' }}</strong>
       to
-      <strong>{{ notice.endTime | date : 'medium' }}</strong>
+      <strong>{{ notice.effectiveEndTime | date : 'medium' }}</strong>
     </div>
 
     <button class="ok-btn" (click)="close()">OK, I Understand</button>

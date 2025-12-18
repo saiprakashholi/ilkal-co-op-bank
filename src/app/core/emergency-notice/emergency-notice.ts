@@ -12,16 +12,16 @@ export class EmergencyNoticeComponent implements OnInit {
 
   EMERGENCY_NOTICE = {
     enabled: true,
-
     type: 'warning', // 'info' | 'warning' | 'error'
 
-    showValidity: true, // show / hide valid from section
-
     title: 'Important Public Notice',
-    message: 'Due to system maintenance, NEFT and RTGS services will be unavailable from 6:00 PM to 9:00 PM for some days.',
-
+    message: 'Due to system maintenance, NEFT and RTGS services will be unavailable from 6:00 PM to 9:00 PM on December 29, 2025. Please plan your transactions accordingly.',
+    showValidity: false, // show / hide valid from section (effectiveStartTime and effectiveEndTime)
+    effectiveStartTime: '2025-12-29T18:00:00',
+    effectiveEndTime: '2025-12-29T21:00:00',
+    // notice starts and ends
     startTime: '2025-12-11T15:00:00',
-    endTime: '2025-12-25T21:00:00',
+    endTime: '2025-12-17T21:00:00',
   };
 
 
@@ -48,15 +48,15 @@ export class EmergencyNoticeComponent implements OnInit {
   }
 
   getIcon(): string {
-  switch (this.notice.type) {
-    case 'error':
-      return '⛔';
-    case 'warning':
-      return '⚠️';
-    case 'info':
-    default:
-      return 'ℹ️';
+    switch (this.notice.type) {
+      case 'error':
+        return '⛔';
+      case 'warning':
+        return '⚠️';
+      case 'info':
+      default:
+        return 'ℹ️';
+    }
   }
-}
 
 }
