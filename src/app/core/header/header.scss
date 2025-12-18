@@ -1,275 +1,211 @@
-// header.scss - brand colors + layout
+/* =====================
+   SAFETY (NO OVERFLOW)
+===================== */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
-$header-height: 64px;
+/* =====================
+   VARIABLES
+===================== */
+$primary: #015c8b;
+$primary-dark: #014a72;
+$white: #ffffff;
+$shadow: rgba(0, 0, 0, 0.18);
 $breakpoint: 900px;
 
-// set brand colors (tweak hexs here)
-$navy-700: #015c8b;; // header background (dark navy)
-$navy-800: #0171ab; // second gradient stop
-$maroon: #8b1a1a; // accent (matches the page title maroon)
-$white: #ffffff;
-$shadow: rgba(2, 6, 23, 0.25);
-
-$breakpoint-mobile-max: $breakpoint - 1px;
-
+/* =====================
+   HEADER
+===================== */
 .header {
   position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 90;
-  background: linear-gradient(180deg, $navy-700, $navy-800);
-  color: $white;
-  box-shadow: 0 2px 10px $shadow;
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  z-index: 100;
+  width: 100%;
+  background: linear-gradient(180deg, $primary, $primary-dark);
+  box-shadow: 0 3px 12px $shadow;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
+/* =====================
+   CONTAINER
+===================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.header-inner {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* =====================
+   DESKTOP NAV
+===================== */
+.nav-desktop ul {
+  display: flex;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-desktop a {
+  position: relative;
+  color: $white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.nav-desktop a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.nav-desktop a::after {
+  content: '';
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 6px;
+  height: 2px;
+  background: $white;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: 0.25s ease;
+}
+
+.nav-desktop a.active {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.nav-desktop a.active::after,
+.nav-desktop a:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* =====================
+   MOBILE MENU BUTTON
+===================== */
+.mobile-menu-holder {
+  display: none;
+  position: absolute;
+  right: 12px;
+  padding: 6px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hamburger {
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  background: transparent;
+  border: none;
+  color: $white;
+  cursor: pointer;
+}
+
+/* =====================
+   BACKDROP
+===================== */
+.mobile-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.mobile-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* =====================
+   MOBILE NAV (FIXED SPACING)
+===================== */
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, $primary, $primary-dark);
+  padding: 24px 16px 16px; /* ⬅ anchored to top */
+  box-sizing: border-box;
+  transition: right 0.25s ease;
+  box-shadow: -4px 0 18px rgba(0, 0, 0, 0.35);
+}
+
+.nav-mobile.open {
+  right: 0;
+}
+
+/* menu list */
+.nav-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* menu items */
+.nav-mobile a {
+  display: block;
+  color: $white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 18px;
+  margin: 4px 0;            /* ✔ consistent vertical spacing */
+  border-radius: 8px;
+  line-height: 1.4;
+  border-left: 3px solid transparent;
+  transition: background 0.2s ease;
+}
+
+/* hover */
+.nav-mobile a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* active */
+.nav-mobile a.active {
+  background: rgba(255, 255, 255, 0.14);
+  border-left-color: $white;
+  font-weight: 700;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: $breakpoint) {
+  .nav-desktop {
+    display: none;
   }
 
   .header-inner {
-    height: $header-height;
+    justify-content: flex-end;
+  }
+
+  .mobile-menu-holder {
     display: flex;
     align-items: center;
-    gap: 16px;
   }
-
-  /* brand (logo only) */
-  a.brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: inherit;
-    min-width: 140px;
-    flex-shrink: 0;
-    padding-left: 4px;
-
-    .logo-img {
-      height: 48px;
-      width: 48px;
-      object-fit: contain;
-      border-radius: 6px;
-      background: rgba(255, 255, 255, 0.02);
-      padding: 4px;
-    }
-  }
-
-  /* center nav; brand left, actions right */
-  .nav-desktop {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-
-    ul {
-      display: flex;
-      gap: 18px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      align-items: center;
-      white-space: nowrap;
-
-      li a {
-        color: $white;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 14px;
-        padding: 8px 10px;
-        border-radius: 6px;
-        transition: background 0.15s ease, color 0.12s ease;
-
-        &:hover,
-        &:focus {
-          background: rgba(255, 255, 255, 0.04);
-          color: $white;
-        }
-      }
-    }
-  }
-
-  .header-actions {
-    margin-left: auto;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-
-    .hamburger {
-      display: none;
-      width: 46px;
-      height: 46px;
-      background: transparent;
-      border: 0;
-      padding: 6px;
-      border-radius: 8px;
-      cursor: pointer;
-
-
-      .bar {
-        display: block;
-        width: 22px;
-        height: 2.5px;
-        background: $white;
-        margin: 3px 0;
-        border-radius: 2px;
-        transition: transform .18s ease, opacity .18s ease;
-      }
-    }
-  }
-
-  // mobile off-canvas
-  .mobile-nav-backdrop {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(2, 6, 23, 0.45);
-    opacity: 0;
-    transition: opacity .18s ease;
-    z-index: 88;
-
-    &.open {
-      display: block;
-      opacity: 1;
-    }
-  }
-
-  .nav-mobile {
-    position: fixed;
-    top: 0;
-    left: -320px;
-    width: 320px;
-    height: 100vh;
-    background: linear-gradient(180deg, $navy-800, $navy-700);
-    padding: 18px;
-    box-shadow: 6px 0 24px rgba(2, 6, 23, 0.4);
-    transition: left .28s cubic-bezier(.2, .9, .2, 1);
-    z-index: 89;
-
-    &.open {
-      left: 0;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 30px 0;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-
-      li a {
-        color: $white;
-        text-decoration: none;
-        padding: 12px;
-        border-radius: 8px;
-        display: block;
-
-        &:hover {
-          background: rgba(255, 255, 255, 0.03);
-        }
-      }
-    }
-  }
-
-  // responsive
-  @media (max-width: $breakpoint-mobile-max) {
-    .nav-desktop {
-      display: none;
-    }
-
-    .header-actions .hamburger {
-      display: inline-flex;
-    }
-  }
-
-  @media (min-width: $breakpoint) {
-
-    .nav-mobile,
-    .mobile-nav-backdrop {
-      display: none !important;
-    }
-  }
-
-  // MOBILE FIXES (paste near the end of header.scss)
-  $mobile-logo-size: 40px;
-  $mobile-header-height: 56px;
-
-  @media (max-width: $breakpoint-mobile-max) {
-
-    // make header slimmer and ensure it spans full width
-    .header {
-      .header-inner {
-        height: $mobile-header-height;
-        padding: 0 12px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between; // brand left/center handled below
-      }
-
-      // center the logo visually while keeping it in the flow
-      a.brand {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        min-width: 0;
-        padding-left: 0;
-
-        .logo-img {
-          height: $mobile-logo-size;
-          width: $mobile-logo-size;
-          padding: 2px;
-        }
-      }
-
-      // place actions/hamburger on the right edge
-      .header-actions {
-        margin-left: 0;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-
-        .hamburger {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          padding: 6px;
-          background: transparent;
-          
-        }
-      }
-    }
-
-    // ensure the off-canvas mobile nav is completely out of view when closed
-    .nav-mobile {
-      left: -100%; // keep it entirely off-screen (fixes left strip)
-      width: 280px; // keep panel narrow when open
-
-      &.open {
-        left: 0;
-      }
-
-      // slide in when open
-    }
-
-    // the backdrop should not be present unless open
-    .mobile-nav-backdrop {
-      display: none;
-
-      &.open {
-        display: block;
-      }
-    }
-
-    // hero content: add top offset so header doesn't overlap hero
-    main,
-    .hero,
-    .page-hero {
-      padding-top: $mobile-header-height + 12px; // keep content visible below header
-    }
-  }
-
 }

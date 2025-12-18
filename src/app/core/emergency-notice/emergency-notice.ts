@@ -35,7 +35,7 @@ export class EmergencyNoticeComponent implements OnInit {
     const start = new Date(this.notice.startTime).getTime();
     const end = new Date(this.notice.endTime).getTime();
 
-    const alreadyClosed = localStorage.getItem('emergency_notice_closed');
+    const alreadyClosed = false; //localStorage.getItem('emergency_notice_closed');
 
     if (now >= start && now <= end && !alreadyClosed) {
       this.show = true;
@@ -44,7 +44,7 @@ export class EmergencyNoticeComponent implements OnInit {
 
   close(): void {
     this.show = false;
-    localStorage.setItem('emergency_notice_closed', 'true');
+    // localStorage.setItem('emergency_notice_closed', 'true');
   }
 
   getIcon(): string {

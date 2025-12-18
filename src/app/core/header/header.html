@@ -1,43 +1,57 @@
 <header class="header" role="banner">
   <div class="header-inner container">
-    <!-- desktop nav -->
-    <nav class="nav-desktop" aria-label="Primary">
+
+    <!-- DESKTOP MENU -->
+    <nav class="nav-desktop" aria-label="Primary navigation">
       <ul>
         <li *ngFor="let item of menu">
-          <a [routerLink]="item.url || '#'" (click)="closeMenu()">{{ item.label }}</a>
+          <a
+            [routerLink]="item.url"
+            [class.active]="isActive(item.url)"
+          >
+            {{ item.label }}
+          </a>
         </li>
       </ul>
     </nav>
 
-    <div class="header-actions">
-      <!-- mobile hamburger -->
+    <!-- MOBILE MENU BUTTON -->
+    <div class="mobile-menu-holder">
       <button
         class="hamburger"
-        aria-label="Toggle navigation"
+        type="button"
+        aria-label="Toggle menu"
         [attr.aria-expanded]="mobileMenuOpen"
         (click)="toggleMenu()"
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-          <circle cx="12" cy="5" r="2" fill="white"></circle>
-          <circle cx="12" cy="12" r="2" fill="white"></circle>
-          <circle cx="12" cy="19" r="2" fill="white"></circle>
-        </svg>
+        ☰
       </button>
     </div>
+
   </div>
 
-  <!-- mobile sliding nav -->
+  <!-- MOBILE BACKDROP -->
   <div
-    class="mobile-nav-backdrop"
+    class="mobile-backdrop"
     [class.open]="mobileMenuOpen"
     (click)="closeMenu()"
-    aria-hidden="{{ !mobileMenuOpen }}"
   ></div>
 
-  <nav class="nav-mobile" [class.open]="mobileMenuOpen" aria-label="Mobile primary navigation">
+  <!-- MOBILE SLIDE MENU -->
+  <nav
+    class="nav-mobile"
+    [class.open]="mobileMenuOpen"
+    aria-label="Mobile navigation"
+  >
     <ul>
       <li *ngFor="let item of menu">
-        <a [routerLink]="item.url || '#'" (click)="closeMenu()">{{ item.label }}</a>
+        <a
+          [routerLink]="item.url"
+          [class.active]="isActive(item.url)"
+          (click)="closeMenu()"
+        >
+          {{ item.label }}
+        </a>
       </li>
     </ul>
   </nav>
