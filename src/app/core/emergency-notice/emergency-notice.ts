@@ -48,15 +48,15 @@ export class EmergencyNoticeComponent implements OnInit {
   }
 
   getIcon(): string {
-  switch (this.notice.type) {
-    case 'error':
-      return '⛔';
-    case 'warning':
-      return '⚠️';
-    case 'info':
-    default:
-      return 'ℹ️';
+    switch (this.notice.type) {
+      case 'error':
+        return '⛔';
+      case 'warning':
+        return '⚠️';
+      case 'info':
+      default:
+        return 'ℹ️';
+    }
   }
-}
 
 }
