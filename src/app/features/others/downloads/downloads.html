@@ -1,0 +1,20 @@
+<section class="downloads">
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Downloads</h1>
+    <p>Important documents and reports available for customers</p>
+  </div>
+
+  <!-- LIST -->
+  <div class="list">
+    <div class="item" *ngFor="let doc of downloads">
+      <div class="title">📄 {{ doc.title }}</div>
+
+      <div class="actions">
+        <a [href]="doc.url" target="_blank" rel="noopener" class="view"> View </a>
+
+        <a [href]="doc.url" download class="download"> Download </a>
+      </div>
+    </div>
+  </div>
+</section>

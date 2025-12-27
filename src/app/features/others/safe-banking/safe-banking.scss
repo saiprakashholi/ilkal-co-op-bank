@@ -1,0 +1,139 @@
+.safe-banking {
+    background: #f5f8fb;
+    min-height: 100%;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #013b5e, #015c8b);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 8px;
+}
+
+.hero p {
+    opacity: 0.9;
+    font-size: 16px;
+}
+
+/* CONTENT */
+.content {
+    max-width: 900px;
+    margin: 24px auto 0;
+    /* normal spacing */
+    padding: 0 16px 40px;
+}
+
+/* CARD */
+.tips-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+
+.tips-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tips-card li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+.tips-card li:last-child {
+    border-bottom: none;
+}
+
+.icon {
+    color: #2e7d32;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+/* ALERT */
+.alert {
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 12px;
+    background: #fff3f3;
+    color: #b71c1c;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* EXTRA */
+.extra {
+    margin-top: 28px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+.extra h3 {
+    color: #014a72;
+    margin-bottom: 10px;
+}
+
+.extra ul {
+    padding-left: 18px;
+}
+
+.extra li {
+    margin-bottom: 8px;
+}
+
+.alert ul,
+.extra ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.alert li,
+.extra li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 18px;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.tips-card li,
+.alert li,
+.extra li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .hero {
+        padding: 32px 16px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .tips-card li {
+        font-size: 14px;
+    }
+}

@@ -598,3 +598,89 @@ img {
         padding: 12px;
     }
 }
+
+
+
+/* ILKAL SAREE */
+.ilkal-saree {
+  background: #f6fbfe;
+  padding: 40px 0;
+}
+
+/* HEADER */
+.saree-header {
+  text-align: center;
+  margin-bottom: 28px;
+
+  h2 {
+    color: $primary;
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+  .gi-banner {
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* CONTENT */
+.saree-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.saree-text {
+  p {
+    color: $text;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .intro {
+    font-weight: 600;
+  }
+
+  h3 {
+    color: $primary-dark;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+}
+
+/* IMAGE */
+.saree-image {
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: contain;
+  }
+}
+
+/* TABLET & DESKTOP */
+@media (min-width: 768px) {
+  .saree-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .saree-text {
+    flex: 1.2;
+  }
+
+  .saree-image {
+    flex: 0.8;
+  }
+}

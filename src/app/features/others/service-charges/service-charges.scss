@@ -1,0 +1,86 @@
+.service-charges {
+  padding: 24px;
+}
+
+h1 {
+  color: #014a72;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 24px;
+}
+
+/* Section */
+.section {
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  color: #015c8b;
+  margin-bottom: 12px;
+}
+
+/* Table */
+.table {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Row */
+.row {
+  display: grid;
+  grid-template-columns: 80px 1fr 220px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.row.header {
+  background: #f1f7fb;
+  font-weight: 700;
+  color: #014a72;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+/* IMPS table adjustment */
+.table.imps .row {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .service-charges {
+    padding: 16px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .row.header {
+    display: none;
+  }
+
+  .row span {
+    display: block;
+  }
+
+  .row span::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #014a72;
+    display: none;
+  }
+
+  .row span:last-child {
+    font-weight: 700;
+  }
+}

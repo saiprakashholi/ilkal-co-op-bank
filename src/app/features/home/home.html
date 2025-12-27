@@ -53,44 +53,99 @@
 <app-management></app-management>
 <!-- Management members ENDS -->
 
-<!-- SERVICES -->
+<!-- SERVICES STARTS-->
 <section id="servicesSection" class="services" role="region" aria-label="Services">
   <div class="container">
     <h2>Our Services</h2>
 
-    <!-- mobile-first: horizontal scroll with snap -->
     <div class="services-strip" role="list" aria-label="Quick services">
-      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
-        <div class="icon" aria-hidden="true">🏦</div>
-        <div class="meta">
-          <div class="title">Loans</div>
-          <div class="desc">Agriculture, personal & business loans with competitive rates.</div>
+      <a
+        role="listitem"
+        class="service-card"
+        *ngFor="let service of services; trackBy: trackByTitle"
+        href="#"
+        (click)="$event.preventDefault()"
+      >
+        <div class="icon" aria-hidden="true">
+          {{ service.icon }}
         </div>
-      </a>
 
-      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
-        <div class="icon" aria-hidden="true">💰</div>
         <div class="meta">
-          <div class="title">Deposits</div>
-          <div class="desc">Fixed, recurring & savings accounts to help you save better.</div>
-        </div>
-      </a>
-
-      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
-        <div class="icon" aria-hidden="true">📱</div>
-        <div class="meta">
-          <div class="title">Digital Banking</div>
-          <div class="desc">Mobile & Internet banking for fast, secure transactions.</div>
-        </div>
-      </a>
-
-      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
-        <div class="icon" aria-hidden="true">🔐</div>
-        <div class="meta">
-          <div class="title">Locker Facility</div>
-          <div class="desc">Secure locker services for your valuables.</div>
+          <div class="title">{{ service.title }}</div>
+          <div class="desc">{{ service.description }}</div>
         </div>
       </a>
     </div>
   </div>
 </section>
+<!-- SERVICES ENDS-->
+
+<!-- ILKAL SAREE (GI TAG) -->
+<!-- ILKAL SAREE (GI TAG) -->
+<section class="ilkal-saree" role="region" aria-label="Ilkal Sarees GI Tag">
+  <div class="container">
+
+    <!-- SECTION HEADER (CENTERED) -->
+    <div class="saree-header">
+      <h2>Ilkal Sarees – A Proud Heritage</h2>
+
+      <img
+        src="assets/ilkal-gi/ilkal-gi-banner.jpeg"
+        alt="Geographical Indications of India"
+        class="gi-banner"
+        loading="lazy"
+      />
+    </div>
+
+    <!-- CONTENT -->
+    <div class="saree-content">
+      <!-- TEXT -->
+      <div class="saree-text">
+        <p class="intro">
+          Originating in the pit looms of the Bagalkot district of North Karnataka,
+          the elegant Ilkal sarees are woven using the unique
+          <strong>Tope Teni</strong> technique.
+        </p>
+
+        <p>
+          In this technique, the pure silk pallu is woven separately and then
+          attached to the body warp using interlocked loops, giving Ilkal sarees
+          their distinctive identity.
+        </p>
+
+        <h3>The Artform</h3>
+        <p>
+          Named after the town of Ilkal in Karnataka,aj, these sarees are known for
+          simple yet elegant patterns and a richly designed pallu featuring motifs
+          such as lotuses, palanquins, temple structures, and elephants.
+        </p>
+
+        <p>
+          The four to six-inch wide border is the main attraction, handwoven with
+          great care and precision by skilled weavers.
+        </p>
+
+        <h3>GI Tag Recognition</h3>
+        <p>
+          Ilkal Sarees were awarded the
+          <strong>Geographical Indication (GI) tag in 2007</strong>
+          with support from NABARD.
+          <strong>Ilkal Co-Operative Bank Ltd.</strong> takes pride in supporting
+          and preserving this rich cultural heritage.
+        </p>
+      </div>
+
+      <!-- CERTIFICATE -->
+      <div class="saree-image">
+        <img
+          src="assets/ilkal-gi/ilkal-gi-certificate.jpeg"
+          alt="Ilkal Saree GI Registration Certificate"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ILKAL SAREE (GI TAG) ENDS -->

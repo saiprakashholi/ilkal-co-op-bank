@@ -5,6 +5,12 @@ import { AnnouncementsComponent } from "./components/announcements/announcements
 import { NoticeComponent } from './components/notice/notice';
 import { ManagementComponent } from './components/management/management';
 
+interface BankService {
+  icon: string;
+  title: string;
+  description: string;
+}
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -15,10 +21,43 @@ import { ManagementComponent } from './components/management/management';
 
 })
 export class Home {
+
+  // Notice board data
   public notice = 'Introduced Mobile Banking App. | Bank is Live on IMPS & UPI';
 
-  public menu = ['Home', 'About Us', 'Agriculture Finance', 'Corporate Banking', 'Retail Banking', 'Mobile Banking', 'Gallery', 'Locations', 'Contact Us'];
-
+  // Our services data
+  services: BankService[] = [
+    {
+      icon: '📲',
+      title: 'UPI Payments',
+      description:
+        'Instant and secure money transfers using UPI. Send or receive money anytime using popular UPI apps with Ilkal Co-Operative Bank.',
+    },
+    {
+      icon: '🏧',
+      title: 'ATM Banking',
+      description:
+        '24×7 access to cash withdrawal, balance enquiry, mini statements, and other essential ATM banking services.',
+    },
+    {
+      icon: '📱',
+      title: 'Mobile Banking',
+      description:
+        'Access your account anytime through our mobile app. Check balances, transfer funds, and enjoy secure digital banking.',
+    },
+    {
+      icon: '🔄',
+      title: 'RTGS / NEFT',
+      description:
+        'Fast and reliable fund transfers to any bank in India using RTGS and NEFT facilities.',
+    },
+    {
+      icon: '🔐',
+      title: 'Safe Deposit Lockers',
+      description:
+        'Secure locker facilities to protect your valuables and important documents with complete peace of mind.',
+    },
+  ];
 
   public mobileMenuOpen = false;
 
@@ -69,6 +108,9 @@ export class Home {
     requestAnimationFrame(step);
   }
 
-
-
+  // used for our services sections
+  trackByTitle(_: number, item: BankService): string {
+    return item.title;
+  }
+  
 }

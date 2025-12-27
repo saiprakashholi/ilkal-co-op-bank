@@ -18,18 +18,18 @@ export class ContactUs {
     Karnataka, India`,
     mobiles: ['+91 9538868030'],
     landline: '',//'08351-123456',
-    IFSC : 'UTIB0SICB',
+    IFSC : 'UTIB0SICB25',
     mapLink: 'https://maps.app.goo.gl/rC4ukBmdHf5oecYk7',
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d221.33278889677794!2d76.11376566414671!3d15.960396026548803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDU3JzM3LjIiTiA3NsKwMDYnNDkuNiJF!5e1!3m2!1sen!2sin!4v1766080977076!5m2!1sen!2sin",
   };
 
   workingHours = {
-    weekdays: '10:00 AM – 5:00 PM',
-    saturday: '10:00 AM – 1:00 PM',
+    weekdays: '10:30 AM – 4:30 PM',
+    // saturday: '10:00 AM – 1:00 PM',
     holidays: [
       'Sunday',
-      '2nd Saturday',
-      '4th Saturday',
+      // '2nd Saturday',
+      // '4th Saturday',
       'All Government Holidays',
     ],
   };

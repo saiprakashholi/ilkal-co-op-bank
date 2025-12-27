@@ -1,0 +1,42 @@
+<section class="service-charges">
+  <h1>Service Charges</h1>
+  <p class="subtitle">Applicable service charges for various banking services</p>
+
+  <!-- MAIN SECTIONS -->
+  <div class="section" *ngFor="let section of sections">
+    <h2>{{ section.title }}</h2>
+
+    <div class="table">
+      <div class="row header">
+        <span>Sl. No</span>
+        <span>Details</span>
+        <span>Service Charges</span>
+      </div>
+
+      <div class="row" *ngFor="let row of section.rows">
+        <span>{{ row.no }}</span>
+        <span>{{ row.details }}</span>
+        <span>{{ row.charge }}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPS CHARGES -->
+  <div class="section">
+    <h2>IMPS Charges</h2>
+
+    <div class="table imps">
+      <div class="row header">
+        <span>From (₹)</span>
+        <span>To (₹)</span>
+        <span>Charges (Incl. GST)</span>
+      </div>
+
+      <div class="row" *ngFor="let item of impsCharges">
+        <span>{{ item.from }}</span>
+        <span>{{ item.to }}</span>
+        <span>{{ item.charge }}</span>
+      </div>
+    </div>
+  </div>
+</section>

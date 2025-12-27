@@ -1,0 +1,42 @@
+<section class="safe-banking">
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Secure & Safe Banking</h1>
+    <p>Your safety is our priority. Follow these guidelines to protect yourself from fraud.</p>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <!-- SAFETY TIPS -->
+    <div class="tips-card">
+      <ul>
+        <li *ngFor="let tip of safetyTips">
+          <span class="icon">{{ tip.icon }}</span>
+          <span class="text">{{ tip.text }}</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- IMPORTANT WARNING -->
+    <div class="alert">
+      <h3>Important Notice</h3>
+      <ul>
+        <li *ngFor="let notice of importantNotices">
+          <span class="icon">{{ notice.icon }}</span>
+          <span>{{ notice.text }}</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- EXTRA SAFETY -->
+    <div class="extra">
+      <h3>Additional Safety Measures</h3>
+      <ul>
+        <li *ngFor="let item of additionalSafety">
+          <span class="icon">{{ item.icon }}</span>
+          <span>{{ item.text }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
