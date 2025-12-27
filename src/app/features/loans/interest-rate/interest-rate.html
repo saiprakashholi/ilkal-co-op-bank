@@ -1,0 +1,19 @@
+<section class="page">
+  <h1>Loan Interest Rates</h1>
+  <p class="subtitle">Category wise interest details</p>
+
+  <div class="loan-list">
+    <div class="loan-card" *ngFor="let loan of loans">
+      <div class="name">{{ loan.name }}</div>
+      <div class="percent">{{ loan.rate }}%</div>
+    </div>
+  </div>
+</section>
+<div class="image-section">
+  <h2>Loan Interest Rate Chart</h2>
+  <br />
+  <img src="assets/finance/Loan Interest Chart.jpg" alt="Loan Interest Rates Chart" />
+</div>
+
+<br />
+<br />

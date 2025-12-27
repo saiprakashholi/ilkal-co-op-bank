@@ -28,8 +28,8 @@ export class ContactUs {
     // saturday: '10:00 AM – 1:00 PM',
     holidays: [
       'Sunday',
-      // '2nd Saturday',
-      // '4th Saturday',
+      '2nd Saturday',
+      '4th Saturday',
       'All Government Holidays',
     ],
   };

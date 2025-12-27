@@ -1,0 +1,49 @@
+<section class="loan-page">
+  <!-- HERO -->
+  <header class="hero">
+    <div class="icon">{{ hero.icon }}</div>
+    <h1>{{ hero.title }}</h1>
+    <p class="subtitle">{{ hero.subtitle }}</p>
+    <p class="desc">{{ hero.description }}</p>
+  </header>
+
+  <!-- OVERVIEW GRID -->
+  <section class="overview">
+    <div class="overview-card" *ngFor="let o of overview">
+      <span class="label">{{ o.label }}</span>
+      <strong class="value">{{ o.value }}</strong>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="loan-block">
+    <h2>Key Features</h2>
+    <ol class="numbered-list">
+      <li *ngFor="let f of features">{{ f }}</li>
+    </ol>
+  </section>
+
+  <!-- SECURITY -->
+  <section class="loan-block">
+    <h2>Security & Guarantees</h2>
+    <ol class="numbered-list">
+      <li *ngFor="let s of security">{{ s }}</li>
+    </ol>
+  </section>
+
+  <!-- CHARGES -->
+  <section class="loan-block">
+    <h2>Charges & Insurance</h2>
+    <ol class="numbered-list">
+      <li *ngFor="let c of charges">{{ c }}</li>
+    </ol>
+  </section>
+
+  <!-- DOCUMENTS -->
+  <section class="loan-block">
+    <h2>Documents Required</h2>
+    <ol class="numbered-list">
+      <li *ngFor="let d of documents">{{ d }}</li>
+    </ol>
+  </section>
+</section>
