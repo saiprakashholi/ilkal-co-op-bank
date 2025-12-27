@@ -34,8 +34,33 @@ export class Header {
     },
 
     { label: 'Reports', url: '/agm' },
-    { label: 'Deposits', url: '/deposits' },
-    { label: 'Loans', url: '/loans' },
+    {
+      label: 'Deposits',
+      url: '/deposits',
+      expanded: false,
+      children: [
+        { label: 'Savings Deposits', url: '/deposits/saving' },
+        { label: 'Current Deposits', url: '/deposits/current' },
+        { label: 'Term Deposits', url: '/deposits/term' },
+        { label: 'Deposit Interest Rates', url: '/deposits/interest-rate' },
+      ],
+    },
+    {
+      label: 'Loans',
+      url: '/loans',
+      expanded: false,
+      children: [
+        { label: 'Personal Loan', url: '/loans/personal' },
+        { label: 'Housing Loan', url: '/loans/housing' },
+        { label: 'SGH-JLG Loan', url: '/loans/sgh-jlg' },
+        { label: 'Vehical Loan', url: '/loans/vehical' },
+        { label: 'Gold Loan', url: '/loans/gold' },
+        { label: 'Business Loan', url: '/loans/business' },
+        { label: 'Term Loan', url: '/loans/term' },
+
+        { label: 'Loan Interest Rates', url: '/loans/interest-rate' },
+      ],
+    },
     { label: 'Gallery', url: '/gallery' },
     {
       label: 'Others', url: '/others',
@@ -46,7 +71,7 @@ export class Header {
         { label: 'Downloads', url: '/others/download' },
       ],
     },
-    { label: 'Locations', url: '/locations' },
+    { label: 'Branches', url: '/locations' },
     { label: 'Contact Us', url: '/contact-us' },
   ];
 

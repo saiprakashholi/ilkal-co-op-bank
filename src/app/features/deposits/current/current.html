@@ -1,0 +1,69 @@
+<section class="current-page">
+  <!-- HERO -->
+  <header class="hero">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+  </header>
+
+  <!-- CONTENT -->
+  <div class="grid">
+    <!-- Benefits -->
+    <section class="card">
+      <h2>Benefits</h2>
+      <ul>
+        <li *ngFor="let item of benefits">{{ item }}</li>
+      </ul>
+    </section>
+
+    <!-- Eligibility -->
+    <section class="card">
+      <h2>Eligibility</h2>
+      <p class="hint">Who can open an account</p>
+      <ul>
+        <li *ngFor="let item of eligibility">{{ item }}</li>
+      </ul>
+    </section>
+
+    <!-- Documents -->
+    <section class="card full">
+      <h2>Documents Required</h2>
+
+      <div class="doc-block">
+        <h3>Photographs</h3>
+        <ul>
+          <li *ngFor="let p of documents.photos">{{ p }}</li>
+        </ul>
+      </div>
+
+      <div class="doc-block">
+        <h3>Mandatory</h3>
+        <ul>
+          <li *ngFor="let m of documents.mandatory">{{ m }}</li>
+        </ul>
+      </div>
+
+      <div class="doc-block">
+        <h3>Address Proof (Any one)</h3>
+        <ul class="two-col">
+          <li *ngFor="let a of documents.addressProof">{{ a }}</li>
+        </ul>
+      </div>
+
+      <div class="doc-block">
+        <h3>Identity Proof (Any one)</h3>
+        <ul class="two-col">
+          <li *ngFor="let i of documents.identityProof">{{ i }}</li>
+        </ul>
+      </div>
+
+      <p class="note">
+        {{ documents.note }}
+      </p>
+    </section>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <button (click)="goToBranches()">Visit Nearest Branch</button>
+  </div>
+</section>

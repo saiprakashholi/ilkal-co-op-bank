@@ -1,0 +1,48 @@
+<section class="loan-page">
+  <!-- HERO -->
+  <header class="hero">
+    <div class="icon">{{ hero.icon }}</div>
+    <h1>{{ hero.title }}</h1>
+    <p class="subtitle">{{ hero.subtitle }}</p>
+    <p class="desc">{{ hero.description }}</p>
+  </header>
+
+  <!-- AGRI ALLIED -->
+  <section class="loan-block">
+    <h2>{{ agriAllied.title }}</h2>
+    <p class="block-desc">{{ agriAllied.description }}</p>
+
+    <ol class="feature-list">
+      <li *ngFor="let f of agriAllied.features">{{ f }}</li>
+    </ol>
+  </section>
+
+  <!-- NON FARM -->
+  <section class="loan-block">
+    <h2>{{ nonFarm.title }}</h2>
+    <p class="block-desc">{{ nonFarm.description }}</p>
+
+    <ol class="feature-list">
+      <li *ngFor="let f of nonFarm.features">{{ f }}</li>
+    </ol>
+  </section>
+
+  <!-- SHG -->
+  <section class="loan-block">
+    <h2>{{ shg.title }}</h2>
+    <p class="block-desc">{{ shg.description }}</p>
+
+    <ol class="feature-list">
+      <li *ngFor="let f of shg.features">{{ f }}</li>
+    </ol>
+  </section>
+
+  <!-- DOCUMENTS -->
+  <section class="loan-block">
+    <h2>Documents Required</h2>
+
+    <ol class="feature-list">
+      <li *ngFor="let d of documents">{{ d }}</li>
+    </ol>
+  </section>
+</section>

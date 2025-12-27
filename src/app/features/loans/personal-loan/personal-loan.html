@@ -1,0 +1,86 @@
+<section class="loan-page">
+  <!-- HERO -->
+  <header class="hero">
+    <div class="icon">{{ hero.icon }}</div>
+    <h1>{{ hero.title }}</h1>
+    <p class="subtitle">{{ hero.subtitle }}</p>
+    <p class="desc">{{ hero.description }}</p>
+  </header>
+
+  <!-- QUICK FACTS -->
+  <div class="facts">
+    <div class="fact" *ngFor="let h of highlights">
+      <span class="label">{{ h.label }}</span>
+      <strong class="value">{{ h.value }}</strong>
+    </div>
+  </div>
+
+  <!-- USE CASES -->
+  <section class="use-cases">
+    <h2>When is a Personal Loan useful?</h2>
+    <ul>
+      <li *ngFor="let u of useCases">{{ u }}</li>
+    </ul>
+  </section>
+
+  <!-- ACCORDION -->
+  <section class="accordion">
+    <!-- ELIGIBILITY -->
+    <div class="acc-item">
+      <button class="acc-header" (click)="toggle('eligibility')">
+        Eligibility
+        <span>{{ openSection === 'eligibility' ? '−' : '+' }}</span>
+      </button>
+
+      <div class="acc-body" *ngIf="openSection === 'eligibility'">
+        <h4>For Salaried Persons</h4>
+        <ul>
+          <li *ngFor="let e of eligibility.salaried">{{ e }}</li>
+        </ul>
+
+        <h4>For Businessmen & Professionals</h4>
+        <ul>
+          <li *ngFor="let e of eligibility.business">{{ e }}</li>
+        </ul>
+
+        <h4>Guarantors</h4>
+        <ul>
+          <li *ngFor="let g of guarantors">{{ g }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DOCUMENTS -->
+    <div class="acc-item" #documentsSection>
+      <button class="acc-header" (click)="toggle('documents', documentsSection)">
+        Documents Required
+        <span>{{ openSection === 'documents' ? '−' : '+' }}</span>
+      </button>
+
+      <div class="acc-body" *ngIf="openSection === 'documents'">
+        <ul>
+          <li *ngFor="let d of documents">{{ d }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CHARGES -->
+    <div class="acc-item">
+      <button class="acc-header" (click)="toggle('charges')">
+        Charges & Notes
+        <span>{{ openSection === 'charges' ? '−' : '+' }}</span>
+      </button>
+
+      <div class="acc-body">
+        <p *ngIf="openSection === 'charges'" class="note">
+          {{ chargesNote }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <button (click)="goToBranches()">Check Eligibility at Nearest Branch</button>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+<section class="loan-page">
+  <!-- HERO -->
+  <header class="hero">
+    <div class="icon">{{ hero.icon }}</div>
+    <h1>{{ hero.title }}</h1>
+    <p class="subtitle">{{ hero.subtitle }}</p>
+    <p class="desc">{{ hero.description }}</p>
+  </header>
+
+  <!-- INTRO -->
+  <section class="loan-block">
+    <h2>Overview of Term Loan</h2>
+    <ol class="numbered-list">
+      <li *ngFor="let p of introPoints">{{ p }}</li>
+    </ol>
+  </section>
+
+  <!-- FACTORY LAND & BUILDING -->
+  <section class="loan-block">
+    <h2>{{ factoryLoan.title }}</h2>
+    <ol class="numbered-list">
+      <li *ngFor="let p of factoryLoan.points">{{ p }}</li>
+    </ol>
+  </section>
+
+  <!-- MORTGAGE TERM LOAN -->
+  <section class="loan-block">
+    <h2>{{ mortgageLoan.title }}</h2>
+    <ol class="numbered-list">
+      <li *ngFor="let p of mortgageLoan.points">{{ p }}</li>
+    </ol>
+  </section>
+</section>

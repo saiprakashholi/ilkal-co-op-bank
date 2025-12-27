@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { PresidentsList } from './presidents-list/presidents-list';
 import { AboutUs } from './about-us';
 import { DirectorsList } from './directors-list/directors-list';
 import { FoundersList } from './founders-list/founders-list';

@@ -1,0 +1,44 @@
+<section class="term-page">
+  <!-- HEADER -->
+  <header class="header">
+    <h1>{{ title }}</h1>
+    <p>Applicable from {{ applicableFrom }}</p>
+  </header>
+
+  <!-- DESKTOP TABLE -->
+  <div class="table-wrapper desktop-only">
+    <table>
+      <thead>
+        <tr>
+          <th>Deposit Period</th>
+          <th>General / Co-Op Societies</th>
+          <th>Senior Citizens</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let r of rates">
+          <td>{{ r.period }}</td>
+          <td>{{ r.general }}</td>
+          <td class="senior">{{ r.senior }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MOBILE CARDS -->
+  <div class="cards mobile-only">
+    <div class="rate-card" *ngFor="let r of rates">
+      <div class="period">{{ r.period }}</div>
+
+      <div class="rate-row">
+        <span>General</span>
+        <strong>{{ r.general }}</strong>
+      </div>
+
+      <div class="rate-row senior">
+        <span>Senior Citizens</span>
+        <strong>{{ r.senior }}</strong>
+      </div>
+    </div>
+  </div>
+</section>

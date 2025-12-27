@@ -1,0 +1,33 @@
+<section class="loan-page">
+  <!-- HERO -->
+  <header class="hero">
+    <div class="icon">{{ hero.icon }}</div>
+    <h1>{{ hero.title }}</h1>
+    <p class="subtitle">{{ hero.subtitle }}</p>
+    <p class="desc">{{ hero.description }}</p>
+  </header>
+
+  <!-- INTRO -->
+  <section class="loan-block">
+    <h2>Purpose of Business Loan</h2>
+    <ol class="numbered-list">
+      <li *ngFor="let p of introPoints">{{ p }}</li>
+    </ol>
+  </section>
+
+  <!-- CASH CREDIT HYPOTHECATION -->
+  <section class="loan-block">
+    <h2>{{ cashCreditHypothecation.title }}</h2>
+    <ol class="numbered-list">
+      <li *ngFor="let p of cashCreditHypothecation.points">{{ p }}</li>
+    </ol>
+  </section>
+
+  <!-- SECURED CASH CREDIT -->
+  <section class="loan-block">
+    <h2>{{ securedCashCredit.title }}</h2>
+    <ol class="numbered-list">
+      <li *ngFor="let p of securedCashCredit.points">{{ p }}</li>
+    </ol>
+  </section>
+</section>
