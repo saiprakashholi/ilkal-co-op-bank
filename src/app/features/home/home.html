@@ -53,44 +53,39 @@
 <app-management></app-management>
 <!-- Management members ENDS -->
 
-<!-- SERVICES -->
-<section id="servicesSection" class="services" role="region" aria-label="Services">
+<!-- SERVICES STARTS-->
+<section
+  id="servicesSection"
+  class="services"
+  role="region"
+  aria-label="Services"
+>
   <div class="container">
     <h2>Our Services</h2>
 
-    <!-- mobile-first: horizontal scroll with snap -->
-    <div class="services-strip" role="list" aria-label="Quick services">
-      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
-        <div class="icon" aria-hidden="true">🏦</div>
-        <div class="meta">
-          <div class="title">Loans</div>
-          <div class="desc">Agriculture, personal & business loans with competitive rates.</div>
+    <div
+      class="services-strip"
+      role="list"
+      aria-label="Quick services"
+    >
+      <a
+        role="listitem"
+        class="service-card"
+        *ngFor="let service of services; trackBy: trackByTitle"
+        href="#"
+        (click)="$event.preventDefault()"
+      >
+        <div class="icon" aria-hidden="true">
+          {{ service.icon }}
         </div>
-      </a>
 
-      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
-        <div class="icon" aria-hidden="true">💰</div>
         <div class="meta">
-          <div class="title">Deposits</div>
-          <div class="desc">Fixed, recurring & savings accounts to help you save better.</div>
-        </div>
-      </a>
-
-      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
-        <div class="icon" aria-hidden="true">📱</div>
-        <div class="meta">
-          <div class="title">Digital Banking</div>
-          <div class="desc">Mobile & Internet banking for fast, secure transactions.</div>
-        </div>
-      </a>
-
-      <a role="listitem" class="service-card" href="#" (click)="$event.preventDefault()">
-        <div class="icon" aria-hidden="true">🔐</div>
-        <div class="meta">
-          <div class="title">Locker Facility</div>
-          <div class="desc">Secure locker services for your valuables.</div>
+          <div class="title">{{ service.title }}</div>
+          <div class="desc">{{ service.description }}</div>
         </div>
       </a>
     </div>
   </div>
 </section>
+<!-- SERVICES ENDS-->
+

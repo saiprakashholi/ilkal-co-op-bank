@@ -1,57 +1,80 @@
 <header class="header" role="banner">
   <div class="header-inner container">
-
-    <!-- DESKTOP MENU -->
+    <!-- DESKTOP NAV -->
     <nav class="nav-desktop" aria-label="Primary navigation">
       <ul>
-        <li *ngFor="let item of menu">
+        <li *ngFor="let item of menu" class="nav-item" [class.has-children]="item.children">
           <a
+            *ngIf="item.url"
             [routerLink]="item.url"
             [class.active]="isActive(item.url)"
+            (click)="item.children ? $event.preventDefault() : null"
           >
             {{ item.label }}
+            <span *ngIf="item.children" class="caret">▾</span>
           </a>
+
+          <!-- DESKTOP DROPDOWN -->
+          <div class="dropdown" *ngIf="item.children">
+            <a
+              *ngFor="let child of item.children"
+              [routerLink]="child.url"
+              routerLinkActive="active"
+            >
+              {{ child.label }}
+            </a>
+          </div>
         </li>
       </ul>
     </nav>
 
     <!-- MOBILE MENU BUTTON -->
     <div class="mobile-menu-holder">
-      <button
-        class="hamburger"
-        type="button"
-        aria-label="Toggle menu"
-        [attr.aria-expanded]="mobileMenuOpen"
-        (click)="toggleMenu()"
-      >
-        ☰
-      </button>
+      <button class="hamburger" aria-label="Open menu" (click)="toggleMenu()">☰</button>
     </div>
-
   </div>
 
   <!-- MOBILE BACKDROP -->
-  <div
-    class="mobile-backdrop"
-    [class.open]="mobileMenuOpen"
-    (click)="closeMenu()"
-  ></div>
+  <div class="mobile-backdrop" [class.open]="mobileMenuOpen" (click)="closeMenu()"></div>
 
-  <!-- MOBILE SLIDE MENU -->
-  <nav
-    class="nav-mobile"
-    [class.open]="mobileMenuOpen"
-    aria-label="Mobile navigation"
-  >
-    <ul>
+  <!-- MOBILE DRAWER -->
+  <nav class="nav-mobile" [class.open]="mobileMenuOpen" aria-label="Mobile navigation">
+    <div class="mobile-header">
+      <span>Menu</span>
+      <button class="close-btn" (click)="closeMenu()">✕</button>
+    </div>
+
+    <ul class="mobile-list">
       <li *ngFor="let item of menu">
+        <!-- SIMPLE LINK -->
         <a
+          *ngIf="!item.children"
           [routerLink]="item.url"
+          
           [class.active]="isActive(item.url)"
           (click)="closeMenu()"
         >
           {{ item.label }}
         </a>
+
+        <!-- ACCORDION -->
+        <div *ngIf="item.children" class="accordion">
+          <button class="accordion-header" (click)="toggleAccordion(item)">
+            {{ item.label }}
+            <span class="arrow" [class.open]="item.expanded">▾</span>
+          </button>
+
+          <div class="accordion-body" [class.open]="item.expanded">
+            <a
+              *ngFor="let child of item.children"
+              [routerLink]="child.url"
+              routerLinkActive="active"
+              (click)="closeMenu()"
+            >
+              {{ child.label }}
+            </a>
+          </div>
+        </div>
       </li>
     </ul>
   </nav>

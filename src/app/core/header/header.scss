@@ -1,41 +1,28 @@
-/* =====================
-   SAFETY (NO OVERFLOW)
-===================== */
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* =====================
-   VARIABLES
-===================== */
 $primary: #015c8b;
 $primary-dark: #014a72;
 $white: #ffffff;
-$shadow: rgba(0, 0, 0, 0.18);
 $breakpoint: 900px;
 
-/* =====================
-   HEADER
-===================== */
+/* SAFETY */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* HEADER */
 .header {
   position: sticky;
   top: 0;
   z-index: 100;
-  width: 100%;
   background: linear-gradient(180deg, $primary, $primary-dark);
-  box-shadow: 0 3px 12px $shadow;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* =====================
-   CONTAINER
-===================== */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
-  box-sizing: border-box;
 }
 
 .header-inner {
@@ -46,89 +33,99 @@ $breakpoint: 900px;
   position: relative;
 }
 
-/* =====================
-   DESKTOP NAV
-===================== */
+/* ================= DESKTOP NAV ================= */
 .nav-desktop ul {
   display: flex;
-  gap: 6px;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  gap: 6px;
+}
+
+.nav-item {
+  position: relative;
 }
 
 .nav-desktop a {
-  position: relative;
   color: $white;
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
   padding: 12px 18px;
   border-radius: 10px;
-  letter-spacing: 0.3px;
-  transition: background 0.2s ease, transform 0.15s ease;
+  transition: background 0.2s ease;
 }
 
-.nav-desktop a:hover {
-  background: rgba(255, 255, 255, 0.12);
-  transform: translateY(-1px);
-}
-
-.nav-desktop a::after {
-  content: '';
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 6px;
-  height: 2px;
-  background: $white;
-  opacity: 0;
-  transform: scaleX(0);
-  transition: 0.25s ease;
-}
-
+.nav-desktop a:hover,
 .nav-desktop a.active {
   background: rgba(255, 255, 255, 0.18);
 }
 
-.nav-desktop a.active::after,
-.nav-desktop a:hover::after {
-  opacity: 1;
-  transform: scaleX(1);
+.caret {
+  margin-left: 6px;
+  font-size: 12px;
 }
 
-/* =====================
-   MOBILE MENU BUTTON
-===================== */
+/* DROPDOWN */
+.dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-item:hover .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown a {
+  color: #014a72;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.dropdown a:hover,
+.dropdown a.active {
+  background: rgba(1, 92, 139, 0.12);
+}
+
+/* ================= MOBILE ================= */
 .mobile-menu-holder {
   display: none;
   position: absolute;
   right: 12px;
-  padding: 6px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.12);
 }
 
 .hamburger {
-  width: 40px;
-  height: 40px;
-  font-size: 22px;
-  background: transparent;
+  background: none;
   border: none;
+  font-size: 24px;
   color: $white;
   cursor: pointer;
 }
 
-/* =====================
-   BACKDROP
-===================== */
+/* BACKDROP */
 .mobile-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.55);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
+  z-index: 99;
 }
 
 .mobile-backdrop.open {
@@ -136,65 +133,127 @@ $breakpoint: 900px;
   pointer-events: auto;
 }
 
-/* =====================
-   MOBILE NAV (FIXED SPACING)
-===================== */
+/* DRAWER */
 .nav-mobile {
   position: fixed;
   top: 0;
-  right: -280px;
-  width: 260px;
+  right: -100%;
+  width: 300px;
+  max-width: 85vw;
   height: 100vh;
   background: linear-gradient(180deg, $primary, $primary-dark);
-  padding: 24px 16px 16px; /* ⬅ anchored to top */
-  box-sizing: border-box;
   transition: right 0.25s ease;
-  box-shadow: -4px 0 18px rgba(0, 0, 0, 0.35);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* header stays fixed */
 }
 
 .nav-mobile.open {
   right: 0;
 }
 
-/* menu list */
-.nav-mobile ul {
+.mobile-header {
+  height: 56px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  /* FIX */
+  background: linear-gradient(180deg, #0b3f63, #083250);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: $white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* LIST */
+.mobile-list {
   list-style: none;
-  padding: 0;
+  padding: 12px;
   margin: 0;
   display: flex;
   flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  /* take remaining height */
+  overflow-y: auto;
+  /* ✅ enable vertical scroll */
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 24px;
+  /* space at bottom */
 }
 
-/* menu items */
-.nav-mobile a {
-  display: block;
-  color: $white;
-  text-decoration: none;
+.mobile-list a,
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-radius: 12px;
   font-size: 16px;
   font-weight: 600;
-  padding: 12px 18px;
-  margin: 4px 0;            /* ✔ consistent vertical spacing */
-  border-radius: 8px;
-  line-height: 1.4;
-  border-left: 3px solid transparent;
-  transition: background 0.2s ease;
-}
-
-/* hover */
-.nav-mobile a:hover {
+  color: $white;
+  text-decoration: none;
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* active */
-.nav-mobile a.active {
-  background: rgba(255, 255, 255, 0.14);
-  border-left-color: $white;
+.mobile-list a.active {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* ACCORDION */
+.accordion-header {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow {
+  transition: transform 0.25s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+  padding-left: 12px;
+}
+
+.accordion-body.open {
+  max-height: 300px;
+}
+
+.accordion-body a {
+  margin-top: 6px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Active sub menu item */
+.accordion-body a.active {
+  background: rgba(255, 255, 255, 0.22);
+  border-left: 3px solid #ffffff;
   font-weight: 700;
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
+
+/* RESPONSIVE */
 @media (max-width: $breakpoint) {
   .nav-desktop {
     display: none;
@@ -205,7 +264,6 @@ $breakpoint: 900px;
   }
 
   .mobile-menu-holder {
-    display: flex;
-    align-items: center;
+    display: block;
   }
 }
