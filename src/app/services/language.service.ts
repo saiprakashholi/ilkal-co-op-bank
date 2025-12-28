@@ -27,6 +27,13 @@ export class LanguageService {
       // home page
       'home',
 
+      // footer 
+      'footer',
+    
+
+      // contact us 
+      'contact-us',
+
       // Service module
       'services',
       'services.upi',

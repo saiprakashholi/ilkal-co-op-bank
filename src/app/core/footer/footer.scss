@@ -234,3 +234,37 @@
         }
     }
 }
+
+
+/* Language switch */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+
+  button {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 2px 4px;
+
+    &.active {
+      font-weight: 700;
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  span {
+    opacity: 0.6;
+  }
+}
+

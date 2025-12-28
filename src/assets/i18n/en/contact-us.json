@@ -1,0 +1,16 @@
+{
+  "title": "Contact Us",
+  "subtitle": "We’re here to help you. Reach out to our head office anytime.",
+  "ifsc": "IFSC Code",
+  "address": "Address",
+  "mobile": "Mobile Numbers",
+  "email": "Email",
+  "website": "Website",
+  "gst": "GST Number",
+  "bankRegNo": "Bank Registration No",
+  "rbiLicence": "RBI Licence No",
+  "workingHours": "Bank Working Hours",
+  "monSat": "Monday – Saturday",
+  "holidays": "Holidays",
+  "viewMap": "View on Google Maps"
+}

@@ -98,8 +98,19 @@
       </div>
 
       <div class="right">
+        <div class="lang-switch">
+          <button [class.active]="lang.currentLang === 'en'" (click)="switchLang('en')">
+            English
+          </button>
+          <span>|</span>
+          <button [class.active]="lang.currentLang === 'kn'" (click)="switchLang('kn')">
+            ಕನ್ನಡ
+          </button>
+        </div>
+
         <div class="copyright">
-          Copyright © 2006-{{ today | date : 'yyyy' }} Ilkal Co-Operative Bank Ltd.
+          © 2006–{{ today | date : 'yyyy' }}
+          {{ lang.t('footer', 'copyright') }}
         </div>
       </div>
 
@@ -107,7 +118,6 @@
         <span class="visitors-label">Visitors today:</span>
         <span class="visitors-count">{{ visitorsToday }}</span>
       </div> -->
-
     </div>
   </div>
 </footer>

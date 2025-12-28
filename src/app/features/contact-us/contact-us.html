@@ -1,62 +1,98 @@
 <div class="contact-root">
   <!-- Header -->
   <div class="contact-header">
-    <h1>Contact Us</h1>
-    <p>We’re here to help you. Reach out to our head office anytime.</p>
+    <h1>{{ lang.t('contact-us', 'title') }}</h1>
+    <p>{{ lang.t('contact-us', 'subtitle') }}</p>
   </div>
 
   <!-- Content -->
   <div class="contact-container">
-    <!-- Left: Details -->
+    <!-- Left -->
     <div class="contact-card">
       <h2>{{ bank.name }}</h2>
       <div class="place">{{ bank.place }}</div>
-      <div class="place">IFSC : {{ bank.IFSC }}</div>
+      <div class="place">
+        {{ lang.t('contact-us', 'ifsc') }} : {{ bank.IFSC }}
+      </div>
 
+      <!-- Address -->
       <div class="info-block">
-        <strong>Address</strong>
+        <strong>{{ lang.t('contact-us', 'address') }}</strong>
         <p class="address">{{ bank.address }}</p>
       </div>
 
+      <!-- Contact -->
       <div class="info-block">
-        <strong>Mobile Numbers</strong>
+        <strong>{{ lang.t('contact-us', 'mobile') }}</strong>
         <p *ngFor="let m of bank.mobiles">
           <a href="tel:{{ m }}">{{ m }}</a>
         </p>
       </div>
 
-      <div class="info-block" *ngIf="bank.landline">
-        <strong>Landline</strong>
+      <!-- Email -->
+      <div class="info-block">
+        <strong>{{ lang.t('contact-us', 'email') }}</strong>
         <p>
-          <a href="tel:{{ bank.landline }}">{{ bank.landline }}</a>
+          <a href="mailto:{{ bank.email }}">{{ bank.email }}</a>
         </p>
       </div>
-      <div class="info-block working-hours">
-        <strong>Bank Working Hours</strong>
 
+      <!-- Website -->
+      <div class="info-block">
+        <strong>{{ lang.t('contact-us', 'website') }}</strong>
         <p>
-          <span class="label">Monday – Saturday:</span>
+          <a [href]="bank.website" target="_blank" rel="noopener">
+            {{ bank.website }}
+          </a>
+        </p>
+      </div>
+
+      <!-- Registration -->
+      <div class="info-block">
+        <strong>{{ lang.t('contact-us', 'gst') }}</strong>
+        <p>{{ bank.gstNo }}</p>
+      </div>
+
+      <div class="info-block">
+        <strong>{{ lang.t('contact-us', 'bankRegNo') }}</strong>
+        <p>{{ bank.bankRegNo }}</p>
+      </div>
+
+      <div class="info-block">
+        <strong>{{ lang.t('contact-us', 'rbiLicence') }}</strong>
+        <p>{{ bank.rbiLicenceNo }}</p>
+      </div>
+
+      <!-- Working Hours -->
+      <div class="info-block working-hours">
+        <strong>{{ lang.t('contact-us', 'workingHours') }}</strong>
+        <p>
+          <span class="label">
+            {{ lang.t('contact-us', 'monSat') }}:
+          </span>
           {{ workingHours.weekdays }}
         </p>
-
-        <!-- <p>
-          <span class="label">Saturday:</span>
-          {{ workingHours.saturday }}
-        </p> -->
       </div>
+
+      <!-- Holidays -->
       <div class="info-block">
-        <strong>Holidays:</strong>
-        <div *ngFor="let h of workingHours.holidays">
-          <p class="address">{{ h }}</p>
-        </div>
+        <strong>{{ lang.t('contact-us', 'holidays') }}</strong>
+        <p class="address" *ngFor="let h of workingHours.holidays">
+          {{ h }}
+        </p>
       </div>
 
-      <a class="map-link" [href]="bank.mapLink" target="_blank" rel="noopener noreferrer">
-        📍 View on Google Maps
+      <a
+        class="map-link"
+        [href]="bank.mapLink"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📍 {{ lang.t('contact-us', 'viewMap') }}
       </a>
     </div>
 
-    <!-- Right: Map -->
+    <!-- Right -->
     <div class="map-card">
       <iframe
         [src]="mapSafeUrl"
