@@ -22,7 +22,7 @@ import { TermLoan } from './term-loan/term-loan';
                 path: '',
                 component: Loans,
                 children: [
-                    { path: '', redirectTo: 'interest-rate', pathMatch: 'full' },
+                    { path: '', redirectTo: 'personal', pathMatch: 'full' },
 
                     { path: 'interest-rate', component: InterestRate },
                     { path: 'personal', component: PersonalLoan },

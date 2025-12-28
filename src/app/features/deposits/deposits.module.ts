@@ -18,7 +18,7 @@ import { Term } from './term/term';
                 path: '',
                 component: Deposits,
                 children: [
-                    { path: '', redirectTo: 'interest-rate', pathMatch: 'full' },
+                    { path: '', redirectTo: 'saving', pathMatch: 'full' },
 
                     { path: 'interest-rate', component: InterestRate },
                     { path: 'saving', component: Saving },
