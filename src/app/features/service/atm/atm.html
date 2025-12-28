@@ -1,1 +1,39 @@
-<p>atm works!</p>
+<section class="atm-root">
+
+  <!-- Title -->
+  <h1 class="title">
+    {{ lang.t('services.atm', 'TITLE') }}
+  </h1>
+
+  <!-- Intro -->
+  <p class="description">
+    {{ lang.t('services.atm', 'INTRO_1') }}
+  </p>
+
+  <p class="description">
+    {{ lang.t('services.atm', 'INTRO_2') }}
+  </p>
+
+  <!-- ATM Services -->
+  <h2 class="subtitle">
+    {{ lang.t('services.atm', 'ATM_FEATURES_TITLE') }}
+  </h2>
+
+  <ul class="list">
+    <li *ngFor="let key of features">
+      {{ lang.t('services.atm', key) }}
+    </li>
+  </ul>
+
+  <!-- Debit Card -->
+  <h2 class="subtitle">
+    {{ lang.t('services.atm', 'DEBIT_CARD_TITLE') }}
+  </h2>
+
+  <ul class="list">
+    <li *ngFor="let key of debitCardPoints">
+      {{ lang.t('services.atm', key) }}
+    </li>
+  </ul>
+
+</section>

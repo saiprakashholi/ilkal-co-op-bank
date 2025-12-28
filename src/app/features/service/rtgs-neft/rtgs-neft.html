@@ -1,1 +1,54 @@
-<p>rtgs-neft works!</p>
+<section class="rtgs-neft-root">
+
+  <!-- Page Title -->
+  <h1 class="title">
+    {{ lang.t('services.rtgs-neft', 'TITLE') }}
+  </h1>
+
+  <!-- RTGS -->
+  <h2 class="subtitle">
+    {{ lang.t('services.rtgs-neft', 'RTGS_TITLE') }}
+  </h2>
+
+  <p class="description">
+    {{ lang.t('services.rtgs-neft', 'RTGS_DESC_1') }}
+  </p>
+
+  <p class="description">
+    {{ lang.t('services.rtgs-neft', 'RTGS_DESC_2') }}
+  </p>
+
+  <h3 class="subheading">
+    {{ lang.t('services.rtgs-neft', 'BENEFITS_TITLE') }}
+  </h3>
+
+  <ul class="list">
+    <li *ngFor="let key of rtgsBenefits">
+      {{ lang.t('services.rtgs-neft', key) }}
+    </li>
+  </ul>
+
+  <!-- NEFT -->
+  <h2 class="subtitle">
+    {{ lang.t('services.rtgs-neft', 'NEFT_TITLE') }}
+  </h2>
+
+  <p class="description">
+    {{ lang.t('services.rtgs-neft', 'NEFT_DESC_1') }}
+  </p>
+
+  <p class="description">
+    {{ lang.t('services.rtgs-neft', 'NEFT_DESC_2') }}
+  </p>
+
+  <h3 class="subheading">
+    {{ lang.t('services.rtgs-neft', 'BENEFITS_TITLE') }}
+  </h3>
+
+  <ul class="list">
+    <li *ngFor="let key of neftBenefits">
+      {{ lang.t('services.rtgs-neft', key) }}
+    </li>
+  </ul>
+
+</section>

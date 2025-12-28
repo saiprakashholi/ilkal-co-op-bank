@@ -10,7 +10,7 @@ export class LanguageService {
   constructor(
     private http: HttpClient,
     @Inject(PLATFORM_ID) private platformId: Object
-  ) {}
+  ) { }
 
   loadLanguage(lang: 'en' | 'kn') {
     this.currentLang = lang;
@@ -21,8 +21,19 @@ export class LanguageService {
     }
 
     const modules = [
+      // common 
+      'common',
+
+      // Service module
       'services',
-      'services.upi'
+      'services.upi',
+      'services.imps',
+      'services.mobile',
+      'services.atm',
+      'services.rtgs-neft',
+      'services.locker'
+
+      
     ];
 
     modules.forEach(m => {

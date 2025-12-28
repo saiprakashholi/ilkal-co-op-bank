@@ -1,1 +1,44 @@
-<p>locker works!</p>
+<section class="locker-root">
+
+  <!-- Title -->
+  <h1 class="title">
+    {{ lang.t('services.locker', 'TITLE') }}
+  </h1>
+
+  <!-- Intro -->
+  <p class="description">
+    {{ lang.t('services.locker', 'INTRO_1') }}
+  </p>
+
+  <p class="description">
+    {{ lang.t('services.locker', 'INTRO_2') }}
+  </p>
+
+  <!-- Locker Table -->
+  <div class="table-wrapper">
+    <table class="locker-table">
+      <thead>
+        <tr>
+          <th>{{ lang.t('services.locker', 'SIZE') }}</th>
+          <th>{{ lang.t('services.locker', 'DIMENSIONS') }}</th>
+          <th>{{ lang.t('services.locker', 'RENT') }}</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let locker of lockers">
+          <td>{{ lang.t('services.locker', locker.size) }}</td>
+          <td>{{ locker.dimensions }}</td>
+          <td>{{ locker.rent }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Notes -->
+  <ul class="notes">
+    <li>{{ lang.t('services.locker', 'NOTE_1') }}</li>
+    <li>{{ lang.t('services.locker', 'NOTE_2') }}</li>
+  </ul>
+
+</section>

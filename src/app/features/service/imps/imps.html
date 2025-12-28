@@ -1,1 +1,28 @@
-<p>imps works!</p>
+<section class="imps-root">
+
+  <!-- Title -->
+  <h1 class="title">
+    {{ lang.t('services.imps', 'TITLE') }}
+  </h1>
+
+  <!-- Intro -->
+  <p class="description">
+    {{ lang.t('services.imps', 'INTRO_1') }}
+  </p>
+
+  <p class="description">
+    {{ lang.t('services.imps', 'INTRO_2') }}
+  </p>
+
+  <!-- Features -->
+  <h2 class="subtitle">
+    {{ lang.t('services.imps', 'FEATURES_TITLE') }}
+  </h2>
+
+  <ul class="list">
+    <li *ngFor="let key of features">
+      {{ lang.t('services.imps', key) }}
+    </li>
+  </ul>
+
+</section>

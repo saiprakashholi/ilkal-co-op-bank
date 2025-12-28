@@ -1,0 +1,25 @@
+{
+  "TITLE": "RTGS / NEFT",
+
+  "RTGS_TITLE": "RTGS (Real Time Gross Settlement)",
+
+  "RTGS_DESC_1": "RTGS is a real-time fund transfer system where the processing and settlement of transactions take place instantly on a transaction-by-transaction basis.",
+  "RTGS_DESC_2": "It is the fastest interbank money transfer facility available through secure banking channels in India.",
+
+  "NEFT_TITLE": "NEFT (National Electronic Fund Transfer)",
+
+  "NEFT_DESC_1": "NEFT is an electronic fund transfer system that operates on a Deferred Net Settlement basis.",
+  "NEFT_DESC_2": "In NEFT, transactions are settled in batches at specific intervals rather than continuously, making it suitable for routine fund transfers.",
+
+  "BENEFITS_TITLE": "Key Benefits",
+
+  "RTGS_REAL_TIME": "Real-time processing and settlement of transactions.",
+  "RTGS_GROSS": "Transactions are settled individually without netting.",
+  "RTGS_FAST": "Fastest method for large-value interbank fund transfers.",
+  "RTGS_SECURE": "Highly secure fund transfer through regulated banking channels.",
+
+  "NEFT_BATCH": "Transactions are settled in batches at regular intervals.",
+  "NEFT_WIDE_USAGE": "Widely used for retail and corporate fund transfers.",
+  "NEFT_CONVENIENT": "No need for demand drafts or cheques.",
+  "NEFT_SECURE": "Safe and reliable electronic fund transfer system."
+}
