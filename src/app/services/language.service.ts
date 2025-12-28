@@ -1,43 +1,45 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-
-import { BehaviorSubject } from 'rxjs';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({ providedIn: 'root' })
 export class LanguageService {
-    currentLang = 'en';
-    private translations: any = {};
+  currentLang: 'en' | 'kn' = 'en';
+  private translations: Record<string, any> = {};
 
-    constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
+  loadLanguage(lang: 'en' | 'kn') {
+    this.currentLang = lang;
 
-    loadLanguage(lang: 'en' | 'kn') {
-        this.currentLang = lang;
+    // 🔒 SSR SAFE: skip HTTP during prerender
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
 
-        const modules = [
-            // 'common',
-            // 'header',
-            // 'footer',
-            // 'loans',
-            // 'deposits',
-            // 'notices'
-            'services',
-            'services.upi',
-            
-        ];
+    const modules = [
+      'services',
+      'services.upi'
+    ];
 
-        modules.forEach(m => {
-            this.http
-                .get(`/assets/i18n/${lang}/${m}.json`)
-                .subscribe(data => {
-                    // console.log(`Loaded ${m} translations for ${lang}:`, data);
-                    this.translations[m] = data;
-                });
+    modules.forEach(m => {
+      this.http
+        .get(`/assets/i18n/${lang}/${m}.json`)
+        .subscribe({
+          next: data => {
+            this.translations[m] = data;
+          },
+          error: err => {
+            console.warn(`Failed to load i18n ${m}`, err);
+          }
         });
-    }
+    });
+  }
 
-    t(module: string, key: string): string {
-        // console.log("LanguageService t()", module, key, this.translations[module]?.[key]);
-        return this.translations[module]?.[key] || key;
-    }
+  t(module: string, key: string): string {
+    return this.translations[module]?.[key] || key;
+  }
 }
