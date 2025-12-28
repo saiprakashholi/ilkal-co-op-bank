@@ -24,6 +24,9 @@ export class LanguageService {
       // common 
       'common',
 
+      // home page
+      'home',
+
       // Service module
       'services',
       'services.upi',
@@ -32,7 +35,6 @@ export class LanguageService {
       'services.atm',
       'services.rtgs-neft',
       'services.locker'
-
       
     ];
 

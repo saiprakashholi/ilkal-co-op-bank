@@ -1,6 +1,3 @@
-
-
-
 <!-- HERO -->
 <section class="hero" role="region" aria-label="Hero">
   <div class="container hero-inner">
@@ -84,11 +81,44 @@
 </section>
 <!-- SERVICES ENDS-->
 
-<!-- ILKAL SAREE (GI TAG) -->
+<!-- FINANCIAL STRENGTH STARTS-->
+<section class="financial-strength" role="region" aria-label="Financial Strength">
+  <div class="container">
+    <h2 class="fs-title">
+      {{ lang.t('home', 'FINANCIAL_STRENGTH_TITLE') }}
+    </h2>
+
+    <p class="fs-subtitle">
+      {{ lang.t('home', 'FINANCIAL_STRENGTH_SUBTITLE') }}
+    </p>
+
+    <div class="fs-stats">
+      <div class="fs-item" *ngFor="let stat of financialStats">
+        <div class="fs-value">
+          {{ stat.value }}
+          <span class="fs-unit">{{ stat.unit }}</span>
+        </div>
+        <div class="fs-label">
+          {{ lang.t('home', stat.key) }}
+        </div>
+      </div>
+    </div>
+
+    <div class="fs-cta">
+      <p>
+        {{ lang.t('home', 'QUERY_TEXT') }}
+      </p>
+      <a routerLink="/contact-us" class="btn-primary">
+        {{ lang.t('home', 'CONTACT_US') }}
+      </a>
+    </div>
+  </div>
+</section>
+<!-- FINANCIAL STRENGTH ENDS -->
+
 <!-- ILKAL SAREE (GI TAG) -->
 <section class="ilkal-saree" role="region" aria-label="Ilkal Sarees GI Tag">
   <div class="container">
-
     <!-- SECTION HEADER (CENTERED) -->
     <div class="saree-header">
       <h2>Ilkal Sarees – A Proud Heritage</h2>
@@ -106,27 +136,26 @@
       <!-- TEXT -->
       <div class="saree-text">
         <p class="intro">
-          Originating in the pit looms of the Bagalkot district of North Karnataka,
-          the elegant Ilkal sarees are woven using the unique
+          Originating in the pit looms of the Bagalkot district of North Karnataka, the elegant
+          Ilkal sarees are woven using the unique
           <strong>Tope Teni</strong> technique.
         </p>
 
         <p>
-          In this technique, the pure silk pallu is woven separately and then
-          attached to the body warp using interlocked loops, giving Ilkal sarees
-          their distinctive identity.
+          In this technique, the pure silk pallu is woven separately and then attached to the body
+          warp using interlocked loops, giving Ilkal sarees their distinctive identity.
         </p>
 
         <h3>The Artform</h3>
         <p>
-          Named after the town of Ilkal in Karnataka,aj, these sarees are known for
-          simple yet elegant patterns and a richly designed pallu featuring motifs
-          such as lotuses, palanquins, temple structures, and elephants.
+          Named after the town of Ilkal in Karnataka,aj, these sarees are known for simple yet
+          elegant patterns and a richly designed pallu featuring motifs such as lotuses, palanquins,
+          temple structures, and elephants.
         </p>
 
         <p>
-          The four to six-inch wide border is the main attraction, handwoven with
-          great care and precision by skilled weavers.
+          The four to six-inch wide border is the main attraction, handwoven with great care and
+          precision by skilled weavers.
         </p>
 
         <h3>GI Tag Recognition</h3>
@@ -134,8 +163,8 @@
           Ilkal Sarees were awarded the
           <strong>Geographical Indication (GI) tag in 2007</strong>
           with support from NABARD.
-          <strong>Ilkal Co-Operative Bank Ltd.</strong> takes pride in supporting
-          and preserving this rich cultural heritage.
+          <strong>Ilkal Co-Operative Bank Ltd.</strong> takes pride in supporting and preserving
+          this rich cultural heritage.
         </p>
       </div>
 
@@ -148,8 +177,8 @@
         />
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- ILKAL SAREE (GI TAG) ENDS -->
+
