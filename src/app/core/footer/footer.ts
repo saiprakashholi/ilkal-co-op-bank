@@ -1,6 +1,6 @@
 import { DatePipe } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
-import { VisitorService } from '../../services/visitors.service';
+// import { VisitorService } from '../../services/visitors.service';
 import { LanguageService } from '../../services/language.service';
 
 @Component({
@@ -32,12 +32,12 @@ export class Footer implements OnInit {
 
 
   constructor(
-    private visitorSvc: VisitorService,
+    // private visitorSvc: VisitorService,
     public lang: LanguageService
   ) {}
 
   ngOnInit(): void {
-    this.visitorsToday = this.visitorSvc.incrementToday();
+    // this.visitorsToday = this.visitorSvc.incrementToday();
   }
 
   switchLang(l: 'en' | 'kn') {
