@@ -53,7 +53,7 @@ export class Header {
         { label: 'Personal Loan', url: '/loans/personal' },
         { label: 'Housing Loan', url: '/loans/housing' },
         { label: 'SGH-JLG Loan', url: '/loans/sgh-jlg' },
-        { label: 'Vehical Loan', url: '/loans/vehical' },
+        { label: 'Vehicle Loan', url: '/loans/vehical' },
         { label: 'Gold Loan', url: '/loans/gold' },
         { label: 'Business Loan', url: '/loans/business' },
         { label: 'Term Loan', url: '/loans/term' },

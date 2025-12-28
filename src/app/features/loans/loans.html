@@ -1,1 +1,13 @@
-<router-outlet> </router-outlet>
+<div class="others-root">
+  <aside class="sidebar">
+    <div *ngFor="let item of list">
+      <a [routerLink]="item.url" routerLinkActive="active">
+        {{ item.label }}
+      </a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
