@@ -1,7 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
-// import { VisitorService } from '../../services/visitors.service';
 import { LanguageService } from '../../services/language.service';
+// import { VisitorService } from '../../services/visitors.service';
 
 @Component({
   selector: 'app-footer',
