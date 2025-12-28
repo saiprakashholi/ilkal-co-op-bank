@@ -28,5 +28,5 @@ export const routes: Routes = [
     {
         path: 'service',
         loadChildren: () => import('./features/service/service.module').then(m => m.ServiceModule)
-    },
+    }
 ];
