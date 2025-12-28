@@ -1,0 +1,8 @@
+{
+  "UPI": "UPI",
+  "IMPS": "IMPS",
+  "ATM": "ATM",
+  "RTGS_NEFT": "RTGS / NEFT",
+  "LOCKER": "Locker",
+  "MOBILE": "Mobile Banking"
+}

@@ -25,4 +25,8 @@ export const routes: Routes = [
         path: 'loans',
         loadChildren: () => import('./features/loans/loans.module').then(m => m.LoansModule)
     },
+    {
+        path: 'service',
+        loadChildren: () => import('./features/service/service.module').then(m => m.ServiceModule)
+    },
 ];

@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AnnouncementsComponent } from "./components/announcements/announcements.component";
 import { NoticeComponent } from './components/notice/notice';
 import { ManagementComponent } from './components/management/management';
+import { LanguageService } from '../../services/language.service';
 
 interface BankService {
   icon: string;
@@ -63,8 +64,8 @@ export class Home {
 
   currentYear: number = new Date().getFullYear();
 
-  constructor() {
-  }
+  constructor(public lang: LanguageService) { }
+
 
   toggleMenu() {
     this.mobileMenuOpen = !this.mobileMenuOpen;
@@ -112,5 +113,5 @@ export class Home {
   trackByTitle(_: number, item: BankService): string {
     return item.title;
   }
-  
+
 }

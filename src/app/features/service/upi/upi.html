@@ -1,0 +1,39 @@
+<section class="upi-root">
+
+  <!-- Title -->
+  <h1 class="title">
+    {{ lang.t('services.upi', 'TITLE') }}
+  </h1>
+
+  <!-- Intro paragraphs (do NOT loop) -->
+  <p class="description">
+    {{ lang.t('services.upi', 'INTRO_1') }}
+  </p>
+
+  <p class="description">
+    {{ lang.t('services.upi', 'INTRO_2') }}
+  </p>
+
+  <!-- Methods -->
+  <h2 class="subtitle">
+    {{ lang.t('services.upi', 'METHODS_TITLE') }}
+  </h2>
+
+  <ul class="list">
+    <li *ngFor="let key of methods">
+      {{ lang.t('services.upi', key) }}
+    </li>
+  </ul>
+
+  <!-- Prerequisites -->
+  <h2 class="subtitle">
+    {{ lang.t('services.upi', 'PREREQUISITE_TITLE') }}
+  </h2>
+
+  <ul class="list">
+    <li *ngFor="let key of prerequisites">
+      {{ lang.t('services.upi', key) }}
+    </li>
+  </ul>
+
+</section>
