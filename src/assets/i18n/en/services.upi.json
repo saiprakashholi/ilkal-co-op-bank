@@ -1,0 +1,20 @@
+{
+  "TITLE": "UPI Service",
+
+  "INTRO_1": "Easy and quick payment transactions using Unified Payments Interface (UPI) with MPSS Bank. Unified Payments Interface 2.0 is a real-time interbank payment system that allows sending or requesting money.",
+  "INTRO_2": "Any UPI client app may be used and multiple bank accounts may be linked to a single app.",
+
+  "METHODS_TITLE": "Unified Payments Interface allows transactions using the following methods:",
+
+  "VPA": "Virtual Payment Address (VPA) or UPI ID: Send or request money from/to bank account mapped using VPA.",
+  "MOBILE": "Mobile number: Send or request money from/to the bank account mapped with mobile number.",
+  "ACCOUNT_IFSC": "Account number & IFSC: Send money directly to the bank account.",
+  "QR": "QR code: Send money using QR code containing VPA, Account number & IFSC or Mobile number.",
+
+  "PREREQUISITE_TITLE": "Pre-requisite for registering for UPI",
+
+  "BANK_ACCOUNT": "Bank account",
+  "MOBILE_LINKED": "Mobile number should be linked with bank account",
+  "SMARTPHONE": "Smartphone with internet facility",
+  "DEBIT_CARD": "Debit card for setting MPIN"
+}

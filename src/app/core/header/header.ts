@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { LanguageService } from '../../services/language.service';
 
 interface MenuItem {
   label: string;
@@ -33,6 +34,22 @@ export class Header {
       ],
     },
 
+     {
+      label: 'Services',
+      url: '/service',
+      expanded: false,
+      children: [
+        { label: 'UPI', url: '/service/upi' },
+        { label: 'IMPS', url: '/service/imps' },
+        { label: 'ATM', url: '/service/atm' },
+        { label: 'RTGS/NEFT', url: '/service/rtgs-neft' },
+        { label: 'Locker', url: '/service/locker' },
+        { label: 'Mobile Banking', url: '/service/mobile' },
+        
+      ],
+    },
+
+
     { label: 'Reports', url: '/agm' },
     {
       label: 'Deposits',
@@ -57,7 +74,6 @@ export class Header {
         { label: 'Gold Loan', url: '/loans/gold' },
         { label: 'Business Loan', url: '/loans/business' },
         { label: 'Term Loan', url: '/loans/term' },
-
         { label: 'Loan Interest Rates', url: '/loans/interest-rate' },
       ],
     },
@@ -75,7 +91,8 @@ export class Header {
     { label: 'Contact Us', url: '/contact-us' },
   ];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public lang: LanguageService) { }
+  
 
   isActive(url?: string): boolean {
     if (!url) return false;
