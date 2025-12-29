@@ -28,5 +28,9 @@ export const routes: Routes = [
     {
         path: 'service',
         loadChildren: () => import('./features/service/service.module').then(m => m.ServiceModule)
+    },
+     {
+        path: 'misc',
+        loadChildren: () => import('./features/misc/misc.module').then(m => m.MiscModule)
     }
 ];

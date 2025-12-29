@@ -22,11 +22,11 @@ Karnataka, India`,
     IFSC: 'UTIB0SICB25',
 
     gstNo: '29AAAAI1234A1Z5', // <-- replace with actual
-    bankRegNo: 'UB/KA/721 (08-12-1986)',
-    rbiLicenceNo: '22530 (24-08-1965)',
+    bankRegNo: '22530 (24-08-1965)',
+    rbiLicenceNo: 'UB/KA/721 (08-12-1986)',
 
-    email: 'info@ilkalbank.com',
-    website: 'https://www.ilkalbank.com',
+    email: 'admin@ilkalcoopbank.com',
+    website: 'https://ilkalcoopbank.com/',
 
     mapLink: 'https://maps.app.goo.gl/rC4ukBmdHf5oecYk7',
     mapEmbed:

@@ -116,9 +116,9 @@ export class Home {
 
   financialStats = [
     { key: 'SHARE_CAPITAL', value: '12+', unit: 'Cr' },
-    { key: 'NET_PROFIT', value: '2+', unit: 'Cr' },
-    { key: 'ADVANCES', value: '195+', unit: 'Cr' },
-    { key: 'DEPOSITS', value: '273+', unit: 'Cr' }
+    { key: 'NET_PROFIT', value: '4+', unit: 'Cr' },
+    { key: 'ADVANCES', value: '300+', unit: 'Cr' },
+    { key: 'DEPOSITS', value: '431+', unit: 'Cr' }
   ];
 
 
