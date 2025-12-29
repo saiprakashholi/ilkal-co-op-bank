@@ -1,0 +1,20 @@
+{
+  "title": "Complaint / Suggestion",
+  "subtitle": "Do you have any questions or concerns? Please share the details below.",
+  "name": "Your Name",
+  "email": "Email Address",
+  "phone": "Phone No.",
+  "accountNo": "Bank Account No.",
+  "selectType": "Select Complaint Type",
+  "rrn": "RRN No. (if applicable)",
+  "message": "Your Message",
+  "submit": "Submit",
+  "type_atm": "ATM / Card Issue",
+  "type_upi": "UPI / Digital Banking",
+  "type_loan": "Loan Related",
+  "type_deposit": "Deposit Related",
+  "type_other": "Other",
+  "successTitle": "Complaint Submitted",
+  "successMsg": "Thank you. Your complaint has been submitted successfully. Our team will review it shortly.",
+  "newComplaint": "Submit another complaint"
+}

@@ -41,7 +41,10 @@ export class LanguageService {
       'services.mobile',
       'services.atm',
       'services.rtgs-neft',
-      'services.locker'
+      'services.locker',
+
+      // misc
+      'misc.complaint',
       
     ];
 

@@ -1,1 +1,65 @@
-<p>lodge-a-complaint works!</p>
+<section class="complaint-root">
+  <div class="complaint-card">
+    <!-- LEFT -->
+    <div class="form-section">
+      <!-- SUCCESS STATE -->
+      <div *ngIf="submitted" class="success-box">
+        <div class="icon">✔</div>
+        <h3>{{ lang.t('misc.complaint', 'successTitle') }}</h3>
+        <p>{{ lang.t('misc.complaint', 'successMsg') }}</p>
+
+        <button class="secondary" (click)="resetForm()">
+          {{ lang.t('misc.complaint', 'newComplaint') }}
+        </button>
+      </div>
+
+      <!-- FORM -->
+      <form *ngIf="!submitted" (submit)="onSubmit($event)">
+        <h2>{{ lang.t('misc.complaint', 'title') }}</h2>
+        <p class="subtitle">
+          {{ lang.t('misc.complaint', 'subtitle') }}
+        </p>
+
+        <div class="row">
+          <input type="text" [placeholder]="lang.t('misc.complaint', 'name')" />
+          <input type="email" [placeholder]="lang.t('misc.complaint', 'email')" />
+        </div>
+
+        <div class="row">
+          <input type="tel" [placeholder]="lang.t('misc.complaint', 'phone')" />
+          <input type="text" [placeholder]="lang.t('misc.complaint', 'accountNo')" />
+        </div>
+
+        <div class="row">
+          <select>
+            <option value="">
+              {{ lang.t('misc.complaint', 'selectType') }}
+            </option>
+            <option *ngFor="let t of complaintTypes" [value]="t.key">
+              {{ lang.t('misc.complaint', 'type_' + t.key) }}
+            </option>
+          </select>
+
+          <input type="text" [placeholder]="lang.t('misc.complaint', 'rrn')" />
+        </div>
+
+        <div class="row full">
+          <input type="file" />
+        </div>
+
+        <div class="row full">
+          <textarea rows="4" [placeholder]="lang.t('misc.complaint', 'message')"></textarea>
+        </div>
+
+        <button type="submit" class="primary">
+          {{ lang.t('misc.complaint', 'submit') }}
+        </button>
+      </form>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="image-section">
+      <img src="assets/complaint-illustration.svg" alt="Complaint illustration" />
+    </div>
+  </div>
+</section>
