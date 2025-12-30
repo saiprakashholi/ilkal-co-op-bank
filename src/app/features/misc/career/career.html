@@ -1,1 +1,81 @@
-<p>career works!</p>
+<section class="career-root">
+  <div class="career-card">
+    <!-- LEFT : FORM -->
+    <div class="form-section">
+      <h2>{{ lang.t('misc.career', 'title') }}</h2>
+      <p class="subtitle">
+        {{ lang.t('misc.career', 'subtitle') }}
+      </p>
+
+      <form (ngSubmit)="submit()">
+        <div class="row">
+          <input
+            type="text"
+            [(ngModel)]="form.name"
+            name="name"
+            [placeholder]="lang.t('misc.career', 'name')"
+            required
+          />
+          <input
+            type="email"
+            [(ngModel)]="form.email"
+            name="email"
+            [placeholder]="lang.t('misc.career', 'email')"
+            required
+          />
+        </div>
+
+        <div class="row">
+          <input
+            type="tel"
+            [(ngModel)]="form.phone"
+            name="phone"
+            [placeholder]="lang.t('misc.career', 'phone')"
+            required
+          />
+          <input
+            type="text"
+            [(ngModel)]="form.subject"
+            name="subject"
+            [placeholder]="lang.t('misc.career', 'subject')"
+            required
+          />
+        </div>
+
+        <div class="row full">
+          <ng-container *ngIf="showFileInput">
+            <input type="file" (change)="onFileChange($event)" accept=".pdf,.doc,.docx" />
+          </ng-container>
+        </div>
+
+        <div class="row full">
+          <textarea
+            rows="4"
+            [(ngModel)]="form.message"
+            name="message"
+            [placeholder]="lang.t('misc.career', 'message')"
+          ></textarea>
+        </div>
+
+        <button type="submit" [disabled]="loading">
+          {{ loading ? lang.t('misc.career', 'submitting') : lang.t('misc.career', 'submit') }}
+        </button>
+
+        <!-- SUCCESS -->
+        <div *ngIf="success" class="msg success">
+          {{ lang.t('misc.career', 'success') }}
+        </div>
+
+        <!-- ERROR -->
+        <div *ngIf="error" class="msg error">
+          {{ lang.t('misc.career', 'error') }}
+        </div>
+      </form>
+    </div>
+
+    <!-- RIGHT : IMAGE -->
+    <div class="image-section">
+      <img src="assets/career-illustration.svg" alt="Career opportunities" />
+    </div>
+  </div>
+</section>

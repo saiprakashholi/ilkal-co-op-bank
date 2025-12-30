@@ -1,1 +1,79 @@
-<p>inquiry works!</p>
+<section class="enquiry-root">
+  <div class="enquiry-card">
+    <h2>{{ lang.t('misc.enquiry', 'title') }}</h2>
+
+    <form (ngSubmit)="submit()">
+      <div class="row">
+        <input
+          type="text"
+          [(ngModel)]="form.name"
+          name="name"
+          [placeholder]="lang.t('misc.enquiry', 'name')"
+          required
+        />
+
+        <input
+          type="email"
+          [(ngModel)]="form.email"
+          name="email"
+          [placeholder]="lang.t('misc.enquiry', 'email')"
+          required
+        />
+      </div>
+
+      <div class="row">
+        <input
+          type="tel"
+          [(ngModel)]="form.phone"
+          name="phone"
+          [placeholder]="lang.t('misc.enquiry', 'phone')"
+          required
+        />
+
+        <select [(ngModel)]="form.type" name="type" required>
+          <option value="">
+            {{ lang.t('misc.enquiry', 'selectType') }}
+          </option>
+          <option *ngFor="let t of enquiryTypes" [value]="t">
+            {{ lang.t('misc.enquiry', 'type_' + t) }}
+          </option>
+        </select>
+      </div>
+
+      <div class="row full">
+        <textarea
+          rows="4"
+          [(ngModel)]="form.message"
+          name="message"
+          [placeholder]="lang.t('misc.enquiry', 'message')"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" [disabled]="loading">
+        {{ loading ? lang.t('misc.enquiry', 'submitting') : lang.t('misc.enquiry', 'submit') }}
+      </button>
+
+      <!-- SUCCESS -->
+      <div *ngIf="success" class="msg success">
+        {{ lang.t('misc.enquiry', 'success') }}
+      </div>
+
+      <!-- ERROR -->
+      <div *ngIf="error" class="msg error">
+        {{ lang.t('misc.enquiry', 'error') }}
+      </div>
+    </form>
+
+    <!-- contact us -->
+    <div class="contact-cta">
+      <div class="help-text">
+        {{ lang.t('misc.enquiry', 'needHelp') }}
+      </div>
+
+      <a href="/contact-us" class="contact-btn">
+        {{ lang.t('misc.enquiry', 'contactUs') }}
+      </a>
+    </div>
+  </div>
+</section>

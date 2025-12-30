@@ -1,0 +1,20 @@
+{
+  "title": "Inquiry Form",
+  "name": "Name",
+  "email": "Email",
+  "phone": "Mobile Number",
+  "selectType": "- Select -",
+  "message": "Your Message",
+  "submit": "Submit",
+  "submitting": "Submitting...",
+  "success": "Your enquiry has been submitted successfully.",
+  "error": "Something went wrong. Please try again.",
+  "needHelp": "Need immediate help?",
+  "contactUs": "Contact Us",
+
+  "type_general": "General Enquiry",
+  "type_loan": "Loan Related",
+  "type_deposit": "Deposit Related",
+  "type_account": "Account Related",
+  "type_other": "Other"
+}

@@ -45,6 +45,8 @@ export class LanguageService {
 
       // misc
       'misc.complaint',
+      'misc.enquiry',
+      'misc.career',
       
     ];
 

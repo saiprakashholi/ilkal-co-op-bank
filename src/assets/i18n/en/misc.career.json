@@ -1,0 +1,13 @@
+{
+  "title": "Career Form",
+  "subtitle": "Send us your resume and we will get back to you.",
+  "name": "Your Name",
+  "email": "Email Address",
+  "phone": "Phone No.",
+  "subject": "Subject",
+  "message": "Your Message",
+  "submit": "Submit",
+  "submitting": "Submitting...",
+  "success": "Your resume has been submitted successfully.",
+  "error": "Something went wrong. Please try again."
+}
