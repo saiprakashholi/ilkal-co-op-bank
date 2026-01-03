@@ -23,8 +23,8 @@ export class PersonalLoan {
 
   // QUICK FACTS
   highlights = [
-    { label: 'Maximum Amount', value: '₹2.00 Lakhs' },
-    { label: 'Tenure', value: '2 – 3 Years' },
+    { label: 'Maximum Amount', value: '₹5.00 Lakhs', valueLabel: '(10 Times of Basic Salary)' },
+    { label: 'Tenure', value: '3 Years' },
     { label: 'Collateral', value: 'Not Required' },
     { label: 'Prepayment', value: 'No Penalty' },
   ];
@@ -42,14 +42,14 @@ export class PersonalLoan {
   openSection: 'eligibility' | 'documents' | 'charges' | null = 'eligibility';
 
   toggle(section: 'eligibility' | 'documents' | 'charges', el?: HTMLElement) {
-  this.openSection = section;
+    this.openSection = section;
 
-  if (el) {
-    setTimeout(() => {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 50);
+    if (el) {
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 50);
+    }
   }
-}
 
 
 
@@ -58,7 +58,7 @@ export class PersonalLoan {
     salaried: [
       'Must be a member of the bank',
       'Employee of a reputed and financially sound organization',
-      'Minimum gross take-home salary of ₹25,000 per month',
+      // 'Minimum gross take-home salary of ₹25,000 per month',
       'Confirmed service for at least one year',
       'Undertaking letter from employer',
     ],

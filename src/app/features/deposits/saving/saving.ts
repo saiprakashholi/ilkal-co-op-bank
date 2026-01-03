@@ -35,7 +35,8 @@ export class Saving {
   ];
 
   documents = {
-    photos: ['Two recent passport-size color photographs'],
+    photos: ['Four recent passport-size color photographs'],
+    mandatory: ['PAN Card'],
     addressProof: [
       'Aadhaar Card',
       'Driving License',

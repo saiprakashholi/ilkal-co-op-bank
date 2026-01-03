@@ -37,9 +37,7 @@
   <div class="container about-inner">
     <h2>About Us</h2>
     <p>
-      Ilkal Co-operative Bank Ltd. has served the local community for over a century with trusted
-      banking products and digital services. We focus on transparent pricing, fast service and local
-      empowerment.
+      {{ aboutUsText }}
     </p>
   </div>
 </section>
@@ -68,7 +66,8 @@
         (click)="$event.preventDefault()"
       >
         <div class="icon" aria-hidden="true">
-          {{ service.icon }}
+          <!-- {{ service.icon }} -->
+          <img [src]="service.icon" [alt]="service.title + ' icon'" loading="lazy" />
         </div>
 
         <div class="meta">
@@ -181,4 +180,3 @@
 </section>
 
 <!-- ILKAL SAREE (GI TAG) ENDS -->
-

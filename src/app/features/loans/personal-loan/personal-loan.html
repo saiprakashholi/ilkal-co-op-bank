@@ -12,6 +12,10 @@
     <div class="fact" *ngFor="let h of highlights">
       <span class="label">{{ h.label }}</span>
       <strong class="value">{{ h.value }}</strong>
+      <!-- show tag only if valueLabel exists -->
+      <span class="value-tag" *ngIf="h.valueLabel">
+        {{ h.valueLabel }}
+      </span>
     </div>
   </div>
 

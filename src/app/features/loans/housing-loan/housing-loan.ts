@@ -23,9 +23,9 @@ export class HousingLoan {
 
   // QUICK FACTS
   highlights = [
-    { label: 'Maximum Loan', value: '₹70.00 Lakhs' },
-    { label: 'Repayment Period', value: 'Up to 20 Years' },
-    { label: 'Interest Rate', value: '12% p.a.' },
+    { label: 'Maximum Loan', value: '₹1 Crore' },
+    { label: 'Repayment Period', value: 'Up to 15 Years' },
+    { label: 'Interest Rate', value: '11% p.a.' },
     { label: 'Margin', value: '25%' },
   ];
 
@@ -54,7 +54,7 @@ export class HousingLoan {
   eligibility = {
     salaried: [
       'Employees of reputed and financially sound organizations',
-      'Minimum gross take-home salary of ₹15,000 per month',
+      // 'Minimum gross take-home salary of ₹15,000 per month',
       'Confirmed service for at least one year',
     ],
     business: [
@@ -69,10 +69,18 @@ export class HousingLoan {
   // DOCUMENTS
   documents = [
     'Duly filled loan application form',
+    'Building Permission of Concern Authority',
+    'Utilization Certificate',
+    'Original Sale Deed Bond',
+    'Income Tax Filling Return (Minimum 3 Years)',
+    'Computer Utar',
+    'Encumbrance Certificate (EC 30 Years)',
+    // 'Plan and Estimation And Legal Opinion',
     'Income proof of applicant(s) and guarantor(s)',
     'Residential proof of applicant(s) and guarantor(s)',
     'PAN Card of applicant(s) and guarantor(s)',
     'KYC documents of applicant(s) and guarantor(s)',
+    'Other Required Applicable Documents as per bank norms'
   ];
 
   // SECURITY & CHARGES

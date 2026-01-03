@@ -39,7 +39,7 @@ export class Current {
   ];
 
   documents = {
-    photos: ['Two passport-size color photographs'],
+    photos: ['Four recent passport-size color photographs'],
     mandatory: ['PAN Card'],
     addressProof: [
       'Aadhaar Card',

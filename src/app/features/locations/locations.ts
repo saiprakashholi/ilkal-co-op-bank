@@ -63,6 +63,7 @@ export class Locations {
       Bus Stand road, Kushtagi`,
       image: 'assets/branches/KusthagiBranch.jpg',
       phone: '+91 91412 68105',
+      location: 'https://maps.app.goo.gl/GRPnaeACNW7iYGSv8'
     },
 
 

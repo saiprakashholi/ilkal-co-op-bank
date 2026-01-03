@@ -15,7 +15,7 @@ export class InterestRate {
     { title: '91 – 180 Days', rate: 6.5 },
     { title: '181 – 364 Days', rate: 7.0 },
     { title: '12 – 35 Months', rate: 8.5 },
-    { title: '36 Months & Above', rate: 9.0 },
+    { title: '36 Months & Above', rate: 8.5 },
     { title: 'Bulk Deposit', rate: 9.0 },
   ];
 }

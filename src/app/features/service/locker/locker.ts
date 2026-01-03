@@ -20,6 +20,11 @@ export class Locker {
       rent: '1000 + GST'
     },
     {
+      size: 'MEDIUM',
+      dimensions: '0.7 × 0.70 × 1.75',
+      rent: '1500 + GST'
+    },
+    {
       size: 'BIG',
       dimensions: '0.75 × 1.00 × 1.75',
       rent: '3000 + GST'

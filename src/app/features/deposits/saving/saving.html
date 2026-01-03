@@ -45,6 +45,13 @@
       </div>
 
       <div class="doc-block">
+        <h3>Mandatory</h3>
+        <ul>
+          <li *ngFor="let m of documents.mandatory">{{ m }}</li>
+        </ul>
+      </div>
+
+      <div class="doc-block">
         <h3>Address Proof (Any one)</h3>
         <ul class="two-col">
           <li *ngFor="let a of documents.addressProof">{{ a }}</li>
