@@ -19,7 +19,13 @@
 
         <p class="phone" *ngIf="branch.phone">📞 {{ branch.phone }}</p>
 
-        <a *ngIf="branch.phone" class="call-btn" [href]="'tel:' + branch.phone"> Call Branch </a>
+        <div class="branch-actions">
+          <a *ngIf="branch.phone" class="btn call" [href]="'tel:' + branch.phone"> Call Branch </a>
+
+          <a *ngIf="branch.location" class="btn visit" [href]="branch.location" target="_blank">
+            Visit Branch
+          </a>
+        </div>
       </div>
     </div>
   </div>

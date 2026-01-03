@@ -88,20 +88,53 @@
 }
 
 /* BUTTON */
-.call-btn {
-  display: inline-block;
-  background: #0b5e8e;
-  color: #fff;
+
+.branch-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+
+  /* key line */
+  justify-content: space-between;
+}
+
+.btn {
   padding: 8px 18px;
   border-radius: 20px;
   font-size: 14px;
+  font-weight: 600;
   text-decoration: none;
-  transition: background 0.2s ease;
+  text-align: center;
+  white-space: nowrap;
 }
 
-.call-btn:hover {
+.btn.call {
+  background: #1f5d8f;
+  color: #fff;
+}
+
+.btn.visit {
+  background: #2e77b8;
+  color: #fff;
+}
+
+.btn:hover {
   background: #094b73;
 }
+
+/* 📱 Mobile handling */
+@media (max-width: 480px) {
+  .branch-actions {
+    gap: 10px;
+  }
+
+  .btn {
+    flex: 1;
+    /* equal width on mobile */
+  }
+}
+
 
 /* MOBILE */
 @media (max-width: 600px) {

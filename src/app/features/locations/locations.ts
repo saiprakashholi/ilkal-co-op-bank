@@ -6,6 +6,7 @@ interface Branch {
   address?: string;
   phone?: string;
   image?: string;
+  location?: string;
 }
 
 @Component({
@@ -24,6 +25,7 @@ export class Locations {
     Karnataka, India`,
       phone: '+91 95388 68030',
       image: 'assets/branches/HeadOffice.jpg',
+      location: 'https://maps.app.goo.gl/rC4ukBmdHf5oecYk7'
     },
     {
       name: 'SVM College Branch',
@@ -31,12 +33,14 @@ export class Locations {
       Behind Bus Stand, Ilkal`,
       phone: '+91 91412 77102',
       image: 'assets/branches/SVMCollegeBranch.jpg',
+      location: 'https://maps.app.goo.gl/xNsRGjc13vZs3cxi6',
     },
     {
       name: 'APMC Yard Branch',
       address: 'APMC Yard, Ilkal. ',
       image: 'assets/branches/APMCYardBranch.jpg',
       phone: '+91 91415 58106',
+      location: 'https://maps.app.goo.gl/NoZRR5ohdUrg13Vg6'
     },
     {
       name: 'Gudur Branch',
@@ -44,6 +48,7 @@ export class Locations {
       Gudur S C`,
       image: 'assets/branches/GudurSCBranch.jpg',
       phone: '+91 91412 66103',
+      location: 'https://maps.app.goo.gl/rci6Pp6hq5gw7rzf7',
     },
     {
       name: 'Kudala Sangam Branch',
@@ -60,6 +65,6 @@ export class Locations {
       phone: '+91 91412 68105',
     },
 
-    
+
   ];
 }
