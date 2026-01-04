@@ -132,7 +132,7 @@
 
   .acc-body {
     padding: 0 16px 16px;
-    font-size: .9rem;
+
 
     h4 {
       margin-top: 12px;
@@ -147,6 +147,7 @@
         padding-left: 22px;
         margin-bottom: 6px;
         position: relative;
+        font-size: .9rem;
 
         &::before {
           content: '✔';

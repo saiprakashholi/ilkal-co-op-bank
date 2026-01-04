@@ -1,49 +1,72 @@
 <section class="loan-page">
   <!-- HERO -->
   <header class="hero">
-    <div class="icon">{{ hero.icon }}</div>
-    <h1>{{ hero.title }}</h1>
-    <p class="subtitle">{{ hero.subtitle }}</p>
-    <p class="desc">{{ hero.description }}</p>
+    <img src="/assets/loans/gold-loan.png" alt="Gold Loan" class="hero-image" />
+
+    <h1>{{ lang.t('loans.gold', 'title') }}</h1>
+    <p class="subtitle">{{ lang.t('loans.gold', 'subtitle') }}</p>
+    <p class="desc">{{ lang.t('loans.gold', 'description') }}</p>
   </header>
 
   <!-- OVERVIEW -->
   <section class="overview">
-    <div class="overview-card" *ngFor="let o of overview">
-      <span class="label">{{ o.label }}</span>
-      <strong class="value">{{ o.value }}</strong>
+    <div class="overview-card">
+      <span class="label">{{ lang.t('loans.gold', 'labelPurpose') }}</span>
+      <strong class="value">{{ lang.t('loans.gold', 'purpose') }}</strong>
+    </div>
+
+    <div class="overview-card">
+      <span class="label">{{ lang.t('loans.gold', 'labelAmount') }}</span>
+      <strong class="value">{{ lang.t('loans.gold', 'amount') }}</strong>
+    </div>
+
+    <div class="overview-card">
+      <span class="label">{{ lang.t('loans.gold', 'labelMargin') }}</span>
+      <strong class="value">{{ lang.t('loans.gold', 'margin') }}</strong>
+    </div>
+
+    <div class="overview-card">
+      <span class="label">{{ lang.t('loans.gold', 'labelInterest') }}</span>
+      <strong class="value">{{ lang.t('loans.gold', 'interest') }}</strong>
     </div>
   </section>
 
   <!-- REPAYMENT -->
   <section class="loan-block">
-    <h2>Repayment Details</h2>
+    <h2>{{ lang.t('loans.gold', 'repaymentTitle') }}</h2>
     <ol class="numbered-list">
-      <li *ngFor="let r of repayment">{{ r }}</li>
+      <li>{{ lang.t('loans.gold', 'repayment1') }}</li>
+      <li>{{ lang.t('loans.gold', 'repayment2') }}</li>
+      <li>{{ lang.t('loans.gold', 'repayment3') }}</li>
     </ol>
   </section>
 
   <!-- SECURITY -->
   <section class="loan-block">
-    <h2>Security</h2>
+    <h2>{{ lang.t('loans.gold', 'securityTitle') }}</h2>
     <ol class="numbered-list">
-      <li *ngFor="let s of security">{{ s }}</li>
+      <li>{{ lang.t('loans.gold', 'security1') }}</li>
+      <li>{{ lang.t('loans.gold', 'security2') }}</li>
     </ol>
   </section>
 
   <!-- CHARGES -->
   <section class="loan-block">
-    <h2>Charges & Membership</h2>
+    <h2>{{ lang.t('loans.gold', 'chargesTitle') }}</h2>
     <ol class="numbered-list">
-      <li *ngFor="let c of charges">{{ c }}</li>
+      <li>{{ lang.t('loans.gold', 'charge1') }}</li>
+      <li>{{ lang.t('loans.gold', 'charge2') }}</li>
     </ol>
   </section>
 
   <!-- DOCUMENTS -->
   <section class="loan-block">
-    <h2>Documents Required</h2>
+    <h2>{{ lang.t('loans.gold', 'documentsTitle') }}</h2>
     <ol class="numbered-list">
-      <li *ngFor="let d of documents">{{ d }}</li>
+      <li>{{ lang.t('loans.gold', 'doc1') }}</li>
+      <li>{{ lang.t('loans.gold', 'doc2') }}</li>
+      <li>{{ lang.t('loans.gold', 'doc3') }}</li>
+      <li>{{ lang.t('loans.gold', 'doc4') }}</li>
     </ol>
   </section>
 </section>

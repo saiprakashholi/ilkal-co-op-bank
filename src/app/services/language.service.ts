@@ -29,7 +29,7 @@ export class LanguageService {
 
       // footer 
       'footer',
-    
+
 
       // contact us 
       'contact-us',
@@ -47,7 +47,11 @@ export class LanguageService {
       'misc.complaint',
       'misc.enquiry',
       'misc.career',
-      
+
+      // loans
+      'loans.vehicle',
+      'loans.gold',
+
     ];
 
     modules.forEach(m => {
@@ -67,4 +71,9 @@ export class LanguageService {
   t(module: string, key: string): string {
     return this.translations[module]?.[key] || key;
   }
+
+  tArray(module: string, key: string): string[] {
+    return this.translations[module]?.[key] || [];
+  }
+
 }

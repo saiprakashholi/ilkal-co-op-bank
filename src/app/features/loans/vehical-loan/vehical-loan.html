@@ -1,49 +1,115 @@
 <section class="loan-page">
   <!-- HERO -->
   <header class="hero">
-    <div class="icon">{{ hero.icon }}</div>
-    <h1>{{ hero.title }}</h1>
-    <p class="subtitle">{{ hero.subtitle }}</p>
-    <p class="desc">{{ hero.description }}</p>
+    <!-- <img class="hero-image" src="/assets/loans/vehicle-loan.png" alt="Vehicle Loan" /> -->
+    <img
+  src="/assets/loans/vehicle-loan.png"
+  alt="Vehicle Loan"
+  class="hero-image"
+/>
+
+
+    <h1>{{ lang.t('loans.vehicle', 'title') }}</h1>
+    <p class="subtitle">{{ lang.t('loans.vehicle', 'subtitle') }}</p>
+    <p class="desc">{{ lang.t('loans.vehicle', 'description') }}</p>
   </header>
 
-  <!-- OVERVIEW GRID -->
-  <section class="overview">
-    <div class="overview-card" *ngFor="let o of overview">
-      <span class="label">{{ o.label }}</span>
-      <strong class="value">{{ o.value }}</strong>
+  <!-- TWO WHEELER -->
+  <section class="loan-block">
+    <h2>{{ lang.t('loans.vehicle', 'twoTitle') }}</h2>
+
+    <div class="overview">
+      <div class="overview-card">
+        <span class="label">{{ lang.t('loans.vehicle', 'labelEligible') }}</span>
+        <strong class="value">{{ lang.t('loans.vehicle', 'twoEligible') }}</strong>
+      </div>
+
+      <div class="overview-card">
+        <span class="label">{{ lang.t('loans.vehicle', 'labelPurpose') }}</span>
+        <strong class="value">{{ lang.t('loans.vehicle', 'twoPurpose') }}</strong>
+      </div>
+
+      <div class="overview-card">
+        <span class="label">{{ lang.t('loans.vehicle', 'labelAmount') }}</span>
+        <strong class="value">{{ lang.t('loans.vehicle', 'twoAmount') }}</strong>
+      </div>
+
+      <div class="overview-card">
+        <span class="label">{{ lang.t('loans.vehicle', 'labelRepayment') }}</span>
+        <strong class="value">{{ lang.t('loans.vehicle', 'twoRepayment') }}</strong>
+      </div>
     </div>
+
+    <h3>{{ lang.t('loans.vehicle', 'labelFeatures') }}</h3>
+    <ol class="numbered-list">
+      <li>{{ lang.t('loans.vehicle', 'twoFeature1') }}</li>
+      <li>{{ lang.t('loans.vehicle', 'twoFeature2') }}</li>
+    </ol>
   </section>
 
-  <!-- FEATURES -->
+  <!-- FOUR WHEELER -->
   <section class="loan-block">
-    <h2>Key Features</h2>
+    <h2>{{ lang.t('loans.vehicle', 'fourTitle') }}</h2>
+
+    <div class="overview">
+      <div class="overview-card">
+        <span class="label">{{ lang.t('loans.vehicle', 'labelEligible') }}</span>
+        <strong class="value">{{ lang.t('loans.vehicle', 'fourEligible') }}</strong>
+      </div>
+
+      <div class="overview-card">
+        <span class="label">{{ lang.t('loans.vehicle', 'labelPurpose') }}</span>
+        <strong class="value">{{ lang.t('loans.vehicle', 'fourPurpose') }}</strong>
+      </div>
+
+      <div class="overview-card">
+        <span class="label">{{ lang.t('loans.vehicle', 'labelAmount') }}</span>
+        <strong class="value">{{ lang.t('loans.vehicle', 'fourAmount') }}</strong>
+      </div>
+
+      <div class="overview-card">
+        <span class="label">{{ lang.t('loans.vehicle', 'labelRepayment') }}</span>
+        <strong class="value">{{ lang.t('loans.vehicle', 'fourRepayment') }}</strong>
+      </div>
+    </div>
+
+    <h3>{{ lang.t('loans.vehicle', 'labelFeatures') }}</h3>
     <ol class="numbered-list">
-      <li *ngFor="let f of features">{{ f }}</li>
+      <li>{{ lang.t('loans.vehicle', 'fourFeature1') }}</li>
+      <li>{{ lang.t('loans.vehicle', 'fourFeature2') }}</li>
     </ol>
   </section>
 
   <!-- SECURITY -->
   <section class="loan-block">
-    <h2>Security & Guarantees</h2>
+    <h2>{{ lang.t('loans.vehicle', 'securityTitle') }}</h2>
     <ol class="numbered-list">
-      <li *ngFor="let s of security">{{ s }}</li>
+      <li>{{ lang.t('loans.vehicle', 'security1') }}</li>
+      <li>{{ lang.t('loans.vehicle', 'security2') }}</li>
+      <li>{{ lang.t('loans.vehicle', 'security3') }}</li>
     </ol>
   </section>
 
   <!-- CHARGES -->
   <section class="loan-block">
-    <h2>Charges & Insurance</h2>
+    <h2>{{ lang.t('loans.vehicle', 'chargesTitle') }}</h2>
     <ol class="numbered-list">
-      <li *ngFor="let c of charges">{{ c }}</li>
+      <li>{{ lang.t('loans.vehicle', 'charge1') }}</li>
+      <li>{{ lang.t('loans.vehicle', 'charge2') }}</li>
+      <li>{{ lang.t('loans.vehicle', 'charge3') }}</li>
     </ol>
   </section>
 
   <!-- DOCUMENTS -->
   <section class="loan-block">
-    <h2>Documents Required</h2>
+    <h2>{{ lang.t('loans.vehicle', 'documentsTitle') }}</h2>
     <ol class="numbered-list">
-      <li *ngFor="let d of documents">{{ d }}</li>
+      <li>{{ lang.t('loans.vehicle', 'doc1') }}</li>
+      <li>{{ lang.t('loans.vehicle', 'doc2') }}</li>
+      <li>{{ lang.t('loans.vehicle', 'doc3') }}</li>
+      <li>{{ lang.t('loans.vehicle', 'doc4') }}</li>
+      <li>{{ lang.t('loans.vehicle', 'doc5') }}</li>
+      <li>{{ lang.t('loans.vehicle', 'doc6') }}</li>
     </ol>
   </section>
 </section>

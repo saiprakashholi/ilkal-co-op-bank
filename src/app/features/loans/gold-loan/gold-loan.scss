@@ -1,42 +1,58 @@
+/* =========================
+   PAGE WRAPPER
+   ========================= */
 .loan-page {
   background: #f4f6f8;
   padding: 20px;
   color: #1f2937;
 }
 
-/* HERO */
+/* =========================
+   HERO SECTION (GOLD THEME)
+   ========================= */
 .hero {
-  background: linear-gradient(135deg, #92400e, #f59e0b);
-  color: #ffffff;
-  padding: 28px 20px;
+  background: #ffffff;
+  padding: 18px;
   border-radius: 18px;
+  margin-bottom: 24px;
   text-align: center;
-  margin-bottom: 22px;
-
-  .icon {
-    font-size: 2rem;
-    margin-bottom: 6px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-    margin-bottom: 4px;
-  }
-
-  .subtitle {
-    font-size: 0.95rem;
-    opacity: 0.95;
-  }
-
-  .desc {
-    font-size: 0.9rem;
-    max-width: 760px;
-    margin: 8px auto 0;
-    opacity: 0.9;
-  }
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
 }
 
-/* OVERVIEW */
+.hero-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+/* ONLY hero text gets gold color */
+.hero h1 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #92400e;
+  margin-bottom: 6px;
+}
+
+.hero .subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #78350f;
+  margin-bottom: 10px;
+}
+
+.hero .desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto;
+  color: #854d0e;
+}
+
+/* =========================
+   OVERVIEW GRID (RESET COLOR)
+   ========================= */
 .overview {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -53,17 +69,22 @@
       display: block;
       font-size: 0.8rem;
       color: #6b7280;
+      /* neutral */
       margin-bottom: 4px;
     }
 
     .value {
       font-size: 0.95rem;
-      color: #92400e;
+      font-weight: 600;
+      color: #1e3a8a;
+      /* RESET to brand blue */
     }
   }
 }
 
-/* BLOCKS */
+/* =========================
+   CONTENT BLOCKS (RESET)
+   ========================= */
 .loan-block {
   background: #ffffff;
   border-radius: 16px;
@@ -74,11 +95,14 @@
   h2 {
     font-size: 1.15rem;
     margin-bottom: 10px;
-    color: #92400e;
+    color: #1e40af;
+    /* brand blue */
   }
 }
 
-/* NUMBERED LIST */
+/* =========================
+   LISTS (NEUTRAL)
+   ========================= */
 .numbered-list {
   padding-left: 20px;
   margin: 0;
@@ -86,11 +110,14 @@
   li {
     margin-bottom: 8px;
     font-size: 0.9rem;
-    line-height: 1.4;
+    line-height: 1.45;
+    color: #374151;
   }
 }
 
-/* DESKTOP */
+/* =========================
+   TABLET
+   ========================= */
 @media (min-width: 768px) {
   .overview {
     grid-template-columns: repeat(4, 1fr);
@@ -98,5 +125,23 @@
 
   .loan-page {
     padding: 28px 40px;
+  }
+}
+
+/* =========================
+   DESKTOP
+   ========================= */
+@media (min-width: 1024px) {
+  .hero {
+    text-align: left;
+    padding: 22px 28px;
+  }
+
+  .hero-image {
+    height: 240px;
+  }
+
+  .hero .desc {
+    margin: 0;
   }
 }
