@@ -84,6 +84,11 @@
         white-space: pre-line;
     }
 
+    .ifsc-code {
+        font-weight: bold;
+        font-family: system-ui;
+    }
+
     .map-link {
         display: inline-block;
         margin-top: 18px;
@@ -102,8 +107,14 @@
 }
 
 /* Working hours */
+
 .working-hours {
-    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 4px;
 
     .label {
         font-weight: 600;
@@ -111,24 +122,16 @@
         margin-right: 6px;
     }
 
-    p {
-        margin: 4px 0;
-        font-size: 14.5px;
+    .time-before {
+        font-weight: 500;
+        margin-top: 2px;
+        color: #0066cc;
     }
 
-    .holiday {
-        margin-top: 6px;
-
-        ul {
-            margin: 6px 0 0 16px;
-            padding: 0;
-
-            li {
-                font-size: 14px;
-                color: #444;
-                margin-bottom: 2px;
-            }
-        }
+    .time-after {
+        font-weight: 500;
+        margin-top: 0;
+        color: #0066cc; // blue like screenshot
     }
 }
 

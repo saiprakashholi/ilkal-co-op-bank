@@ -73,7 +73,7 @@ export class Header {
         { label: 'Vehicle Loan', url: '/loans/vehical' },
         { label: 'Gold Loan', url: '/loans/gold' },
         { label: 'Business Loan', url: '/loans/business' },
-        { label: 'Term Loan', url: '/loans/term' },
+        // { label: 'Term Loan', url: '/loans/term' },
         { label: 'Loan Interest Rates', url: '/loans/interest-rate' },
       ],
     },

@@ -54,6 +54,22 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.imps-note {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666666; // subtle text
+  font-style: italic;
+
+  &::before {
+    content: '';
+    margin-right: 4px;
+    color: #007bff; // match brand / table header blue if needed
+    font-style: normal;
+  }
+}
+
+
 /* MOBILE */
 @media (max-width: 768px) {
   .service-charges {

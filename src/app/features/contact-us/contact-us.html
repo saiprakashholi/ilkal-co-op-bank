@@ -11,8 +11,14 @@
     <div class="contact-card">
       <h2>{{ bank.name }}</h2>
       <div class="place">{{ bank.place }}</div>
-      <div class="place">
+      <!-- <div class="place">
         {{ lang.t('contact-us', 'ifsc') }} : {{ bank.IFSC }}
+      </div> -->
+
+      <!-- Address -->
+      <div class="info-block">
+        <strong>{{ lang.t('contact-us', 'ifsc') }}</strong>
+        <p class="ifsc-code">{{ bank.IFSC }}</p>
       </div>
 
       <!-- Address -->
@@ -33,7 +39,10 @@
       <div class="info-block">
         <strong>{{ lang.t('contact-us', 'email') }}</strong>
         <p>
-          <a href="mailto:{{ bank.email }}">{{ bank.email }}</a>
+          <a href="mailto:{{ bank.email[0] }}">{{ bank.email[0] }}</a>
+        </p>
+        <p>
+          <a href="mailto:{{ bank.email[1] }}">{{ bank.email[1] }}</a>
         </p>
       </div>
 
@@ -66,12 +75,11 @@
       <!-- Working Hours -->
       <div class="info-block working-hours">
         <strong>{{ lang.t('contact-us', 'workingHours') }}</strong>
-        <p>
-          <span class="label">
-            {{ lang.t('contact-us', 'monSat') }}:
-          </span>
-          {{ workingHours.weekdays }}
-        </p>
+        <span class="label"> {{ lang.t('contact-us', 'monSat') }}: </span>
+
+        <div class="time-before">{{ workingHours.weekdaysBeforeLunch }}</div>
+
+        <div class="time-after">After Lunch: {{ workingHours.weekdaysAfterLunch }}</div>
       </div>
 
       <!-- Holidays -->
@@ -82,12 +90,7 @@
         </p>
       </div>
 
-      <a
-        class="map-link"
-        [href]="bank.mapLink"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a class="map-link" [href]="bank.mapLink" target="_blank" rel="noopener noreferrer">
         📍 {{ lang.t('contact-us', 'viewMap') }}
       </a>
     </div>

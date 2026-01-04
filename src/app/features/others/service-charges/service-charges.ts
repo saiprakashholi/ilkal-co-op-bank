@@ -60,34 +60,39 @@ export class ServiceCharges {
     {
       title: 'Debit Card Limits',
       rows: [
-        { no: 18, details: 'Cash Withdrawal limit per day (EMV Debit Card)', charge: '₹24,000' },
+        { no: 18, details: 'Cash Withdrawal limit per day (EMV Debit Card)', charge: '₹25,000' },
         { no: 19, details: 'Purchase transaction limit per day', charge: '₹1,00,000' },
         { no: 20, details: 'IMPS Mobile Banking outward transaction limit per day', charge: '₹5,00,000' },
       ],
     },
     {
       title: 'RTGS / NEFT',
-      rows: [{ no: 21, details: 'RTGS / NEFT Charges', charge: 'Nil' }],
+      rows: [
+        { no: 21, details: 'RTGS  Charges', charge: '₹30 (Including GST)' },
+        { no: 22, details: 'NEFT Charges (Below 2 Lakhs)', charge: '₹15 (Including GST)' }
+      ],
     },
     {
       title: 'SMS Charges',
       rows: [
-        { no: 22, details: 'SMS Charges for SB / CA account holders', charge: '₹10 + GST (Quarterly)' },
-        { no: 23, details: 'SMS Charges for CA / OD / CCL account holders', charge: '₹25 + GST (Quarterly)' },
+        { no: 23, details: 'SMS Charges for SB / CA account holders', charge: '₹15 + GST (Quarterly)' },
+        { no: 24, details: 'SMS Charges for OD / CCL account holders', charge: '₹15 + GST (Quarterly)' },
       ],
     },
     {
       title: 'Cheque Book Charges',
-      rows: [{ no: 24, details: 'Cheque Book charges (all account types)', charge: '₹2 + GST (Per Leaf)' }],
+      rows: [{ no: 25, details: 'Cheque Book charges (all account types)', charge: '₹2 + GST (Per Leaf)' }],
     },
   ];
 
   impsCharges = [
-    { from: '₹1', to: '₹5,000', charge: '₹1.18' },
-    { from: '₹5,001', to: '₹10,000', charge: '₹5.90' },
-    { from: '₹10,001', to: '₹25,000', charge: '₹11.80' },
-    { from: '₹25,001', to: '₹50,000', charge: '₹23.60' },
-    { from: '₹50,001', to: '₹1 Lakh', charge: '₹29.50' },
-    { from: '₹1 Lakh', to: '₹5 Lakhs', charge: '₹41.30' },
+    { from: '₹1', to: '₹1,000', charge: '₹2.50' },
+    { from: '₹1,001', to: '₹10,000', charge: '₹5' },
+    { from: '₹10,001', to: '₹1,00,000', charge: '₹10' },
+    { from: '₹1,00,001', to: '₹2,00,000', charge: '₹15' },
+    // { from: '₹50,001', to: '₹1 Lakh', charge: '₹29.50' },
+    // { from: '₹1 Lakh', to: '₹5 Lakhs', charge: '₹41.30' },
   ];
+
+  impsNote = 'Note: For IMPS, the per-day transaction limit is ₹5,00,000, and within this, the per-transaction limit is ₹2,00,000 only.';
 }

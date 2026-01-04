@@ -14,18 +14,18 @@ export class ContactUs {
   bank = {
     name: 'Ilkal Co-Operative Bank Ltd.',
     place: 'Head Office – Ilkal',
-    address: `Near Basavangudi Ilkal - 587125
+    address: `Ward No. 02, Near Basavangudi Ilkal - 587125
 Dist: Bagalakot,
 Karnataka, India`,
     mobiles: ['+91 9538868030'],
     landline: '',
     IFSC: 'UTIB0SICB25',
 
-    gstNo: '29AAAAI1234A1Z5', // <-- replace with actual
+    gstNo: '29AAAAI0212P2ZO',
     bankRegNo: '22530 (24-08-1965)',
     rbiLicenceNo: 'UB/KA/721 (08-12-1986)',
 
-    email: 'admin@ilkalcoopbank.com',
+    email: ['admin@ilkalcoopbank.common', 'ilkalcoop@hotmail.com'],
     website: 'https://ilkalcoopbank.com/',
 
     mapLink: 'https://maps.app.goo.gl/rC4ukBmdHf5oecYk7',
@@ -34,7 +34,12 @@ Karnataka, India`,
   };
 
   workingHours = {
-    weekdays: '10:30 AM – 4:30 PM',
+
+    // weekdays: '10:30 AM – 4:30 PM',
+
+    weekdaysBeforeLunch: "10:30 AM - 2:30 PM",
+    weekdaysAfterLunch: "3:30 PM - 4:30 PM",
+
     holidays: [
       'Sunday',
       '2nd Saturday',
