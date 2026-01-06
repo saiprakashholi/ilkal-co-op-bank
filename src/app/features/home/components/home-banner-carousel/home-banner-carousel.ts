@@ -10,7 +10,6 @@ interface BannerItem {
 
 @Component({
   selector: 'app-home-banner-carousel',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './home-banner-carousel.html',
   styleUrl: './home-banner-carousel.scss',
