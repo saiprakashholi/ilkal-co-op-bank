@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
 import { LanguageService } from '../../../../services/language.service';
 
 interface BannerItem {
@@ -16,16 +16,20 @@ interface BannerItem {
 })
 export class HomeBannerCarousel implements OnInit, OnDestroy {
   currentIndex = 0;
-  intervalId: any;
-  slideIntervalMs = 2000; // 👈 change anytime (5s now)
-  isResetting = false;
+  intervalId: any = null;
 
+  slideIntervalMs = 5000;
 
-
-  constructor(public lang: LanguageService) {}
+  constructor(
+    public lang: LanguageService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   ngOnInit() {
-    this.startAutoScroll();
+    // ✅ IMPORTANT: run autoplay only in browser
+    if (isPlatformBrowser(this.platformId)) {
+      this.startAutoScroll();
+    }
   }
 
   ngOnDestroy() {
@@ -37,12 +41,11 @@ export class HomeBannerCarousel implements OnInit, OnDestroy {
   }
 
   startAutoScroll() {
-  this.stopAutoScroll();
-  this.intervalId = setInterval(() => {
-    this.next();
-  }, this.slideIntervalMs);
-}
-
+    this.stopAutoScroll();
+    this.intervalId = setInterval(() => {
+      this.next();
+    }, this.slideIntervalMs);
+  }
 
   stopAutoScroll() {
     if (this.intervalId) {
@@ -52,21 +55,9 @@ export class HomeBannerCarousel implements OnInit, OnDestroy {
   }
 
   next() {
-  if (!this.banners.length) return;
-
-  if (this.currentIndex === this.banners.length - 1) {
-    // reset without animation
-    this.isResetting = true;
-    this.currentIndex = 0;
-
-    setTimeout(() => {
-      this.isResetting = false;
-    });
-  } else {
-    this.currentIndex++;
+    if (!this.banners.length) return;
+    this.currentIndex = (this.currentIndex + 1) % this.banners.length;
   }
-}
-
 
   prev() {
     if (!this.banners.length) return;
@@ -79,7 +70,6 @@ export class HomeBannerCarousel implements OnInit, OnDestroy {
     this.currentIndex = i;
   }
 
-  /** 👇 THIS is the key */
   getTranslateX(index: number): string {
     return `translateX(${(index - this.currentIndex) * 100}%)`;
   }

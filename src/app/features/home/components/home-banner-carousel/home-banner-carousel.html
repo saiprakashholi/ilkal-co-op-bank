@@ -14,7 +14,6 @@
   class="slide"
   *ngFor="let b of banners; let i = index"
   [style.transform]="getTranslateX(i)"
-  [class.no-animate]="isResetting"
 >
 
         <img [src]="b.image" alt="Bank banner" loading="lazy" />
