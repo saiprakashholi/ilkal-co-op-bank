@@ -72,8 +72,12 @@ export class LanguageService {
     return this.translations[module]?.[key] || key;
   }
 
-  tArray(module: string, key: string): string[] {
-    return this.translations[module]?.[key] || [];
-  }
+  // tArray(module: string, key: string): string[] {
+  //   return this.translations[module]?.[key] || [];
+  // }
+  tArray<T = any>(module: string, key: string): T[] {
+  return this.translations[module]?.[key] || [];
+}
+
 
 }

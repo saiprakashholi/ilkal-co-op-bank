@@ -1,0 +1,187 @@
+/* ===== Wrapper ===== */
+.carousel-wrapper {
+//   margin: 24px 0;
+}
+
+/* ===== Main Carousel ===== */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  height: 360px;
+  background: #000;
+}
+
+/* Mobile height */
+@media (max-width: 768px) {
+  .carousel {
+    height: 220px;
+  }
+}
+
+/* ===== Slides Track ===== */
+.slides-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== Individual Slide ===== */
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* ===== Slide Image ===== */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Overlay (Gradient + Blur) ===== */
+.overlay {
+  position: absolute;
+  inset: 0;
+  width: 65%;
+  pointer-events: none;
+
+  /* DARK → TRANSPARENT SLOPE */
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.80) 0%,
+    rgba(0, 0, 0, 0.65) 20%,
+    rgba(0, 0, 0, 0.45) 40%,
+    rgba(0, 0, 0, 0.25) 60%,
+    rgba(0, 0, 0, 0.10) 78%,
+    rgba(0, 0, 0, 0.00) 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 140px;
+  padding-right: 28px;
+
+  color: #ffffff;
+}
+
+/* ===== Blur Layer (Fades to Right) ===== */
+.overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  /* MASK makes blur slowly disappear */
+  mask-image: linear-gradient(
+    90deg,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 25%,
+    rgba(0,0,0,0.6) 45%,
+    rgba(0,0,0,0.25) 65%,
+    rgba(0,0,0,0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 25%,
+    rgba(0,0,0,0.6) 45%,
+    rgba(0,0,0,0.25) 65%,
+    rgba(0,0,0,0) 100%
+  );
+
+  pointer-events: none;
+}
+
+/* Keep text ABOVE blur */
+.overlay > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Text Styling ===== */
+.overlay h2 {
+  max-width: 420px;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.overlay p {
+  max-width: 420px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ===== Mobile Overlay ===== */
+@media (max-width: 768px) {
+  .overlay {
+    width: 88%;
+    padding-left: 20px;
+    padding-right: 16px;
+  }
+
+  .overlay h2,
+  .overlay p {
+    max-width: 100%;
+  }
+}
+
+/* ===== Navigation Arrows ===== */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.nav:hover {
+  background: rgba(255, 255, 255, 0.45);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.prev {
+  left: 14px;
+}
+
+.next {
+  right: 14px;
+}
+
+/* ===== Dots ===== */
+.dots {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.dots span {
+  width: 9px;
+  height: 9px;
+  margin: 0 4px;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.dots span.active {
+  background: #ffffff;
+}

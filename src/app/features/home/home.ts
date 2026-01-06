@@ -5,6 +5,7 @@ import { AnnouncementsComponent } from "./components/announcements/announcements
 import { NoticeComponent } from './components/notice/notice';
 import { ManagementComponent } from './components/management/management';
 import { LanguageService } from '../../services/language.service';
+import { HomeBannerCarousel } from "./components/home-banner-carousel/home-banner-carousel";
 
 interface BankService {
   icon: string;
@@ -16,7 +17,7 @@ interface BankService {
   selector: 'app-home',
   standalone: true,
   imports: [CommonModule, RouterModule, AnnouncementsComponent,
-    NoticeComponent, ManagementComponent],
+    NoticeComponent, ManagementComponent, HomeBannerCarousel],
   templateUrl: './home.html',
   styleUrls: ['./home.scss'],
 

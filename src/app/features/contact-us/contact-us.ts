@@ -25,7 +25,7 @@ Karnataka, India`,
     bankRegNo: '22530 (24-08-1965)',
     rbiLicenceNo: 'UB/KA/721 (08-12-1986)',
 
-    email: ['admin@ilkalcoopbank.common', 'ilkalcoop@hotmail.com'],
+    email: ['admin@ilkalcoopbank.com', 'ilkalcoop@hotmail.com'],
     website: 'https://ilkalcoopbank.com/',
 
     mapLink: 'https://maps.app.goo.gl/rC4ukBmdHf5oecYk7',
