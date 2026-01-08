@@ -23,7 +23,7 @@ Karnataka, India`,
 
     gstNo: '29AAAAI0212P2ZO',
     bankRegNo: '22530 (24-08-1965)',
-    rbiLicenceNo: 'UB/KA/721 (08-12-1986)',
+    rbiLicenceNo: 'UBD/K.A.P/721 (08-12-1986)',
 
     email: ['admin@ilkalcoopbank.com', 'ilkalcoop@hotmail.com'],
     website: 'https://ilkalcoopbank.com/',
