@@ -10,6 +10,8 @@
     "SECURE_ACCESS": "Secure login using MPIN and device authentication.",
     "DOWNLOAD_TITLE": "Download Mobile Banking App",
     "ANDROID_APP": "Android Mobile Banking Application",
-    "TERMS_TITLE": "Mobile App Terms & Conditions",
-    "TERMS_CONDITIONS": "Mobile Banking Application – Terms & Conditions"
+    "TERMS_TITLE": "Mobile Banking Related Documents",
+    "TERMS_CONDITIONS": "Mobile Banking Application – Terms & Conditions",
+    "APP_POLICIES": "Mobile Banking App Policies",
+    "SECURE_USAGE": "Mobile Banking Secure Usage Guidelines"
 }

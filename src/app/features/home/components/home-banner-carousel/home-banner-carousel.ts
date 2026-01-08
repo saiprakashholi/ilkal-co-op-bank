@@ -18,7 +18,7 @@ export class HomeBannerCarousel implements OnInit, OnDestroy {
   currentIndex = 0;
   intervalId: any = null;
 
-  slideIntervalMs = 2000;
+  slideIntervalMs = 4000;
 
   constructor(
     public lang: LanguageService,

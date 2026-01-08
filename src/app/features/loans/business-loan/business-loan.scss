@@ -1,3 +1,4 @@
+/* PAGE */
 .loan-page {
   background: #f4f6f8;
   padding: 20px;
@@ -6,66 +7,144 @@
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #1f2937, #374151);
-  color: #ffffff;
-  padding: 28px 20px;
-  border-radius: 18px;
-  text-align: center;
-  margin-bottom: 22px;
-
-  .icon {
-    font-size: 2rem;
-    margin-bottom: 6px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-    margin-bottom: 4px;
-  }
-
-  .subtitle {
-    font-size: 0.95rem;
-    opacity: 0.95;
-  }
-
-  .desc {
-    font-size: 0.9rem;
-    max-width: 800px;
-    margin: 8px auto 0;
-    opacity: 0.9;
-  }
-}
-
-/* BLOCKS */
-.loan-block {
   background: #ffffff;
-  border-radius: 16px;
-  padding: 18px;
-  margin-bottom: 18px;
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 36px; /* IMPORTANT FIX */
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
 
-  h2 {
-    font-size: 1.15rem;
-    margin-bottom: 10px;
-    color: #111827;
+.hero-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  font-size: 1.7rem;
+  margin-bottom: 6px;
+}
+
+.hero .subtitle {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+.hero .desc {
+  font-size: 0.9rem;
+  color: #4b5563;
+  max-width: 800px;
+}
+
+/* LOAN LIST */
+.loan-list {
+  display: block;
+}
+
+/* LOAN CARD */
+.loan-section {
+  background: #f4f6f8;
+  padding: 20px;
+  margin-bottom: 28px;
+  border-radius: 20px;
+}
+
+/* TITLE */
+.loan-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* BIG IMAGE */
+.loan-banner {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* QUICK FACTS (MATCH HOUSING) */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+
+  .fact {
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+
+    .label {
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+
+    .value {
+      display: block;
+      font-size: 1rem;
+      margin-top: 4px;
+      color: #2563eb;
+      font-weight: 600;
+    }
   }
 }
 
-/* NUMBERED LIST */
-.numbered-list {
-  padding-left: 20px;
-  margin: 0;
+/* DOCUMENTS */
+.documents-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.07);
+
+  h3 {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 
   li {
+    position: relative;
+    padding-left: 22px;
     margin-bottom: 8px;
     font-size: 0.9rem;
-    line-height: 1.4;
+
+    &::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #16a34a;
+      font-size: 0.8rem;
+    }
   }
 }
 
 /* DESKTOP */
 @media (min-width: 768px) {
-  .loan-page {
-    padding: 28px 40px;
+  .hero-image {
+    height: 260px;
+  }
+
+  .loan-banner {
+    height: 260px;
+  }
+
+  .facts {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

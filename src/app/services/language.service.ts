@@ -51,7 +51,9 @@ export class LanguageService {
       // loans
       'loans.vehicle',
       'loans.gold',
+      'loans.business',
 
+      
     ];
 
     modules.forEach(m => {

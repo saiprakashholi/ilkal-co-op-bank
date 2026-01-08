@@ -35,6 +35,17 @@ export class Mobile {
       key: 'TERMS_CONDITIONS',
       viewUrl: '/assets/downloads/MobileBankingTermsConditions.pdf',
       downloadUrl: '/assets/downloads/MobileBankingTermsConditions.pdf'
+    },
+    {
+      key: 'APP_POLICIES',
+      viewUrl: '/assets/downloads/MobileBankAppPolicies.pdf',
+      downloadUrl: '/assets/downloads/MobileBankAppPolicies.pdf'
+    },
+    {
+      key: 'SECURE_USAGE',
+      viewUrl: '/assets/downloads/MobileBankingSecureUsageGuidelines.pdf',
+      downloadUrl: '/assets/downloads/MobileBankingSecureUsageGuidelines.pdf'
     }
+
   ];
 }

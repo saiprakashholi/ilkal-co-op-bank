@@ -1,5 +1,7 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { LanguageService } from '../../../services/language.service';
+
 
 @Component({
   selector: 'app-business-loan',
@@ -8,42 +10,22 @@ import { Component } from '@angular/core';
   templateUrl: './business-loan.html',
   styleUrl: './business-loan.scss',
 })
-export class BusinessLoan {
+export class BusinessLoan implements OnInit {
+  constructor(public lang: LanguageService, @Inject(PLATFORM_ID) private platformId: Object) { }
+  // loans : Array<any>= [];
 
-  hero = {
-    title: 'Business Loan',
-    subtitle: 'Working capital support for growing businesses',
-    icon: '🏢',
-    description:
-      'A Business Loan is offered to business owners with an existing running enterprise who require external funds for day-to-day operations, expansion, or capital requirements.',
-  };
+  ngOnInit() {
+    // if (isPlatformBrowser(this.platformId)) {
+    // this.setData();
 
-  introPoints = [
-    'Meeting working capital requirements',
-    'Payment of employee salaries and operational expenses',
-    'Purchase of machinery and equipment',
-    'Business expansion to new locations',
-  ];
+    // this.loans = this.lang.tArray('loans.business', 'loans');
+    //   console.log("loans :", this.loans);
+    // }
+  }
 
-  cashCreditHypothecation = {
-    title: 'Cash Credit – Hypothecation',
-    points: [
-      'Primary Security: Stock and Book Debts',
-      'Collateral Security: 100%',
-      'Margin: Stock @ 25%, Book Debts (age up to 90 days) @ 50%',
-      'Rate of Interest: 15.00%',
-      'Repayment Period: 1 Year',
-    ],
-  };
-
-  securedCashCredit = {
-    title: 'Secured Cash Credit',
-    points: [
-      'Primary Security: Property',
-      'Collateral Security: 150%',
-      'Margin: Stock @ 25%, Book Debts (age up to 90 days) @ 50%',
-      'Rate of Interest: Attractive ROI',
-      'Repayment Period: 1 Year',
-    ],
-  };
+  get loans(): Array<any> {
+    {
+      return this.lang.tArray<Array<any>>('loans.business', 'loans');
+    }
+  }
 }

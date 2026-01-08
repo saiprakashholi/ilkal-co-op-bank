@@ -1,33 +1,64 @@
 <section class="loan-page">
+
   <!-- HERO -->
   <header class="hero">
-    <div class="icon">{{ hero.icon }}</div>
-    <h1>{{ hero.title }}</h1>
-    <p class="subtitle">{{ hero.subtitle }}</p>
-    <p class="desc">{{ hero.description }}</p>
+    <img
+      src="/assets/loans/business-loan.png"
+      alt="Business Loan"
+      class="hero-image"
+    />
+
+    <h1>{{ lang.t('loans.business', 'pageTitle') }}</h1>
+    <p class="subtitle">
+      {{ lang.t('loans.business', 'pageSubtitle') }}
+    </p>
+    <p class="desc">
+      {{ lang.t('loans.business', 'pageDescription') }}
+    </p>
   </header>
 
-  <!-- INTRO -->
-  <section class="loan-block">
-    <h2>Purpose of Business Loan</h2>
-    <ol class="numbered-list">
-      <li *ngFor="let p of introPoints">{{ p }}</li>
-    </ol>
-  </section>
+  <!-- LOAN LIST -->
+  <div class="loan-list">
 
-  <!-- CASH CREDIT HYPOTHECATION -->
-  <section class="loan-block">
-    <h2>{{ cashCreditHypothecation.title }}</h2>
-    <ol class="numbered-list">
-      <li *ngFor="let p of cashCreditHypothecation.points">{{ p }}</li>
-    </ol>
-  </section>
+    <section *ngFor="let loan of loans" class="loan-section">
 
-  <!-- SECURED CASH CREDIT -->
-  <section class="loan-block">
-    <h2>{{ securedCashCredit.title }}</h2>
-    <ol class="numbered-list">
-      <li *ngFor="let p of securedCashCredit.points">{{ p }}</li>
-    </ol>
-  </section>
+      <!-- LOAN TITLE -->
+      <h2 class="loan-title">
+        {{ lang.t('loans.business', loan.key) }}
+      </h2>
+
+      <!-- BIG LOAN IMAGE -->
+      <img *ngIf="loan.image"
+        class="loan-banner"
+        [src]="loan.image"
+        alt=""
+      />
+
+      <!-- STAT CARDS -->
+      <div class="facts">
+        <div class="fact" *ngFor="let s of loan.stats">
+          <span class="label">
+            {{  s.labelKey }}
+          </span>
+          <strong class="value">
+            {{  s.value }}
+          </strong>
+        </div>
+      </div>
+
+      <!-- DOCUMENTS -->
+      <div class="documents-card">
+        <h3>{{ lang.t('loans.business', 'documentsTitle') }}</h3>
+
+        <ul>
+          <li *ngFor="let doc of loan.requiredDocs">
+            {{ doc }}
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+  </div>
+
 </section>

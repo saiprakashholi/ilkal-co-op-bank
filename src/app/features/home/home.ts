@@ -55,13 +55,13 @@ export class Home {
         'Fast and reliable fund transfers to any bank in India using RTGS and NEFT facilities.',
     },
     {
-      icon: '/assets/imps.svg',
+      icon: '/assets/imps.png',
       title: 'IMPS',
       description:
         'Instant interbank money transfer service.',
     },
     {
-      icon: '/assets/safe-locker.svg',
+      icon: '/assets/locker-logo.png',
       title: 'Safe Deposit Lockers',
       description:
         'Secure locker facilities to protect your valuables and important documents with complete peace of mind.',
