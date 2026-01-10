@@ -64,6 +64,7 @@ export class Locations {
       Karnataka, India`,
       // image: 'assets/branches/KudalaSangamBranch.jpg',
       phone: '+91 91419 42104',
+      location: 'https://maps.app.goo.gl/uJtzV5PePrnnBCaK8'
     },
     {
       name: 'Kushtagi Branch',

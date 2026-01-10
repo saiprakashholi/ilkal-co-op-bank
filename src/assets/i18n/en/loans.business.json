@@ -6,7 +6,7 @@
     "loans": [
         {
             "key": "1. Over Draft Loan (ODL)",
-            "image": "/assets/loans/overdraft-loan.png",
+            "image": "/assets/loans/over-draft-loan.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
@@ -41,7 +41,7 @@
         },
         {
             "key": "2. Hypothecation (Goods) Cash Credit",
-            "image": "/assets/loans/hypothecation-goods.png",
+            "image": "/assets/loans/hypothication-goods.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
@@ -75,6 +75,7 @@
         },
         {
             "key": "3. Hypothecation (Goods) CC Firm",
+            "image": "/assets/loans/hyphotication-cc-firm.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
@@ -108,7 +109,7 @@
         },
         {
             "key": "4. Mortgage Loan",
-            "image": "/assets/loans/mortgage-loan.png",
+            "image": "/assets/loans/mortgage-loan.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
@@ -138,7 +139,7 @@
         },
         {
             "key": "5. Weavers Loan",
-            "image": "/assets/loans/weivers-loan.png",
+            "image": "/assets/loans/weavers-loan-final.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
@@ -168,7 +169,7 @@
         },
         {
             "key": "6. Ware House Receipt Loan",
-            "image": "/assets/loans/ware-house-loan.png",
+            "image": "/assets/loans/ware-house-final.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
@@ -198,7 +199,7 @@
         },
         {
             "key": "7. Hypothecation Machinery Loan",
-            "image": "/assets/loans/machine-loan.png",
+            "image": "/assets/loans/machinery-loan.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
@@ -234,6 +235,7 @@
         },
         {
             "key": "8. Mortgage CC Loan",
+            "image": "/assets/loans/mortgage-loan.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
