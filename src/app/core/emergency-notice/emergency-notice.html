@@ -1,5 +1,11 @@
 <div class="overlay" *ngIf="show">
-  <div class="notice-card">
+  <div
+    class="notice-card"
+    [class.with-images]="hasImages()"
+    [style.maxWidth.px]="hasImages()
+      ? notice.images.maxWidthDesktop
+      : 460"
+  >
     <button class="close-btn" (click)="close()">✕</button>
 
     <div class="icon">{{ getIcon() }}</div>
@@ -8,13 +14,35 @@
 
     <p>{{ notice.message }}</p>
 
-    <div class="time" *ngIf="notice.showValidity">
-      Valid from
-      <strong>{{ notice.effectiveStartTime | date : 'medium' }}</strong>
-      to
-      <strong>{{ notice.effectiveEndTime | date : 'medium' }}</strong>
+    <!-- 🔥 STEP SLIDER -->
+    <div
+      *ngIf="hasImages()"
+      class="step-slider"
+      [style.--desktopHeight.px]="notice.images.heightDesktop"
+      [style.--mobileHeight.px]="notice.images.heightMobile"
+    >
+      <div
+        class="step-track"
+        [style.transform]="'translateX(-' + (currentIndex * 100) + '%)'"
+      >
+        <div
+          class="slide"
+          *ngFor="let img of notice.images.items"
+        >
+          <img [src]="img" alt="notice banner" 
+          [style.object-fit]="notice.images.fit"
+          />
+        </div>
+      </div>
     </div>
 
-    <button class="ok-btn" (click)="close()">OK, I Understand</button>
+    <div class="time" *ngIf="notice.showValidity">
+      Valid from
+      <strong>{{ notice.effectiveStartTime | date:'medium' }}</strong>
+      to
+      <strong>{{ notice.effectiveEndTime | date:'medium' }}</strong>
+    </div>
+
+    <button class="ok-btn" (click)="close()">OK</button>
   </div>
 </div>
