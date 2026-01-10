@@ -20,16 +20,16 @@
       <thead>
         <tr>
           <th>{{ lang.t('services.locker', 'SIZE') }}</th>
-          <th>{{ lang.t('services.locker', 'DIMENSIONS') }}</th>
-          <th>{{ lang.t('services.locker', 'RENT') }}</th>
+          <!-- <th>{{ lang.t('services.locker', 'DIMENSIONS') }}</th>
+          <th>{{ lang.t('services.locker', 'RENT') }}</th> -->
         </tr>
       </thead>
 
       <tbody>
         <tr *ngFor="let locker of lockers">
           <td>{{ lang.t('services.locker', locker.size) }}</td>
-          <td>{{ locker.dimensions }}</td>
-          <td>{{ locker.rent }}</td>
+          <!-- <td>{{ locker.dimensions }}</td>
+          <td>{{ locker.rent }}</td> -->
         </tr>
       </tbody>
     </table>
