@@ -1,21 +1,12 @@
-<section
-
-  *ngIf="banners.length"
-  aria-label="Home banner carousel"
->
-  <div
-    class="carousel"
-    (mouseenter)="stopAutoScroll()"
-    (mouseleave)="startAutoScroll()"
-  >
+<section *ngIf="banners.length" aria-label="Home banner carousel">
+  <div class="carousel" (mouseenter)="stopAutoScroll()" (mouseleave)="startAutoScroll()">
     <!-- SLIDE TRACK -->
     <div class="slides-track">
       <div
-  class="slide"
-  *ngFor="let b of banners; let i = index"
-  [style.transform]="getTranslateX(i)"
->
-
+        class="slide"
+        *ngFor="let b of banners; let i = index"
+        [style.transform]="getTranslateX(i)"
+      >
         <img [src]="b.image" alt="Bank banner" loading="lazy" />
 
         <div class="overlay" *ngIf="b.title || b.subtitle">

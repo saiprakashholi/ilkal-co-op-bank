@@ -1,4 +1,15 @@
 .bank-footer {
+   
+  background:
+    // linear-gradient(
+    //   rgba(0, 0, 0, 0.7),
+    //   rgba(0, 0, 0, 0.7)
+    // ),
+    url('/assets/about-us-bgm.png');
+
+  background-size: cover;
+  background-position: center;
+
     color: #fff;
     font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     --pad: 36px;

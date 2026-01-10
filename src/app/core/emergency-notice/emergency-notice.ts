@@ -22,7 +22,7 @@ export class EmergencyNoticeComponent implements OnInit, OnDestroy {
     enabled: true,
     type: 'warning',
 
-    title: 'Awareness Public Notice',
+    title: 'Awareness Notice',
     message:
       'Customers are advised to stay alert against cyber frauds. Do not share your OTP, PIN, passwords, or card details with anyone.',
 
@@ -35,8 +35,8 @@ export class EmergencyNoticeComponent implements OnInit, OnDestroy {
 
     images: {
       enabled: true,
-      heightDesktop: 360,
-      heightMobile: 100,
+      maxHeightDesktop: 360,
+      maxHeightMobile: 200,
       maxWidthDesktop: 420,
       fit: 'contain',
       intervalMs: 3000,
@@ -65,7 +65,6 @@ export class EmergencyNoticeComponent implements OnInit, OnDestroy {
     if (now >= start && now <= end) {
       this.show = true;
 
-      // 🔒 Browser-only logic
       if (isPlatformBrowser(this.platformId)) {
         this.startSlider();
       }

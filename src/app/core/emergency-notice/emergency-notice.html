@@ -2,9 +2,7 @@
   <div
     class="notice-card"
     [class.with-images]="hasImages()"
-    [style.maxWidth.px]="hasImages()
-      ? notice.images.maxWidthDesktop
-      : 460"
+    [style.maxWidth.px]="hasImages() ? notice.images.maxWidthDesktop : 460"
   >
     <button class="close-btn" (click)="close()">✕</button>
 
@@ -14,33 +12,28 @@
 
     <p>{{ notice.message }}</p>
 
-    <!-- 🔥 STEP SLIDER -->
-    <div
-      *ngIf="hasImages()"
-      class="step-slider"
-      [style.--desktopHeight.px]="notice.images.heightDesktop"
-      [style.--mobileHeight.px]="notice.images.heightMobile"
-    >
-      <div
-        class="step-track"
-        [style.transform]="'translateX(-' + (currentIndex * 100) + '%)'"
-      >
-        <div
-          class="slide"
-          *ngFor="let img of notice.images.items"
-        >
-          <img [src]="img" alt="notice banner" 
-          [style.object-fit]="notice.images.fit"
-          />
+    <!-- 🔥 IMAGE SLIDER -->
+    <div *ngIf="hasImages()" class="step-slider">
+      <div class="step-track" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+        <div class="slide" *ngFor="let img of notice.images.items">
+          <a [href]="img" target="_blank" rel="noopener noreferrer" class="slide-link">
+            <img
+              [src]="img"
+              alt="Emergency notice"
+              [style.object-fit]="notice.images.fit"
+              [style.--imgMaxHeightDesktop.px]="notice.images.maxHeightDesktop"
+              [style.--imgMaxHeightMobile.px]="notice.images.maxHeightMobile"
+            />
+          </a>
         </div>
       </div>
     </div>
 
     <div class="time" *ngIf="notice.showValidity">
       Valid from
-      <strong>{{ notice.effectiveStartTime | date:'medium' }}</strong>
+      <strong>{{ notice.effectiveStartTime | date : 'medium' }}</strong>
       to
-      <strong>{{ notice.effectiveEndTime | date:'medium' }}</strong>
+      <strong>{{ notice.effectiveEndTime | date : 'medium' }}</strong>
     </div>
 
     <button class="ok-btn" (click)="close()">OK</button>

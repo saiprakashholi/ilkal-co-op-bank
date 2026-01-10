@@ -23,7 +23,7 @@ export class HomeBannerCarousel implements OnInit, OnDestroy {
   constructor(
     public lang: LanguageService,
     @Inject(PLATFORM_ID) private platformId: Object
-  ) {}
+  ) { }
 
   ngOnInit() {
     // ✅ IMPORTANT: run autoplay only in browser

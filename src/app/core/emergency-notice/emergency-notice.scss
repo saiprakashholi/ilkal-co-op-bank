@@ -1,3 +1,6 @@
+/* =========================
+   OVERLAY
+========================= */
 .overlay {
   position: fixed;
   inset: 0;
@@ -9,11 +12,12 @@
   padding: 14px;
 }
 
-/* CARD */
+/* =========================
+   NOTICE CARD
+========================= */
 .notice-card {
   position: relative;
   width: 100%;
-  max-width: 460px;
   background: #fff;
   border-radius: 14px;
   padding: 24px 22px;
@@ -37,6 +41,9 @@
   }
 }
 
+/* =========================
+   HEADER CONTENT
+========================= */
 .icon {
   font-size: 38px;
   margin-bottom: 6px;
@@ -54,16 +61,16 @@ p {
   line-height: 1.5;
 }
 
-/* 🔥 STEP SLIDER */
+/* =========================
+   IMAGE SLIDER (FIXED)
+========================= */
 .step-slider {
-  --desktopHeight: 340px;
-  --mobileHeight: 100px;
-
-  height: var(--desktopHeight);
-  overflow: hidden;
   margin: 14px auto 10px;
   border-radius: 10px;
-  
+
+  /* 🔥 critical fix */
+  overflow-x: hidden;     /* hides side slides */
+  overflow-y: visible;   /* allows tall images */
 }
 
 .step-track {
@@ -74,24 +81,33 @@ p {
 
 .slide {
   min-width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
+/* 🔥 IMAGE RULES (NO CUTTING) */
 .slide img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  // max-height: 70vh;     
+   max-height: var(--imgMaxHeightDesktop, 360px);
   object-fit: contain;
   border-radius: 10px;
   background: #f6f8fb;
 }
 
-/* TIME */
+/* =========================
+   TIME TEXT
+========================= */
 .time {
   margin-top: 10px;
   font-size: 13px;
   color: #666;
 }
 
+/* =========================
+   BUTTONS
+========================= */
 .ok-btn {
   margin-top: 16px;
   padding: 10px 22px;
@@ -114,18 +130,21 @@ p {
   color: #777;
 }
 
-/* 📱 MOBILE */
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 480px) {
-  .step-slider {
-    height: var(--mobileHeight);
-  }
-
   h2 {
     font-size: 19px;
   }
 
   p {
     font-size: 14px;
+  }
+
+  .slide img {
+    // max-height: 50vh;
+    max-height: var(--imgMaxHeightMobile, 220px);
   }
 
   .ok-btn {

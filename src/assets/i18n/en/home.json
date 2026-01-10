@@ -14,14 +14,20 @@
       "subtitle": "Gold, Business and Personal Loans"
     },
     {
-      "image": "/assets/loans/vehicle-loan.png",
+      "image": "/assets/home-page-banner/Home Page Image 9.jpg",
       "title": "Digital Banking Services",
       "subtitle": "UPI, IMPS and Mobile Banking"
     },
     {
-      "image": "/assets/loans/vehicle-loan.png",
+      "image": "/assets/home-page-banner/Home Page Image 3.jpg",
       "title": "Transparent Co-operative Bank",
       "subtitle": "Serving customers with trust and transparency"
+    },
+    {
+      "image": "/assets/home-page-banner/accidental-coverage.jpeg"
+    },
+    {
+      "image": "/assets/home-page-banner/Home Page Image 10.jpg"
     }
   ]
 }
