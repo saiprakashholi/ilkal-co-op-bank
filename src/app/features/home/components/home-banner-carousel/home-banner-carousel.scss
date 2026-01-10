@@ -8,14 +8,14 @@
   position: relative;
   overflow: hidden;
   border-radius: 0px;
-  height: 420px;
+  height: 360px;
   background: #000;
 }
 
 /* Mobile height */
 @media (max-width: 768px) {
   .carousel {
-    height: 220px;
+    height: 250px;
   }
 }
 
