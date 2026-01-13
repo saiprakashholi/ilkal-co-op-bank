@@ -1,22 +1,20 @@
 <div class="bank-brand">
-  <!-- Logo + Title -->
+  <!-- Left: Logo + Title -->
   <div class="left-section">
     <img src="/assets/logo_128.png" alt="Bank Logo" class="bank-logo" />
 
     <div class="bank-info">
       <h1 class="bank-title">ILKAL CO-OPERATIVE BANK LTD.</h1>
-      <p class="bank-sub">Serving the Community Since {{bankStartedYear}}</p>
+      <p class="bank-sub">Serving the Community Since {{ bankStartedYear }}</p>
     </div>
   </div>
 
-  <!-- Founder photo (desktop only) -->
-  <!-- <div class="founder-wrapper" *ngIf="showFounder">
-    <img src="/assets/FounderChairman.png" alt="Founder" class="founder-photo" />
-
-    <div class="founder-text">
-      <div class="founder-name">Sri. R V Kalagi</div>
-      <div class="founder-title">Founder</div>
-    </div>
-  </div> -->
-  
+  <!-- Right: 50 Years Celebration Logo -->
+  <div class="celebration-wrapper" *ngIf="showFounder">
+    <img
+      src="/assets/50years-logo.png"
+      alt="50 Years Celebration"
+      class="celebration-logo"
+    />
+  </div>
 </div>

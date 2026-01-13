@@ -1,133 +1,92 @@
+/* ==================================================
+   BANK BRAND HEADER (CLEAN & PROFESSIONAL)
+================================================== */
+
 .bank-brand {
-    display: flex;
-    align-items: center; // <-- KEY: vertically aligns everything
-    justify-content: space-between;
-    padding: 12px 20px;
-    background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
 }
 
+/* ==================================================
+   LEFT SECTION
+================================================== */
 
 .left-section {
-    display: flex;
-    align-items: center; // <-- aligns logo + title at same height
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-// .bank-logo {
-//   height: 64px;
-//   width: auto;
-// }
 .bank-logo {
-    height: 100px;
-    width: 100px;
+  height: 90px;
+  width: 90px;
+  object-fit: contain;
 }
 
-.founder-photo {
-    height: 90px; // recommended sweet spot
-    margin-top: 2px;
-    object-fit: contain;
-    margin-bottom: 4px;
-}
-
-
+/* ==================================================
+   BANK INFO
+================================================== */
 
 .bank-info {
+  .bank-title {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.8px;
+    color: #9b1c1c;
+  }
 
-    .bank-title {
-        font-size: 28px;
-        font-weight: 800;
-        text-transform: uppercase;
-        margin: 0;
-
-        letter-spacing: 0.8px;
-
-        background: linear-gradient(90deg, #7a0000, #b82323);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .bank-sub {
-        margin-top: 4px;
-        font-size: 14px;
-        color: #555;
-        text-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.15);
-    }
+  .bank-sub {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #555;
+  }
 }
 
-/* Founder Photo Right Section */
-.founder-wrapper {
-    display: block;
-    margin-top: -10px; // optional small lift
+/* ==================================================
+   50 YEARS LOGO – REFINED BADGE STYLE
+================================================== */
+
+.celebration-wrapper {
+  display: flex;
+  align-items: center;
 }
 
+.celebration-logo {
+  height: 110px; /* reduced = classy */
+  width: auto;
+  object-fit: contain;
+  opacity: 0.95;
 
-// /* Hide founder photo on mobile */
-// @media (max-width: 768px) {
-//     .founder-wrapper {
-//         display: none !important;
-//     }
+  filter:
+    drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+}
 
-//     .bank-brand {
-//         flex-direction: column;
-//         text-align: center;
-//         gap: 12px;
-//     }
-
-//     .bank-logo {
-//         height: 60px;
-//     }
-
-//     .bank-title {
-//         font-size: 20px !important;
-//     }
-// }
-
-/* Mobile view */
 @media (max-width: 768px) {
   .bank-brand {
     flex-direction: column;
-    align-items: center !important;
     text-align: center;
-    gap: 10px;
+    gap: 12px;
   }
 
   .left-section {
     flex-direction: column;
-    align-items: center !important;
-    text-align: center;
   }
 
   .bank-logo {
-    height: 80px;    /* slightly bigger looks better on mobile */
+    height: 70px;
   }
 
-  .bank-info {
-    .bank-title {
-      font-size: 22px !important;
-      line-height: 1.2;
-    }
-
-    .bank-sub {
-      font-size: 14px;
-    }
+  .bank-info .bank-title {
+    font-size: 22px;
   }
-}
 
-
-
-.founder-text {
-    text-align: center;
-    margin-top: 6px;
-
-    .founder-name {
-        font-size: 13px;
-        font-weight: 700;
-        color: #333;
-    }
-
-    .founder-title {
-        font-size: 11px;
-        color: #777;
-        margin-top: 2px;
-    }
+  .celebration-logo {
+    height: 90px;
+  }
 }

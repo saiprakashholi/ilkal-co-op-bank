@@ -1,17 +1,13 @@
 <section class="mobile-root">
-
   <!-- Title -->
-  <h1 class="title">
-    {{ lang.t('services.mobile', 'TITLE') }}
-  </h1>
 
-  <!-- Intro -->
-  <p class="description">
-    {{ lang.t('services.mobile', 'INTRO_1') }}
-  </p>
-  <p class="description">
-    {{ lang.t('services.mobile', 'INTRO_2') }}
-  </p>
+  <header class="hero">
+    <img src="/assets/mobile-banking.jpg" alt="Mobile Banking" class="hero-image" />
+
+    <h1>{{ lang.t('services.mobile', 'TITLE') }}</h1>
+    <p class="subtitle">{{ lang.t('services.mobile', 'INTRO_1') }}</p>
+    <p class="desc">{{ lang.t('services.mobile', 'INTRO_2') }}</p>
+  </header>
 
   <!-- Features -->
   <h2 class="subtitle">
@@ -54,10 +50,7 @@
     {{ lang.t('services.mobile', 'TERMS_TITLE') }}
   </h2>
 
-  <div
-    class="doc-row"
-    *ngFor="let doc of documents"
-  >
+  <div class="doc-row" *ngFor="let doc of documents">
     <div class="doc-info">
       <span class="doc-icon">📄</span>
       <span class="doc-name">
@@ -66,24 +59,14 @@
     </div>
 
     <div class="doc-actions">
-      <a
-        class="btn view-btn"
-        [href]="doc.viewUrl"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a class="btn view-btn" [href]="doc.viewUrl" target="_blank" rel="noopener noreferrer">
         {{ lang.t('common', 'VIEW') }}
       </a>
 
-      <a
-        class="btn download-btn"
-        [href]="doc.downloadUrl"
-        download
-      >
+      <a class="btn download-btn" [href]="doc.downloadUrl" download>
         <span class="icon">⬇️</span>
         {{ lang.t('common', 'DOWNLOAD') }}
       </a>
     </div>
   </div>
-
 </section>
