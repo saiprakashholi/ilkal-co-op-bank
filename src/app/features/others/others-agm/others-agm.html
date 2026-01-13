@@ -1,0 +1,23 @@
+<section class="agm">
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Annual General Meeting (AGM)</h1>
+    <p>View and download AGM reports and proceedings</p>
+  </div>
+
+  <!-- LIST -->
+  <div class="list">
+    <div class="item" *ngFor="let agm of agmReports">
+      <div class="info">
+        <div class="year">{{ agm.year }}</div>
+        <div class="title">📑 {{ agm.title }}</div>
+      </div>
+
+      <div class="actions" [class.disabled]="!agm.url">
+        <a class="view" [href]="agm.url" target="_blank" rel="noopener"> View </a>
+
+        <a class="download" [href]="agm.url" download> Download </a>
+      </div>
+    </div>
+  </div>
+</section>

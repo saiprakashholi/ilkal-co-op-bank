@@ -34,14 +34,6 @@ export class Downloads {
     {
       title: 'Customer Complaints and Grievance',
       // url: '/assets/downloads/5.pdf',
-    },
-    {
-      title: '61st AGM Report 2025–26',
-      url: '/assets/downloads/agm-2023-24.pdf',
-    },
-    {
-      title: '61st AGM Proceedings',
-      url: '/assets/downloads/agm-2022-23.pdf',
-    },
+    }
   ];
 }

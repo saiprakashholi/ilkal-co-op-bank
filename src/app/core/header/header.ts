@@ -34,7 +34,7 @@ export class Header {
       ],
     },
 
-     {
+    {
       label: 'Services',
       url: '/service',
       expanded: false,
@@ -45,7 +45,7 @@ export class Header {
         { label: 'RTGS/NEFT', url: '/service/rtgs-neft' },
         { label: 'Locker', url: '/service/locker' },
         { label: 'Mobile Banking', url: '/service/mobile' },
-        
+
       ],
     },
 
@@ -85,6 +85,7 @@ export class Header {
         { label: 'Service Charges', url: '/others/service-charges' },
         { label: 'Secure and Safe Banking', url: '/others/safe-banking' },
         { label: 'Downloads', url: '/others/download' },
+        { label: 'AGM', url: '/others/agm' },
       ],
     },
     { label: 'Branches', url: '/locations' },
@@ -92,7 +93,7 @@ export class Header {
   ];
 
   constructor(private router: Router, public lang: LanguageService) { }
-  
+
 
   isActive(url?: string): boolean {
     if (!url) return false;
