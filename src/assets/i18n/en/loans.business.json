@@ -6,7 +6,7 @@
     "loans": [
         {
             "key": "1. Over Draft Loan (ODL)",
-            "image": "/assets/loans/over-draft-loan.jpg",
+            "image": "/assets/loans2/over-draft-loan.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
@@ -75,7 +75,7 @@
         },
         {
             "key": "3. Hypothecation (Goods) CC Firm",
-            "image": "/assets/loans/hyphotication-cc-firm.jpg",
+            "image": "/assets/loans2/hypotication-firmloan.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
@@ -109,7 +109,7 @@
         },
         {
             "key": "4. Mortgage Loan",
-            "image": "/assets/loans/mortgage-loan.jpg",
+            "image": "/assets/loans2/mortagage-cc.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
