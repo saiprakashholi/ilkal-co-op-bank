@@ -109,7 +109,7 @@
         },
         {
             "key": "4. Mortgage Loan",
-            "image": "/assets/loans2/mortagage-cc.jpg",
+            "image": "/assets/loans/mortgage-loan.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",
@@ -235,7 +235,7 @@
         },
         {
             "key": "8. Mortgage CC Loan",
-            "image": "/assets/loans/mortgage-loan.jpg",
+            "image": "/assets/loans2/mortagage-cc.jpg",
             "stats": [
                 {
                     "labelKey": "Maximum Loan",

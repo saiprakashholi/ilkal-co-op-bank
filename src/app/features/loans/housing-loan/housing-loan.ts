@@ -23,7 +23,7 @@ export class HousingLoan {
 
   // QUICK FACTS
   highlights = [
-    { label: 'Maximum Loan', value: '₹1 Crore' },
+    { label: 'Maximum Loan', value: '₹1.4 Crore' },
     { label: 'Repayment Period', value: 'Up to 15 Years' },
     { label: 'Interest Rate', value: '11% p.a.' },
     { label: 'Margin', value: '25%' },
