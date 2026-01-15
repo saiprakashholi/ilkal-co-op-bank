@@ -24,10 +24,10 @@ export class ServiceCharges {
     {
       title: 'Incidental Charges',
       rows: [
-        { no: 1, details: 'Incidental Charges for Current Operative accounts', charge: '₹1,000 + GST (Per Year)' },
+        { no: 1, details: 'Incidental Charges for Current Operative accounts', charge: 'Nil' },
         { no: 2, details: 'Incidental Charges for Current In-operative accounts', charge: 'Nil' },
-        { no: 3, details: 'Incidental Charges for SB Operative (Non-Cheque holder)', charge: '₹200 + GST (Per Year)' },
-        { no: 4, details: 'Incidental Charges for SB Operative (Cheque holder)', charge: '₹200 + GST (Per Year)' },
+        { no: 3, details: 'Incidental Charges for SB Operative (Non-Cheque holder)', charge: 'Nil' },
+        { no: 4, details: 'Incidental Charges for SB Operative (Cheque holder)', charge: 'Nil' },
         { no: 5, details: 'Incidental Charges for SB In-operative (Non-Cheque holder)', charge: 'Nil' },
         { no: 6, details: 'Incidental Charges for SB In-operative (Cheque holder)', charge: 'Nil' },
       ],
@@ -35,18 +35,18 @@ export class ServiceCharges {
     {
       title: 'Charges for Closure of Accounts (Normal Accounts)',
       rows: [
-        { no: 7, details: 'Closing of Account SB Operative', charge: '₹50 + GST (Per Year)' },
-        { no: 8, details: 'Closing of Account SB In-operative', charge: '₹50 + GST (Per Year)' },
-        { no: 9, details: 'Closing of Account Current Operative', charge: '₹100 + GST (Per Year)' },
-        { no: 10, details: 'Closing of Account Current In-operative', charge: '₹100 + GST (Per Year)' },
+        { no: 7, details: 'Closing of Account SB Operative', charge: 'Nil' },
+        { no: 8, details: 'Closing of Account SB In-operative', charge: 'Nil' },
+        { no: 9, details: 'Closing of Account Current Operative', charge: 'Nil' },
+        { no: 10, details: 'Closing of Account Current In-operative', charge: 'Nil' },
       ],
     },
     {
       title: 'Card Charges',
       rows: [
-        { no: 11, details: 'EMV Debit Card Charges for all SB & Current accounts', charge: '₹150 + GST (One Time)' },
-        { no: 12, details: 'Additional / Replacement EMV Debit Card', charge: '₹150 + GST (One Time)' },
-        { no: 13, details: 'PIN Regeneration Charges', charge: '₹50 + GST (One Time)' },
+        { no: 11, details: 'EMV Debit Card Charges for all SB & Current accounts', charge: '₹125 + GST (One Time)' },
+        { no: 12, details: 'Additional / Replacement EMV Debit Card', charge: '₹200 + GST (One Time)' },
+        { no: 13, details: 'PIN Regeneration Charges', charge: 'Nil' },
         { no: 14, details: 'Transaction fees at MPS Bank ATM', charge: 'Nil' },
         {
           no: 15,

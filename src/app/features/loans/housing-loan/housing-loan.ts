@@ -18,7 +18,7 @@ export class HousingLoan {
     subtitle: 'Turn your dream of owning a home into reality',
     icon: '🏠',
     description:
-      'We offer Home Loans and Home Construction Loans with simple documentation and flexible repayment options, helping you build or buy your dream home with confidence.',
+      'We offer Home Loans and Home Construction Loans with simple documentation and flexible repayment options, helping you build your dream home with confidence.',
   };
 
   // QUICK FACTS
@@ -31,7 +31,7 @@ export class HousingLoan {
 
   // USE CASES
   useCases = [
-    'Purchase of residential house or flat',
+    // 'Purchase of residential house or flat',
     'Construction of a new house',
     'Purchase of under-construction property',
     'Long-term real estate investment',

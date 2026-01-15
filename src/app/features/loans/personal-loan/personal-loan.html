@@ -21,7 +21,7 @@
   </div>
 
   <!-- USE CASES -->
-  <section class="use-cases">
+  <section *ngIf="useCases && useCases.length > 0" class="use-cases">
     <h2>When is a Personal Loan useful?</h2>
     <ul>
       <li *ngFor="let u of useCases">{{ u }}</li>

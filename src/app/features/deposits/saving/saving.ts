@@ -22,7 +22,7 @@ export class Saving {
   benefits = [
     'Minimum balance without cheque book – ₹500',
     'Minimum balance with cheque book – ₹1000',
-    'Multi-City Cheque Book facility',
+    // 'Multi-City Cheque Book facility',
     'RTGS / NEFT facility',
     'SMS alerts on registered mobile number',
     'Mobile Banking Application access',
@@ -51,6 +51,7 @@ export class Saving {
       'Driving License',
       'Voter ID',
       'Passport',
+      'Ration Card'
     ],
   };
 

@@ -9,6 +9,11 @@
   "CONTACT_US": "Contact Us",
   "banner.items": [
     {
+      "image": "/assets/home-page-banner/50years.jpg",
+      "title": "Suvarna Sambrama – Golden Jubilee 🎉✨",
+      "subtitle": "Celebrating 50 Golden Years of trust, growth, and service to our community."
+    },
+    {
       "image": "/assets/loans/gold-loan.png",
       "title": "Loans for Every Need",
       "subtitle": "Gold, Business and Personal Loans"
@@ -26,6 +31,10 @@
     {
       "image": "/assets/home-page-banner/home-page-insurance.jpg"
     },
+    {
+      "image": "/assets/mobile-banking.jpg"
+    },
+     
     {
       "image": "/assets/home-page-banner/Untitled-5.jpg"
     }

@@ -18,24 +18,24 @@ export class PersonalLoan {
     subtitle: 'Quick financial support for your personal needs',
     icon: '💳',
     description:
-      'An unsecured loan with minimal documentation, flexible repayment, and no collateral requirement.',
+      'An unsecured loan with minimal documentation and flexible repayment.',
   };
 
   // QUICK FACTS
   highlights = [
     { label: 'Maximum Amount', value: '₹5.00 Lakhs', valueLabel: '(10 Times of Basic Salary)' },
     { label: 'Tenure', value: '3 Years' },
-    { label: 'Collateral', value: 'Not Required' },
+    // { label: 'Collateral', value: 'Not Required' },
     { label: 'Prepayment', value: 'No Penalty' },
   ];
 
   // USE CASES
   useCases = [
-    'Medical or emergency expenses',
-    'Education or skill development',
-    'Marriage or family functions',
-    'Travel or personal commitments',
-    'Any genuine personal financial need',
+    // 'Medical or emergency expenses',
+    // 'Education or skill development',
+    // 'Marriage or family functions',
+    // 'Travel or personal commitments',
+    // 'Any genuine personal financial need',
   ];
 
   // ACCORDION STATE

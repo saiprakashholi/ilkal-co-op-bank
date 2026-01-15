@@ -20,9 +20,9 @@ export class Current {
 
   benefits = [
     'No restriction on transactions either in number or amount',
-    'Minimum balance without cheque book – ₹1000',
+    // 'Minimum balance without cheque book – ₹1000',
     'Minimum balance with cheque book – ₹2000',
-    'Multi-City Cheque Book facility',
+    // 'Multi-City Cheque Book facility',
     'RTGS / NEFT facility',
     'SMS alerts on registered mobile number',
   ];
@@ -55,6 +55,7 @@ export class Current {
       'Passport',
       'PAN Card',
       'Aadhaar Card',
+      'GST Registration'
     ],
     note:
       'For Proprietorship / Partnership Firms / Public or Private Limited Companies / Trusts / HUF accounts, additional documents may be required as per bank norms.',
