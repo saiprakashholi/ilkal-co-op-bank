@@ -1,5 +1,3 @@
-
-
 <header class="header" role="banner">
   <div class="header-inner container">
     <!-- DESKTOP NAV -->
@@ -20,6 +18,7 @@
           <div class="dropdown" *ngIf="item.children">
             <a
               *ngFor="let child of item.children"
+              class="dropdown-item"
               [routerLink]="child.url"
               routerLinkActive="active"
             >
@@ -52,7 +51,6 @@
         <a
           *ngIf="!item.children"
           [routerLink]="item.url"
-          
           [class.active]="isActive(item.url)"
           (click)="closeMenu()"
         >
