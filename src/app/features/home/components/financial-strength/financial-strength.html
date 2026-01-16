@@ -1,0 +1,33 @@
+<section class="financial-strength">
+  <div class="container">
+
+    <h2 class="fs-title">
+      {{ lang.t('home', 'FINANCIAL_STRENGTH_TITLE') }}
+    </h2>
+
+    <p class="fs-subtitle">
+      {{ lang.t('home', 'FINANCIAL_STRENGTH_SUBTITLE') }}
+    </p>
+
+    <div class="fs-stats">
+      <div class="fs-item" *ngFor="let stat of financialStats">
+        <div class="fs-value">
+          <span #counter>0</span>+
+          <span class="fs-unit">{{ stat.unit }}</span>
+        </div>
+
+        <div class="fs-label">
+          {{ lang.t('home', stat.key) }}
+        </div>
+      </div>
+    </div>
+
+    <div class="fs-cta">
+      <p>{{ lang.t('home', 'QUERY_TEXT') }}</p>
+      <a routerLink="/contact-us" class="btn-primary">
+        {{ lang.t('home', 'CONTACT_US') }}
+      </a>
+    </div>
+
+  </div>
+</section>

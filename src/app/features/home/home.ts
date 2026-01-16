@@ -6,6 +6,7 @@ import { NoticeComponent } from './components/notice/notice';
 import { ManagementComponent } from './components/management/management';
 import { LanguageService } from '../../services/language.service';
 import { HomeBannerCarousel } from "./components/home-banner-carousel/home-banner-carousel";
+import { FinancialStrength } from "./components/financial-strength/financial-strength";
 
 interface BankService {
   icon: string;
@@ -17,7 +18,7 @@ interface BankService {
   selector: 'app-home',
   standalone: true,
   imports: [CommonModule, RouterModule, AnnouncementsComponent,
-    NoticeComponent, ManagementComponent, HomeBannerCarousel],
+    NoticeComponent, ManagementComponent, HomeBannerCarousel, FinancialStrength],
   templateUrl: './home.html',
   styleUrls: ['./home.scss'],
 
@@ -122,12 +123,7 @@ export class Home {
     return item.title;
   }
 
-  financialStats = [
-    { key: 'SHARE_CAPITAL', value: '12+', unit: 'Cr' },
-    { key: 'NET_PROFIT', value: '4+', unit: 'Cr' },
-    { key: 'ADVANCES', value: '300+', unit: 'Cr' },
-    { key: 'DEPOSITS', value: '431+', unit: 'Cr' }
-  ];
+ 
 
 
 }
