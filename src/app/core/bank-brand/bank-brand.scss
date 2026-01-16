@@ -6,32 +6,42 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 24px;
+  padding: 18px 24px;
   background: #ffffff;
   border-bottom: 1px solid #eee;
 }
 
 /* ==================================================
-   LEFT SECTION
+   LEFT SECTION (LOGO + NAME)
 ================================================== */
 
 .left-section {
   display: flex;
   align-items: center;
-  gap: 16px;
-}
-
-.bank-logo {
-  height: 90px;
-  width: 90px;
-  object-fit: contain;
+  gap: 20px;
 }
 
 /* ==================================================
-   BANK INFO
+   BANK LOGO (PRIMARY – BIGGER THAN 50 YEARS)
+================================================== */
+
+.bank-logo {
+  height: 120px;
+  /* MAIN CHANGE */
+  width: 120px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* ==================================================
+   BANK INFO TEXT
 ================================================== */
 
 .bank-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   .bank-title {
     font-size: 28px;
     font-weight: 800;
@@ -39,54 +49,90 @@
     margin: 0;
     letter-spacing: 0.8px;
     color: #9b1c1c;
+    line-height: 1.2;
   }
 
   .bank-sub {
-    margin-top: 4px;
+    margin-top: 6px;
     font-size: 14px;
     color: #555;
   }
 }
 
 /* ==================================================
-   50 YEARS LOGO – REFINED BADGE STYLE
+   50 YEARS CELEBRATION LOGO (SECONDARY)
 ================================================== */
 
 .celebration-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .celebration-logo {
-  height: 110px; /* reduced = classy */
+  height: 105px;
+  /* Slightly smaller than bank logo */
   width: auto;
   object-fit: contain;
   opacity: 0.95;
-
-  filter:
-    drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
 }
+
+/* ==================================================
+   RESPONSIVE – TABLET & MOBILE
+================================================== */
 
 @media (max-width: 768px) {
   .bank-brand {
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    gap: 12px;
+    gap: 14px;
+    padding: 16px;
   }
 
   .left-section {
     flex-direction: column;
+    gap: 10px;
   }
 
   .bank-logo {
-    height: 70px;
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+
   }
 
   .bank-info .bank-title {
     font-size: 22px;
   }
 
+  .bank-info .bank-sub {
+    font-size: 13px;
+  }
+
   .celebration-logo {
-    height: 90px;
+    // height: 80px;
+    display: none;
+  }
+}
+
+/* ==================================================
+   SMALL MOBILE (VERY NARROW DEVICES)
+================================================== */
+
+@media (max-width: 480px) {
+  .bank-logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .celebration-logo {
+    // height: 70px;
+    display: none;
+  }
+
+  .bank-info .bank-title {
+    font-size: 20px;
   }
 }
