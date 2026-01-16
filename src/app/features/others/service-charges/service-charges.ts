@@ -81,7 +81,7 @@ export class ServiceCharges {
     },
     {
       title: 'Cheque Book Charges',
-      rows: [{ no: 25, details: 'Cheque Book charges (all account types)', charge: '₹2 + GST (Per Leaf)' }],
+      rows: [{ no: 25, details: 'Cheque Book charges (all account types)', charge: '₹1 + GST (Per Leaf)' }],
     },
   ];
 
