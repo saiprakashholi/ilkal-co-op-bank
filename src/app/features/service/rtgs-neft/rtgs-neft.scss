@@ -1,3 +1,36 @@
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1f2a44;
+  margin-bottom: 12px;
+}
+
+/* Title + logo wrapper */
+.title-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* UPI logo */
+.upi-logo {
+  width: 100px;
+  height: 64px;
+  object-fit: contain;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .upi-logo {
+    width: 50px;
+    height: 32px;
+  }
+}
+
 .rtgs-neft-root {
   max-width: 900px;
   margin: 0 auto;

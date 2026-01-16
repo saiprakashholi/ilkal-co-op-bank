@@ -27,7 +27,7 @@ export class FoundersList {
     { id: 4, name: 'V C Akki', photo: 'assets/foundersPhotos/4.AKKI.JPG' },
     { id: 5, name: 'N O Aralikatti', photo: 'assets/foundersPhotos/5.ARALIKATTI.JPG' },
     { id: 6, name: 'M M Japagal', photo: 'assets/foundersPhotos/6.JAPAGAL.JPG' },
-    { id: 7, name: 'M M Bora', photo: 'assets/foundersPhotos/7.BORA.JPG' },
+    { id: 7, name: 'M M Bora', photo: '/assets/foundersPhotos/7.M-M-Bora.jpg' },
     { id: 9, name: 'N R Sapparad', photo: 'assets/foundersPhotos/9.SAPARAD.JPG' },
     { id: 10, name: 'N V Mannapur', photo: 'assets/foundersPhotos/10.MANAPUR.JPG' },
     { id: 11, name: 'N A Tapadiya', photo: 'assets/foundersPhotos/11.TAPADIYA.JPG' },

@@ -29,7 +29,7 @@ export class Downloads {
     },
     {
       title: 'Statutory Auditor Policy',
-      url: '/assets/downloads/statitory-auditors Policy.pdf',
+      url: '/assets/downloads/statutory-auditor-policy.pdf',
     },
     {
       title: 'Customer Complaints and Grievance',
