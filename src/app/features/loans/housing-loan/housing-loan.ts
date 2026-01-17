@@ -33,7 +33,7 @@ export class HousingLoan {
   useCases = [
     // 'Purchase of residential house or flat',
     'Construction of a new house',
-    'Purchase of under-construction property',
+    // 'Purchase of under-construction property',
     'Long-term real estate investment',
   ];
 
