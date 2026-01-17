@@ -9,11 +9,12 @@ import {
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { LanguageService } from '../../../../services/language.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-financial-strength',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './financial-strength.html',
   styleUrl: './financial-strength.scss',
 })

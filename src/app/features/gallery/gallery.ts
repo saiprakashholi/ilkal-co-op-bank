@@ -26,7 +26,7 @@ export class Gallery {
     },
     {
       id: 2,
-      name: 'Prize Distribution',
+      name: 'Awards',
       description: 'Prize Distribution in our new branch with esteemed guests.',
       photos: [
         '/assets/gallery/2/others Prize.jpg',
@@ -41,7 +41,7 @@ export class Gallery {
     },
     {
       id: 3,
-      name: 'General Meetings',
+      name: 'Annual General Meeting',
       description: 'Inauguration of our new branch with esteemed guests and community members.',
       // cover: '/assets/gallery/1/1.gm.jpeg',
       photos: [
