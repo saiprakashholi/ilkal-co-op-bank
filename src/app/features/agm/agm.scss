@@ -48,3 +48,29 @@ td {
     padding: 8px;
   }
 }
+
+
+.chart-card {
+  margin-top: 32px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.chart-card h2 {
+  text-align: center;
+  color: #b71c1c;
+  margin-bottom: 12px;
+}
+
+.chart-wrapper {
+  position: relative;
+  height: 420px;
+}
+
+@media (max-width: 768px) {
+  .chart-wrapper {
+    height: 300px;
+  }
+}
