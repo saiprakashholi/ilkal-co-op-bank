@@ -32,7 +32,7 @@ export class DirectorsList {
     { id: 10, name: 'Basavaraj Talikoti', photo: 'assets/managementImages/10 Basavaraj Talikoti.jpg', designation: 'Director' },
     { id: 11, name: 'Manjunath Shetter', photo: 'assets/managementImages/11 Manjunath Shetter.png', designation: 'Director' },
     { id: 12, name: 'Charalingappa Akki', photo: 'assets/managementImages/12 Charalingappa Akki.jpg', designation: 'Director' },
-    { id: 13, name: 'Praveen Hoolageri', photo: 'assets/managementImages/13 Praveen Hoolageri.jpg', designation: 'Director' },
+    { id: 13, name: 'Praveen Hoolageri', photo: 'assets/managementImages/13 Praveen Hoolageri.jpeg', designation: 'Director' },
     { id: 14, name: 'Shantkumar Surpur', photo: 'assets/managementImages/14 Shantkumar Surpur.jpg', designation: 'Director' },
     { id: 15, name: 'Dr.Aruna Akki', photo: 'assets/managementImages/15 Dr.Aruna Akki.jpg', designation: 'Director' },
     { id: 16, name: 'Lata Herur', photo: 'assets/managementImages/16 Lata Herur.jpg', designation: 'Director' },
