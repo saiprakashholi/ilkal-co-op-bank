@@ -13,15 +13,32 @@ import { PhotoListComponent } from "./photo-list/photo-list";
 export class Gallery {
 
   groups = [
+
+
     {
-      id: 1,
-      name: 'Branch Opening Ceremony',
-      description: 'Inauguration of our new branch with esteemed guests and community members.',
+      id: 3,
+      name: 'Annual General Meeting',
+      description: 'Annual General Meeting with esteemed guests and community members.',
       // cover: '/assets/gallery/1/1.gm.jpeg',
       photos: [
-        '/assets/gallery/1/1.gm.jpeg',
-        '/assets/gallery/1/2.gm.jpeg',
-        '/assets/gallery/1/3.gm.jpeg',
+        '/assets/gallery/agm/agm_gallery_1.jpg',
+        '/assets/gallery/agm/agm_gallery_2.jpg',
+        '/assets/gallery/agm/agm_gallery_3.jpg',
+        '/assets/gallery/agm/agm_gallery_4.jpg',
+
+      ]
+    },
+    {
+      id: 4,
+      name: 'Staff Events',
+      description: 'Management and staff unveiling QR-based digital banking services, reinforcing the bank’s commitment to modernization.',
+      // cover: '/assets/gallery/1/1.gm.jpeg',
+      photos: [
+        '/assets/gallery/staff-event/staff_gallery_1.jpg',
+        '/assets/gallery/staff-event/staff_gallery_2.jpg',
+        '/assets/gallery/staff-event/staff_gallery_3.jpg',
+        '/assets/gallery/staff-event/staff_gallery_4.jpg',
+
       ]
     },
     {
@@ -34,36 +51,21 @@ export class Gallery {
         '/assets/gallery/2/3rd Prize Group Photo.jpg',
         '/assets/gallery/2/3rd Prize.jpg',
         '/assets/gallery/2/Good Performance Prize Group Photo.jpg',
-        '/assets/gallery/2/Good Performance Prize.jpg',
-        '/assets/gallery/2/others Prize.jpg',
+        '/assets/gallery/2/Good Performance Prize.jpg'
 
       ]
     },
     {
-      id: 3,
-      name: 'Annual General Meeting',
-      description: 'Annual General Meeting with esteemed guests and community members.',
-      // cover: '/assets/gallery/1/1.gm.jpeg',
-      photos: [
-        '/assets/gallery/2/Good Performance Prize.jpg',
-        '/assets/gallery/1/1.gm.jpeg',
-        '/assets/gallery/1/2.gm.jpeg',
-
-      ]
-    },
-    {
-      id: 4,
-      name: 'Staff Events',
+      id: 1,
+      name: 'Branch Opening Ceremony',
       description: 'Inauguration of our new branch with esteemed guests and community members.',
       // cover: '/assets/gallery/1/1.gm.jpeg',
       photos: [
-        '/assets/gallery/2/Good Performance Prize.jpg',
-        '/assets/gallery/1/3.gm.jpeg',
         '/assets/gallery/1/1.gm.jpeg',
         '/assets/gallery/1/2.gm.jpeg',
-
+        '/assets/gallery/1/3.gm.jpeg',
       ]
-    }
+    },
   ];
 
   // gallery.ts (inside class)
