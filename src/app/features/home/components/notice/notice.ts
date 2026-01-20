@@ -29,11 +29,11 @@ export class NoticeComponent implements OnInit, OnDestroy {
   @Input() notices: (NoticeItem | string)[] = [
     'Introduced Mobile Banking App.',
     'Bank is Live on IMPS & UPI',
-    {
-      text: 'Hiring Staff for New Branches. Apply Now!',
-      // url: '/careers',
-      newTab: true
-    },
+    // {
+    //   text: 'Hiring Staff for New Branches. Apply Now!',
+    //   // url: '/careers',
+    //   newTab: true
+    // },
   ];
 
   @Input() speed = 18;
