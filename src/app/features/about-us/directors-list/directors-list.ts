@@ -24,6 +24,7 @@ export class DirectorsList {
     { id: 2, name: 'Mahantesh Kampli', photo: 'assets/managementImages/2.Mahantesh.Kampli(Vice-President).jpg', designation: 'Vice President' },
     { id: 3, name: 'Pampapati Kalagi', photo: 'assets/managementImages/3 Pampapati Kalagi .jpg', designation: 'Director' },
     { id: 4, name: 'Lachamayya Guram', photo: 'assets/managementImages/4 Lachamayya Guram.jpg', designation: 'Director' },
+    { id: 51, name: 'Mallikarjunagouda S Patil', photo: 'assets/managementImages/MSPATIL NEW.jpg', designation: 'Director' },
     { id: 5, name: 'Goutham Bora', photo: 'assets/managementImages/5 Goutam Bora.jpg', designation: 'Director' },
     { id: 6, name: 'Mahantappa Angadi', photo: 'assets/managementImages/6 Mahantappa Angadi.jpg', designation: 'Director' },
     { id: 7, name: 'Vijay Giraddi', photo: 'assets/managementImages/7 Vijay Giraddi.jpg', designation: 'Director' },
