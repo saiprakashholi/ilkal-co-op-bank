@@ -1,0 +1,25 @@
+{
+  "title": "Leadership That Upholds Our Values",
+  "description": "Our Board of Directors plays a vital role in governing the bank with transparency, accountability, and long-term vision. Their insights and expertise help us deliver reliable and customer-centric financial services.",
+  "placeholderImage": "https://via.placeholder.com/600x600?text=No+Image",
+  "members": [
+    { "id": 1, "name": "Satish Sapparad", "photo": "assets/managementImages/1.Satish.Sapparad.(President).jpg", "designation": "President" },
+    { "id": 2, "name": "Mahantesh Kampli", "photo": "assets/managementImages/2.Mahantesh.Kampli(Vice-President).jpg", "designation": "Vice President" },
+    { "id": 3, "name": "Pampapati Kalagi", "photo": "assets/managementImages/3 Pampapati Kalagi .jpg", "designation": "Director" },
+    { "id": 4, "name": "Lachamayya Guram", "photo": "assets/managementImages/4 Lachamayya Guram.jpg", "designation": "Director" },
+    { "id": 51, "name": "Mallikarjunagouda S Patil", "photo": "assets/managementImages/MSPATIL NEW.jpg", "designation": "Director" },
+    { "id": 5, "name": "Goutham Bora", "photo": "assets/managementImages/5 Goutam Bora.jpg", "designation": "Director" },
+    { "id": 6, "name": "Mahantappa Angadi", "photo": "assets/managementImages/6 Mahantappa Angadi.jpg", "designation": "Director" },
+    { "id": 7, "name": "Vijay Giraddi", "photo": "assets/managementImages/7 Vijay Giraddi.jpg", "designation": "Director" },
+    { "id": 8, "name": "Mallikarjun Agni", "photo": "assets/managementImages/8 Mallikarjun Agni.jpg", "designation": "Director" },
+    { "id": 9, "name": "Aravind Mangalur", "photo": "assets/managementImages/9 Aravind Mangalur.jpg", "designation": "Director" },
+    { "id": 10, "name": "Basavaraj Talikoti", "photo": "assets/managementImages/10 Basavaraj Talikoti.jpg", "designation": "Director" },
+    { "id": 11, "name": "Manjunath Shetter", "photo": "assets/managementImages/11 Manjunath Shetter.png", "designation": "Director" },
+    { "id": 12, "name": "Charalingappa Akki", "photo": "assets/managementImages/12 Charalingappa Akki.jpg", "designation": "Director" },
+    { "id": 13, "name": "Praveen Hoolageri", "photo": "assets/managementImages/13 Praveen Hoolageri.jpeg", "designation": "Director" },
+    { "id": 14, "name": "Shantkumar Surpur", "photo": "assets/managementImages/14 Shantkumar Surpur.jpg", "designation": "Director" },
+    { "id": 15, "name": "Dr.Aruna Akki", "photo": "assets/managementImages/15 Dr.Aruna Akki.jpg", "designation": "Director" },
+    { "id": 16, "name": "Lata Herur", "photo": "assets/managementImages/16 Lata Herur.jpg", "designation": "Director" },
+    { "id": 17, "name": "Nagaraj Kutagamari", "photo": "assets/managementImages/Nagaraj Kutagamari (General Manager).jpg", "designation": "General Manager" }
+  ]
+}

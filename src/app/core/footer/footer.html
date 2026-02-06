@@ -1,93 +1,54 @@
 <footer
   class="bank-footer"
   [style.background-color]="brandColor"
+  [style.background-image]="'url(' + lang.t('core.footer', 'backgroundImage') + ')'"
   role="contentinfo"
-  aria-label="Site footer"
+  [attr.aria-label]="lang.t('core.footer', 'ariaLabel')"
 >
   <div class="footer-inner">
     <!-- Top columns -->
     <div class="footer-grid">
       <!-- Column 1: Quick links / About -->
       <div class="col">
-        <h4>About Us</h4>
+        <h4>{{ lang.t('core.footer', 'quickLinksTitle') }}</h4>
         <ul>
-          <li><a href="/about-us/founders">Founders</a></li>
-          <li>
-            <a href="/about-us/directors">Board of Directors</a>
+          <li *ngFor="let link of quickLinks">
+            <a [href]="link.url">{{ link.label }}</a>
           </li>
-          <!-- <li><a href="/about/presidents">List of the Presidents</a></li>
-          <li><a href="/about/mds">List of MDs / CEOs</a></li>
-          <li><a href="/about/board">Board of Directors</a></li>
-          <li><a href="/about/key-personnel">Key Personnel</a></li> -->
-          <li><a href="/about-us/financials">Financials</a></li>
         </ul>
       </div>
 
       <!-- Column 2: Products -->
       <div class="col">
-        <h4>Retail Banking</h4>
+        <h4>{{ lang.t('core.footer', 'retailTitle') }}</h4>
         <ul>
-          <li><a href="/deposits/saving">Savings Bank Account</a></li>
-          <li><a href="/deposits/current">Current Account</a></li>
-          <li><a href="/service/locker">Safe Deposit Lockers</a></li>
-          <li><a href="/service/rtgs-neft">RTGS / NEFT</a></li>
+          <li *ngFor="let link of retailLinks">
+            <a [href]="link.url">{{ link.label }}</a>
+          </li>
         </ul>
       </div>
 
       <!-- Column 3: Services / Info -->
       <div class="col">
-        <h4>Important Links</h4>
+        <h4>{{ lang.t('core.footer', 'importantTitle') }}</h4>
         <ul>
-          <li><a href="/misc/lodge-a-complaint">Lodge a Complaint</a></li>
-          <li><a href="/misc/inquiry">Inquiry Form</a></li>
-          <li><a href="/misc/career">Career Form</a></li>
+          <li *ngFor="let link of importantLinks">
+            <a [href]="link.url">{{ link.label }}</a>
+          </li>
         </ul>
       </div>
 
       <!-- Column 4: Resources Center -->
       <div class="col">
-        <h4>Resources Center</h4>
+        <h4>{{ lang.t('core.footer', 'resourcesTitle') }}</h4>
         <ul>
-          <li>
-            <a href="https://www.rbi.org.in/" target="_blank" rel="noopener">
-              Reserve Bank of India
-            </a>
-          </li>
-          <li>
+          <li *ngFor="let link of resourceLinks">
             <a
-              href="https://rbi.org.in/Scripts/FS_UsefulInfoCustomer.aspx?fn=2745"
-              target="_blank"
+              [href]="link.url"
+              [attr.target]="link.external ? '_blank' : null"
               rel="noopener"
             >
-              RBI – Consumer Useful Information
-            </a>
-          </li>
-          <li>
-            <a href="https://ncfe.org.in/" target="_blank" rel="noopener">
-              National Centre for Financial Education
-            </a>
-          </li>
-          <li>
-            <a href="https://www.kubfed.com/" target="_blank" rel="noopener">
-              State Urban Bank Federation
-            </a>
-          </li>
-          <li>
-            <a href="https://nafcub.org/" target="_blank" rel="noopener"> NAFCUB </a>
-          </li>
-          <li>
-            <a href="https://cooperatives.gov.in/" target="_blank" rel="noopener">
-              National Cooperative Database
-            </a>
-          </li>
-          <li>
-            <a href="https://ricmb.ac.in/" target="_blank" rel="noopener">
-              Regional Institute of Cooperative Management
-            </a>
-          </li>
-          <li>
-            <a href="https://cybercrime.gov.in/" target="_blank" rel="noopener">
-              Cyber Crime Portal
+              {{ link.label }}
             </a>
           </li>
         </ul>
@@ -96,10 +57,14 @@
       <!-- Column 5: Social + Store + QR -->
       <div class="col col-right">
         <div class="social-row">
-          <a aria-label="Facebook" href="#" class="social-icon">f</a>
-          <a aria-label="X" href="#" class="social-icon">x</a>
-          <a aria-label="Instagram" href="#" class="social-icon">ig</a>
-          <a aria-label="LinkedIn" href="#" class="social-icon">in</a>
+          <a
+            *ngFor="let s of socialLinks"
+            [attr.aria-label]="s.label"
+            [href]="s.url"
+            class="social-icon"
+          >
+            {{ s.iconText }}
+          </a>
           <!-- <a aria-label="YouTube" href="#" class="social-icon">yt</a> -->
         </div>
 
@@ -107,14 +72,15 @@
 
         <div class="store-buttons">
           <a
+            *ngFor="let b of storeBadges"
             class="store-btn"
-            href="https://play.google.com/store/apps/details?id=in.sarvatra.ilkalcoop.mobilebanking"
+            [href]="b.href"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Ilkal Bank app on Google Play"
+            [attr.aria-label]="b.ariaLabel"
           >
-            <img src="assets/playstore.qr.svg" alt="Download App QR" class="qr-img" />
-            <img src="/assets/playstore.png" alt="Get it on Google Play" class="qr-img" />
+            <img [src]="b.qrImage" [attr.alt]="lang.t('core.footer', 'storeQrAlt')" class="qr-img" />
+            <img [src]="b.badgeImage" [attr.alt]="lang.t('core.footer', 'storeBadgeAlt')" class="qr-img" />
           </a>
         </div>
 
@@ -123,23 +89,21 @@
         <!-- DICGC logo and qr starts -->
 
         <a
-          href="https://www.dicgc.org.in/"
+          [href]="dicgc.href"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="We are a Registered Member of the DICGC and Your deposits are insured"
+          [attr.aria-label]="dicgc.ariaLabel"
         >
           <div class="cert-qr">
-            <img src="/assets/dicgc.jpg" alt="DICGC Logo" class="cert-logo" />
+            <img [src]="dicgc.logoImage" [attr.alt]="dicgc.logoAlt" class="cert-logo" />
             <div class="qr">
-              <img src="/assets/dicgc-qr.jpeg" alt="DICGC QR Code" />
+              <img [src]="dicgc.qrImage" [attr.alt]="dicgc.qrAlt" />
             </div>
           </div>
         </a>
         <!-- DICGC logo and qr ends -->
 
-        <div class="dic-msg">
-          We are a Registered Member of the DICGC and Your deposits are insured
-        </div>
+        <div class="dic-msg">{{ dicgc.message }}</div>
       </div>
     </div>
 
@@ -149,31 +113,34 @@
     <!-- Bottom row -->
     <div class="footer-bottom">
       <div class="left">
-        <nav class="legal-links" aria-label="Legal">
-          <a href="/assets/terms-and-conditions.pdf" target="_blank" rel="noopener"
-            >Terms & Conditions</a
+        <nav class="legal-links" [attr.aria-label]="lang.t('core.footer', 'legalLabel')">
+          <a
+            *ngFor="let link of legalLinks"
+            [href]="link.url"
+            [attr.target]="link.external ? '_blank' : null"
+            rel="noopener"
           >
-          <a href="/assets/privacy-policy.pdf" target="_blank" rel="noopener">Privacy Policy</a>
-          <a href="/sitemap">Sitemap</a>
+            {{ link.label }}
+          </a>
         </nav>
-        <div class="small-note">Site best viewed in modern browsers at 1024x768 or higher</div>
+        <div class="small-note">{{ lang.t('core.footer', 'smallNote') }}</div>
       </div>
 
       <div class="right">
         <div class="lang-switch">
-          Language:
+          {{ lang.t('core.footer', 'languageLabel') }}
           <button [class.active]="lang.currentLang === 'en'" (click)="switchLang('en')">
-            English
+            {{ lang.t('core.footer', 'langEnglish') }}
           </button>
           <span>|</span>
           <button [class.active]="lang.currentLang === 'kn'" (click)="switchLang('kn')">
-            ಕನ್ನಡ
+            {{ lang.t('core.footer', 'langKannada') }}
           </button>
         </div>
 
         <div class="copyright">
           © 2006–{{ today | date : 'yyyy' }}
-          {{ lang.t('footer', 'copyright') }}
+          {{ lang.t('core.footer', 'copyright') }}
         </div>
       </div>
 

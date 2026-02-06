@@ -1,0 +1,70 @@
+{
+  "primaryNavLabel": "Primary navigation",
+  "openMenuLabel": "Open menu",
+  "mobileNavLabel": "Mobile navigation",
+  "mobileMenuTitle": "Menu",
+  "menu": [
+    { "label": "Home", "url": "/" },
+    {
+      "label": "About Us",
+      "url": "/about-us",
+      "expanded": false,
+      "children": [
+        { "label": "Founders", "url": "/about-us/founders" },
+        { "label": "Board of Directors", "url": "/about-us/directors" },
+        { "label": "Key Indicators", "url": "/agm" }
+      ]
+    },
+    {
+      "label": "Services",
+      "url": "/service",
+      "expanded": false,
+      "children": [
+        { "label": "UPI", "url": "/service/upi" },
+        { "label": "IMPS", "url": "/service/imps" },
+        { "label": "ATM", "url": "/service/atm" },
+        { "label": "RTGS/NEFT", "url": "/service/rtgs-neft" },
+        { "label": "Locker", "url": "/service/locker" },
+        { "label": "Mobile Banking", "url": "/service/mobile" }
+      ]
+    },
+    { "label": "Reports", "url": "/agm" },
+    {
+      "label": "Deposits",
+      "url": "/deposits",
+      "expanded": false,
+      "children": [
+        { "label": "Savings Deposits", "url": "/deposits/saving" },
+        { "label": "Current Deposits", "url": "/deposits/current" },
+        { "label": "Deposit Interest Rates", "url": "/deposits/interest-rate" }
+      ]
+    },
+    {
+      "label": "Loans",
+      "url": "/loans",
+      "expanded": false,
+      "children": [
+        { "label": "Personal Loan", "url": "/loans/personal" },
+        { "label": "Housing Loan", "url": "/loans/housing" },
+        { "label": "Vehicle Loan", "url": "/loans/vehical" },
+        { "label": "Gold Loan", "url": "/loans/gold" },
+        { "label": "Business Loan", "url": "/loans/business" },
+        { "label": "Loan Interest Rates", "url": "/loans/interest-rate" }
+      ]
+    },
+    { "label": "Gallery", "url": "/gallery" },
+    {
+      "label": "Others",
+      "url": "/others",
+      "expanded": false,
+      "children": [
+        { "label": "Service Charges", "url": "/others/service-charges" },
+        { "label": "Secure and Safe Banking", "url": "/others/safe-banking" },
+        { "label": "Downloads", "url": "/others/download" },
+        { "label": "AGM", "url": "/others/agm" }
+      ]
+    },
+    { "label": "Branches", "url": "/locations" },
+    { "label": "Contact Us", "url": "/contact-us" }
+  ]
+}

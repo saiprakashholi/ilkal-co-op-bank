@@ -43,6 +43,17 @@ export class LanguageService {
 
       // footer 
       'footer',
+      'core.header',
+      'core.footer',
+      'core.bank-brand',
+      'core.emergency-notice',
+
+      // about us
+      'about-us',
+      'about-us.directors-list',
+      'about-us.founders-list',
+      'about-us.presidents-list',
+      'about-us.fin-key-indicators',
 
 
       // contact us 

@@ -1,7 +1,7 @@
 <header class="header" role="banner">
   <div class="header-inner container">
     <!-- DESKTOP NAV -->
-    <nav class="nav-desktop" aria-label="Primary navigation">
+    <nav class="nav-desktop" [attr.aria-label]="lang.t('core.header', 'primaryNavLabel')">
       <ul>
         <li *ngFor="let item of menu" class="nav-item" [class.has-children]="item.children">
           <a
@@ -31,7 +31,13 @@
 
     <!-- MOBILE MENU BUTTON -->
     <div class="mobile-menu-holder">
-      <button class="hamburger" aria-label="Open menu" (click)="toggleMenu()">☰</button>
+      <button
+        class="hamburger"
+        [attr.aria-label]="lang.t('core.header', 'openMenuLabel')"
+        (click)="toggleMenu()"
+      >
+        ☰
+      </button>
     </div>
   </div>
 
@@ -39,9 +45,13 @@
   <div class="mobile-backdrop" [class.open]="mobileMenuOpen" (click)="closeMenu()"></div>
 
   <!-- MOBILE DRAWER -->
-  <nav class="nav-mobile" [class.open]="mobileMenuOpen" aria-label="Mobile navigation">
+  <nav
+    class="nav-mobile"
+    [class.open]="mobileMenuOpen"
+    [attr.aria-label]="lang.t('core.header', 'mobileNavLabel')"
+  >
     <div class="mobile-header">
-      <span>Menu</span>
+      <span>{{ lang.t('core.header', 'mobileMenuTitle') }}</span>
       <button class="close-btn" (click)="closeMenu()">✕</button>
     </div>
 

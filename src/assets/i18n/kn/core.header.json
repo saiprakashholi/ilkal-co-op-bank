@@ -1,0 +1,69 @@
+{
+  "primaryNavLabel": "ಪ್ರಾಥಮಿಕ ನ್ಯಾವಿಗೇಷನ್",
+  "openMenuLabel": "ಮೆನು ತೆರೆಯಿರಿ",
+  "mobileNavLabel": "ಮೊಬೈಲ್ ನ್ಯಾವಿಗೇಷನ್",
+  "mobileMenuTitle": "ಮೆನು",
+  "menu": [
+    { "label": "ಮುಖಪುಟ", "url": "/" },
+    {
+      "label": "ನಮ್ಮ ಬಗ್ಗೆ",
+      "url": "/about-us",
+      "expanded": false,
+      "children": [
+        { "label": "ಸ್ಥಾಪಕರು", "url": "/about-us/founders" },
+        { "label": "ನಿರ್ದೇಶಕರ ಮಂಡಳಿ", "url": "/about-us/directors" },
+        { "label": "ಮುಖ್ಯ ಸೂಚ್ಯಂಕಗಳು", "url": "/agm" }
+      ]
+    },
+    {
+      "label": "ಸೇವೆಗಳು",
+      "url": "/service",
+      "expanded": false,
+      "children": [
+        { "label": "UPI", "url": "/service/upi" },
+        { "label": "IMPS", "url": "/service/imps" },
+        { "label": "ATM", "url": "/service/atm" },
+        { "label": "RTGS/NEFT", "url": "/service/rtgs-neft" },
+        { "label": "ಲಾಕರ್", "url": "/service/locker" },
+        { "label": "ಮೊಬೈಲ್ ಬ್ಯಾಂಕಿಂಗ್", "url": "/service/mobile" }
+      ]
+    },
+    { "label": "ವರದಿಗಳು", "url": "/agm" },
+    {
+      "label": "ಠೇವಣಿಗಳು",
+      "url": "/deposits",
+      "expanded": false,
+      "children": [
+        { "label": "ಸೇವಿಂಗ್ಸ್ ಠೇವಣಿಗಳು", "url": "/deposits/saving" },
+        { "label": "ಕರಂಟ್ ಠೇವಣಿಗಳು", "url": "/deposits/current" },
+        { "label": "ಠೇವಣಿ ಬಡ್ಡಿದರಗಳು", "url": "/deposits/interest-rate" }
+      ]
+    },
+    {
+      "label": "ಸಾಲಗಳು",
+      "url": "/loans",
+      "expanded": false,
+      "children": [
+        { "label": "ವೈಯಕ್ತಿಕ ಸಾಲ", "url": "/loans/personal" },
+        { "label": "ಗೃಹ ಸಾಲ", "url": "/loans/housing" },
+        { "label": "ವಾಹನ ಸಾಲ", "url": "/loans/vehical" },
+        { "label": "ಚಿನ್ನ ಸಾಲ", "url": "/loans/gold" },
+        { "label": "ವ್ಯಾಪಾರ ಸಾಲ", "url": "/loans/business" },
+        { "label": "ಸಾಲ ಬಡ್ಡಿದರಗಳು", "url": "/loans/interest-rate" }
+      ]
+    },
+    { "label": "ಗ್ಯಾಲರಿ", "url": "/gallery" },
+    {
+      "label": "ಇತರೆ", "url": "/others",
+      "expanded": false,
+      "children": [
+        { "label": "ಸೇವಾ ಶುಲ್ಕಗಳು", "url": "/others/service-charges" },
+        { "label": "ಸುರಕ್ಷಿತ ಮತ್ತು ಭದ್ರ ಬ್ಯಾಂಕಿಂಗ್", "url": "/others/safe-banking" },
+        { "label": "ಡೌನ್‌ಲೋಡ್‌ಗಳು", "url": "/others/download" },
+        { "label": "AGM", "url": "/others/agm" }
+      ]
+    },
+    { "label": "ಶಾಖೆಗಳು", "url": "/locations" },
+    { "label": "ಸಂಪರ್ಕಿಸಿ", "url": "/contact-us" }
+  ]
+}

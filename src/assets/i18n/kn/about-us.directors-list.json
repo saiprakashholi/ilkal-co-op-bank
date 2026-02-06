@@ -1,0 +1,25 @@
+{
+  "title": "ನಮ್ಮ ಮೌಲ್ಯಗಳನ್ನು ಉಳಿಸುವ ನಾಯಕತ್ವ",
+  "description": "ನಮ್ಮ ನಿರ್ದೇಶಕರ ಮಂಡಳಿ ಪಾರದರ್ಶಕತೆ, ಜವಾಬ್ದಾರಿತನ ಮತ್ತು ದೀರ್ಘಕಾಲೀನ ದೃಷ್ಟಿಯಿಂದ ಬ್ಯಾಂಕ್‌ನ್ನು ಮುನ್ನಡೆಸುವಲ್ಲಿ ಪ್ರಮುಖ ಪಾತ್ರ ವಹಿಸುತ್ತದೆ. ಅವರ ಒಳನೋಟ ಮತ್ತು ಪರಿಣತಿ ವಿಶ್ವಾಸಾರ್ಹ ಹಾಗೂ ಗ್ರಾಹಕ-ಕೇಂದ್ರೀಕೃತ ಹಣಕಾಸು ಸೇವೆಗಳನ್ನು ನೀಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+  "placeholderImage": "https://via.placeholder.com/600x600?text=No+Image",
+  "members": [
+    { "id": 1, "name": "Satish Sapparad", "photo": "assets/managementImages/1.Satish.Sapparad.(President).jpg", "designation": "ಅಧ್ಯಕ್ಷ" },
+    { "id": 2, "name": "Mahantesh Kampli", "photo": "assets/managementImages/2.Mahantesh.Kampli(Vice-President).jpg", "designation": "ಉಪಾಧ್ಯಕ್ಷ" },
+    { "id": 3, "name": "Pampapati Kalagi", "photo": "assets/managementImages/3 Pampapati Kalagi .jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 4, "name": "Lachamayya Guram", "photo": "assets/managementImages/4 Lachamayya Guram.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 51, "name": "Mallikarjunagouda S Patil", "photo": "assets/managementImages/MSPATIL NEW.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 5, "name": "Goutham Bora", "photo": "assets/managementImages/5 Goutam Bora.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 6, "name": "Mahantappa Angadi", "photo": "assets/managementImages/6 Mahantappa Angadi.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 7, "name": "Vijay Giraddi", "photo": "assets/managementImages/7 Vijay Giraddi.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 8, "name": "Mallikarjun Agni", "photo": "assets/managementImages/8 Mallikarjun Agni.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 9, "name": "Aravind Mangalur", "photo": "assets/managementImages/9 Aravind Mangalur.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 10, "name": "Basavaraj Talikoti", "photo": "assets/managementImages/10 Basavaraj Talikoti.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 11, "name": "Manjunath Shetter", "photo": "assets/managementImages/11 Manjunath Shetter.png", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 12, "name": "Charalingappa Akki", "photo": "assets/managementImages/12 Charalingappa Akki.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 13, "name": "Praveen Hoolageri", "photo": "assets/managementImages/13 Praveen Hoolageri.jpeg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 14, "name": "Shantkumar Surpur", "photo": "assets/managementImages/14 Shantkumar Surpur.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 15, "name": "Dr.Aruna Akki", "photo": "assets/managementImages/15 Dr.Aruna Akki.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 16, "name": "Lata Herur", "photo": "assets/managementImages/16 Lata Herur.jpg", "designation": "ನಿರ್ದೇಶಕ" },
+    { "id": 17, "name": "Nagaraj Kutagamari", "photo": "assets/managementImages/Nagaraj Kutagamari (General Manager).jpg", "designation": "ಜನರಲ್ ಮ್ಯಾನೇಜರ್" }
+  ]
+}

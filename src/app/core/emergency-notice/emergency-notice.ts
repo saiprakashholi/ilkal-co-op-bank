@@ -6,6 +6,7 @@ import {
   PLATFORM_ID
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-emergency-notice',
@@ -16,47 +17,22 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 })
 export class EmergencyNoticeComponent implements OnInit, OnDestroy {
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    public lang: LanguageService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
-  EMERGENCY_NOTICE = {
-    enabled: true,
-    type: 'warning',
-
-    title: 'Awareness Notice',
-    message:
-      'Customers are advised to stay alert against cyber frauds. Do not share your OTP, PIN, passwords, or card details with anyone.',
-
-    showValidity: false,
-    effectiveStartTime: '2025-12-29T18:00:00',
-    effectiveEndTime: '2025-12-29T21:00:00',
-
-    startTime: '2025-12-11T15:00:00',
-    endTime: '2026-12-17T21:00:00',
-
-    images: {
-      enabled: true,
-      maxHeightDesktop: 360,
-      maxHeightMobile: 200,
-      maxWidthDesktop: 420,
-      fit: 'contain',
-      intervalMs: 3000,
-      items: [
-        '/assets/emergency-notice/rbi1.jpeg',
-        '/assets/emergency-notice/rbi2.jpeg',
-        '/assets/emergency-notice/cyber-awareness.jpeg',
-        '/assets/emergency-notice/national-security-awareness.jpeg'
-      ],
-    },
-  };
-
-  notice = this.EMERGENCY_NOTICE;
+  get notice(): any {
+    const notice = this.lang.t('core.emergency-notice', 'notice') as any;
+    return notice && typeof notice === 'object' ? notice : {};
+  }
   show = false;
 
   currentIndex = 0;
   sliderTimer: any;
 
   ngOnInit(): void {
-    if (!this.notice.enabled) return;
+    if (!this.notice?.enabled) return;
 
     const now = Date.now();
     const start = new Date(this.notice.startTime).getTime();
@@ -81,8 +57,8 @@ export class EmergencyNoticeComponent implements OnInit, OnDestroy {
   }
 
   hasImages(): boolean {
-    return !!this.notice.images?.enabled &&
-           !!this.notice.images?.items?.length;
+    return !!this.notice?.images?.enabled &&
+           !!this.notice?.images?.items?.length;
   }
 
   startSlider(): void {

@@ -1,11 +1,11 @@
-import { DatePipe } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
 // import { VisitorService } from '../../services/visitors.service';
 
 @Component({
   selector: 'app-footer',
-  imports: [DatePipe],
+  imports: [CommonModule, DatePipe],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
@@ -14,21 +14,79 @@ export class Footer implements OnInit {
   today = new Date();
   visitorsToday = 0;
 
-  bankDetails = {
-    name: 'Ilkal Co-Operative Bank Ltd.',
-    address:
-      'Near Basavangudi, Ilkal – 587125, Dist: Bagalakot, Karnataka, India',
+  get bankDetails(): {
+    name: string;
+    address: string;
+    ifsc: string;
+    workingHours: string;
+    gst: string;
+    bankRegNo: string;
+    rbiLicenceNo: string;
+    email: string;
+    website: string;
+  } {
+    const details = this.lang.t('core.footer', 'bankDetails') as any;
+    return {
+      name: details?.name ?? '',
+      address: details?.address ?? '',
+      ifsc: details?.ifsc ?? '',
+      workingHours: details?.workingHours ?? '',
+      gst: details?.gst ?? '',
+      bankRegNo: details?.bankRegNo ?? '',
+      rbiLicenceNo: details?.rbiLicenceNo ?? '',
+      email: details?.email ?? '',
+      website: details?.website ?? '',
+    };
+  }
 
-    ifsc: 'UTIB0SICB25',
+  get quickLinks(): Array<{ label: string; url: string }> {
+    return this.lang.tArray<{ label: string; url: string }>('core.footer', 'quickLinks');
+  }
 
-    workingHours: 'Monday – Saturday: 10:30 AM – 4:30 PM',
+  get retailLinks(): Array<{ label: string; url: string }> {
+    return this.lang.tArray<{ label: string; url: string }>('core.footer', 'retailLinks');
+  }
 
-    gst: '29AAAAI1234A1Z5',
-    bankRegNo: 'UB/KA/721 (08-12-1986)',
-    rbiLicenceNo: '22530 (24-08-1965)',
-    email: 'info@ilkalbank.com',
-    website: 'https://www.ilkalbank.com',
-  };
+  get importantLinks(): Array<{ label: string; url: string }> {
+    return this.lang.tArray<{ label: string; url: string }>('core.footer', 'importantLinks');
+  }
+
+  get resourceLinks(): Array<{ label: string; url: string; external?: boolean }> {
+    return this.lang.tArray<{ label: string; url: string; external?: boolean }>('core.footer', 'resourceLinks');
+  }
+
+  get socialLinks(): Array<{ label: string; url: string; iconText: string }> {
+    return this.lang.tArray<{ label: string; url: string; iconText: string }>('core.footer', 'socialLinks');
+  }
+
+  get storeBadges(): Array<{ qrImage: string; badgeImage: string; href: string; ariaLabel: string }> {
+    return this.lang.tArray<{ qrImage: string; badgeImage: string; href: string; ariaLabel: string }>('core.footer', 'storeBadges');
+  }
+
+  get dicgc(): {
+    href: string;
+    ariaLabel: string;
+    logoImage: string;
+    logoAlt: string;
+    qrImage: string;
+    qrAlt: string;
+    message: string;
+  } {
+    const dicgc = this.lang.t('core.footer', 'dicgc') as any;
+    return {
+      href: dicgc?.href ?? '',
+      ariaLabel: dicgc?.ariaLabel ?? '',
+      logoImage: dicgc?.logoImage ?? '',
+      logoAlt: dicgc?.logoAlt ?? '',
+      qrImage: dicgc?.qrImage ?? '',
+      qrAlt: dicgc?.qrAlt ?? '',
+      message: dicgc?.message ?? '',
+    };
+  }
+
+  get legalLinks(): Array<{ label: string; url: string; external?: boolean }> {
+    return this.lang.tArray<{ label: string; url: string; external?: boolean }>('core.footer', 'legalLinks');
+  }
 
 
   constructor(

@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { HoverZoomDirective } from '../../shared/hover-zoom';
 import { Router } from '@angular/router';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-bank-brand',
@@ -14,7 +15,10 @@ export class BankBrand {
 
   bankStartedYear = 1965;
 
-  constructor(private router: Router) { }
+  constructor(
+    public lang: LanguageService,
+    private router: Router
+  ) { }
 
 
   goHome() {

@@ -1,0 +1,16 @@
+{
+  "heroImage": "/assets/about-us-bgm.png",
+  "heroImageAlt": "hero",
+  "sidebarTitle": "ನಮ್ಮ ಬಗ್ಗೆ",
+  "executivesTitle": "ಕಾರ್ಯನಿರ್ವಾಹಕರು",
+  "financialsTitle": "ಹಣಕಾಸು",
+  "foundersNavLabel": "ಸ್ಥಾಪಕರು",
+  "directorsNavLabel": "ನಿರ್ದೇಶಕರ ಮಂಡಳಿ",
+  "keyIndicatorsNavLabel": "ಬ್ಯಾಂಕ್‌ನ ಪ್ರಮುಖ ಸೂಚ್ಯಂಕಗಳು",
+  "directors.pageTitle": "ನಿರ್ದೇಶಕರ ಮಂಡಳಿ ಪಟ್ಟಿ",
+  "directors.pageBreadcrumb": "ನಮ್ಮ ಬಗ್ಗೆ / ಕಾರ್ಯನಿರ್ವಾಹಕರು / ನಿರ್ದೇಶಕರ ಮಂಡಳಿ",
+  "directors.sectionTitle": "ಬ್ಯಾಂಕ್‌ನ ನಿರ್ದೇಶಕರ ಮಂಡಳಿ ಪಟ್ಟಿ ಹೀಗಿದೆ",
+  "founders.pageTitle": "ಸ್ಥಾಪಕರ ಪಟ್ಟಿ",
+  "founders.pageBreadcrumb": "ನಮ್ಮ ಬಗ್ಗೆ / ಕಾರ್ಯನಿರ್ವಾಹಕರು / ಸ್ಥಾಪಕರು",
+  "founders.sectionTitle": "ಬ್ಯಾಂಕ್‌ನ ಸ್ಥಾಪಕರ ಪಟ್ಟಿ ಹೀಗಿದೆ"
+}

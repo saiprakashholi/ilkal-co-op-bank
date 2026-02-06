@@ -3,6 +3,7 @@ import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { Router, NavigationEnd, RouterModule } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { isPlatformBrowser } from '@angular/common';
+import { LanguageService } from '../../services/language.service';
 
 
 @Component({
@@ -18,26 +19,24 @@ export class AboutUs {
   execExpanded = true;
   financialsExpanded = false;
 
-  pageTitle = "List of the Board of Directors";
-  pageBreadcrumb = "About Us / Executives / Board of Directors";
-  sectionTitle = "List of the Board of Directors of Bank are as under";
+  private currentPageKey: 'directors' | 'founders' = 'directors';
 
 
   // mobile breakpoint (match scss)
   private mobileBreakpoint = 900;
 
-  constructor(private router: Router, @Inject(PLATFORM_ID) private platformId: object) {
+  constructor(
+    public lang: LanguageService,
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: object
+  ) {
     // Ensure sidebar state matches route changes on mobile (close drawer after navigation)
     this.router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe((e) => {
 
       if (e.url === '/about-us/directors') {
-        this.pageTitle = "List of the Board of Directors";
-        this.pageBreadcrumb = "About Us / Executives / Board of Directors";
-        this.sectionTitle = "List of the Board of Directors of Bank are as under";
+        this.currentPageKey = 'directors';
       } else if (e.url === '/about-us/founders') {
-        this.pageTitle = "List of the Founders";
-        this.pageBreadcrumb = "About Us / Executives / Founders";
-        this.sectionTitle = "List of the Founders of Bank are as under";
+        this.currentPageKey = 'founders';
       }
 
       if (this.isMobile()) {
@@ -78,6 +77,18 @@ export class AboutUs {
     } else {
       this.sidebarOpen = true;
     }
+  }
+
+  get pageTitle(): string {
+    return this.lang.t('about-us', `${this.currentPageKey}.pageTitle`);
+  }
+
+  get pageBreadcrumb(): string {
+    return this.lang.t('about-us', `${this.currentPageKey}.pageBreadcrumb`);
+  }
+
+  get sectionTitle(): string {
+    return this.lang.t('about-us', `${this.currentPageKey}.sectionTitle`);
   }
 
 }

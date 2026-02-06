@@ -1,0 +1,32 @@
+{
+  "closeLabel": "✕",
+  "okLabel": "ಸರಿ",
+  "imageAlt": "ತುರ್ತು ಸೂಚನೆ",
+  "validFromLabel": "ಮಾನ್ಯತೆ ಪ್ರಾರಂಭ",
+  "validToLabel": "ವರೆಗೆ",
+  "notice": {
+    "enabled": true,
+    "type": "warning",
+    "title": "ಜಾಗೃತಿ ಸೂಚನೆ",
+    "message": "ಗ್ರಾಹಕರು ಸೈಬರ್ ಮೋಸಗಳ ವಿರುದ್ಧ ಎಚ್ಚರಿಕೆಯಿಂದ ಇರಲು ಸಲಹೆ ನೀಡಲಾಗಿದೆ. ನಿಮ್ಮ OTP, PIN, ಪಾಸ್‌ವರ್ಡ್‌ಗಳು ಅಥವಾ ಕಾರ್ಡ್ ವಿವರಗಳನ್ನು ಯಾರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ.",
+    "showValidity": false,
+    "effectiveStartTime": "2025-12-29T18:00:00",
+    "effectiveEndTime": "2025-12-29T21:00:00",
+    "startTime": "2025-12-11T15:00:00",
+    "endTime": "2026-12-17T21:00:00",
+    "images": {
+      "enabled": true,
+      "maxHeightDesktop": 360,
+      "maxHeightMobile": 200,
+      "maxWidthDesktop": 420,
+      "fit": "contain",
+      "intervalMs": 3000,
+      "items": [
+        "/assets/emergency-notice/rbi1.jpeg",
+        "/assets/emergency-notice/rbi2.jpeg",
+        "/assets/emergency-notice/cyber-awareness.jpeg",
+        "/assets/emergency-notice/national-security-awareness.jpeg"
+      ]
+    }
+  }
+}

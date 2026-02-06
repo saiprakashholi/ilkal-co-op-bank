@@ -1,22 +1,28 @@
 <div class="bank-brand">
   <!-- Left: Logo + Title -->
   <div class="left-section">
-    <img src="/assets/logo_128.png" alt="Bank Logo" class="bank-logo" hoverZoom 
+    <img
+      [src]="lang.t('core.bank-brand', 'logoImage')"
+      [attr.alt]="lang.t('core.bank-brand', 'logoAlt')"
+      class="bank-logo"
+      hoverZoom 
      (click)="goHome()"
-     title="Go to Home"
+     [attr.title]="lang.t('core.bank-brand', 'logoTitle')"
     />
 
     <div class="bank-info">
-      <h1 class="bank-title">ILKAL CO-OPERATIVE BANK LTD.</h1>
-      <p class="bank-sub">Serving the Community Since {{ bankStartedYear }}</p>
+      <h1 class="bank-title">{{ lang.t('core.bank-brand', 'bankTitle') }}</h1>
+      <p class="bank-sub">
+        {{ lang.t('core.bank-brand', 'bankSubBefore') }} {{ bankStartedYear }}
+      </p>
     </div>
   </div>
 
   <!-- Right: 50 Years Celebration Logo -->
   <div class="celebration-wrapper" *ngIf="showFounder">
     <img
-      src="/assets/50years-logo.png"
-      alt="50 Years Celebration"
+      [src]="lang.t('core.bank-brand', 'celebrationImage')"
+      [attr.alt]="lang.t('core.bank-brand', 'celebrationAlt')"
       class="celebration-logo"
       hoverZoom
     />

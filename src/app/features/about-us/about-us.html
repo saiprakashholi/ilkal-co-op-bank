@@ -14,7 +14,7 @@
 
     <div class="hero-right">
       <!-- Use provided local image path -->
-      <img src="/assets/about-us-bgm.png" alt="hero" />
+      <img [src]="lang.t('about-us', 'heroImage')" [attr.alt]="lang.t('about-us', 'heroImageAlt')" />
     </div>
   </header>
 
@@ -22,19 +22,27 @@
     <!-- Sidebar: becomes off-canvas on mobile -->
     <aside class="sidebar" [class.open]="sidebarOpen" [attr.aria-hidden]="!sidebarOpen">
       <div class="card">
-        <h3>About Us</h3>
+        <h3>{{ lang.t('about-us', 'sidebarTitle') }}</h3>
 
         <ul class="menu">
           <!-- Executives (accordion on mobile) -->
           <li class="menu-section">
             <button class="menu-toggle" (click)="toggleExecutives()" [attr.aria-expanded]="execExpanded">
-              Executives
+              {{ lang.t('about-us', 'executivesTitle') }}
               <span class="chev" [class.open]="execExpanded">▸</span>
             </button>
 
             <ul class="submenu" [class.expanded]="execExpanded">
-              <li><a routerLink="/about-us/founders" routerLinkActive="active">Founders</a></li>
-              <li><a routerLink="/about-us/directors" routerLinkActive="active">Board of Directors</a></li>
+              <li>
+                <a routerLink="/about-us/founders" routerLinkActive="active">
+                  {{ lang.t('about-us', 'foundersNavLabel') }}
+                </a>
+              </li>
+              <li>
+                <a routerLink="/about-us/directors" routerLinkActive="active">
+                  {{ lang.t('about-us', 'directorsNavLabel') }}
+                </a>
+              </li>
               
               <!-- <li><a routerLink="/about-us/board" routerLinkActive="active">Board of Directors</a></li>
               <li><a routerLink="/about-us/key-personnel" routerLinkActive="active">Key Personnel</a></li> -->
@@ -44,13 +52,17 @@
           <!-- Financials -->
           <li class="menu-section">
             <button class="menu-toggle" (click)="toggleFinancials()" [attr.aria-expanded]="financialsExpanded">
-              Financials
+              {{ lang.t('about-us', 'financialsTitle') }}
               <span class="chev" [class.open]="financialsExpanded">▸</span>
             </button>
 
             <ul class="submenu" [class.expanded]="financialsExpanded">
               <!-- <li><a routerLink="/about-us/financials" routerLinkActive="active">Key Indicators of the Bank</a></li> -->
-               <li><a routerLink="/agm" routerLinkActive="active">Key Indicators of the Bank</a></li>
+               <li>
+                 <a routerLink="/agm" routerLinkActive="active">
+                   {{ lang.t('about-us', 'keyIndicatorsNavLabel') }}
+                 </a>
+               </li>
             </ul>
           </li>
 

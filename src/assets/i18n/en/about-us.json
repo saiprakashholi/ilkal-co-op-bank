@@ -1,0 +1,16 @@
+{
+  "heroImage": "/assets/about-us-bgm.png",
+  "heroImageAlt": "hero",
+  "sidebarTitle": "About Us",
+  "executivesTitle": "Executives",
+  "financialsTitle": "Financials",
+  "foundersNavLabel": "Founders",
+  "directorsNavLabel": "Board of Directors",
+  "keyIndicatorsNavLabel": "Key Indicators of the Bank",
+  "directors.pageTitle": "List of the Board of Directors",
+  "directors.pageBreadcrumb": "About Us / Executives / Board of Directors",
+  "directors.sectionTitle": "List of the Board of Directors of Bank are as under",
+  "founders.pageTitle": "List of the Founders",
+  "founders.pageBreadcrumb": "About Us / Executives / Founders",
+  "founders.sectionTitle": "List of the Founders of Bank are as under"
+}

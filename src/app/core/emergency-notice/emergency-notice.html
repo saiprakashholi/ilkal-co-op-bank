@@ -4,7 +4,9 @@
     [class.with-images]="hasImages()"
     [style.maxWidth.px]="hasImages() ? notice.images.maxWidthDesktop : 460"
   >
-    <button class="close-btn" (click)="close()">✕</button>
+    <button class="close-btn" (click)="close()">
+      {{ lang.t('core.emergency-notice', 'closeLabel') }}
+    </button>
 
     <div class="icon">{{ getIcon() }}</div>
 
@@ -19,7 +21,7 @@
           <a [href]="img" target="_blank" rel="noopener noreferrer" class="slide-link">
             <img
               [src]="img"
-              alt="Emergency notice"
+              [attr.alt]="lang.t('core.emergency-notice', 'imageAlt')"
               [style.object-fit]="notice.images.fit"
               [style.--imgMaxHeightDesktop.px]="notice.images.maxHeightDesktop"
               [style.--imgMaxHeightMobile.px]="notice.images.maxHeightMobile"
@@ -30,12 +32,14 @@
     </div>
 
     <div class="time" *ngIf="notice.showValidity">
-      Valid from
+      {{ lang.t('core.emergency-notice', 'validFromLabel') }}
       <strong>{{ notice.effectiveStartTime | date : 'medium' }}</strong>
-      to
+      {{ lang.t('core.emergency-notice', 'validToLabel') }}
       <strong>{{ notice.effectiveEndTime | date : 'medium' }}</strong>
     </div>
 
-    <button class="ok-btn" (click)="close()">OK</button>
+    <button class="ok-btn" (click)="close()">
+      {{ lang.t('core.emergency-notice', 'okLabel') }}
+    </button>
   </div>
 </div>
