@@ -58,7 +58,6 @@ export class Header {
       children: [
         { label: 'Savings Deposits', url: '/deposits/saving' },
         { label: 'Current Deposits', url: '/deposits/current' },
-        // { label: 'Term Deposits', url: '/deposits/term' },
         { label: 'Deposit Interest Rates', url: '/deposits/interest-rate' },
       ],
     },
@@ -69,11 +68,9 @@ export class Header {
       children: [
         { label: 'Personal Loan', url: '/loans/personal' },
         { label: 'Housing Loan', url: '/loans/housing' },
-        // { label: 'SGH-JLG Loan', url: '/loans/sgh-jlg' },
         { label: 'Vehicle Loan', url: '/loans/vehical' },
         { label: 'Gold Loan', url: '/loans/gold' },
         { label: 'Business Loan', url: '/loans/business' },
-        // { label: 'Term Loan', url: '/loans/term' },
         { label: 'Loan Interest Rates', url: '/loans/interest-rate' },
       ],
     },

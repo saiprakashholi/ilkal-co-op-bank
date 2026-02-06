@@ -13,7 +13,6 @@ export class Deposits {
   list = [
     { label: 'Savings Deposits', url: 'saving' },
     { label: 'Current Deposits', url: 'current' },
-    // { label: 'Term Deposits', url: 'term' },
     { label: 'Deposit Interest Rates', url: 'interest-rate' },
   ]
 }

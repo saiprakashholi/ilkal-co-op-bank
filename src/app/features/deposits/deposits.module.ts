@@ -5,7 +5,6 @@ import { Deposits } from './deposits';
 import { InterestRate } from './interest-rate/interest-rate';
 import { Saving } from './saving/saving';
 import { Current } from './current/current';
-import { Term } from './term/term';
 
 
 @NgModule({
@@ -22,8 +21,7 @@ import { Term } from './term/term';
 
                     { path: 'interest-rate', component: InterestRate },
                     { path: 'saving', component: Saving },
-                    { path: 'current', component: Current },
-                    { path: 'term', component: Term }
+                    { path: 'current', component: Current }
 
                 ]
             }

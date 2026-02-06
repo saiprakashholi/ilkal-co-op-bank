@@ -5,11 +5,9 @@ import { InterestRate } from './interest-rate/interest-rate';
 import { Loans } from './loans';
 import { PersonalLoan } from './personal-loan/personal-loan';
 import { HousingLoan } from './housing-loan/housing-loan';
-import { SghJlgLoan } from './sgh-jlg-loan/sgh-jlg-loan';
 import { VehicalLoan } from './vehical-loan/vehical-loan';
 import { GoldLoan } from './gold-loan/gold-loan';
 import { BusinessLoan } from './business-loan/business-loan';
-import { TermLoan } from './term-loan/term-loan';
 
 
 @NgModule({
@@ -27,12 +25,9 @@ import { TermLoan } from './term-loan/term-loan';
                     { path: 'interest-rate', component: InterestRate },
                     { path: 'personal', component: PersonalLoan },
                     { path: 'housing', component: HousingLoan },
-                    { path: 'sgh-jlg', component: SghJlgLoan },
                     { path: 'vehical', component: VehicalLoan },
                     { path: 'gold', component: GoldLoan },
-                    { path: 'business', component: BusinessLoan },
-                    { path: 'term', component: TermLoan }
-
+                    { path: 'business', component: BusinessLoan }
                 ]
             }
         ])
