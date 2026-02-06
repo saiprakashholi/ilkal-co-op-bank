@@ -2,25 +2,34 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
+type SupportedLang = 'en' | 'kn';
+
 @Injectable({ providedIn: 'root' })
 export class LanguageService {
-  currentLang: 'en' | 'kn' = 'en';
+
+  currentLang: SupportedLang = 'en';
   private translations: Record<string, any> = {};
+
+  // GitHub RAW base URL
+  private readonly GITHUB_I18N_BASE =
+    'https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod';
 
   constructor(
     private http: HttpClient,
     @Inject(PLATFORM_ID) private platformId: Object
   ) { }
 
-  loadLanguage(lang: 'en' | 'kn') {
+  loadLanguage(lang: SupportedLang): void {
     this.currentLang = lang;
 
-    // 🔒 SSR SAFE: skip HTTP during prerender
+    // 🔒 SSR safe
     if (!isPlatformBrowser(this.platformId)) {
       return;
     }
 
-    const modules = [
+    this.translations = {};
+
+    const modules: string[] = [
       // common 
       'common',
 
@@ -53,33 +62,31 @@ export class LanguageService {
       'loans.gold',
       'loans.business',
 
-      
+
     ];
 
-    modules.forEach(m => {
-      this.http
-        .get(`/assets/i18n/${lang}/${m}.json`)
-        .subscribe({
-          next: data => {
-            this.translations[m] = data;
-          },
-          error: err => {
-            console.warn(`Failed to load i18n ${m}`, err);
-          }
-        });
+    const cacheBust = Date.now();
+
+    modules.forEach(module => {
+      const url =
+        `${this.GITHUB_I18N_BASE}/${lang}/${module}.json?_=${cacheBust}`;
+
+      this.http.get(url).subscribe({
+        next: data => {
+          this.translations[module] = data;
+        },
+        error: err => {
+          console.warn(`⚠️ Failed to load i18n: ${module}`, err);
+        }
+      });
     });
   }
 
   t(module: string, key: string): string {
-    return this.translations[module]?.[key] || key;
+    return this.translations[module]?.[key] ?? key;
   }
 
-  // tArray(module: string, key: string): string[] {
-  //   return this.translations[module]?.[key] || [];
-  // }
   tArray<T = any>(module: string, key: string): T[] {
-  return this.translations[module]?.[key] || [];
-}
-
-
+    return this.translations[module]?.[key] ?? [];
+  }
 }
