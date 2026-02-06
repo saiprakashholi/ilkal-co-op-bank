@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "image": "/assets/home-page-banner/50years.jpg",
+      "title": "Suvarna Sambrama – Golden Jubilee ✨",
+      "subtitle": "Celebrating 50 Golden Years of trust, growth, and service to our community."
+    },
+    {
+      "image": "/assets/home-page-banner/home-page-insurance.jpg"
+    },
+    {
+      "image": "/assets/home-page-banner/mobile-banking.jpg"
+    },
+    {
+      "image": "/assets/home-page-banner/ilkal-saree.jpg"
+    },
+    {
+      "image": "/assets/loans/gold-loan.png",
+      "title": "Loans for Every Need",
+      "subtitle": "Gold, Business and Personal Loans"
+    },
+    {
+      "image": "/assets/home-page-banner/Untitled-3.jpg",
+      "title": "Digital Banking Services",
+      "subtitle": "UPI, IMPS and Mobile Banking"
+    },
+    {
+      "image": "/assets/home-page-banner/Untitled-1.jpg",
+      "title": "Transparent Co-operative Bank",
+      "subtitle": "Serving customers with trust and transparency"
+    }
+  ]
+}

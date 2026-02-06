@@ -24,50 +24,9 @@ interface BankService {
 
 })
 export class Home {
-  public aboutUsText: string = 'Ilkal Co-operative Bank Ltd. has served the local community for over a Sixty plus years with trusted banking products and digital services. We focus on transparent pricing, fast service and local empowerment.';
-
-  // Notice board data
-  public notice = 'Introduced Mobile Banking App. | Bank is Live on IMPS & UPI';
-
-  // Our services data
-  services: BankService[] = [
-    {
-      icon: '/assets/upi-icon.png',
-      title: 'UPI Payments',
-      description:
-        'Instant and secure money transfers using UPI. Send or receive money anytime using popular UPI apps with Ilkal Co-Operative Bank.',
-    },
-    {
-      icon: '/assets/atm.png',
-      title: 'ATM Banking',
-      description:
-        '24×7 access to cash withdrawal, balance enquiry, mini statements, and other essential ATM banking services.',
-    },
-    {
-      icon: '/assets/mobile-banking.png',
-      title: 'Mobile Banking',
-      description:
-        'Access your account anytime through our mobile app. Check balances, transfer funds, and enjoy secure digital banking.',
-    },
-    {
-      icon: '/assets/rtgs-neft.png',
-      title: 'RTGS / NEFT',
-      description:
-        'Fast and reliable fund transfers to any bank in India using RTGS and NEFT facilities.',
-    },
-    {
-      icon: '/assets/imps.png',
-      title: 'IMPS',
-      description:
-        'Instant interbank money transfer service.',
-    },
-    {
-      icon: '/assets/locker-logo.png',
-      title: 'Safe Deposit Lockers',
-      description:
-        'Secure locker facilities to protect your valuables and important documents with complete peace of mind.',
-    },
-  ];
+  get services(): BankService[] {
+    return this.lang.tArray<BankService>('home', 'services');
+  }
 
   public mobileMenuOpen = false;
 

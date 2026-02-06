@@ -1,0 +1,24 @@
+{
+  "title": "Management Team",
+  "placeholderImage": "assets/images/placeholder.png",
+  "members": [
+    {
+      "id": 1,
+      "name": "Sri Satish Sapparad",
+      "role": "President",
+      "image": "assets/managementImages/1.Satish.Sapparad.(President).jpg",
+      "aboutTitle": "About Sri Satish Sapparad",
+      "aboutText": "Sri Satish Sapparad is currently serving as the President of Ilkal Co-Operative Bank Ltd. With a strong background in public service and community development, he brings a wealth of experience to the bank.",
+      "description": "Sri Satish Sapparad is a respected leader with a clear vision for cooperative banking."
+    },
+    {
+      "id": 2,
+      "name": "Sri Mahantesh Kampli",
+      "role": "Vice President",
+      "image": "assets/managementImages/2.Mahantesh.Kampli(Vice-President).jpg",
+      "aboutTitle": "About Sri Mahantesh Kampli",
+      "aboutText": "Sri Mahantesh Kampli is currently serving as the Vice President of Ilkal Co-Operative Bank Ltd. Known for his dedication to public service and community development, he contributes significantly to the bank’s growth and strategic initiatives.",
+      "description": "Sri Mahantesh Kampli is a committed leader with strong administrative and cooperative banking experience."
+    }
+  ]
+}

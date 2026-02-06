@@ -1,0 +1,24 @@
+{
+  "title": "ನಿರ್ವಹಣಾ ತಂಡ",
+  "placeholderImage": "assets/images/placeholder.png",
+  "members": [
+    {
+      "id": 1,
+      "name": "Sri Satish Sapparad",
+      "role": "ಅಧ್ಯಕ್ಷ",
+      "image": "assets/managementImages/1.Satish.Sapparad.(President).jpg",
+      "aboutTitle": "ಶ್ರೀ ಸತೀಶ್ ಸಪ್ಪರಾಡ್ ಬಗ್ಗೆ",
+      "aboutText": "ಶ್ರೀ ಸತೀಶ್ ಸಪ್ಪರಾಡ್ ಅವರು Ilkal Co-Operative Bank Ltd. ನ ಅಧ್ಯಕ್ಷರಾಗಿ ಪ್ರಸ್ತುತ ಸೇವೆ ಸಲ್ಲಿಸುತ್ತಿದ್ದಾರೆ. ಸಾರ್ವಜನಿಕ ಸೇವೆ ಮತ್ತು ಸಮುದಾಯ ಅಭಿವೃದ್ಧಿಯ ದೃಢ ಹಿನ್ನೆಲೆ ಹೊಂದಿರುವ ಅವರು ಬ್ಯಾಂಕ್‌ಗೆ ಸಮೃದ್ಧ ಅನುಭವವನ್ನು ತರುತ್ತಾರೆ.",
+      "description": "ಶ್ರೀ ಸತೀಶ್ ಸಪ್ಪರಾಡ್ ಅವರು ಸಹಕಾರಿ ಬ್ಯಾಂಕಿಂಗ್‌ಗಾಗಿ ಸ್ಪಷ್ಟ ದೃಷ್ಟಿಯನ್ನು ಹೊಂದಿದ ಗೌರವನೀಯ ನಾಯಕರು."
+    },
+    {
+      "id": 2,
+      "name": "Sri Mahantesh Kampli",
+      "role": "ಉಪಾಧ್ಯಕ್ಷ",
+      "image": "assets/managementImages/2.Mahantesh.Kampli(Vice-President).jpg",
+      "aboutTitle": "ಶ್ರೀ ಮಹಾಂತೇಶ್ ಕಂಪ್ಲಿ ಬಗ್ಗೆ",
+      "aboutText": "ಶ್ರೀ ಮಹಾಂತೇಶ್ ಕಂಪ್ಲಿ ಅವರು Ilkal Co-Operative Bank Ltd. ನ ಉಪಾಧ್ಯಕ್ಷರಾಗಿ ಪ್ರಸ್ತುತ ಸೇವೆ ಸಲ್ಲಿಸುತ್ತಿದ್ದಾರೆ. ಸಾರ್ವಜನಿಕ ಸೇವೆ ಮತ್ತು ಸಮುದಾಯ ಅಭಿವೃದ್ಧಿಗೆ ಅವರ ಬದ್ಧತೆಯಿಗಾಗಿ ಅವರು ಪ್ರಸಿದ್ಧರಾಗಿದ್ದು, ಬ್ಯಾಂಕ್‌ನ ಬೆಳವಣಿಗೆ ಮತ್ತು ತಂತ್ರಾತ್ಮಕ ಮುಂದಾಳತ್ವಕ್ಕೆ ಮಹತ್ವದ ಕೊಡುಗೆ ನೀಡುತ್ತಾರೆ.",
+      "description": "ಶ್ರೀ ಮಹಾಂತೇಶ್ ಕಂಪ್ಲಿ ಅವರು ಬಲವಾದ ಆಡಳಿತಾತ್ಮಕ ಮತ್ತು ಸಹಕಾರಿ ಬ್ಯಾಂಕಿಂಗ್ ಅನುಭವ ಹೊಂದಿದ ಬದ್ಧ ನಾಯಕರು."
+    }
+  ]
+}

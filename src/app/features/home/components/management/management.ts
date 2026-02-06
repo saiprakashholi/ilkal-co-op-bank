@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { interval, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { LanguageService } from '../../../../services/language.service';
 
 interface Member {
   id: number;
@@ -23,34 +24,18 @@ export class ManagementComponent implements OnInit, OnDestroy {
   @Input() intervalMs = 5000; // rotation interval in ms
   @Input() fadeMs = 600;      // fade transition duration in ms
 
-  constructor() { }
-
-  members: Member[] = [
-    {
-      id: 1,
-      name: 'Sri Satish Sapparad',
-      role: 'President',
-      image: 'assets/managementImages/1.Satish.Sapparad.(President).jpg',
-      aboutTitle: 'About Sri Satish Sapparad',
-      aboutText: 'Sri Satish Sapparad is currently serving as the President of Ilkal Co-Operative Bank Ltd. With a strong background in public service and community development, he brings a wealth of experience to the bank.',
-      description: 'Sri Satish Sapparad is a respected leader with a clear vision for cooperative banking.'
-
-    },
-    {
-      id: 2,
-      name: 'Sri Mahantesh Kampli',
-      role: 'Vice President',
-      image: 'assets/managementImages/2.Mahantesh.Kampli(Vice-President).jpg',
-      aboutTitle: 'About Sri Mahantesh Kampli',
-      aboutText: 'Sri Mahantesh Kampli is currently serving as the Vice President of Ilkal Co-Operative Bank Ltd. Known for his dedication to public service and community development, he contributes significantly to the bank’s growth and strategic initiatives.',
-      description: 'Sri Mahantesh Kampli is a committed leader with strong administrative and cooperative banking experience.'
-    }
-  ];
+  constructor(public lang: LanguageService) { }
 
   // aboutTitle = 'About APEX Bank';
   // aboutText = 'The Bank was registered on 10th November 1915 under the name and style of “The Mysore Provincial Cooperative Bank Limited.”';
 
-  readonly placeholder = 'assets/images/placeholder.png';
+  get members(): Member[] {
+    return this.lang.tArray<Member>('home.management', 'members');
+  }
+
+  get placeholder(): string {
+    return this.lang.t('home.management', 'placeholderImage');
+  }
 
   currentIndex = 0;
 
@@ -163,6 +148,18 @@ export class ManagementComponent implements OnInit, OnDestroy {
   }
 
   get currentMember(): Member {
-    return this.members[this.currentIndex];
+    const members = this.members;
+    return (
+      members[this.currentIndex] ||
+      members[0] || {
+        id: 0,
+        name: '',
+        role: '',
+        image: '',
+        aboutTitle: '',
+        aboutText: '',
+        description: ''
+      }
+    );
   }
 }

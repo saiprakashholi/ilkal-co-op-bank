@@ -35,6 +35,11 @@ export class LanguageService {
 
       // home page
       'home',
+      'home.announcements',
+      'home.notice',
+      'home.management',
+      'home.home-banner-carousel',
+      'home.financial-strength',
 
       // footer 
       'footer',

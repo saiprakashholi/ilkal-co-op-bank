@@ -10,6 +10,7 @@ import {
   ViewChild,
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { LanguageService } from '../../../../services/language.service';
 
 interface NoticeItem {
   text: string;
@@ -26,15 +27,7 @@ interface NoticeItem {
 })
 export class NoticeComponent implements OnInit, OnDestroy {
   // 👇 Now supports array of NoticeItem or strings
-  @Input() notices: (NoticeItem | string)[] = [
-    'Introduced Mobile Banking App.',
-    'Bank is Live on IMPS & UPI',
-    // {
-    //   text: 'Hiring Staff for New Branches. Apply Now!',
-    //   // url: '/careers',
-    //   newTab: true
-    // },
-  ];
+  @Input() notices: (NoticeItem | string)[] = [];
 
   @Input() speed = 18;
 
@@ -47,9 +40,16 @@ export class NoticeComponent implements OnInit, OnDestroy {
   public messages: NoticeItem[] = [];
   public isPaused = false;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+  constructor(
+    public lang: LanguageService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) { }
 
   ngOnInit(): void {
+    if (!this.notices.length) {
+      this.notices = this.lang.tArray<NoticeItem>('home.notice', 'items');
+    }
+
     // Normalize: convert strings to { text } objects
     this.messages = this.notices.map((n) =>
       typeof n === 'string' ? { text: n } : n

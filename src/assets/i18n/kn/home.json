@@ -1,32 +1,68 @@
 {
-  "FINANCIAL_STRENGTH_TITLE": "ಹಣಕಾಸಿನ ಬಲ",
-  "FINANCIAL_STRENGTH_SUBTITLE": "ನಿರಂತರ ಬೆಳವಣಿಗೆ ನಮ್ಮ ನಂಬಿಕೆ ಮತ್ತು ಸ್ಥಿರತೆಯನ್ನು ಪ್ರತಿಬಿಂಬಿಸುತ್ತದೆ",
-
-  "SHARE_CAPITAL": "ಹಂಚಿಕೆ ಬಂಡವಾಳ",
-  "NET_PROFIT": "ನಿವ್ವಳ ಲಾಭ",
-  "ADVANCES": "ಮುಂಗಡಗಳು",
-  "DEPOSITS": "ಠೇವಣಿಗಳು",
-
-  "QUERY_TEXT": "ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳಿದ್ದರೆ ದಯವಿಟ್ಟು ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ.",
-  "CONTACT_US": "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
-  
-  "banner.items": [
+  "heroAriaLabel": "ಮೂಲ ವಿಭಾಗ",
+  "heroTitle": "ಪ್ರತಿ ನಾಗರಿಕನ ವಿಶ್ವಾಸಾರ್ಹ ಬ್ಯಾಂಕಿಂಗ್ ಪಾಲುದಾರ",
+  "heroSubtitle": "ಸುರಕ್ಷಿತ, ವಿಶ್ವಾಸಾರ್ಹ ಮತ್ತು ಆಧುನಿಕ ಬ್ಯಾಂಕಿಂಗ್ — ನಿಮ್ಮ ಎಲ್ಲಾ ಹಣಕಾಸು ಅಗತ್ಯಗಳಿಗೆ ಡಿಜಿಟಲ್ ಪರಿಹಾರಗಳು ಮತ್ತು ವೈಯಕ್ತಿಕ ಸೇವೆ.",
+  "heroPrimaryCta": "ಸೇವೆಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
+  "heroSecondaryCta": "ಶಾಖೆಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ",
+  "heroImageSrc": "assets/hero-480.jpg",
+  "heroImageSrcset": "assets/hero-480.jpg 480w, assets/hero-800.jpg 800w, assets/hero-800.jpg 1200w",
+  "heroImageSizes": "(max-width:480px) 100vw, (max-width:900px) 50vw, 600px",
+  "heroImageAlt": "",
+  "aboutAriaLabel": "ಇಲ್ಕಲ್ ಸಹಕಾರಿ ಬ್ಯಾಂಕ್ ಬಗ್ಗೆ",
+  "aboutTitle": "ನಮ್ಮ ಬಗ್ಗೆ",
+  "aboutText": "Ilkal Co-operative Bank Ltd. ಕಳೆದ ಅರುವತ್ತುಕ್ಕೂ ಹೆಚ್ಚು ವರ್ಷಗಳಿಂದ ಸ್ಥಳೀಯ ಸಮುದಾಯಕ್ಕೆ ವಿಶ್ವಾಸಾರ್ಹ ಬ್ಯಾಂಕಿಂಗ್ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಡಿಜಿಟಲ್ ಸೇವೆಗಳನ್ನು ಒದಗಿಸಿದೆ. ನಾವು ಪಾರದರ್ಶಕ ಶುಲ್ಕ, ವೇಗದ ಸೇವೆ ಮತ್ತು ಸ್ಥಳೀಯ ಸಬಲೀಕರಣದ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸಿದ್ದೇವೆ.",
+  "servicesAriaLabel": "ಸೇವೆಗಳು",
+  "servicesTitle": "ನಮ್ಮ ಸೇವೆಗಳು",
+  "servicesListAriaLabel": "ಶೀಘ್ರ ಸೇವೆಗಳು",
+  "services": [
     {
-      "image": "assets/banners/loan.jpg",
-      "title": "ನಿಮ್ಮ ಎಲ್ಲ ಅಗತ್ಯಗಳಿಗೆ ಸಾಲಗಳು",
-      "subtitle": "ಕೃಷಿ, ಚಿನ್ನ, ವ್ಯಾಪಾರ ಮತ್ತು ವೈಯಕ್ತಿಕ ಸಾಲಗಳು"
+      "icon": "/assets/upi-icon.png",
+      "title": "UPI ಪಾವತಿಗಳು",
+      "description": "UPI ಮೂಲಕ ತ್ವರಿತ ಮತ್ತು ಸುರಕ್ಷಿತ ಹಣ ವರ್ಗಾವಣೆ. Ilkal Co-Operative Bank ನ ಜನಪ್ರಿಯ UPI ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಮೂಲಕ ಯಾವಾಗ ಬೇಕಾದರೂ ಹಣ ಕಳುಹಿಸಿ ಅಥವಾ ಸ್ವೀಕರಿಸಿ."
     },
     {
-      "image": "assets/banners/digital.jpg",
-      "title": "ಡಿಜಿಟಲ್ ಬ್ಯಾಂಕಿಂಗ್ ಸೇವೆಗಳು",
-      "subtitle": "ಯುಪಿಐ, ಐಎಂಪಿಎಸ್ ಮತ್ತು ಮೊಬೈಲ್ ಬ್ಯಾಂಕಿಂಗ್"
+      "icon": "/assets/atm.png",
+      "title": "ಎಟಿಎಮ್ ಬ್ಯಾಂಕಿಂಗ್",
+      "description": "24×7 ನಗದು ವಿತರಣಾ, ಶೇಷ ವಿಚಾರಣೆ, ಮಿನಿ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಮತ್ತು ಇತರೆ ಅಗತ್ಯ ಎಟಿಎಮ್ ಸೇವೆಗಳ ಪ್ರವೇಶ."
     },
     {
-      "image": "assets/banners/trust.jpg",
-      "title": "ವಿಶ್ವಾಸಾರ್ಹ ಸಹಕಾರಿ ಬ್ಯಾಂಕ್",
-      "subtitle": "ನಂಬಿಕೆ ಮತ್ತು ಪಾರದರ್ಶಕ ಸೇವೆ"
+      "icon": "/assets/mobile-banking.png",
+      "title": "ಮೊಬೈಲ್ ಬ್ಯಾಂಕಿಂಗ್",
+      "description": "ನಮ್ಮ ಮೊಬೈಲ್ ಆ್ಯಪ್ ಮೂಲಕ ಯಾವಾಗ ಬೇಕಾದರೂ ಖಾತೆಯನ್ನು ಪ್ರವೇಶಿಸಿ. ಶೇಷ ಪರಿಶೀಲಿಸಿ, ಹಣ ವರ್ಗಾಯಿಸಿ ಮತ್ತು ಸುರಕ್ಷಿತ ಡಿಜಿಟಲ್ ಬ್ಯಾಂಕಿಂಗ್ ಅನುಭವಿಸಿ."
+    },
+    {
+      "icon": "/assets/rtgs-neft.png",
+      "title": "RTGS / NEFT",
+      "description": "RTGS ಮತ್ತು NEFT ಸೌಲಭ್ಯಗಳ ಮೂಲಕ ಭಾರತದ ಯಾವುದೇ ಬ್ಯಾಂಕ್‌ಗೆ ವೇಗವಾದ ಮತ್ತು ವಿಶ್ವಾಸಾರ್ಹ ಹಣ ವರ್ಗಾವಣೆ."
+    },
+    {
+      "icon": "/assets/imps.png",
+      "title": "IMPS",
+      "description": "ತ್ವರಿತ ಅಂತರ್ ಬ್ಯಾಂಕ್ ಹಣ ವರ್ಗಾವಣೆ ಸೇವೆ."
+    },
+    {
+      "icon": "/assets/locker-logo.png",
+      "title": "ಸೇಫ್ ಡಿಪಾಜಿಟ್ ಲಾಕರ್‌ಗಳು",
+      "description": "ನಿಮ್ಮ ಮೌಲ್ಯವಾದ ವಸ್ತುಗಳು ಮತ್ತು ಪ್ರಮುಖ ದಾಖಲೆಗಳನ್ನು ಸಂಪೂರ್ಣ ಮನಶಾಂತಿಯೊಂದಿಗೆ ರಕ್ಷಿಸಲು ಸುರಕ್ಷಿತ ಲಾಕರ್ ಸೌಲಭ್ಯಗಳು."
     }
-  ]
-
-
+  ],
+  "sareeSectionAriaLabel": "ಇಲ್ಕಲ್ ಸೀರೆಗಳು GI ಟ್ಯಾಗ್",
+  "sareeTitle": "ಇಲ್ಕಲ್ ಸೀರೆಗಳು – ಹೆಮ್ಮೆಯ ಪರಂಪರೆ",
+  "sareeBannerImage": "assets/ilkal-gi/ilkal-gi-banner.jpeg",
+  "sareeBannerAlt": "ಭಾರತದ ಭೌಗೋಳಿಕ ಸೂಚ್ಯಂಕಗಳು",
+  "sareeIntroBefore": "ಉತ್ತರ ಕರ್ನಾಟಕದ ಬಾಗಲಕೋಟೆ ಜಿಲ್ಲೆಯ ಪಿಟ್ ಲೂಮ್‌ಗಳಲ್ಲಿ ಉದ್ಭವಿಸಿದ ಆಕರ್ಷಕ ಇಲ್ಕಲ್ ಸೀರೆಗಳು ವಿಶಿಷ್ಟ",
+  "sareeIntroEmphasis": "ಟೋಪೆ ತೆನಿ",
+  "sareeIntroAfter": "ತಂತ್ರವನ್ನು ಬಳಸಿಕೊಂಡು ನೆಯಲಾಗುತ್ತದೆ.",
+  "sareeTechniqueText": "ಈ ತಂತ್ರದಲ್ಲಿ ಶುದ್ಧ ರೇಷ್ಮೆ ಪಲ್ಲುವನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ನೆಯಲಾಗುತ್ತದೆ ಮತ್ತು ನಂತರ ಇಂಟರ್‌ಲಾಕ್ ಲೂಪ್‌ಗಳ ಮೂಲಕ ದೇಹದ ವಾರ್ಪ್‌ಗೆ ಜೋಡಿಸಲಾಗುತ್ತದೆ, ಇದರಿಂದ ಇಲ್ಕಲ್ ಸೀರೆಗಳಿಗೆ ವಿಶಿಷ್ಟ ಗುರುತು ದೊರೆಯುತ್ತದೆ.",
+  "sareeArtformTitle": "ಕಲಾರೂಪ",
+  "sareeArtformText": "ಕರ್ನಾಟಕದ ಇಲ್ಕಲ್ ಪಟ್ಟಣದ ಹೆಸರಿನಿಂದ ಪ್ರಸಿದ್ಧವಾದ ಈ ಸೀರೆಗಳು ಸರಳ ಆದರೆ ಆಕರ್ಷಕ ವಿನ್ಯಾಸಗಳು ಮತ್ತು ಕಮಲ, ಪಲ್ಲಕ್ಕಿ, ದೇವಾಲಯ ನಿರ್ಮಾಣ ಹಾಗೂ ಆನೆಯಂತಹ ಮೋಟಿಫ್‌ಗಳನ್ನು ಒಳಗೊಂಡ ಶ್ರೀಮಂತ ಪಲ್ಲುವಿನೊಂದಿಗೆ ಪ್ರಸಿದ್ಧವಾಗಿದೆ.",
+  "sareeBorderText": "ನಾಲ್ಕುದಿಂದ ಆರು ಇಂಚಿನ ಅಗಲದ ಬೋರ್ಡರ್ ಮುಖ್ಯ ಆಕರ್ಷಣೆಯಾಗಿದ್ದು, ನಿಪುಣ ನೆಯಿಗರು ಅದನ್ನು ವಿಶೇಷ ಜಾಗರೂಕತೆಯಿಂದ ಹಾಗೂ ನಿಖರವಾಗಿ ಕೈನೇಯುತ್ತಾರೆ.",
+  "sareeGiTitle": "GI ಟ್ಯಾಗ್ ಮಾನ್ಯತೆ",
+  "sareeGiTextBefore": "ಇಲ್ಕಲ್ ಸೀರೆಗಳಿಗೆ",
+  "sareeGiEmphasis": "2007ರಲ್ಲಿ ಭೌಗೋಳಿಕ ಸೂಚ್ಯಂಕ (GI) ಟ್ಯಾಗ್",
+  "sareeGiTextBetween": "NABARD ಬೆಂಬಲದೊಂದಿಗೆ ನೀಡಲಾಗಿದೆ.",
+  "sareeGiBankName": "Ilkal Co-Operative Bank Ltd.",
+  "sareeGiTextAfter": "ಈ ಶ್ರೀಮಂತ ಸಾಂಸ್ಕೃತಿಕ ಪರಂಪರೆಯನ್ನು ಬೆಂಬಲಿಸುವುದಕ್ಕೂ ಸಂರಕ್ಷಿಸುವುದಕ್ಕೂ ಹೆಮ್ಮೆಪಡುತ್ತದೆ.",
+  "sareeCertificateImage": "assets/ilkal-gi/ilkal-gi-certificate.jpeg",
+  "sareeCertificateAlt": "ಇಲ್ಕಲ್ ಸೀರೆ GI ನೋಂದಣಿ ಪ್ರಮಾಣಪತ್ರ"
 }

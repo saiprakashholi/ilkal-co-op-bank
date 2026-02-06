@@ -8,27 +8,32 @@
 <!-- NOTICE ENDS-->
  
 <!-- HERO -->
-<section class="hero" role="region" aria-label="Hero">
+<section
+  class="hero"
+  role="region"
+  [attr.aria-label]="lang.t('home', 'heroAriaLabel')"
+>
   <div class="container hero-inner">
     <div class="hero-text">
-      <h1>Trusted Banking Partner for Every Citizen</h1>
-      <p>
-        Secure, reliable and modern banking — digital solutions and personal service for all your
-        financial needs.
-      </p>
+      <h1>{{ lang.t('home', 'heroTitle') }}</h1>
+      <p>{{ lang.t('home', 'heroSubtitle') }}</p>
       <div class="hero-actions">
         <!-- <a class="btn-primary" (click)="scrollTo('servicesSection')">Explore Services</a> -->
-        <a class="btn-primary" routerLink="/service">Explore Services</a>
-        <a class="btn-outline" routerLink="/locations">Locate Branches</a>
+        <a class="btn-primary" routerLink="/service">
+          {{ lang.t('home', 'heroPrimaryCta') }}
+        </a>
+        <a class="btn-outline" routerLink="/locations">
+          {{ lang.t('home', 'heroSecondaryCta') }}
+        </a>
       </div>
     </div>
 
     <div class="hero-image" aria-hidden="true">
       <img
-        src="assets/hero-480.jpg"
-        srcset="assets/hero-480.jpg 480w, assets/hero-800.jpg 800w, assets/hero-800.jpg 1200w"
-        sizes="(max-width:480px) 100vw, (max-width:900px) 50vw, 600px"
-        alt=""
+        [src]="lang.t('home', 'heroImageSrc')"
+        [attr.srcset]="lang.t('home', 'heroImageSrcset')"
+        [attr.sizes]="lang.t('home', 'heroImageSizes')"
+        [attr.alt]="lang.t('home', 'heroImageAlt')"
         loading="lazy"
       />
     </div>
@@ -38,12 +43,14 @@
 
 
 <!-- ABOUT -->
-<section class="about" role="region" aria-label="About Ilkal Co-operative Bank">
+<section
+  class="about"
+  role="region"
+  [attr.aria-label]="lang.t('home', 'aboutAriaLabel')"
+>
   <div class="container about-inner">
-    <h2>About Us</h2>
-    <p>
-      {{ aboutUsText }}
-    </p>
+    <h2>{{ lang.t('home', 'aboutTitle') }}</h2>
+    <p>{{ lang.t('home', 'aboutText') }}</p>
   </div>
 </section>
 
@@ -58,11 +65,20 @@
 <!-- Management members ENDS -->
 
 <!-- SERVICES STARTS-->
-<section id="servicesSection" class="services" role="region" aria-label="Services">
+<section
+  id="servicesSection"
+  class="services"
+  role="region"
+  [attr.aria-label]="lang.t('home', 'servicesAriaLabel')"
+>
   <div class="container">
-    <h2>Our Services</h2>
+    <h2>{{ lang.t('home', 'servicesTitle') }}</h2>
 
-    <div class="services-strip" role="list" aria-label="Quick services">
+    <div
+      class="services-strip"
+      role="list"
+      [attr.aria-label]="lang.t('home', 'servicesListAriaLabel')"
+    >
       <a
         role="listitem"
         class="service-card"
@@ -90,15 +106,19 @@
 <!-- FINANCIAL STRENGTH ENDS -->
 
 <!-- ILKAL SAREE (GI TAG) -->
-<section class="ilkal-saree" role="region" aria-label="Ilkal Sarees GI Tag">
+<section
+  class="ilkal-saree"
+  role="region"
+  [attr.aria-label]="lang.t('home', 'sareeSectionAriaLabel')"
+>
   <div class="container">
     <!-- SECTION HEADER (CENTERED) -->
     <div class="saree-header">
-      <h2>Ilkal Sarees – A Proud Heritage</h2>
+      <h2>{{ lang.t('home', 'sareeTitle') }}</h2>
 
       <img
-        src="assets/ilkal-gi/ilkal-gi-banner.jpeg"
-        alt="Geographical Indications of India"
+        [src]="lang.t('home', 'sareeBannerImage')"
+        [attr.alt]="lang.t('home', 'sareeBannerAlt')"
         class="gi-banner"
         loading="lazy"
       />
@@ -109,43 +129,33 @@
       <!-- TEXT -->
       <div class="saree-text">
         <p class="intro">
-          Originating in the pit looms of the Bagalkot district of North Karnataka, the elegant
-          Ilkal sarees are woven using the unique
-          <strong>Tope Teni</strong> technique.
+          {{ lang.t('home', 'sareeIntroBefore') }}
+          <strong>{{ lang.t('home', 'sareeIntroEmphasis') }}</strong>
+          {{ lang.t('home', 'sareeIntroAfter') }}
         </p>
 
-        <p>
-          In this technique, the pure silk pallu is woven separately and then attached to the body
-          warp using interlocked loops, giving Ilkal sarees their distinctive identity.
-        </p>
+        <p>{{ lang.t('home', 'sareeTechniqueText') }}</p>
 
-        <h3>The Artform</h3>
-        <p>
-          Named after the town of Ilkal in Karnataka,aj, these sarees are known for simple yet
-          elegant patterns and a richly designed pallu featuring motifs such as lotuses, palanquins,
-          temple structures, and elephants.
-        </p>
+        <h3>{{ lang.t('home', 'sareeArtformTitle') }}</h3>
+        <p>{{ lang.t('home', 'sareeArtformText') }}</p>
 
-        <p>
-          The four to six-inch wide border is the main attraction, handwoven with great care and
-          precision by skilled weavers.
-        </p>
+        <p>{{ lang.t('home', 'sareeBorderText') }}</p>
 
-        <h3>GI Tag Recognition</h3>
+        <h3>{{ lang.t('home', 'sareeGiTitle') }}</h3>
         <p>
-          Ilkal Sarees were awarded the
-          <strong>Geographical Indication (GI) tag in 2007</strong>
-          with support from NABARD.
-          <strong>Ilkal Co-Operative Bank Ltd.</strong> takes pride in supporting and preserving
-          this rich cultural heritage.
+          {{ lang.t('home', 'sareeGiTextBefore') }}
+          <strong>{{ lang.t('home', 'sareeGiEmphasis') }}</strong>
+          {{ lang.t('home', 'sareeGiTextBetween') }}
+          <strong>{{ lang.t('home', 'sareeGiBankName') }}</strong>
+          {{ lang.t('home', 'sareeGiTextAfter') }}
         </p>
       </div>
 
       <!-- CERTIFICATE -->
       <div class="saree-image">
         <img
-          src="assets/ilkal-gi/ilkal-gi-certificate.jpeg"
-          alt="Ilkal Saree GI Registration Certificate"
+          [src]="lang.t('home', 'sareeCertificateImage')"
+          [attr.alt]="lang.t('home', 'sareeCertificateAlt')"
           loading="lazy"
         />
       </div>

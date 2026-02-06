@@ -37,7 +37,7 @@ export class HomeBannerCarousel implements OnInit, OnDestroy {
   }
 
   get banners(): BannerItem[] {
-    return this.lang.tArray<BannerItem>('home', 'banner.items');
+    return this.lang.tArray<BannerItem>('home.home-banner-carousel', 'items');
   }
 
   startAutoScroll() {

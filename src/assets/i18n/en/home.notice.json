@@ -1,0 +1,10 @@
+{
+  "ariaLabel": "Notice board",
+  "label": "NOTICE BOARD:",
+  "viewAllTitle": "View all notices",
+  "viewAllLabel": "View All",
+  "items": [
+    { "text": "Introduced Mobile Banking App." },
+    { "text": "Bank is Live on IMPS & UPI" }
+  ]
+}

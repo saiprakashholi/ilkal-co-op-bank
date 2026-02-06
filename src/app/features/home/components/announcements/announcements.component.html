@@ -1,11 +1,13 @@
 <section class="announcements" aria-labelledby="announcements-title" role="region">
   <div class="container">
     <div class="ann-head">
-      <h2 id="announcements-title" style="text-align: center;">Latest News and Announcement</h2>
+      <h2 id="announcements-title" style="text-align: center;">
+        {{ lang.t('home.announcements', 'title') }}
+      </h2>
     </div>
 
     <ul class="ann-list" role="list">
-      <li *ngFor="let a of announcements" class="ann-item" [attr.data-highlight]="a.highlight ? 'true' : 'false'">
+      <li *ngFor="let a of items" class="ann-item" [attr.data-highlight]="a.highlight ? 'true' : 'false'">
         <a
           class="ann-link"
           [href]="a.href || '#'"
@@ -27,4 +29,3 @@
     </ul>
   </div>
 </section>
-

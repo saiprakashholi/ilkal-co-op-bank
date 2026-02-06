@@ -1,8 +1,12 @@
-<section class="notice" role="complementary" aria-label="Notice board">
+<section
+  class="notice"
+  role="complementary"
+  [attr.aria-label]="lang.t('home.notice', 'ariaLabel')"
+>
   <div class="container notice-inner">
     <div class="notice-left">
       <span class="notice-icon" aria-hidden="true">📢</span>
-      <strong class="lbl">NOTICE BOARD: </strong>
+      <strong class="lbl">{{ lang.t('home.notice', 'label') }}</strong>
     </div>
 
     <div
@@ -66,7 +70,9 @@
         {{ isPaused ? 'Resume' : 'Pause' }}
       </button> -->
 
-      <a class="notice-cta" href="/notices" title="View all notices">View All</a>
+      <a class="notice-cta" href="/notices" [attr.title]="lang.t('home.notice', 'viewAllTitle')">
+        {{ lang.t('home.notice', 'viewAllLabel') }}
+      </a>
     </div>
   </div>
 </section>

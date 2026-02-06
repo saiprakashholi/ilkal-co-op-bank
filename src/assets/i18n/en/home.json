@@ -1,41 +1,68 @@
 {
-  "FINANCIAL_STRENGTH_TITLE": "Our Current Financial Strength",
-  "FINANCIAL_STRENGTH_SUBTITLE": "Our consistent growth reflects trust and stability",
-  "SHARE_CAPITAL": "Share Capital",
-  "NET_PROFIT": "Net Profit",
-  "ADVANCES": "Advances",
-  "DEPOSITS": "Deposits",
-  "QUERY_TEXT": "If you have any queries, please feel free to contact us.",
-  "CONTACT_US": "Contact Us",
-  "banner.items": [
+  "heroAriaLabel": "Hero",
+  "heroTitle": "Trusted Banking Partner for Every Citizen",
+  "heroSubtitle": "Secure, reliable and modern banking — digital solutions and personal service for all your financial needs.",
+  "heroPrimaryCta": "Explore Services",
+  "heroSecondaryCta": "Locate Branches",
+  "heroImageSrc": "assets/hero-480.jpg",
+  "heroImageSrcset": "assets/hero-480.jpg 480w, assets/hero-800.jpg 800w, assets/hero-800.jpg 1200w",
+  "heroImageSizes": "(max-width:480px) 100vw, (max-width:900px) 50vw, 600px",
+  "heroImageAlt": "",
+  "aboutAriaLabel": "About Ilkal Co-operative Bank",
+  "aboutTitle": "About Us",
+  "aboutText": "Ilkal Co-operative Bank Ltd. has served the local community for over a Sixty plus years with trusted banking products and digital services. We focus on transparent pricing, fast service and local empowerment.",
+  "servicesAriaLabel": "Services",
+  "servicesTitle": "Our Services",
+  "servicesListAriaLabel": "Quick services",
+  "services": [
     {
-      "image": "/assets/home-page-banner/50years.jpg",
-      "title": "Suvarna Sambrama – Golden Jubilee ✨",
-      "subtitle": "Celebrating 50 Golden Years of trust, growth, and service to our community."
+      "icon": "/assets/upi-icon.png",
+      "title": "UPI Payments",
+      "description": "Instant and secure money transfers using UPI. Send or receive money anytime using popular UPI apps with Ilkal Co-Operative Bank."
     },
     {
-      "image": "/assets/home-page-banner/home-page-insurance.jpg"
+      "icon": "/assets/atm.png",
+      "title": "ATM Banking",
+      "description": "24×7 access to cash withdrawal, balance enquiry, mini statements, and other essential ATM banking services."
     },
     {
-      "image": "/assets/home-page-banner/mobile-banking.jpg"
-    },
-     {
-      "image": "/assets/home-page-banner/ilkal-saree.jpg"
-    },
-    {
-      "image": "/assets/loans/gold-loan.png",
-      "title": "Loans for Every Need",
-      "subtitle": "Gold, Business and Personal Loans"
+      "icon": "/assets/mobile-banking.png",
+      "title": "Mobile Banking",
+      "description": "Access your account anytime through our mobile app. Check balances, transfer funds, and enjoy secure digital banking."
     },
     {
-      "image": "/assets/home-page-banner/Untitled-3.jpg",
-      "title": "Digital Banking Services",
-      "subtitle": "UPI, IMPS and Mobile Banking"
+      "icon": "/assets/rtgs-neft.png",
+      "title": "RTGS / NEFT",
+      "description": "Fast and reliable fund transfers to any bank in India using RTGS and NEFT facilities."
     },
     {
-      "image": "/assets/home-page-banner/Untitled-1.jpg",
-      "title": "Transparent Co-operative Bank",
-      "subtitle": "Serving customers with trust and transparency"
+      "icon": "/assets/imps.png",
+      "title": "IMPS",
+      "description": "Instant interbank money transfer service."
+    },
+    {
+      "icon": "/assets/locker-logo.png",
+      "title": "Safe Deposit Lockers",
+      "description": "Secure locker facilities to protect your valuables and important documents with complete peace of mind."
     }
-  ]
+  ],
+  "sareeSectionAriaLabel": "Ilkal Sarees GI Tag",
+  "sareeTitle": "Ilkal Sarees – A Proud Heritage",
+  "sareeBannerImage": "assets/ilkal-gi/ilkal-gi-banner.jpeg",
+  "sareeBannerAlt": "Geographical Indications of India",
+  "sareeIntroBefore": "Originating in the pit looms of the Bagalkot district of North Karnataka, the elegant Ilkal sarees are woven using the unique",
+  "sareeIntroEmphasis": "Tope Teni",
+  "sareeIntroAfter": "technique.",
+  "sareeTechniqueText": "In this technique, the pure silk pallu is woven separately and then attached to the body warp using interlocked loops, giving Ilkal sarees their distinctive identity.",
+  "sareeArtformTitle": "The Artform",
+  "sareeArtformText": "Named after the town of Ilkal in Karnataka, these sarees are known for simple yet elegant patterns and a richly designed pallu featuring motifs such as lotuses, palanquins, temple structures, and elephants.",
+  "sareeBorderText": "The four to six-inch wide border is the main attraction, handwoven with great care and precision by skilled weavers.",
+  "sareeGiTitle": "GI Tag Recognition",
+  "sareeGiTextBefore": "Ilkal Sarees were awarded the",
+  "sareeGiEmphasis": "Geographical Indication (GI) tag in 2007",
+  "sareeGiTextBetween": "with support from NABARD.",
+  "sareeGiBankName": "Ilkal Co-Operative Bank Ltd.",
+  "sareeGiTextAfter": "takes pride in supporting and preserving this rich cultural heritage.",
+  "sareeCertificateImage": "assets/ilkal-gi/ilkal-gi-certificate.jpeg",
+  "sareeCertificateAlt": "Ilkal Saree GI Registration Certificate"
 }
