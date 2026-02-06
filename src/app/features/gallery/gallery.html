@@ -1,9 +1,9 @@
 <section class="gallery-page">
   <header class="gallery-header">
     <div class="left">
-      <h1>Gallery</h1>
+      <h1>{{ lang.t('gallery.gallery', 'pageTitle') }}</h1>
       <br />
-      <p>Explore photos of events, activities and memorable moments.</p>
+      <p>{{ lang.t('gallery.gallery', 'pageSubtitle') }}</p>
       <br />
     </div>
     <!-- <div class="cta">
@@ -18,7 +18,7 @@
       (click)="openGroup(g)"
       role="button"
       tabindex="0"
-      [attr.aria-label]="g.name + ', ' + g.photos.length + ' photos'"
+      [attr.aria-label]="g.name + ', ' + g.photos.length + ' ' + lang.t('gallery.gallery', 'photosLabel')"
     >
       <div class="cover-two">
         <div

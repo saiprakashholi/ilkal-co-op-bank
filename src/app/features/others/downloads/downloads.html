@@ -1,8 +1,8 @@
 <section class="downloads">
   <!-- HERO -->
   <div class="hero">
-    <h1>Downloads</h1>
-    <p>Important documents and reports available for customers</p>
+    <h1>{{ lang.t('others.downloads', 'pageTitle') }}</h1>
+    <p>{{ lang.t('others.downloads', 'pageSubtitle') }}</p>
   </div>
 
   <!-- LIST -->
@@ -11,9 +11,13 @@
       <div class="title">📄 {{ doc.title }}</div>
 
       <div [class.disabled]="!doc.url" class="actions">
-        <a [href]="doc.url" target="_blank" rel="noopener" class="view"> View </a>
+        <a [href]="doc.url" target="_blank" rel="noopener" class="view">
+          {{ lang.t('others.downloads', 'viewLabel') }}
+        </a>
 
-        <a [href]="doc.url" download class="download"> Download </a>
+        <a [href]="doc.url" download class="download">
+          {{ lang.t('others.downloads', 'downloadLabel') }}
+        </a>
       </div>
     </div>
   </div>

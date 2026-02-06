@@ -1,0 +1,50 @@
+{
+  "pageTitle": "ನಮ್ಮ ಶಾಖೆಗಳು",
+  "pageSubtitle": "ನಿಮ್ಮ ಸಮೀಪದ Ilkal Co-Operative Bank ಶಾಖೆಯನ್ನು ಕಂಡುಹಿಡಿದು ವಿಶ್ವಾಸಾರ್ಹ ಬ್ಯಾಂಕಿಂಗ್ ಸೇವೆಗಳನ್ನು ಪಡೆಯಿರಿ.",
+  "callLabel": "ಶಾಖೆಗೆ ಕರೆ ಮಾಡಿ",
+  "visitLabel": "ಶಾಖೆಗೆ ಭೇಟಿ ನೀಡಿ",
+  "fallbackImage": "assets/image-backup.svg",
+  "branches": [
+    {
+      "name": "ಇಲ್ಕಲ್ ಶಾಖೆ (ಮುಖ್ಯ ಕಚೇರಿ)",
+      "address": "Near Basavangudi Ilkal - 587125\nDist: Bagalakot, Taluk: Ilkal,\nKarnataka, India",
+      "phone": "+91 95388 68030",
+      "image": "assets/branches/HeadOffice.jpg",
+      "location": "https://maps.app.goo.gl/rC4ukBmdHf5oecYk7"
+    },
+    {
+      "name": "SVM ಕಾಲೇಜ್ ಶಾಖೆ",
+      "address": "1st cross,\nBehind Bus Stand, Ilkal - 587125\nDist: Bagalakot, Taluk: Ilkal\nKarnataka, India",
+      "phone": "+91 91412 77102",
+      "image": "assets/branches/SVMCollegeBranch.jpg",
+      "location": "https://maps.app.goo.gl/xNsRGjc13vZs3cxi6"
+    },
+    {
+      "name": "APMC ಯಾರ್ಡ್ ಶಾಖೆ",
+      "address": "APMC Yard, Ilkal - 587154\nDist: Bagalakot, Taluk: Ilkal\nKarnataka, India",
+      "image": "assets/branches/APMCYardBranch.jpg",
+      "phone": "+91 91415 58106",
+      "location": "https://maps.app.goo.gl/NoZRR5ohdUrg13Vg6"
+    },
+    {
+      "name": "ಗುಡೂರು ಶಾಖೆ",
+      "address": "Near Bus Stand,\nGudur S C - 587202\nDist: Bagalakot, Taluk: Hunagund\nKarnataka, India",
+      "image": "assets/branches/GudurSCBranch.jpg",
+      "phone": "+91 91412 66103",
+      "location": "https://maps.app.goo.gl/rci6Pp6hq5gw7rzf7"
+    },
+    {
+      "name": "ಕುಡಲ ಸಂಗಮ ಶಾಖೆ",
+      "address": "Basaveshwara Circle,\nKudala Sangam - 587115\nDist: Bagalakot, Taluk: Hunagund\nKarnataka, India",
+      "phone": "+91 91419 42104",
+      "location": "https://maps.app.goo.gl/uJtzV5PePrnnBCaK8"
+    },
+    {
+      "name": "ಕುಷ್ಟಗಿ ಶಾಖೆ",
+      "address": "Maruthi circle,\nBus Stand road, Kushtagi - 583277\nDist: Koppal, Taluk: Kusthagi\nKarnataka, India",
+      "image": "assets/branches/KusthagiBranch.jpg",
+      "phone": "+91 91412 68105",
+      "location": "https://maps.app.goo.gl/GRPnaeACNW7iYGSv8"
+    }
+  ]
+}

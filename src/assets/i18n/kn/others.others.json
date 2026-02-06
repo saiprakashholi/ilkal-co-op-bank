@@ -1,0 +1,8 @@
+{
+  "navItems": [
+    { "label": "ಸೇವಾ ಶುಲ್ಕಗಳು", "url": "service-charges" },
+    { "label": "ಸುರಕ್ಷಿತ ಮತ್ತು ಭದ್ರ ಬ್ಯಾಂಕಿಂಗ್", "url": "safe-banking" },
+    { "label": "ಡೌನ್‌ಲೋಡ್‌ಗಳು", "url": "download" },
+    { "label": "AGM", "url": "agm" }
+  ]
+}

@@ -1,13 +1,13 @@
 <section class="locations-section">
-  <h2 class="title">Our Branch Locations</h2>
+  <h2 class="title">{{ lang.t('locations.locations', 'pageTitle') }}</h2>
   <p class="subtitle">
-    Find your nearest Ilkal Co-Operative Bank branch for trusted banking services.
+    {{ lang.t('locations.locations', 'pageSubtitle') }}
   </p>
 
   <div class="locations-grid">
     <div class="location-card" *ngFor="let branch of branches">
       <div class="image-wrapper">
-        <img [src]="branch.image || 'assets/image-backup.svg'" [alt]="branch.name" loading="lazy" />
+        <img [src]="branch.image || fallbackImage" [alt]="branch.name" loading="lazy" />
       </div>
 
       <div class="card-content">
@@ -20,10 +20,12 @@
         <p class="phone" *ngIf="branch.phone">📞 {{ branch.phone }}</p>
 
         <div class="branch-actions">
-          <a *ngIf="branch.phone" class="btn call" [href]="'tel:' + branch.phone"> Call Branch </a>
+          <a *ngIf="branch.phone" class="btn call" [href]="'tel:' + branch.phone">
+            {{ lang.t('locations.locations', 'callLabel') }}
+          </a>
 
           <a *ngIf="branch.location" class="btn visit" [href]="branch.location" target="_blank">
-            Visit Branch
+            {{ lang.t('locations.locations', 'visitLabel') }}
           </a>
         </div>
       </div>

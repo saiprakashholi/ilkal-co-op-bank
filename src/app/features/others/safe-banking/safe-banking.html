@@ -1,8 +1,8 @@
 <section class="safe-banking">
   <!-- HERO -->
   <div class="hero">
-    <h1>Secure & Safe Banking</h1>
-    <p>Your safety is our priority. Follow these guidelines to protect yourself from fraud.</p>
+    <h1>{{ lang.t('others.safe-banking', 'pageTitle') }}</h1>
+    <p>{{ lang.t('others.safe-banking', 'pageSubtitle') }}</p>
   </div>
 
   <!-- CONTENT -->
@@ -19,7 +19,7 @@
 
     <!-- IMPORTANT WARNING -->
     <div class="alert">
-      <h3>Important Notice</h3>
+      <h3>{{ lang.t('others.safe-banking', 'importantTitle') }}</h3>
       <ul>
         <li *ngFor="let notice of importantNotices">
           <span class="icon">{{ notice.icon }}</span>
@@ -30,7 +30,7 @@
 
     <!-- EXTRA SAFETY -->
     <div class="extra">
-      <h3>Additional Safety Measures</h3>
+      <h3>{{ lang.t('others.safe-banking', 'additionalTitle') }}</h3>
       <ul>
         <li *ngFor="let item of additionalSafety">
           <span class="icon">{{ item.icon }}</span>

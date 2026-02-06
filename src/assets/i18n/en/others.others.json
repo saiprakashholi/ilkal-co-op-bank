@@ -1,0 +1,8 @@
+{
+  "navItems": [
+    { "label": "Service Charges", "url": "service-charges" },
+    { "label": "Secure & Safe Banking", "url": "safe-banking" },
+    { "label": "Downloads", "url": "download" },
+    { "label": "AGM", "url": "agm" }
+  ]
+}

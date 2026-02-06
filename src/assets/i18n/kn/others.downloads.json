@@ -1,0 +1,13 @@
+{
+  "pageTitle": "ಡೌನ್‌ಲೋಡ್‌ಗಳು",
+  "pageSubtitle": "ಗ್ರಾಹಕರಿಗೆ ಲಭ್ಯವಿರುವ ಮಹತ್ವದ ದಾಖಲೆಗಳು ಮತ್ತು ವರದಿಗಳು",
+  "viewLabel": "ವೀಕ್ಷಿಸಿ",
+  "downloadLabel": "ಡೌನ್‌ಲೋಡ್",
+  "items": [
+    { "title": "ನಿಷ್ಕ್ರಿಯ ಖಾತೆಗಳು" },
+    { "title": "SARFAESI Act, 2002 ಅಡಿಯಲ್ಲಿ ವಶಪಡಿಸಿಕೊಳ್ಳಲಾದ ಭದ್ರ ಆಸ್ತಿಗಳ ಮಾಹಿತಿ" },
+    { "title": "RBI ಒಂಬಡ್ಸ್‌ಮನ್ ಯೋಜನೆ", "url": "/assets/downloads/3.pdf" },
+    { "title": "ಕಾನೂನುಬದ್ಧ ಆಡಿಟರ್ ನೀತಿ", "url": "/assets/downloads/statutory-auditor-policy.pdf" },
+    { "title": "ಗ್ರಾಹಕರ ದೂರುಗಳು ಮತ್ತು ಅಸಮಾಧಾನ" }
+  ]
+}

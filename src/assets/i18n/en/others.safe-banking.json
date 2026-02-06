@@ -1,0 +1,34 @@
+{
+  "pageTitle": "Secure & Safe Banking",
+  "pageSubtitle": "Your safety is our priority. Follow these guidelines to protect yourself from fraud.",
+  "importantTitle": "Important Notice",
+  "additionalTitle": "Additional Safety Measures",
+  "safetyTips": [
+    { "icon": "🔑", "text": "Do not use your Birthday, Mobile No, Vehicle No, House No, or Area No as passwords. Change your Debit Card PIN frequently." },
+    { "icon": "📵", "text": "Do not share your Mobile / Net banking login credentials with anyone." },
+    { "icon": "🛡️", "text": "Always use licensed version anti-virus software." },
+    { "icon": "🌐", "text": "Always type the website URL directly to access online portals (https://)." },
+    { "icon": "🚫", "text": "Do not click on suspicious links received through email or messages." },
+    { "icon": "🧭", "text": "Always use the latest browser version." },
+    { "icon": "💻", "text": "Always scan your computer and external devices using licensed anti-virus software." },
+    { "icon": "🔒", "text": "Do not store passwords in your mobile, computer, or laptops." },
+    { "icon": "📶", "text": "Do not use public computers or free Wi-Fi for banking login." },
+    { "icon": "📄", "text": "Check your account statements regularly." },
+    { "icon": "🔌", "text": "Disconnect internet connection when not in use." },
+    { "icon": "📲", "text": "Check authenticity of applications before downloading them." },
+    { "icon": "⚙️", "text": "Always use a newer version of operating system." },
+    { "icon": "🔥", "text": "Ensure that firewall is enabled on your device." },
+    { "icon": "🎣", "text": "Be aware of Phishing and Vishing attacks." },
+    { "icon": "📩", "text": "Check bank SMS alerts regularly and report suspicious transactions immediately." }
+  ],
+  "importantNotices": [
+    { "icon": "⚠️", "text": "Bank executives / officers / representatives NEVER call, SMS, or email customers asking for personal information." },
+    { "icon": "❌", "text": "Never share passwords, debit card details, CVV, PIN, or OTP with anyone." }
+  ],
+  "additionalSafety": [
+    { "icon": "🔔", "text": "Enable SMS and email alerts for all transactions." },
+    { "icon": "🚨", "text": "Immediately block your card if it is lost or stolen." },
+    { "icon": "🚪", "text": "Always log out after completing online banking transactions." },
+    { "icon": "⬆️", "text": "Regularly update your mobile banking applications." }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "pageTitle": "Service Charges",
+  "pageSubtitle": "Applicable service charges for various banking services",
+  "tableHeaderNo": "Sl. No",
+  "tableHeaderDetails": "Details",
+  "tableHeaderCharges": "Service Charges",
+  "sections": [
+    {
+      "title": "Incidental Charges",
+      "rows": [
+        { "no": 1, "details": "Incidental Charges for Current Operative accounts", "charge": "Nil" },
+        { "no": 2, "details": "Incidental Charges for Current In-operative accounts", "charge": "Nil" },
+        { "no": 3, "details": "Incidental Charges for SB Operative (Non-Cheque holder)", "charge": "Nil" },
+        { "no": 4, "details": "Incidental Charges for SB Operative (Cheque holder)", "charge": "Nil" },
+        { "no": 5, "details": "Incidental Charges for SB In-operative (Non-Cheque holder)", "charge": "Nil" },
+        { "no": 6, "details": "Incidental Charges for SB In-operative (Cheque holder)", "charge": "Nil" }
+      ]
+    },
+    {
+      "title": "Charges for Closure of Accounts (Normal Accounts)",
+      "rows": [
+        { "no": 7, "details": "Closing of Account SB Operative", "charge": "Nil" },
+        { "no": 8, "details": "Closing of Account SB In-operative", "charge": "Nil" },
+        { "no": 9, "details": "Closing of Account Current Operative", "charge": "Nil" },
+        { "no": 10, "details": "Closing of Account Current In-operative", "charge": "Nil" }
+      ]
+    },
+    {
+      "title": "Card Charges",
+      "rows": [
+        { "no": 11, "details": "EMV Debit Card Charges for all SB & Current accounts", "charge": "₹125 + GST (One Time)" },
+        { "no": 12, "details": "Additional / Replacement EMV Debit Card", "charge": "₹200 + GST (One Time)" },
+        { "no": 13, "details": "PIN Regeneration Charges", "charge": "Nil" },
+        { "no": 14, "details": "Transaction fees at MPS Bank ATM", "charge": "Nil" },
+        { "no": 15, "details": "Transaction fees at other Bank ATM", "charge": "14 free transactions in Metro cities, 5 free in Non-Metro cities" },
+        { "no": 16, "details": "Financial (Cash Withdrawal) – after free limit", "charge": "₹20 (Including GST)" },
+        { "no": 17, "details": "Non-financial (Balance enquiry, Mini statement, PIN change)", "charge": "₹10 (Including GST)" }
+      ]
+    },
+    {
+      "title": "Debit Card Limits",
+      "rows": [
+        { "no": 18, "details": "Cash Withdrawal limit per day (EMV Debit Card)", "charge": "₹25,000" },
+        { "no": 19, "details": "Purchase transaction limit per day", "charge": "₹1,00,000" },
+        { "no": 20, "details": "IMPS Mobile Banking outward transaction limit per day", "charge": "₹5,00,000" }
+      ]
+    },
+    {
+      "title": "RTGS / NEFT",
+      "rows": [
+        { "no": 21, "details": "RTGS  Charges", "charge": "₹30 (Including GST)" },
+        { "no": 22, "details": "NEFT Charges (Below 2 Lakhs)", "charge": "₹15 (Including GST)" }
+      ]
+    },
+    {
+      "title": "SMS Charges",
+      "rows": [
+        { "no": 23, "details": "SMS Charges for SB / CA account holders", "charge": "₹15 + GST (Quarterly)" },
+        { "no": 24, "details": "SMS Charges for OD / CCL account holders", "charge": "₹15 + GST (Quarterly)" }
+      ]
+    },
+    {
+      "title": "Cheque Book Charges",
+      "rows": [
+        { "no": 25, "details": "Cheque Book charges (all account types)", "charge": "₹1 + GST (Per Leaf)" }
+      ]
+    }
+  ],
+  "impsTitle": "IMPS Charges",
+  "impsHeaderFrom": "From (₹)",
+  "impsHeaderTo": "To (₹)",
+  "impsHeaderCharges": "Charges (Incl. GST)",
+  "impsCharges": [
+    { "from": "₹1", "to": "₹1,000", "charge": "₹2.50" },
+    { "from": "₹1,001", "to": "₹10,000", "charge": "₹5" },
+    { "from": "₹10,001", "to": "₹1,00,000", "charge": "₹10" },
+    { "from": "₹1,00,001", "to": "₹2,00,000", "charge": "₹15" }
+  ],
+  "impsNote": "Note: For IMPS, the per-day transaction limit is ₹5,00,000, and within this, the per-transaction limit is ₹2,00,000 only."
+}

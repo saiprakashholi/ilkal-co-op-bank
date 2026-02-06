@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { LanguageService } from '../../../services/language.service';
 
 interface AgmReport {
   year: string;
@@ -15,26 +16,9 @@ interface AgmReport {
   styleUrl: './others-agm.scss',
 })
 export class OthersAgm {
-  agmReports: AgmReport[] = [
-    {
-      year: '2025–26',
-      title: '61st Annual General Meeting – Report',
-      // url: '/assets/downloads/agm-2025-26.pdf',
-    },
-    {
-      year: '2024–25',
-      title: '60th Annual General Meeting – Proceedings',
-      url: '/assets/downloads/agm-2024-25.pdf',
-    },
-    {
-      year: '2023–24',
-      title: '59th Annual General Meeting – Report',
-      url: '/assets/downloads/agm-2023-24.pdf',
-    },
-    {
-      year: '2022–23',
-      title: '58th Annual General Meeting – Proceedings',
-      // url not yet available
-    },
-  ];
+  constructor(public lang: LanguageService) { }
+
+  get agmReports(): AgmReport[] {
+    return this.lang.tArray<AgmReport>('others.others-agm', 'reports');
+  }
 }

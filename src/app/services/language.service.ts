@@ -59,6 +59,20 @@ export class LanguageService {
       // contact us 
       'contact-us',
 
+      // gallery
+      'gallery.gallery',
+      'gallery.photo-list',
+
+      // others
+      'others.others',
+      'others.safe-banking',
+      'others.service-charges',
+      'others.others-agm',
+      'others.downloads',
+
+      // locations
+      'locations.locations',
+
       // Service module
       'services',
       'services.upi',

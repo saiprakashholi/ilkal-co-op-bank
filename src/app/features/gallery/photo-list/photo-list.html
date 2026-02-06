@@ -1,7 +1,9 @@
 <div class="modal-backdrop" (click)="close.emit()">
   <div class="modal" (click)="$event.stopPropagation()">
     <!-- Close -->
-    <button class="close-btn" (click)="close.emit()">✕</button>
+    <button class="close-btn" (click)="close.emit()">
+      {{ lang.t('gallery.photo-list', 'closeLabel') }}
+    </button>
 
     <!-- Title -->
     <h3 class="title">{{ group.name }}</h3>
@@ -9,7 +11,9 @@
     <!-- FIXED VIEWER -->
     <div class="viewer" (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">
       <!-- Left arrow -->
-      <button class="nav left" (click)="prev()" [disabled]="index === 0">‹</button>
+      <button class="nav left" (click)="prev()" [disabled]="index === 0">
+        {{ lang.t('gallery.photo-list', 'prevLabel') }}
+      </button>
 
       <!-- Image container (fixed size) -->
       <div class="image-frame">
@@ -18,7 +22,7 @@
 
       <!-- Right arrow -->
       <button class="nav right" (click)="next()" [disabled]="index === group.photos.length - 1">
-        ›
+        {{ lang.t('gallery.photo-list', 'nextLabel') }}
       </button>
     </div>
 

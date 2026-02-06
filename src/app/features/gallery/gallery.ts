@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { PhotoListComponent } from "./photo-list/photo-list";
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-gallery',
@@ -12,67 +13,20 @@ import { PhotoListComponent } from "./photo-list/photo-list";
 
 export class Gallery {
 
-  groups = [
+  constructor(public lang: LanguageService) { }
 
-
-    {
-      id: 3,
-      name: 'Annual General Meeting',
-      description: 'Annual General Meeting with esteemed guests and community members.',
-      // cover: '/assets/gallery/1/1.gm.jpeg',
-      photos: [
-        '/assets/gallery/agm/agm_gallery_1.jpg',
-        '/assets/gallery/agm/agm_gallery_2.jpg',
-        '/assets/gallery/agm/agm_gallery_3.jpg',
-        '/assets/gallery/agm/agm_gallery_4.jpg',
-
-      ]
-    },
-    {
-      id: 4,
-      name: 'Staff Events',
-      description: 'Management and staff unveiling QR-based digital banking services, reinforcing the bank’s commitment to modernization.',
-      // cover: '/assets/gallery/1/1.gm.jpeg',
-      photos: [
-        '/assets/gallery/staff-event/staff_gallery_1.jpg',
-        '/assets/gallery/staff-event/staff_gallery_2.jpg',
-        '/assets/gallery/staff-event/staff_gallery_3.jpg',
-        '/assets/gallery/staff-event/staff_gallery_4.jpg',
-
-      ]
-    },
-    {
-      id: 2,
-      name: 'Awards',
-      description: 'Awards Distribution in our new branch with esteemed guests.',
-      photos: [
-        '/assets/gallery/2/others Prize.jpg',
-        '/assets/gallery/2/1st Prize.jpg',
-        '/assets/gallery/2/3rd Prize Group Photo.jpg',
-        '/assets/gallery/2/3rd Prize.jpg',
-        '/assets/gallery/2/Good Performance Prize Group Photo.jpg',
-        '/assets/gallery/2/Good Performance Prize.jpg'
-
-      ]
-    },
-    {
-      id: 1,
-      name: 'Branch Opening Ceremony',
-      description: 'Inauguration of our new branch with esteemed guests and community members.',
-      // cover: '/assets/gallery/1/1.gm.jpeg',
-      photos: [
-        '/assets/gallery/1/1.gm.jpeg',
-        '/assets/gallery/1/2.gm.jpeg',
-        '/assets/gallery/1/3.gm.jpeg',
-      ]
-    },
-  ];
+  get groups(): Array<{ id: number; name: string; description?: string; photos: string[] }> {
+    return this.lang.tArray<{ id: number; name: string; description?: string; photos: string[] }>(
+      'gallery.gallery',
+      'groups'
+    );
+  }
 
   // gallery.ts (inside class)
   getCoverLeft(group: any): string {
     return (group.photos && group.photos.length > 0)
       ? group.photos[0]
-      : '/assets/placeholder.jpg';
+      : this.lang.t('gallery.gallery', 'placeholderImage');
   }
 
   getCoverRight(group: any): string {

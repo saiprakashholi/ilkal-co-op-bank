@@ -1,0 +1,12 @@
+{
+  "pageTitle": "Annual General Meeting (AGM)",
+  "pageSubtitle": "View and download AGM reports and proceedings",
+  "viewLabel": "View",
+  "downloadLabel": "Download",
+  "reports": [
+    { "year": "2025–26", "title": "61st Annual General Meeting – Report" },
+    { "year": "2024–25", "title": "60th Annual General Meeting – Proceedings", "url": "/assets/downloads/agm-2024-25.pdf" },
+    { "year": "2023–24", "title": "59th Annual General Meeting – Report", "url": "/assets/downloads/agm-2023-24.pdf" },
+    { "year": "2022–23", "title": "58th Annual General Meeting – Proceedings" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pageTitle": "Downloads",
+  "pageSubtitle": "Important documents and reports available for customers",
+  "viewLabel": "View",
+  "downloadLabel": "Download",
+  "items": [
+    { "title": "Inoperative Accounts" },
+    { "title": "Information on Secured Assets Possessed under the SARFAESI Act, 2002" },
+    { "title": "RBI Ombudsman Scheme", "url": "/assets/downloads/3.pdf" },
+    { "title": "Statutory Auditor Policy", "url": "/assets/downloads/statutory-auditor-policy.pdf" },
+    { "title": "Customer Complaints and Grievance" }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "pageTitle": "ಗ್ಯಾಲರಿ",
+  "pageSubtitle": "ಕಾರ್ಯಕ್ರಮಗಳು, ಚಟುವಟಿಕೆಗಳು ಮತ್ತು ಸ್ಮರಣೀಯ ಕ್ಷಣಗಳ ಫೋಟೋಗಳನ್ನು ಅನ್ವೇಷಿಸಿ.",
+  "photosLabel": "ಫೋಟೋಗಳು",
+  "placeholderImage": "/assets/placeholder.jpg",
+  "groups": [
+    {
+      "id": 3,
+      "name": "ವಾರ್ಷಿಕ ಸಾಮಾನ್ಯ ಸಭೆ",
+      "description": "ಗೌರವಾನ್ವಿತ ಅತಿಥಿಗಳು ಮತ್ತು ಸಮುದಾಯ ಸದಸ್ಯರೊಂದಿಗೆ ನಡೆದ ವಾರ್ಷಿಕ ಸಾಮಾನ್ಯ ಸಭೆ.",
+      "photos": [
+        "/assets/gallery/agm/agm_gallery_1.jpg",
+        "/assets/gallery/agm/agm_gallery_2.jpg",
+        "/assets/gallery/agm/agm_gallery_3.jpg",
+        "/assets/gallery/agm/agm_gallery_4.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ಸ್ಟಾಫ್ ಈವೆಂಟ್‌ಗಳು",
+      "description": "QR ಆಧಾರಿತ ಡಿಜಿಟಲ್ ಬ್ಯಾಂಕಿಂಗ್ ಸೇವೆಗಳನ್ನು ಅನಾವರಣಗೊಳಿಸಿದ ನಿರ್ವಹಣೆ ಮತ್ತು ಸಿಬ್ಬಂದಿ, ಆಧುನಿಕೀಕರಣದ ಮೇಲಿನ ಬ್ಯಾಂಕ್‌ನ ಬದ್ಧತೆಯನ್ನು ಹಿಗ್ಗಿಸುತ್ತದೆ.",
+      "photos": [
+        "/assets/gallery/staff-event/staff_gallery_1.jpg",
+        "/assets/gallery/staff-event/staff_gallery_2.jpg",
+        "/assets/gallery/staff-event/staff_gallery_3.jpg",
+        "/assets/gallery/staff-event/staff_gallery_4.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ಪ್ರಶಸ್ತಿಗಳು",
+      "description": "ನಮ್ಮ ಹೊಸ ಶಾಖೆಯಲ್ಲಿ ಗೌರವಾನ್ವಿತ ಅತಿಥಿಗಳೊಂದಿಗೆ ಪ್ರಶಸ್ತಿ ವಿತರಣೆ.",
+      "photos": [
+        "/assets/gallery/2/others Prize.jpg",
+        "/assets/gallery/2/1st Prize.jpg",
+        "/assets/gallery/2/3rd Prize Group Photo.jpg",
+        "/assets/gallery/2/3rd Prize.jpg",
+        "/assets/gallery/2/Good Performance Prize Group Photo.jpg",
+        "/assets/gallery/2/Good Performance Prize.jpg"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "ಶಾಖೆ ಆರಂಭ ಸಮಾರಂಭ",
+      "description": "ಗೌರವಾನ್ವಿತ ಅತಿಥಿಗಳು ಮತ್ತು ಸಮುದಾಯ ಸದಸ್ಯರೊಂದಿಗೆ ನಮ್ಮ ಹೊಸ ಶಾಖೆಯ ಉದ್ಘಾಟನೆ.",
+      "photos": [
+        "/assets/gallery/1/1.gm.jpeg",
+        "/assets/gallery/1/2.gm.jpeg",
+        "/assets/gallery/1/3.gm.jpeg"
+      ]
+    }
+  ]
+}

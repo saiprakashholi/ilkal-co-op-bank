@@ -1,6 +1,6 @@
 <section class="service-charges">
-  <h1>Service Charges</h1>
-  <p class="subtitle">Applicable service charges for various banking services</p>
+  <h1>{{ lang.t('others.service-charges', 'pageTitle') }}</h1>
+  <p class="subtitle">{{ lang.t('others.service-charges', 'pageSubtitle') }}</p>
 
   <!-- MAIN SECTIONS -->
   <div class="section" *ngFor="let section of sections">
@@ -8,9 +8,9 @@
 
     <div class="table">
       <div class="row header">
-        <span>Sl. No</span>
-        <span>Details</span>
-        <span>Service Charges</span>
+        <span>{{ lang.t('others.service-charges', 'tableHeaderNo') }}</span>
+        <span>{{ lang.t('others.service-charges', 'tableHeaderDetails') }}</span>
+        <span>{{ lang.t('others.service-charges', 'tableHeaderCharges') }}</span>
       </div>
 
       <div class="row" *ngFor="let row of section.rows">
@@ -23,13 +23,13 @@
 
   <!-- IMPS CHARGES -->
   <div class="section">
-    <h2>IMPS Charges</h2>
+    <h2>{{ lang.t('others.service-charges', 'impsTitle') }}</h2>
 
     <div class="table imps">
       <div class="row header">
-        <span>From (₹)</span>
-        <span>To (₹)</span>
-        <span>Charges (Incl. GST)</span>
+        <span>{{ lang.t('others.service-charges', 'impsHeaderFrom') }}</span>
+        <span>{{ lang.t('others.service-charges', 'impsHeaderTo') }}</span>
+        <span>{{ lang.t('others.service-charges', 'impsHeaderCharges') }}</span>
       </div>
 
       <div class="row" *ngFor="let item of impsCharges">

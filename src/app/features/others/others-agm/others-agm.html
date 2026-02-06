@@ -1,8 +1,8 @@
 <section class="agm">
   <!-- HERO -->
   <div class="hero">
-    <h1>Annual General Meeting (AGM)</h1>
-    <p>View and download AGM reports and proceedings</p>
+    <h1>{{ lang.t('others.others-agm', 'pageTitle') }}</h1>
+    <p>{{ lang.t('others.others-agm', 'pageSubtitle') }}</p>
   </div>
 
   <!-- LIST -->
@@ -14,9 +14,13 @@
       </div>
 
       <div class="actions" [class.disabled]="!agm.url">
-        <a class="view" [href]="agm.url" target="_blank" rel="noopener"> View </a>
+        <a class="view" [href]="agm.url" target="_blank" rel="noopener">
+          {{ lang.t('others.others-agm', 'viewLabel') }}
+        </a>
 
-        <a class="download" [href]="agm.url" download> Download </a>
+        <a class="download" [href]="agm.url" download>
+          {{ lang.t('others.others-agm', 'downloadLabel') }}
+        </a>
       </div>
     </div>
   </div>

@@ -5,6 +5,7 @@ import {
   Input,
   Output
 } from '@angular/core';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'app-photo-list',
@@ -19,6 +20,8 @@ export class PhotoListComponent {
   @Output() close = new EventEmitter<void>();
 
   index = 0;
+
+  constructor(public lang: LanguageService) { }
 
   // keyboard support
   @HostListener('document:keydown.escape')
