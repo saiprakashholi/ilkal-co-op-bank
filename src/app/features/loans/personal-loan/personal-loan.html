@@ -1,11 +1,15 @@
 <section class="loan-page">
   <!-- HERO -->
   <header class="hero">
-    <img src="/assets/loans/personal-loan.jpg" alt="Housing Loan" class="hero-image" />
+    <img
+      [src]="lang.t('loans.personal', 'heroImage')"
+      alt="Housing Loan"
+      class="hero-image"
+    />
 
-    <h1>{{ hero.title }}</h1>
-    <p class="subtitle">{{ hero.subtitle }}</p>
-    <p class="desc">{{ hero.description }}</p>
+    <h1>{{ lang.t('loans.personal', 'pageTitle') }}</h1>
+    <p class="subtitle">{{ lang.t('loans.personal', 'pageSubtitle') }}</p>
+    <p class="desc">{{ lang.t('loans.personal', 'pageDescription') }}</p>
   </header>
 
   <!-- QUICK FACTS -->
@@ -22,7 +26,7 @@
 
   <!-- USE CASES -->
   <section *ngIf="useCases && useCases.length > 0" class="use-cases">
-    <h2>When is a Personal Loan useful?</h2>
+    <h2>{{ lang.t('loans.personal', 'useCasesTitle') }}</h2>
     <ul>
       <li *ngFor="let u of useCases">{{ u }}</li>
     </ul>
@@ -33,22 +37,22 @@
     <!-- ELIGIBILITY -->
     <div class="acc-item">
       <button class="acc-header" (click)="toggle('eligibility')">
-        Eligibility
+        {{ lang.t('loans.personal', 'eligibilityTitle') }}
         <span>{{ openSection === 'eligibility' ? '−' : '+' }}</span>
       </button>
 
       <div class="acc-body" *ngIf="openSection === 'eligibility'">
-        <h4>For Salaried Persons</h4>
+        <h4>{{ lang.t('loans.personal', 'eligibilitySalariedTitle') }}</h4>
         <ul>
-          <li *ngFor="let e of eligibility.salaried">{{ e }}</li>
+          <li *ngFor="let e of eligibilitySalaried">{{ e }}</li>
         </ul>
 
-        <h4>For Businessmen & Professionals</h4>
+        <h4>{{ lang.t('loans.personal', 'eligibilityBusinessTitle') }}</h4>
         <ul>
-          <li *ngFor="let e of eligibility.business">{{ e }}</li>
+          <li *ngFor="let e of eligibilityBusiness">{{ e }}</li>
         </ul>
 
-        <h4>Guarantors</h4>
+        <h4>{{ lang.t('loans.personal', 'guarantorsTitle') }}</h4>
         <ul>
           <li *ngFor="let g of guarantors">{{ g }}</li>
         </ul>
@@ -58,7 +62,7 @@
     <!-- DOCUMENTS -->
     <div class="acc-item" #documentsSection>
       <button class="acc-header" (click)="toggle('documents', documentsSection)">
-        Documents Required
+        {{ lang.t('loans.personal', 'documentsTitle') }}
         <span>{{ openSection === 'documents' ? '−' : '+' }}</span>
       </button>
 
@@ -72,7 +76,7 @@
     <!-- CHARGES -->
     <div class="acc-item">
       <button class="acc-header" (click)="toggle('charges')">
-        Charges & Notes
+        {{ lang.t('loans.personal', 'chargesTitle') }}
         <span>{{ openSection === 'charges' ? '−' : '+' }}</span>
       </button>
 
@@ -86,6 +90,8 @@
 
   <!-- CTA -->
   <div class="cta">
-    <button (click)="goToBranches()">Check Eligibility at Nearest Branch</button>
+    <button (click)="goToBranches()">
+      {{ lang.t('loans.personal', 'ctaLabel') }}
+    </button>
   </div>
 </section>

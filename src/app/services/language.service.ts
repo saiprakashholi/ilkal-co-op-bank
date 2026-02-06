@@ -61,6 +61,9 @@ export class LanguageService {
       'loans.vehicle',
       'loans.gold',
       'loans.business',
+      'loans.housing',
+      'loans.personal',
+      'loans.interest-rate',
 
 
       // deposits

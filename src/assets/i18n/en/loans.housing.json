@@ -1,0 +1,56 @@
+{
+  "pageTitle": "Housing Loan",
+  "pageSubtitle": "Turn your dream of owning a home into reality",
+  "pageDescription": "We offer Home Loans and Home Construction Loans with simple documentation and flexible repayment options, helping you build your dream home with confidence.",
+  "heroImage": "/assets/loans/housing-loan-final.jpg",
+  "highlights": [
+    { "label": "Maximum Loan", "value": "₹1.4 Crore" },
+    { "label": "Repayment Period", "value": "Up to 15 Years" },
+    { "label": "Interest Rate", "value": "11% p.a." },
+    { "label": "Margin", "value": "25%" }
+  ],
+  "useCasesTitle": "How can a Housing Loan help you?",
+  "useCases": [
+    "Construction of a new house",
+    "Long-term real estate investment"
+  ],
+  "eligibilityTitle": "Eligibility",
+  "eligibilitySalariedTitle": "For Salaried Persons",
+  "eligibilityBusinessTitle": "For Businessmen & Professionals",
+  "eligibilityCoApplicantTitle": "Co-Applicant",
+  "eligibility.salaried": [
+    "Employees of reputed and financially sound organizations",
+    "Confirmed service for at least one year"
+  ],
+  "eligibility.business": [
+    "Business establishment of minimum three years"
+  ],
+  "eligibility.coApplicant": [
+    "Co-owners of the dwelling unit must be taken as co-applicants",
+    "Spouse or parents (other than co-owners) can also be co-applicants"
+  ],
+  "documentsTitle": "Documents Required",
+  "documents": [
+    "Duly filled loan application form",
+    "Building Permission of Concern Authority",
+    "Utilization Certificate",
+    "Original Sale Deed Bond",
+    "Income Tax Filling Return (Minimum 3 Years)",
+    "Computer Utar",
+    "Encumbrance Certificate (EC 30 Years)",
+    "Income proof of applicant(s) and guarantor(s)",
+    "Residential proof of applicant(s) and guarantor(s)",
+    "PAN Card of applicant(s) and guarantor(s)",
+    "KYC documents of applicant(s) and guarantor(s)",
+    "Other Required Applicable Documents as per bank norms"
+  ],
+  "securityTitle": "Prime Security",
+  "security": [
+    "Dwelling unit under construction or ready possession to be purchased",
+    "Two acceptable guarantors required",
+    "Security holders to be taken as guarantors"
+  ],
+  "chargesTitle": "Charges & Other Details",
+  "chargesNote": "Other applicable charges include upfront EMI, franking charges, CERSAI, mortgage filing, property insurance, legal charges, valuation and sanction confirmation (if applicable). Service charges may vary as per bank norms.",
+  "ctaLabel": "Discuss Housing Loan at Nearest Branch"
+}

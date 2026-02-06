@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'app-personal-loan',
@@ -10,33 +11,21 @@ import { Router } from '@angular/router';
   styleUrl: './personal-loan.scss',
 })
 export class PersonalLoan {
-  constructor(private router: Router) { }
+  constructor(
+    public lang: LanguageService,
+    private router: Router
+  ) { }
 
-  // HERO
-  hero = {
-    title: 'Personal Loan',
-    subtitle: 'Quick financial support for your personal needs',
-    icon: '💳',
-    description:
-      'An unsecured loan with minimal documentation and flexible repayment.',
-  };
+  get highlights(): Array<{ label: string; value: string; valueLabel?: string }> {
+    return this.lang.tArray<{ label: string; value: string; valueLabel?: string }>(
+      'loans.personal',
+      'highlights'
+    );
+  }
 
-  // QUICK FACTS
-  highlights = [
-    { label: 'Maximum Amount', value: '₹5.00 Lakhs', valueLabel: '(10 Times of Basic Salary)' },
-    { label: 'Tenure', value: '3 Years' },
-    // { label: 'Collateral', value: 'Not Required' },
-    { label: 'Prepayment', value: 'No Penalty' },
-  ];
-
-  // USE CASES
-  useCases = [
-    // 'Medical or emergency expenses',
-    // 'Education or skill development',
-    // 'Marriage or family functions',
-    // 'Travel or personal commitments',
-    // 'Any genuine personal financial need',
-  ];
+  get useCases(): string[] {
+    return this.lang.tArray<string>('loans.personal', 'useCases');
+  }
 
   // ACCORDION STATE
   openSection: 'eligibility' | 'documents' | 'charges' | null = 'eligibility';
@@ -53,39 +42,25 @@ export class PersonalLoan {
 
 
 
-  // ELIGIBILITY
-  eligibility = {
-    salaried: [
-      'Must be a member of the bank',
-      'Employee of a reputed and financially sound organization',
-      // 'Minimum gross take-home salary of ₹25,000 per month',
-      'Confirmed service for at least one year',
-      'Undertaking letter from employer',
-    ],
-    business: [
-      'Must be a member of the bank',
-      'Business establishment of minimum three years',
-      'Statutory business documents such as GST registration',
-    ],
-  };
+  get eligibilitySalaried(): string[] {
+    return this.lang.tArray<string>('loans.personal', 'eligibility.salaried');
+  }
 
-  // GUARANTORS
-  guarantors = [
-    'Two acceptable guarantors are mandatory',
-    'Guarantors should be members of the bank',
-    'Security holders may also be taken as guarantors',
-  ];
+  get eligibilityBusiness(): string[] {
+    return this.lang.tArray<string>('loans.personal', 'eligibility.business');
+  }
 
-  // DOCUMENTS
-  documents = [
-    'Duly filled loan application form',
-    'Income proof of applicant(s) and guarantor(s)',
-    'Residential proof of applicant(s) and guarantor(s)',
-    'PAN Card of applicant(s) and guarantor(s)',
-    'KYC documents of applicant(s) and guarantor(s)',
-  ];
+  get guarantors(): string[] {
+    return this.lang.tArray<string>('loans.personal', 'guarantors');
+  }
 
-  chargesNote = 'Service charges and other fees are applicable as per bank norms';
+  get documents(): string[] {
+    return this.lang.tArray<string>('loans.personal', 'documents');
+  }
+
+  get chargesNote(): string {
+    return this.lang.t('loans.personal', 'chargesNote');
+  }
 
   goToBranches() {
     this.router.navigate(['/locations']);

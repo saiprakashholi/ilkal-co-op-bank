@@ -2,11 +2,15 @@
 
   <!-- HERO -->
   <header class="hero">
-    <img src="/assets/loans/housing-loan-final.jpg" alt="Housing Loan" class="hero-image" />
+    <img
+      [src]="lang.t('loans.housing', 'heroImage')"
+      alt="Housing Loan"
+      class="hero-image"
+    />
 
-    <h1>{{ hero.title }}</h1>
-    <p class="subtitle">{{ hero.subtitle }}</p>
-    <p class="desc">{{ hero.description }}</p>
+    <h1>{{ lang.t('loans.housing', 'pageTitle') }}</h1>
+    <p class="subtitle">{{ lang.t('loans.housing', 'pageSubtitle') }}</p>
+    <p class="desc">{{ lang.t('loans.housing', 'pageDescription') }}</p>
   </header>
 
   <!-- QUICK FACTS -->
@@ -19,7 +23,7 @@
 
   <!-- USE CASES -->
   <section class="use-cases">
-    <h2>How can a Housing Loan help you?</h2>
+    <h2>{{ lang.t('loans.housing', 'useCasesTitle') }}</h2>
     <ul>
       <li *ngFor="let u of useCases">{{ u }}</li>
     </ul>
@@ -30,24 +34,24 @@
     <!-- ELIGIBILITY -->
     <div class="acc-item">
       <button class="acc-header" (click)="toggle('eligibility')">
-        Eligibility
+        {{ lang.t('loans.housing', 'eligibilityTitle') }}
         <span>{{ openSection === 'eligibility' ? '−' : '+' }}</span>
       </button>
 
       <div class="acc-body" *ngIf="openSection === 'eligibility'">
-        <h4>For Salaried Persons</h4>
+        <h4>{{ lang.t('loans.housing', 'eligibilitySalariedTitle') }}</h4>
         <ul>
-          <li *ngFor="let e of eligibility.salaried">{{ e }}</li>
+          <li *ngFor="let e of eligibilitySalaried">{{ e }}</li>
         </ul>
 
-        <h4>For Businessmen & Professionals</h4>
+        <h4>{{ lang.t('loans.housing', 'eligibilityBusinessTitle') }}</h4>
         <ul>
-          <li *ngFor="let e of eligibility.business">{{ e }}</li>
+          <li *ngFor="let e of eligibilityBusiness">{{ e }}</li>
         </ul>
 
-        <h4>Co-Applicant</h4>
+        <h4>{{ lang.t('loans.housing', 'eligibilityCoApplicantTitle') }}</h4>
         <ul>
-          <li *ngFor="let c of eligibility.coApplicant">{{ c }}</li>
+          <li *ngFor="let c of eligibilityCoApplicant">{{ c }}</li>
         </ul>
       </div>
     </div>
@@ -55,7 +59,7 @@
     <!-- DOCUMENTS -->
     <div class="acc-item" #documentsSection>
       <button class="acc-header" (click)="toggle('documents', documentsSection)">
-        Documents Required
+        {{ lang.t('loans.housing', 'documentsTitle') }}
         <span>{{ openSection === 'documents' ? '−' : '+' }}</span>
       </button>
 
@@ -64,7 +68,7 @@
           <li *ngFor="let d of documents">{{ d }}</li>
         </ul>
 
-        <h4>Prime Security</h4>
+        <h4>{{ lang.t('loans.housing', 'securityTitle') }}</h4>
         <ul>
           <li *ngFor="let s of security">{{ s }}</li>
         </ul>
@@ -74,7 +78,7 @@
     <!-- CHARGES -->
     <div class="acc-item">
       <button class="acc-header" (click)="toggle('charges')">
-        Charges & Other Details
+        {{ lang.t('loans.housing', 'chargesTitle') }}
         <span>{{ openSection === 'charges' ? '−' : '+' }}</span>
       </button>
 
@@ -88,6 +92,8 @@
 
   <!-- CTA -->
   <div class="cta">
-    <button (click)="goToBranches()">Discuss Housing Loan at Nearest Branch</button>
+    <button (click)="goToBranches()">
+      {{ lang.t('loans.housing', 'ctaLabel') }}
+    </button>
   </div>
 </section>

@@ -1,0 +1,48 @@
+{
+  "pageTitle": "Personal Loan",
+  "pageSubtitle": "Quick financial support for your personal needs",
+  "pageDescription": "An unsecured loan with minimal documentation and flexible repayment.",
+  "heroImage": "/assets/loans/personal-loan.jpg",
+  "highlights": [
+    {
+      "label": "Maximum Amount",
+      "value": "₹5.00 Lakhs",
+      "valueLabel": "(10 Times of Basic Salary)"
+    },
+    { "label": "Tenure", "value": "3 Years" },
+    { "label": "Prepayment", "value": "No Penalty" }
+  ],
+  "useCasesTitle": "When is a Personal Loan useful?",
+  "useCases": [],
+  "eligibilityTitle": "Eligibility",
+  "eligibilitySalariedTitle": "For Salaried Persons",
+  "eligibilityBusinessTitle": "For Businessmen & Professionals",
+  "guarantorsTitle": "Guarantors",
+  "eligibility.salaried": [
+    "Must be a member of the bank",
+    "Employee of a reputed and financially sound organization",
+    "Confirmed service for at least one year",
+    "Undertaking letter from employer"
+  ],
+  "eligibility.business": [
+    "Must be a member of the bank",
+    "Business establishment of minimum three years",
+    "Statutory business documents such as GST registration"
+  ],
+  "guarantors": [
+    "Two acceptable guarantors are mandatory",
+    "Guarantors should be members of the bank",
+    "Security holders may also be taken as guarantors"
+  ],
+  "documentsTitle": "Documents Required",
+  "documents": [
+    "Duly filled loan application form",
+    "Income proof of applicant(s) and guarantor(s)",
+    "Residential proof of applicant(s) and guarantor(s)",
+    "PAN Card of applicant(s) and guarantor(s)",
+    "KYC documents of applicant(s) and guarantor(s)"
+  ],
+  "chargesTitle": "Charges & Notes",
+  "chargesNote": "Service charges and other fees are applicable as per bank norms",
+  "ctaLabel": "Check Eligibility at Nearest Branch"
+}

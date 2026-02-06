@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'app-housing-loan',
@@ -10,32 +11,21 @@ import { Router } from '@angular/router';
   styleUrl: './housing-loan.scss',
 })
 export class HousingLoan {
-  constructor(private router: Router) {}
+  constructor(
+    public lang: LanguageService,
+    private router: Router
+  ) {}
 
-  // HERO
-  hero = {
-    title: 'Housing Loan',
-    subtitle: 'Turn your dream of owning a home into reality',
-    icon: '🏠',
-    description:
-      'We offer Home Loans and Home Construction Loans with simple documentation and flexible repayment options, helping you build your dream home with confidence.',
-  };
+  get highlights(): Array<{ label: string; value: string }> {
+    return this.lang.tArray<{ label: string; value: string }>(
+      'loans.housing',
+      'highlights'
+    );
+  }
 
-  // QUICK FACTS
-  highlights = [
-    { label: 'Maximum Loan', value: '₹1.4 Crore' },
-    { label: 'Repayment Period', value: 'Up to 15 Years' },
-    { label: 'Interest Rate', value: '11% p.a.' },
-    { label: 'Margin', value: '25%' },
-  ];
-
-  // USE CASES
-  useCases = [
-    // 'Purchase of residential house or flat',
-    'Construction of a new house',
-    // 'Purchase of under-construction property',
-    'Long-term real estate investment',
-  ];
+  get useCases(): string[] {
+    return this.lang.tArray<string>('loans.housing', 'useCases');
+  }
 
   // ACCORDION STATE
   openSection: 'eligibility' | 'documents' | 'charges' | null = 'eligibility';
@@ -50,48 +40,29 @@ export class HousingLoan {
     }
   }
 
-  // ELIGIBILITY
-  eligibility = {
-    salaried: [
-      'Employees of reputed and financially sound organizations',
-      // 'Minimum gross take-home salary of ₹15,000 per month',
-      'Confirmed service for at least one year',
-    ],
-    business: [
-      'Business establishment of minimum three years',
-    ],
-    coApplicant: [
-      'Co-owners of the dwelling unit must be taken as co-applicants',
-      'Spouse or parents (other than co-owners) can also be co-applicants',
-    ],
-  };
+  get eligibilitySalaried(): string[] {
+    return this.lang.tArray<string>('loans.housing', 'eligibility.salaried');
+  }
 
-  // DOCUMENTS
-  documents = [
-    'Duly filled loan application form',
-    'Building Permission of Concern Authority',
-    'Utilization Certificate',
-    'Original Sale Deed Bond',
-    'Income Tax Filling Return (Minimum 3 Years)',
-    'Computer Utar',
-    'Encumbrance Certificate (EC 30 Years)',
-    // 'Plan and Estimation And Legal Opinion',
-    'Income proof of applicant(s) and guarantor(s)',
-    'Residential proof of applicant(s) and guarantor(s)',
-    'PAN Card of applicant(s) and guarantor(s)',
-    'KYC documents of applicant(s) and guarantor(s)',
-    'Other Required Applicable Documents as per bank norms'
-  ];
+  get eligibilityBusiness(): string[] {
+    return this.lang.tArray<string>('loans.housing', 'eligibility.business');
+  }
 
-  // SECURITY & CHARGES
-  security = [
-    'Dwelling unit under construction or ready possession to be purchased',
-    'Two acceptable guarantors required',
-    'Security holders to be taken as guarantors',
-  ];
+  get eligibilityCoApplicant(): string[] {
+    return this.lang.tArray<string>('loans.housing', 'eligibility.coApplicant');
+  }
 
-  chargesNote =
-    'Other applicable charges include upfront EMI, franking charges, CERSAI, mortgage filing, property insurance, legal charges, valuation and sanction confirmation (if applicable). Service charges may vary as per bank norms.';
+  get documents(): string[] {
+    return this.lang.tArray<string>('loans.housing', 'documents');
+  }
+
+  get security(): string[] {
+    return this.lang.tArray<string>('loans.housing', 'security');
+  }
+
+  get chargesNote(): string {
+    return this.lang.t('loans.housing', 'chargesNote');
+  }
 
   goToBranches() {
     this.router.navigate(['/locations']);

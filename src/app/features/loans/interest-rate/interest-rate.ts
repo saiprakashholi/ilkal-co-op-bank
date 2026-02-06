@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'app-interest-rate',
@@ -9,12 +10,12 @@ import { Component } from '@angular/core';
   styleUrl: './interest-rate.scss',
 })
 export class InterestRate {
-  loans = [
-    { name: 'Home Loan', rate: 11.0 },
-    { name: 'Vehicle Loan', rate: 13.5 },
-    { name: 'Business Loan', rate: 13.0 },
-    // { name: 'Education Loan', rate: 11.0 },
-    { name: 'Gold Loan', rate: 11.0 },
-    { name: 'Salaried Loan', rate: 13.5 },
-  ];
+  constructor(public lang: LanguageService) { }
+
+  get loans(): Array<{ name: string; rate: number }> {
+    return this.lang.tArray<{ name: string; rate: number }>(
+      'loans.interest-rate',
+      'loans'
+    );
+  }
 }

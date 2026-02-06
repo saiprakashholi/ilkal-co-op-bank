@@ -1,6 +1,6 @@
 <section class="page">
-  <h1>Loan Interest Rates</h1>
-  <p class="subtitle">Category wise interest details</p>
+  <h1>{{ lang.t('loans.interest-rate', 'pageTitle') }}</h1>
+  <p class="subtitle">{{ lang.t('loans.interest-rate', 'pageSubtitle') }}</p>
 
   <div class="loan-list">
     <div class="loan-card" *ngFor="let loan of loans">
@@ -10,9 +10,12 @@
   </div>
 </section>
 <div class="image-section">
-  <h2>Loan Interest Rate Chart</h2>
+  <h2>{{ lang.t('loans.interest-rate', 'chartTitle') }}</h2>
   <br />
-  <img src="/assets/loans2/loan-interest-chart.jpg" alt="Loan Interest Rates Chart" />
+  <img
+    [src]="lang.t('loans.interest-rate', 'chartImage')"
+    alt="Loan Interest Rates Chart"
+  />
 </div>
 
 <br />
