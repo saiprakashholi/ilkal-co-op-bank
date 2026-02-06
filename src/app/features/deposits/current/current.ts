@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'app-current',
@@ -10,56 +11,34 @@ import { Router } from '@angular/router';
   styleUrl: './current.scss',
 })
 export class Current {
-  constructor(private router: Router) { }
+  constructor(
+    public lang: LanguageService,
+    private router: Router
+  ) { }
 
-  page = {
-    title: 'Current Deposit',
-    description:
-      'A Current Account is designed for businesses and individuals with frequent transactions, offering flexibility, convenience, and seamless banking operations.',
-  };
+  get benefits(): string[] {
+    return this.lang.tArray<string>('deposits.current', 'benefits');
+  }
 
-  benefits = [
-    'No restriction on transactions either in number or amount',
-    // 'Minimum balance without cheque book – ₹1000',
-    'Minimum balance with cheque book – ₹2000',
-    // 'Multi-City Cheque Book facility',
-    'RTGS / NEFT facility',
-    'SMS alerts on registered mobile number',
-  ];
+  get eligibility(): string[] {
+    return this.lang.tArray<string>('deposits.current', 'eligibility');
+  }
 
-  eligibility = [
-    'Individuals',
-    'Businessmen',
-    'Proprietorship Concerns',
-    'Partnership Firms',
-    'Public or Private Limited Companies',
-    'Societies',
-    'Trusts',
-    'HUF Accounts',
-  ];
+  get photos(): string[] {
+    return this.lang.tArray<string>('deposits.current', 'documents.photos');
+  }
 
-  documents = {
-    photos: ['Four recent passport-size color photographs'],
-    mandatory: ['PAN Card'],
-    addressProof: [
-      'Aadhaar Card',
-      'Driving License',
-      'Voter ID',
-      'Passport',
-      'Electricity Bill',
-      'Telephone Bill',
-    ],
-    identityProof: [
-      'Driving License with current address',
-      'Voter ID',
-      'Passport',
-      'PAN Card',
-      'Aadhaar Card',
-      'GST Registration'
-    ],
-    note:
-      'For Proprietorship / Partnership Firms / Public or Private Limited Companies / Trusts / HUF accounts, additional documents may be required as per bank norms.',
-  };
+  get mandatoryDocs(): string[] {
+    return this.lang.tArray<string>('deposits.current', 'documents.mandatory');
+  }
+
+  get addressProofDocs(): string[] {
+    return this.lang.tArray<string>('deposits.current', 'documents.addressProof');
+  }
+
+  get identityProofDocs(): string[] {
+    return this.lang.tArray<string>('deposits.current', 'documents.identityProof');
+  }
 
   goToBranches() {
     this.router.navigate(['/locations']);

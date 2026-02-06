@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Savings Deposit",
+  "pageDescription": "A Savings Bank Account helps you securely set aside your savings while enjoying easy access to funds and earning steady interest.",
+  "heroImage": "/assets/deposits/saving-account.jpg",
+  "interestRateLabel": "Rate of Interest",
+  "interestRateValue": "3.0% p.a.",
+  "benefitsTitle": "Benefits",
+  "benefits": [
+    "Minimum balance without cheque book – ₹500",
+    "Minimum balance with cheque book – ₹1000",
+    "RTGS / NEFT facility",
+    "SMS alerts on registered mobile number",
+    "Mobile Banking Application access"
+  ],
+  "eligibilityTitle": "Eligibility",
+  "eligibilityHint": "Who can open an account",
+  "eligibility": [
+    "Individuals (Single or Joint account)",
+    "Societies",
+    "Trusts"
+  ],
+  "documentsTitle": "Documents Required",
+  "photosTitle": "Photographs",
+  "mandatoryTitle": "Mandatory",
+  "addressProofTitle": "Address Proof (Any one)",
+  "identityProofTitle": "Identity Proof (Any one)",
+  "documents.photos": [
+    "Four recent passport-size color photographs"
+  ],
+  "documents.mandatory": [
+    "PAN Card"
+  ],
+  "documents.addressProof": [
+    "Aadhaar Card",
+    "Driving License",
+    "Voter ID",
+    "Passport",
+    "Electricity Bill",
+    "Telephone Bill"
+  ],
+  "documents.identityProof": [
+    "Aadhaar Card",
+    "PAN Card",
+    "Driving License",
+    "Voter ID",
+    "Passport",
+    "Ration Card"
+  ],
+  "ctaLabel": "Visit Nearest Branch"
+}

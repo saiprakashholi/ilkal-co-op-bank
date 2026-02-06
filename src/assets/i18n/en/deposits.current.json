@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Current Deposit",
+  "pageDescription": "A Current Account is designed for businesses and individuals with frequent transactions, offering flexibility, convenience, and seamless banking operations.",
+  "heroImage": "/assets/deposits/current-deposit.jpg",
+  "benefitsTitle": "Benefits",
+  "benefits": [
+    "No restriction on transactions either in number or amount",
+    "Minimum balance with cheque book – ₹2000",
+    "RTGS / NEFT facility",
+    "SMS alerts on registered mobile number"
+  ],
+  "eligibilityTitle": "Eligibility",
+  "eligibilityHint": "Who can open an account",
+  "eligibility": [
+    "Individuals",
+    "Businessmen",
+    "Proprietorship Concerns",
+    "Partnership Firms",
+    "Public or Private Limited Companies",
+    "Societies",
+    "Trusts",
+    "HUF Accounts"
+  ],
+  "documentsTitle": "Documents Required",
+  "photosTitle": "Photographs",
+  "mandatoryTitle": "Mandatory",
+  "addressProofTitle": "Address Proof (Any one)",
+  "identityProofTitle": "Identity Proof (Any one)",
+  "documents.photos": [
+    "Four recent passport-size color photographs"
+  ],
+  "documents.mandatory": [
+    "PAN Card"
+  ],
+  "documents.addressProof": [
+    "Aadhaar Card",
+    "Driving License",
+    "Voter ID",
+    "Passport",
+    "Electricity Bill",
+    "Telephone Bill"
+  ],
+  "documents.identityProof": [
+    "Driving License with current address",
+    "Voter ID",
+    "Passport",
+    "PAN Card",
+    "Aadhaar Card",
+    "GST Registration"
+  ],
+  "documentsNote": "For Proprietorship / Partnership Firms / Public or Private Limited Companies / Trusts / HUF accounts, additional documents may be required as per bank norms.",
+  "ctaLabel": "Visit Nearest Branch"
+}

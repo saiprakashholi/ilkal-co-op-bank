@@ -1,0 +1,16 @@
+{
+  "pageTitle": "Deposit Interest Rates",
+  "pageSubtitle": "Applicable from 01-02-2026",
+  "chartTitle": "Deposit Interest Rate Chart",
+  "heroImage": "/assets/deposits/fixed-deposit.jpg",
+  "chartImage": "/assets/finance/deposit-interest-chart.jpeg",
+  "deposits": [
+    { "title": "15 – 45 Days", "rate": 4.5 },
+    { "title": "46 – 90 Days", "rate": 5.5 },
+    { "title": "91 – 180 Days", "rate": 6.5 },
+    { "title": "181 – 364 Days", "rate": 7.0 },
+    { "title": "12 – 35 Months", "rate": 8.25 },
+    { "title": "36 Months & Above", "rate": 8.5 },
+    { "title": "Bulk Deposit", "rate": 8.75 }
+  ]
+}

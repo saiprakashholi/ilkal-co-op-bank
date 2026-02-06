@@ -1,0 +1,16 @@
+{
+  "pageTitle": "ಠೇವಣಿ ಬಡ್ಡಿ ದರಗಳು",
+  "pageSubtitle": "01-02-2026 ರಿಂದ ಅನ್ವಯ",
+  "chartTitle": "ಠೇವಣಿ ಬಡ್ಡಿ ದರ ಚಾರ್ಟ್",
+  "heroImage": "/assets/deposits/fixed-deposit.jpg",
+  "chartImage": "/assets/finance/deposit-interest-chart.jpeg",
+  "deposits": [
+    { "title": "15 – 45 ದಿನಗಳು", "rate": 4.5 },
+    { "title": "46 – 90 ದಿನಗಳು", "rate": 5.5 },
+    { "title": "91 – 180 ದಿನಗಳು", "rate": 6.5 },
+    { "title": "181 – 364 ದಿನಗಳು", "rate": 7.0 },
+    { "title": "12 – 35 ತಿಂಗಳು", "rate": 8.25 },
+    { "title": "36 ತಿಂಗಳು ಮತ್ತು ಮೇಲ್ಪಟ್ಟ", "rate": 8.5 },
+    { "title": "ಬಲ್ಕ್ ಠೇವಣಿ", "rate": 8.75 }
+  ]
+}

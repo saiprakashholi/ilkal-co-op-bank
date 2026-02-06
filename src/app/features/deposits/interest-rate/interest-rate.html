@@ -1,8 +1,12 @@
 <section class="page">
   <header class="hero">
-    <img src="/assets/deposits/fixed-deposit.jpg" alt="Savings Deposits" class="hero-image" />
-    <h1>Deposit Interest Rates</h1>
-    <p class="subtitle">Applicable from 01-02-2026</p>
+    <img
+      [src]="lang.t('deposits.interest-rate', 'heroImage')"
+      alt="Savings Deposits"
+      class="hero-image"
+    />
+    <h1>{{ lang.t('deposits.interest-rate', 'pageTitle') }}</h1>
+    <p class="subtitle">{{ lang.t('deposits.interest-rate', 'pageSubtitle') }}</p>
   </header>
 
   <div class="rate-grid">
@@ -14,10 +18,13 @@
 </section>
 
 <div class="image-section">
-  <h2>Deposit Interest Rate Chart</h2>
+  <h2>{{ lang.t('deposits.interest-rate', 'chartTitle') }}</h2>
   <br />
 
-  <img src="/assets/finance/deposit-interest-chart.jpeg" alt="Deposit Interest Rates Chart" />
+  <img
+    [src]="lang.t('deposits.interest-rate', 'chartImage')"
+    alt="Deposit Interest Rates Chart"
+  />
 </div>
 
 <br />

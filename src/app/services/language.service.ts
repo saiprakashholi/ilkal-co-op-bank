@@ -63,6 +63,12 @@ export class LanguageService {
       'loans.business',
 
 
+      // deposits
+      'deposits.saving',
+      'deposits.current',
+      'deposits.interest-rate',
+
+
     ];
 
     const cacheBust = Date.now();

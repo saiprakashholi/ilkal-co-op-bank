@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'app-saving',
@@ -10,50 +11,34 @@ import { Router } from '@angular/router';
   styleUrl: './saving.scss',
 })
 export class Saving {
-  constructor(private router: Router) { }
+  constructor(
+    public lang: LanguageService,
+    private router: Router
+  ) { }
 
-  page = {
-    title: 'Savings Deposit',
-    description:
-      'A Savings Bank Account helps you securely set aside your savings while enjoying easy access to funds and earning steady interest.',
-    interestRate: '3.0% p.a.',
-  };
+  get benefits(): string[] {
+    return this.lang.tArray<string>('deposits.saving', 'benefits');
+  }
 
-  benefits = [
-    'Minimum balance without cheque book – ₹500',
-    'Minimum balance with cheque book – ₹1000',
-    // 'Multi-City Cheque Book facility',
-    'RTGS / NEFT facility',
-    'SMS alerts on registered mobile number',
-    'Mobile Banking Application access',
-  ];
+  get eligibility(): string[] {
+    return this.lang.tArray<string>('deposits.saving', 'eligibility');
+  }
 
-  eligibility = [
-    'Individuals (Single or Joint account)',
-    'Societies',
-    'Trusts',
-  ];
+  get photos(): string[] {
+    return this.lang.tArray<string>('deposits.saving', 'documents.photos');
+  }
 
-  documents = {
-    photos: ['Four recent passport-size color photographs'],
-    mandatory: ['PAN Card'],
-    addressProof: [
-      'Aadhaar Card',
-      'Driving License',
-      'Voter ID',
-      'Passport',
-      'Electricity Bill',
-      'Telephone Bill',
-    ],
-    identityProof: [
-      'Aadhaar Card',
-      'PAN Card',
-      'Driving License',
-      'Voter ID',
-      'Passport',
-      'Ration Card'
-    ],
-  };
+  get mandatoryDocs(): string[] {
+    return this.lang.tArray<string>('deposits.saving', 'documents.mandatory');
+  }
+
+  get addressProofDocs(): string[] {
+    return this.lang.tArray<string>('deposits.saving', 'documents.addressProof');
+  }
+
+  get identityProofDocs(): string[] {
+    return this.lang.tArray<string>('deposits.saving', 'documents.identityProof');
+  }
 
   goToBranches() {
     this.router.navigate(['/locations']);
