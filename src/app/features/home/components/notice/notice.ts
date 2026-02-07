@@ -4,9 +4,11 @@ import {
   ElementRef,
   Inject,
   Input,
+  OnChanges,
   OnDestroy,
   OnInit,
   PLATFORM_ID,
+  SimpleChanges,
   ViewChild,
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -26,7 +28,7 @@ interface NoticeItem {
   templateUrl: './notice.html',
   styleUrls: ['./notice.scss'],
 })
-export class NoticeComponent implements OnInit, OnDestroy {
+export class NoticeComponent implements OnInit, OnDestroy, OnChanges {
   // 👇 Now supports array of NoticeItem or strings
   @Input() notices: (NoticeItem | string)[] = [];
 
@@ -38,6 +40,7 @@ export class NoticeComponent implements OnInit, OnDestroy {
   private animElement: HTMLElement | null = null;
   private visibilityHandler = this.onVisibilityChange.bind(this);
   private langSub?: Subscription;
+  private useI18n = true;
 
   public messages: NoticeItem[] = [];
   public isPaused = false;
@@ -47,10 +50,19 @@ export class NoticeComponent implements OnInit, OnDestroy {
     @Inject(PLATFORM_ID) private platformId: Object
   ) { }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['notices']) {
+      this.useI18n = !this.notices?.length;
+      this.refreshFromI18n();
+    }
+  }
+
   ngOnInit(): void {
+    this.useI18n = !this.notices?.length;
     this.refreshFromI18n();
 
     this.langSub = this.lang.loaded$.subscribe(module => {
+      console.log("Received Notice module : ", module);
       if (module === 'home.notice') {
         this.refreshFromI18n();
       }
@@ -96,7 +108,7 @@ export class NoticeComponent implements OnInit, OnDestroy {
   }
 
   private refreshFromI18n(): void {
-    if (!this.notices.length) {
+    if (this.useI18n) {
       const items = this.lang.tArray<NoticeItem>('home.notice', 'items');
       if (items.length) {
         this.notices = items;

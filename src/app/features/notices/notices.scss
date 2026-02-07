@@ -1,0 +1,93 @@
+.notices-page {
+  padding: 28px 16px 48px;
+  background: #f6f9fc;
+  min-height: 70vh;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto 28px;
+}
+
+.section-title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: #0b5e8e;
+}
+
+.hero h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  color: #0b5e8e;
+}
+
+.hero .subtitle {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.notices-grid,
+.announcements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.notice-card,
+.announcement-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notice-card.highlight {
+  border: 1px solid rgba(1, 92, 139, 0.35);
+  box-shadow: 0 10px 26px rgba(1, 92, 139, 0.16);
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.date {
+  font-size: 12px;
+  color: #6c7a86;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #015c8b;
+  background: #e8f2f9;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.title {
+  margin: 0;
+  font-size: 15px;
+  color: #1d2b35;
+  line-height: 1.4;
+}
+
+.title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title-link:hover {
+  text-decoration: underline;
+}

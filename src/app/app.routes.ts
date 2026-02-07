@@ -25,11 +25,12 @@ export const routes: Routes = [
         path: 'loans',
         loadChildren: () => import('./features/loans/loans.module').then(m => m.LoansModule)
     },
+    { path: 'notices', loadComponent: () => import('./features/notices/notices').then(m => m.Notices) },
     {
         path: 'service',
         loadChildren: () => import('./features/service/service.module').then(m => m.ServiceModule)
     },
-     {
+    {
         path: 'misc',
         loadChildren: () => import('./features/misc/misc.module').then(m => m.MiscModule)
     }

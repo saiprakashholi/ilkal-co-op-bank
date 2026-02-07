@@ -1,8 +1,4 @@
-<section
-  class="notice"
-  role="complementary"
-  [attr.aria-label]="lang.t('home.notice', 'ariaLabel')"
->
+<section class="notice" role="complementary" [attr.aria-label]="lang.t('home.notice', 'ariaLabel')">
   <div class="container notice-inner">
     <div class="notice-left">
       <span class="notice-icon" aria-hidden="true">📢</span>
@@ -60,17 +56,11 @@
     </div>
 
     <div class="notice-actions">
-      <!-- <button
-        class="btn pause"
-        (click)="toggle()"
-        [attr.aria-pressed]="isPaused"
-        aria-label="Pause or resume notices"
-        title="Pause / Resume"
+      <a
+        class="notice-cta"
+        routerLink="/notices"
+        [attr.title]="lang.t('home.notice', 'viewAllTitle')"
       >
-        {{ isPaused ? 'Resume' : 'Pause' }}
-      </button> -->
-
-      <a class="notice-cta" href="/notices" [attr.title]="lang.t('home.notice', 'viewAllTitle')">
         {{ lang.t('home.notice', 'viewAllLabel') }}
       </a>
     </div>

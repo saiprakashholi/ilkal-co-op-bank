@@ -1,0 +1,64 @@
+<section class="notices-page">
+  <header class="hero">
+    <h1>{{ lang.t('notices.notices', 'pageTitle') }}</h1>
+    <p class="subtitle">{{ lang.t('notices.notices', 'pageSubtitle') }}</p>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">{{ lang.t('home.notice', 'label') }}</h2>
+    <div class="notices-grid" role="list">
+      <article
+        class="notice-card"
+        *ngFor="let n of items"
+        role="listitem"
+      >
+        <div class="card-head" *ngIf="n.date || n.newTab">
+          <span class="date" *ngIf="n.date">{{ n.date }}</span>
+          <span class="badge" *ngIf="n.newTab">{{ lang.t('notices.notices', 'highlightLabel') }}</span>
+        </div>
+
+        <h3 class="title">
+          <a
+            *ngIf="n.url; else plainNotice"
+            class="title-link"
+            [href]="n.url"
+            [attr.target]="isExternal(n.url) || n.newTab ? '_blank' : '_self'"
+            rel="noopener"
+          >
+            {{ n.text }}
+          </a>
+          <ng-template #plainNotice>{{ n.text }}</ng-template>
+        </h3>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">{{ lang.t('home.announcements', 'title') }}</h2>
+    <div class="announcements-grid" role="list">
+      <article
+        class="announcement-card"
+        *ngFor="let a of announcements"
+        role="listitem"
+      >
+        <div class="card-head">
+          <span class="date" *ngIf="a.date">{{ a.date }}</span>
+          <span class="badge" *ngIf="a.highlight">{{ lang.t('notices.notices', 'highlightLabel') }}</span>
+        </div>
+
+        <h3 class="title">
+          <a
+            *ngIf="a.href; else plainAnnouncement"
+            class="title-link"
+            [href]="a.href"
+            [attr.target]="isExternal(a.href) ? '_blank' : '_self'"
+            rel="noopener"
+          >
+            {{ a.title }}
+          </a>
+          <ng-template #plainAnnouncement>{{ a.title }}</ng-template>
+        </h3>
+      </article>
+    </div>
+  </section>
+</section>

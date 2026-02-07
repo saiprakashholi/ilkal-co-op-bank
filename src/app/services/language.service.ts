@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { Subject } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 type SupportedLang = 'en' | 'kn';
 
@@ -16,6 +17,7 @@ export class LanguageService {
   // GitHub RAW base URL
   private readonly GITHUB_I18N_BASE =
     'https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod';
+  private readonly LOCAL_I18N_BASE = 'assets/i18n';
 
   constructor(
     private http: HttpClient,
@@ -79,6 +81,9 @@ export class LanguageService {
       // agm
       'agm',
 
+      // notices
+      'notices.notices',
+
       // Service module
       'services',
       'services.upi',
@@ -113,8 +118,9 @@ export class LanguageService {
     const cacheBust = Date.now();
 
     modules.forEach(module => {
-      const url =
-        `${this.GITHUB_I18N_BASE}/${lang}/${module}.json?_=${cacheBust}`;
+      const base =
+        environment.i18nSource === 'local' ? this.LOCAL_I18N_BASE : this.GITHUB_I18N_BASE;
+      const url = `${base}/${lang}/${module}.json?_=${cacheBust}`;
 
       this.http.get(url).subscribe({
         next: data => {
