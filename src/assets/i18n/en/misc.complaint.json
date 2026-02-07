@@ -16,5 +16,7 @@
   "type_other": "Other",
   "successTitle": "Complaint Submitted",
   "successMsg": "Thank you. Your complaint has been submitted successfully. Our team will review it shortly.",
-  "newComplaint": "Submit another complaint"
+  "newComplaint": "Submit another complaint",
+  "illustrationImage": "assets/complaint-illustration.svg",
+  "illustrationAlt": "Complaint illustration"
 }

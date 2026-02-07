@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { Subject } from 'rxjs';
 
 type SupportedLang = 'en' | 'kn';
 
@@ -9,6 +10,8 @@ export class LanguageService {
 
   currentLang: SupportedLang = 'en';
   private translations: Record<string, any> = {};
+  private loadedSubject = new Subject<string>();
+  readonly loaded$ = this.loadedSubject.asObservable();
 
   // GitHub RAW base URL
   private readonly GITHUB_I18N_BASE =
@@ -113,6 +116,7 @@ export class LanguageService {
       this.http.get(url).subscribe({
         next: data => {
           this.translations[module] = data;
+          this.loadedSubject.next(module);
         },
         error: err => {
           console.warn(`⚠️ Failed to load i18n: ${module}`, err);

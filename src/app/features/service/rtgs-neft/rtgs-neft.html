@@ -1,7 +1,11 @@
 <section class="rtgs-neft-root">
   <!-- Title with UPI logo -->
   <h1 class="title title-with-logo">
-    <img src="/assets/rtgs-neft.png" alt="UPI" class="upi-logo" />
+    <img
+      [src]="lang.t('services.rtgs-neft', 'logoImage')"
+      [attr.alt]="lang.t('services.rtgs-neft', 'logoAlt')"
+      class="upi-logo"
+    />
     {{ lang.t('services.rtgs-neft', 'TITLE') }}
   </h1>
 

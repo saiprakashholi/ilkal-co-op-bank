@@ -59,7 +59,10 @@
 
     <!-- RIGHT -->
     <div class="image-section">
-      <img src="assets/complaint-illustration.svg" alt="Complaint illustration" />
+      <img
+        [src]="lang.t('misc.complaint', 'illustrationImage')"
+        [attr.alt]="lang.t('misc.complaint', 'illustrationAlt')"
+      />
     </div>
   </div>
 </section>

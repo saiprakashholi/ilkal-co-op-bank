@@ -11,6 +11,7 @@ import {
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { LanguageService } from '../../../../services/language.service';
+import { Subscription } from 'rxjs';
 
 interface NoticeItem {
   text: string;
@@ -36,6 +37,7 @@ export class NoticeComponent implements OnInit, OnDestroy {
 
   private animElement: HTMLElement | null = null;
   private visibilityHandler = this.onVisibilityChange.bind(this);
+  private langSub?: Subscription;
 
   public messages: NoticeItem[] = [];
   public isPaused = false;
@@ -46,14 +48,13 @@ export class NoticeComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
-    if (!this.notices.length) {
-      this.notices = this.lang.tArray<NoticeItem>('home.notice', 'items');
-    }
+    this.refreshFromI18n();
 
-    // Normalize: convert strings to { text } objects
-    this.messages = this.notices.map((n) =>
-      typeof n === 'string' ? { text: n } : n
-    );
+    this.langSub = this.lang.loaded$.subscribe(module => {
+      if (module === 'home.notice') {
+        this.refreshFromI18n();
+      }
+    });
 
     if (isPlatformBrowser(this.platformId)) {
       const native = this.tickerEl?.nativeElement;
@@ -70,6 +71,7 @@ export class NoticeComponent implements OnInit, OnDestroy {
     if (isPlatformBrowser(this.platformId)) {
       document.removeEventListener('visibilitychange', this.visibilityHandler);
     }
+    this.langSub?.unsubscribe();
   }
 
   pause(): void {
@@ -91,5 +93,19 @@ export class NoticeComponent implements OnInit, OnDestroy {
   private onVisibilityChange(): void {
     if (document.hidden) this.pause();
     else this.resume();
+  }
+
+  private refreshFromI18n(): void {
+    if (!this.notices.length) {
+      const items = this.lang.tArray<NoticeItem>('home.notice', 'items');
+      if (items.length) {
+        this.notices = items;
+      }
+    }
+
+    // Normalize: convert strings to { text } objects
+    this.messages = this.notices.map((n) =>
+      typeof n === 'string' ? { text: n } : n
+    );
   }
 }

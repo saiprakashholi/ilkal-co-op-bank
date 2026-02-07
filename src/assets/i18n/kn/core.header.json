@@ -3,6 +3,7 @@
   "openMenuLabel": "ಮೆನು ತೆರೆಯಿರಿ",
   "mobileNavLabel": "ಮೊಬೈಲ್ ನ್ಯಾವಿಗೇಷನ್",
   "mobileMenuTitle": "ಮೆನು",
+  "closeMenuLabel": "✕",
   "menu": [
     { "label": "ಮುಖಪುಟ", "url": "/" },
     {
@@ -54,7 +55,8 @@
     },
     { "label": "ಗ್ಯಾಲರಿ", "url": "/gallery" },
     {
-      "label": "ಇತರೆ", "url": "/others",
+      "label": "ಇತರೆ",
+      "url": "/others",
       "expanded": false,
       "children": [
         { "label": "ಸೇವಾ ಶುಲ್ಕಗಳು", "url": "/others/service-charges" },

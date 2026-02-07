@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { catchError, first, switchMap } from 'rxjs/operators';
 import { of } from 'rxjs';
+import { LanguageService } from './language.service';
 
 export interface Member { id:number; name:string; role:string; profileUrl?:string; image:string; description?:string; }
 export interface ManagementData { title:string; aboutTitle:string; aboutText:string; members: Member[]; }
@@ -13,17 +14,17 @@ export class ManagementService {
   private directUrl = environment.managementJsonUrl;
   private driveApiUrl = environment.managementJsonDriveApiUrl; // optional (requires API key)
 
-  private fallback: ManagementData = {
-    title: 'Management Team',
-    aboutTitle: 'About Co Op Bank',
-    aboutText: 'Fallback about text...',
-    members: [
-      { id: 1, name: 'Fallback Name', role: 'President', image: 'assets/images/prakash.jpg', profileUrl: '#', description: 'Fallback bio' }
-    ]
-  };
+  private get fallback(): ManagementData {
+    return {
+      title: this.lang.t('home.management', 'title'),
+      aboutTitle: this.lang.t('home.management', 'aboutTitle'),
+      aboutText: this.lang.t('home.management', 'aboutText'),
+      members: this.lang.tArray<Member>('home.management', 'members'),
+    };
+  }
 
 //   constructor(private http: HttpClient) {}
-constructor() {}
+constructor(public lang: LanguageService) {}
 
 //   load() {
 //     // Try direct link first (fast). If it fails (CORS / parse), try Drive API url if provided.

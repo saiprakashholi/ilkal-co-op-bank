@@ -1,5 +1,7 @@
 {
   "title": "Management Team",
+  "aboutTitle": "About Co Op Bank",
+  "aboutText": "Fallback about text...",
   "placeholderImage": "assets/images/placeholder.png",
   "members": [
     {

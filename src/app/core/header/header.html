@@ -52,7 +52,9 @@
   >
     <div class="mobile-header">
       <span>{{ lang.t('core.header', 'mobileMenuTitle') }}</span>
-      <button class="close-btn" (click)="closeMenu()">✕</button>
+      <button class="close-btn" (click)="closeMenu()">
+        {{ lang.t('core.header', 'closeMenuLabel') }}
+      </button>
     </div>
 
     <ul class="mobile-list">

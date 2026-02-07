@@ -3,6 +3,7 @@
   "openMenuLabel": "Open menu",
   "mobileNavLabel": "Mobile navigation",
   "mobileMenuTitle": "Menu",
+  "closeMenuLabel": "✕",
   "menu": [
     { "label": "Home", "url": "/" },
     {
