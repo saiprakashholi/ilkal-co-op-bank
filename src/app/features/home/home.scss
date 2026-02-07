@@ -305,25 +305,6 @@ img {
             gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
-
-            .btn-primary {
-                background: $primary;
-                color: #fff;
-                padding: 10px 16px;
-                border-radius: 6px;
-                text-decoration: none;
-                font-weight: 600;
-            }
-
-            .btn-outline {
-                border: 1px solid $primary;
-                color: $primary;
-                padding: 10px 16px;
-                border-radius: 6px;
-                background: transparent;
-                text-decoration: none;
-                font-weight: 600;
-            }
         }
     }
 
@@ -700,4 +681,3 @@ img {
         flex: 0.8;
     }
 }
-

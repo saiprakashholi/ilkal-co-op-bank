@@ -14,11 +14,11 @@
       </div>
 
       <div class="actions" [class.disabled]="!agm.url">
-        <a class="view" [href]="agm.url" target="_blank" rel="noopener">
+        <a class="btn btn-secondary" [href]="agm.url" target="_blank" rel="noopener">
           {{ lang.t('others.others-agm', 'viewLabel') }}
         </a>
 
-        <a class="download" [href]="agm.url" download>
+        <a class="btn btn-primary" [href]="agm.url" download>
           {{ lang.t('others.others-agm', 'downloadLabel') }}
         </a>
       </div>

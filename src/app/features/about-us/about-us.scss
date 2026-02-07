@@ -61,8 +61,9 @@ $muted: #f6f7f6;
   .card {
     background: white;
     padding: 18px;
-    border-radius: 6px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    border-radius: 16px;
+    border: 1px solid #e6edf5;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
 
     h3 {
       color: $brand-green;
@@ -83,9 +84,15 @@ $muted: #f6f7f6;
           width: 100%;
           justify-content: space-between;
           align-items: center;
-          padding: 8px 0;
+          padding: 10px 12px;
           cursor: pointer;
           font-size: 15px;
+          border-radius: 10px;
+          transition: background .2s ease;
+        }
+
+        .menu-toggle:hover {
+          background: rgba(27, 139, 59, 0.08);
         }
 
         .chev { transition: transform .18s; font-size: 12px; color: #0b6b39; &.open { transform: rotate(90deg); } }
@@ -96,13 +103,41 @@ $muted: #f6f7f6;
           max-height: 999px;
           overflow: hidden;
           transition: max-height .28s ease;
+          list-style: none;
           li { margin: 6px 0;
+            list-style: none;
             a {
               color: #0b6b39;
               text-decoration: none;
-              display: inline-block;
-              padding: 6px 0;
-              &.active { font-weight:700; color: $brand-green; }
+              display: block;
+              padding: 10px 12px 10px 26px;
+              border-radius: 10px;
+              position: relative;
+              transition: background .2s ease;
+              &::before {
+                content: '';
+                position: absolute;
+                left: 8px;
+                top: 50%;
+                width: 4px;
+                height: 0;
+                background: #0b6b39;
+                border-radius: 4px;
+                transform: translateY(-50%);
+                transition: height .2s ease;
+              }
+              &:hover {
+                background: rgba(27, 139, 59, 0.08);
+              }
+              &.active {
+                font-weight:700;
+                color: $brand-green;
+                background: rgba(27, 139, 59, 0.12);
+              }
+              &:hover::before,
+              &.active::before {
+                height: 60%;
+              }
             }
           }
         }
@@ -217,4 +252,3 @@ $muted: #f6f7f6;
   .sidebar { width: 92%; }
   .section-title { font-size: 18px; }
 }
-

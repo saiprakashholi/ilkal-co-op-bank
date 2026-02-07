@@ -11,11 +11,11 @@
       <div class="title">📄 {{ doc.title }}</div>
 
       <div [class.disabled]="!doc.url" class="actions">
-        <a [href]="doc.url" target="_blank" rel="noopener" class="view">
+        <a [href]="doc.url" target="_blank" rel="noopener" class="btn btn-secondary">
           {{ lang.t('others.downloads', 'viewLabel') }}
         </a>
 
-        <a [href]="doc.url" download class="download">
+        <a [href]="doc.url" download class="btn btn-primary">
           {{ lang.t('others.downloads', 'downloadLabel') }}
         </a>
       </div>

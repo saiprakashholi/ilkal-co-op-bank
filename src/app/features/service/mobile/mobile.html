@@ -42,7 +42,7 @@
       [href]="app.url"
       target="_blank"
       rel="noopener noreferrer"
-      class="btn download-btn"
+      class="btn btn-primary"
     >
       <span class="btn-icon">⬇️</span>
       {{ lang.t('common', 'DOWNLOAD') }}
@@ -63,11 +63,11 @@
     </div>
 
     <div class="doc-actions">
-      <a class="btn view-btn" [href]="doc.viewUrl" target="_blank" rel="noopener noreferrer">
+      <a class="btn btn-secondary" [href]="doc.viewUrl" target="_blank" rel="noopener noreferrer">
         {{ lang.t('common', 'VIEW') }}
       </a>
 
-      <a class="btn download-btn" [href]="doc.downloadUrl" download>
+      <a class="btn btn-primary" [href]="doc.downloadUrl" download>
         <span class="icon">⬇️</span>
         {{ lang.t('common', 'DOWNLOAD') }}
       </a>

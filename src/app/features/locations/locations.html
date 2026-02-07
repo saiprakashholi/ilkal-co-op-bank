@@ -20,11 +20,11 @@
         <p class="phone" *ngIf="branch.phone">📞 {{ branch.phone }}</p>
 
         <div class="branch-actions">
-          <a *ngIf="branch.phone" class="btn call" [href]="'tel:' + branch.phone">
+          <a *ngIf="branch.phone" class="btn btn-secondary call" [href]="'tel:' + branch.phone">
             {{ lang.t('locations.locations', 'callLabel') }}
           </a>
 
-          <a *ngIf="branch.location" class="btn visit" [href]="branch.location" target="_blank">
+          <a *ngIf="branch.location" class="btn btn-primary visit" [href]="branch.location" target="_blank">
             {{ lang.t('locations.locations', 'visitLabel') }}
           </a>
         </div>
