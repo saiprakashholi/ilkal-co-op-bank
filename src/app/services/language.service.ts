@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { Subject } from 'rxjs';
+import { Subject, EMPTY, timer } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
 import { environment } from '../../environments/environment';
 
 type SupportedLang = 'en' | 'kn';
@@ -13,6 +14,8 @@ export class LanguageService {
   private translations: Record<string, any> = {};
   private loadedSubject = new Subject<string>();
   readonly loaded$ = this.loadedSubject.asObservable();
+  private cache = new Map<string, any>();
+  private readonly debug = !!environment.i18nDebug;
 
   // GitHub RAW base URL
   private readonly GITHUB_I18N_BASE =
@@ -119,20 +122,64 @@ export class LanguageService {
 
     const cacheBust = Date.now();
 
-    modules.forEach(module => {
-      const base =
-        environment.i18nSource === 'local' ? this.LOCAL_I18N_BASE : this.GITHUB_I18N_BASE;
-      const url = `${base}/${lang}/${module}.json?_=${cacheBust}`;
+    const shouldFallbackToLocal = environment.i18nSource !== 'local';
 
-      this.http.get(url).subscribe({
-        next: data => {
-          this.translations[module] = data;
-          this.loadedSubject.next(module);
-        },
-        error: err => {
-          console.warn(`⚠️ Failed to load i18n: ${module}`, err);
-        }
-      });
+    modules.forEach(module => {
+      const cacheKey = `${lang}:${module}`;
+      if (this.cache.has(cacheKey)) {
+        this.translations[module] = this.cache.get(cacheKey);
+        this.loadedSubject.next(module);
+        return;
+      }
+
+      const primaryBase =
+        environment.i18nSource === 'local' ? this.LOCAL_I18N_BASE : this.GITHUB_I18N_BASE;
+      const primaryUrl = `${primaryBase}/${lang}/${module}.json?_=${cacheBust}`;
+      const fallbackUrl = `${this.LOCAL_I18N_BASE}/${lang}/${module}.json?_=${cacheBust}`;
+
+      const loadAndStore = (url: string, source: string) =>
+        this.http.get(url).pipe(
+          retry({
+            count: 2,
+            delay: (_err, retryCount) => timer(300 * retryCount)
+          }),
+          catchError(err => {
+            console.warn(`⚠️ Failed to load i18n (${source}): ${module}`, err);
+            return EMPTY;
+          })
+        );
+
+      loadAndStore(primaryUrl, primaryBase)
+        .pipe(
+          catchError(() => EMPTY)
+        )
+        .subscribe({
+          next: data => {
+            this.cache.set(cacheKey, data);
+            this.translations[module] = data;
+            if (this.debug) {
+              console.log(`✅ i18n loaded: ${module} (${primaryBase})`);
+            }
+            this.loadedSubject.next(module);
+          },
+          error: () => {
+            // no-op; handled by retry/catchError
+          },
+          complete: () => {
+            if (shouldFallbackToLocal && !this.translations[module]) {
+              loadAndStore(fallbackUrl, this.LOCAL_I18N_BASE).subscribe({
+                next: data => {
+                  this.cache.set(cacheKey, data);
+                  this.translations[module] = data;
+                  if (this.debug) {
+                    console.log(`✅ i18n loaded: ${module} (${this.LOCAL_I18N_BASE})`);
+                  }
+                  this.loadedSubject.next(module);
+                }
+              });
+            }
+          }
+        });
     });
   }
 
