@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from "@angular/router";
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-deposits',
@@ -10,9 +11,9 @@ import { RouterModule } from "@angular/router";
   styleUrl: './deposits.scss',
 })
 export class Deposits {
-  list = [
-    { label: 'Savings Deposits', url: 'saving' },
-    { label: 'Current Deposits', url: 'current' },
-    { label: 'Deposit Interest Rates', url: 'interest-rate' },
-  ]
+  constructor(public lang: LanguageService) { }
+
+  get list() {
+    return this.lang.tArray<{ label: string; url: string }>('deposits', 'list');
+  }
 }

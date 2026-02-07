@@ -1,0 +1,7 @@
+{
+  "list": [
+    { "label": "ಉಳಿತಾಯ ಠೇವಣಿಗಳು", "url": "saving" },
+    { "label": "ಚಾಲು ಠೇವಣಿಗಳು", "url": "current" },
+    { "label": "ಠೇವಣಿ ಬಡ್ಡಿದರಗಳು", "url": "interest-rate" }
+  ]
+}

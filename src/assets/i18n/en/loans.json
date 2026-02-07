@@ -1,0 +1,10 @@
+{
+  "list": [
+    { "label": "Personal Loan", "url": "personal" },
+    { "label": "Housing Loan", "url": "housing" },
+    { "label": "Vehicle Loan", "url": "vehical" },
+    { "label": "Gold Loan", "url": "gold" },
+    { "label": "Business Loan", "url": "business" },
+    { "label": "Loan Interest Rates", "url": "interest-rate" }
+  ]
+}

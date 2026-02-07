@@ -1,0 +1,7 @@
+{
+  "list": [
+    { "label": "Savings Deposits", "url": "saving" },
+    { "label": "Current Deposits", "url": "current" },
+    { "label": "Deposit Interest Rates", "url": "interest-rate" }
+  ]
+}

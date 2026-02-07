@@ -99,6 +99,7 @@ export class LanguageService {
       'misc.career',
 
       // loans
+      'loans',
       'loans.vehicle',
       'loans.gold',
       'loans.business',
@@ -108,6 +109,7 @@ export class LanguageService {
 
 
       // deposits
+      'deposits',
       'deposits.saving',
       'deposits.current',
       'deposits.interest-rate',

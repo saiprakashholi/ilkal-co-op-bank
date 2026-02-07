@@ -1,0 +1,10 @@
+{
+  "list": [
+    { "label": "ವೈಯಕ್ತಿಕ ಸಾಲ", "url": "personal" },
+    { "label": "ಗೃಹ ಸಾಲ", "url": "housing" },
+    { "label": "ವಾಹನ ಸಾಲ", "url": "vehical" },
+    { "label": "ಚಿನ್ನದ ಸಾಲ", "url": "gold" },
+    { "label": "ವ್ಯವಹಾರ ಸಾಲ", "url": "business" },
+    { "label": "ಸಾಲ ಬಡ್ಡಿದರಗಳು", "url": "interest-rate" }
+  ]
+}
