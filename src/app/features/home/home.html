@@ -14,7 +14,7 @@
   [attr.aria-label]="lang.t('home', 'heroAriaLabel')"
 >
   <div class="container hero-inner">
-    <div class="hero-text">
+    <div class="hero-text reveal" style="--delay: 80ms;">
       <h1>{{ lang.t('home', 'heroTitle') }}</h1>
       <p>{{ lang.t('home', 'heroSubtitle') }}</p>
       <div class="hero-actions">
@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="hero-image" aria-hidden="true">
+    <div class="hero-image reveal" style="--delay: 160ms;" aria-hidden="true">
       <img
         [src]="lang.t('home', 'heroImageSrc')"
         [attr.srcset]="lang.t('home', 'heroImageSrcset')"
@@ -48,31 +48,36 @@
   role="region"
   [attr.aria-label]="lang.t('home', 'aboutAriaLabel')"
 >
-  <div class="container about-inner">
+  <div class="container about-inner reveal" style="--delay: 120ms;">
     <h2>{{ lang.t('home', 'aboutTitle') }}</h2>
     <p>{{ lang.t('home', 'aboutText') }}</p>
   </div>
 </section>
 
 <!--ANNOUNCEMENTS STARTS-->
-<app-announcements></app-announcements>
+<section class="reveal" style="--delay: 140ms;">
+  <app-announcements></app-announcements>
+</section>
 <!-- <app-announcements [announcements]="myAnnouncements"></app-announcements> -->
 
 <!--ANNOUNCEMENTS ENDS-->
 
 <!-- Management members STARTS -->
-<app-management></app-management>
+<section class="reveal" style="--delay: 140ms;">
+  <app-management></app-management>
+</section>
 <!-- Management members ENDS -->
 
 <!-- SERVICES STARTS-->
 <section
   id="servicesSection"
-  class="services"
+  class="services reveal"
+  style="--delay: 120ms;"
   role="region"
   [attr.aria-label]="lang.t('home', 'servicesAriaLabel')"
 >
   <div class="container">
-    <h2>{{ lang.t('home', 'servicesTitle') }}</h2>
+    <h2 class="reveal" style="--delay: 140ms;">{{ lang.t('home', 'servicesTitle') }}</h2>
 
     <div
       class="services-strip"
@@ -81,7 +86,7 @@
     >
       <a
         role="listitem"
-        class="service-card"
+        class="service-card reveal"
         *ngFor="let service of services; trackBy: trackByTitle"
         href="#"
         (click)="$event.preventDefault()"
@@ -102,12 +107,15 @@
 <!-- SERVICES ENDS-->
 
 <!-- FINANCIAL STRENGTH STARTS-->
-<app-financial-strength></app-financial-strength>
+<section class="reveal" style="--delay: 160ms;">
+  <app-financial-strength></app-financial-strength>
+</section>
 <!-- FINANCIAL STRENGTH ENDS -->
 
 <!-- ILKAL SAREE (GI TAG) -->
 <section
-  class="ilkal-saree"
+  class="ilkal-saree reveal"
+  style="--delay: 180ms;"
   role="region"
   [attr.aria-label]="lang.t('home', 'sareeSectionAriaLabel')"
 >

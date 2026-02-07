@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { LanguageService } from '../../services/language.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-emergency-notice',
@@ -16,6 +17,7 @@ import { LanguageService } from '../../services/language.service';
   styleUrl: './emergency-notice.scss',
 })
 export class EmergencyNoticeComponent implements OnInit, OnDestroy {
+  private langSub?: Subscription;
 
   constructor(
     public lang: LanguageService,
@@ -32,23 +34,18 @@ export class EmergencyNoticeComponent implements OnInit, OnDestroy {
   sliderTimer: any;
 
   ngOnInit(): void {
-    if (!this.notice?.enabled) return;
+    this.evaluateNotice();
 
-    const now = Date.now();
-    const start = new Date(this.notice.startTime).getTime();
-    const end = new Date(this.notice.endTime).getTime();
-
-    if (now >= start && now <= end) {
-      this.show = true;
-
-      if (isPlatformBrowser(this.platformId)) {
-        this.startSlider();
+    this.langSub = this.lang.loaded$.subscribe(module => {
+      if (module === 'core.emergency-notice') {
+        this.evaluateNotice();
       }
-    }
+    });
   }
 
   ngOnDestroy(): void {
     this.stopSlider();
+    this.langSub?.unsubscribe();
   }
 
   close(): void {
@@ -76,6 +73,29 @@ export class EmergencyNoticeComponent implements OnInit, OnDestroy {
       clearInterval(this.sliderTimer);
       this.sliderTimer = null;
     }
+  }
+
+  private evaluateNotice(): void {
+    if (!this.notice?.enabled) {
+      this.show = false;
+      this.stopSlider();
+      return;
+    }
+
+    const now = Date.now();
+    const start = new Date(this.notice.startTime).getTime();
+    const end = new Date(this.notice.endTime).getTime();
+
+    if (now >= start && now <= end) {
+      this.show = true;
+      if (isPlatformBrowser(this.platformId)) {
+        this.startSlider();
+      }
+      return;
+    }
+
+    this.show = false;
+    this.stopSlider();
   }
 
   getIcon(): string {

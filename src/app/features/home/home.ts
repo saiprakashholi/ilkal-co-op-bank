@@ -1,5 +1,5 @@
-import { Component, HostListener } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, AfterViewInit, OnDestroy, Inject, PLATFORM_ID, NgZone } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { AnnouncementsComponent } from "./components/announcements/announcements.component";
 import { NoticeComponent } from './components/notice/notice';
@@ -23,7 +23,7 @@ interface BankService {
   styleUrls: ['./home.scss'],
 
 })
-export class Home {
+export class Home implements AfterViewInit, OnDestroy {
   get services(): BankService[] {
     return this.lang.tArray<BankService>('home', 'services');
   }
@@ -32,7 +32,47 @@ export class Home {
 
   currentYear: number = new Date().getFullYear();
 
-  constructor(public lang: LanguageService) { }
+  private observer?: IntersectionObserver;
+
+  constructor(
+    public lang: LanguageService,
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private zone: NgZone
+  ) { }
+
+  ngAfterViewInit(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
+    const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
+    if (!elements.length) return;
+
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!prefersReduced) {
+      elements.forEach(el => el.classList.add('reveal-ready'));
+    }
+
+    this.observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          this.zone.run(() => {
+            const el = entry.target as HTMLElement;
+            el.classList.add('reveal-show');
+            el.classList.remove('reveal-ready');
+            this.observer?.unobserve(entry.target);
+          });
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -5% 0px' }
+    );
+
+    elements.forEach(el => this.observer?.observe(el));
+  }
+
+  ngOnDestroy(): void {
+    this.observer?.disconnect();
+  }
 
 
   toggleMenu() {

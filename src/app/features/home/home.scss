@@ -681,3 +681,41 @@ img {
         flex: 0.8;
     }
 }
+
+/* Subtle reveal animations */
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal.reveal-ready {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+}
+
+.reveal.reveal-show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    transition-delay: var(--delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+    .reveal.reveal-show { transition: none; }
+}
+
+/* Services stagger */
+.services .service-card {
+    --delay: 160ms;
+}
+
+.services .service-card:nth-child(2) { --delay: 220ms; }
+.services .service-card:nth-child(3) { --delay: 280ms; }
+.services .service-card:nth-child(4) { --delay: 340ms; }
+.services .service-card:nth-child(5) { --delay: 400ms; }
+.services .service-card:nth-child(6) { --delay: 460ms; }
