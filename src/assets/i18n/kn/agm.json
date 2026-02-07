@@ -1,4 +1,21 @@
 {
   "chartImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/finance/10 Years Bank Profit Chart.jpg",
-  "chartAlt": "10 ವರ್ಷಗಳ ಬ್ಯಾಂಕ್ ಲಾಭ ಚಾರ್ಟ್"
+  "chartAlt": "10 ವರ್ಷಗಳ ಬ್ಯಾಂಕ್ ಲಾಭ ಚಾರ್ಟ್",
+  "pageTitle": "10 ವರ್ಷಗಳ ಬ್ಯಾಂಕ್ ಕಾರ್ಯಕ್ಷಮತೆ",
+  "pageSubtitle": "ಆರ್ಥಿಕ ಬೆಳವಣಿಗೆಯ ಸಂಕ್ಷಿಪ್ತ ಚಿತ್ರಣ",
+  "chartTitle": "ದೃಶ್ಯ ಕಾರ್ಯಕ್ಷಮತೆ ಸಾರಾಂಶ",
+  "imageTitle": "10 ವರ್ಷಗಳ ಹಣಕಾಸು ಕಾರ್ಯಕ್ಷಮತೆ",
+  "note": "*ಈ ಚಾರ್ಟ್ ಉಲ್ಲೇಖ ಮತ್ತು ಪಾರದರ್ಶಕತೆಗಾಗಿ ಒದಗಿಸಲಾಗಿದೆ.",
+  "tableHeaders": {
+    "year": "ವರ್ಷ",
+    "members": "ಸದಸ್ಯರು",
+    "deposits": "ಒಟ್ಟು ಠೇವಣಿಗಳು (₹ ಲಕ್ಷ)",
+    "loans": "ಒಟ್ಟು ಸಾಲಗಳು (₹ ಲಕ್ಷ)",
+    "profit": "ನಿವ್ವಳ ಲಾಭ (₹ ಲಕ್ಷ)"
+  },
+  "labels": {
+    "deposits": "ಠೇವಣಿಗಳು (₹ ಲಕ್ಷ)",
+    "loans": "ಸಾಲಗಳು (₹ ಲಕ್ಷ)",
+    "profit": "ಲಾಭ (₹ ಲಕ್ಷ)"
+  }
 }

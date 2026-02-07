@@ -1,4 +1,21 @@
 {
   "chartImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/finance/10 Years Bank Profit Chart.jpg",
-  "chartAlt": "10 Years Bank Profit Chart"
+  "chartAlt": "10 Years Bank Profit Chart",
+  "pageTitle": "10 Years Bank Performance",
+  "pageSubtitle": "Financial growth overview",
+  "chartTitle": "Visual Performance Summary",
+  "imageTitle": "10 Years Financial Performance",
+  "note": "*This chart is provided for reference and transparency.",
+  "tableHeaders": {
+    "year": "Year",
+    "members": "Members",
+    "deposits": "Total Deposits (₹ in Lakhs)",
+    "loans": "Total Loans (₹ in Lakhs)",
+    "profit": "Net Profit (₹ in Lakhs)"
+  },
+  "labels": {
+    "deposits": "Deposits (₹ Lakhs)",
+    "loans": "Loans (₹ Lakhs)",
+    "profit": "Profit (₹ Lakhs)"
+  }
 }

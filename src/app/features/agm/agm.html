@@ -1,16 +1,16 @@
 <section class="page">
-  <h1>10 Years Bank Performance</h1>
-  <p class="subtitle">Financial growth overview</p>
+  <h1>{{ lang.t('agm', 'pageTitle') }}</h1>
+  <p class="subtitle">{{ lang.t('agm', 'pageSubtitle') }}</p>
 
   <div class="table-card">
     <table>
       <thead>
         <tr>
-          <th>Year</th>
-          <th>Members</th>
-          <th>Total Deposits (₹ in Lakhs)</th>
-          <th>Total Loans (₹ in Lakhs)</th>
-          <th>Net Profit (₹ in Lakhs)</th>
+          <th>{{ tableHeaders?.year }}</th>
+          <th>{{ tableHeaders?.members }}</th>
+          <th>{{ tableHeaders?.deposits }}</th>
+          <th>{{ tableHeaders?.loans }}</th>
+          <th>{{ tableHeaders?.profit }}</th>
         </tr>
       </thead>
 
@@ -27,7 +27,7 @@
   </div>
 
   <div class="chart-card">
-  <h2>Visual Performance Summary </h2>
+  <h2>{{ lang.t('agm', 'chartTitle') }}</h2>
 
   <div class="chart-wrapper">
     <canvas #financeChart></canvas>
@@ -38,14 +38,14 @@
 
 <!-- Reference Chart -->
 <div class="image-section">
-  <h2>10 Years Financial Performance</h2>
+  <h2>{{ lang.t('agm', 'imageTitle') }}</h2>
   <br />
   <img
     [src]="lang.t('agm', 'chartImage')"
     [attr.alt]="lang.t('agm', 'chartAlt')"
   />
 
-  <p class="note">*This chart is provided for reference and transparency.</p>
+  <p class="note">{{ lang.t('agm', 'note') }}</p>
 </div>
 <br />
 <br />

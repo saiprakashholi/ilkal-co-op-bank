@@ -29,6 +29,10 @@ export class Agm implements AfterViewInit, OnDestroy {
     @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
+  get tableHeaders(): any {
+    return this.lang.t('agm', 'tableHeaders') as any;
+  }
+
   reports = [
     { year: '2015-16', members: 20060, deposits: 19394.48, loans: 17559.30, profit: 426.01 },
     { year: '2016-17', members: 20506, deposits: 22613.72, loans: 16254.11, profit: 373.57 },
@@ -51,23 +55,25 @@ export class Agm implements AfterViewInit, OnDestroy {
     const ctx = this.canvasRef.nativeElement.getContext('2d');
     if (!ctx) return;
 
+    const labels = this.lang.t('agm', 'labels') as any;
+
     this.chart = new Chart(ctx, {
       type: 'line',
       data: {
         labels: this.reports.map(r => r.year),
         datasets: [
           {
-            label: 'Deposits (₹ Lakhs)',
+            label: labels?.deposits ?? 'Deposits (₹ Lakhs)',
             data: this.reports.map(r => r.deposits),
             tension: 0.4
           },
           {
-            label: 'Loans (₹ Lakhs)',
+            label: labels?.loans ?? 'Loans (₹ Lakhs)',
             data: this.reports.map(r => r.loans),
             tension: 0.4
           },
           {
-            label: 'Profit (₹ Lakhs)',
+            label: labels?.profit ?? 'Profit (₹ Lakhs)',
             data: this.reports.map(r => r.profit),
             tension: 0.4
           }
