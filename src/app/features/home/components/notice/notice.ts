@@ -62,7 +62,6 @@ export class NoticeComponent implements OnInit, OnDestroy, OnChanges {
     this.refreshFromI18n();
 
     this.langSub = this.lang.loaded$.subscribe(module => {
-      console.log("Received Notice module : ", module);
       if (module === 'home.notice') {
         this.refreshFromI18n();
       }
