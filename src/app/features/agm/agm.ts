@@ -9,6 +9,7 @@ import {
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import Chart from 'chart.js/auto';
+import { LanguageService } from '../../services/language.service';
 
 
 @Component({
@@ -23,7 +24,10 @@ export class Agm implements AfterViewInit, OnDestroy {
   @ViewChild('financeChart') canvasRef!: ElementRef<HTMLCanvasElement>;
   chart!: Chart;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    public lang: LanguageService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   reports = [
     { year: '2015-16', members: 20060, deposits: 19394.48, loans: 17559.30, profit: 426.01 },

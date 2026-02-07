@@ -2,12 +2,24 @@
   "pageTitle": "Housing Loan",
   "pageSubtitle": "Turn your dream of owning a home into reality",
   "pageDescription": "We offer Home Loans and Home Construction Loans with simple documentation and flexible repayment options, helping you build your dream home with confidence.",
-  "heroImage": "/assets/loans/housing-loan-final.jpg",
+  "heroImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/housing-loan-final.jpg",
   "highlights": [
-    { "label": "Maximum Loan", "value": "₹1.4 Crore" },
-    { "label": "Repayment Period", "value": "Up to 15 Years" },
-    { "label": "Interest Rate", "value": "11% p.a." },
-    { "label": "Margin", "value": "25%" }
+    {
+      "label": "Maximum Loan",
+      "value": "₹1.4 Crore"
+    },
+    {
+      "label": "Repayment Period",
+      "value": "Up to 15 Years"
+    },
+    {
+      "label": "Interest Rate",
+      "value": "11% p.a."
+    },
+    {
+      "label": "Margin",
+      "value": "25%"
+    }
   ],
   "useCasesTitle": "How can a Housing Loan help you?",
   "useCases": [

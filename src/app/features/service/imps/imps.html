@@ -1,7 +1,11 @@
 <section class="imps-root">
   <!-- Title with UPI logo -->
   <h1 class="title title-with-logo">
-    <img src="/assets/imps.png" alt="UPI" class="upi-logo" />
+    <img
+      [src]="lang.t('services.imps', 'logoImage')"
+      [attr.alt]="lang.t('services.imps', 'logoAlt')"
+      class="upi-logo"
+    />
     {{ lang.t('services.imps', 'TITLE') }}
   </h1>
 

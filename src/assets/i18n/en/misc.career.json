@@ -9,5 +9,7 @@
   "submit": "Submit",
   "submitting": "Submitting...",
   "success": "Your resume has been submitted successfully.",
-  "error": "Something went wrong. Please try again."
+  "error": "Something went wrong. Please try again.",
+  "illustrationImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/career-illustration.svg",
+  "illustrationAlt": "Career opportunities"
 }

@@ -1,48 +1,126 @@
 {
   "ariaLabel": "ಸೈಟ್ ಫೂಟರ್",
-  "backgroundImage": "/assets/about-us-bgm.png",
+  "backgroundImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/about-us-bgm.png",
   "quickLinksTitle": "ನಮ್ಮ ಬಗ್ಗೆ",
   "retailTitle": "ರಿಟೇಲ್ ಬ್ಯಾಂಕಿಂಗ್",
   "importantTitle": "ಮುಖ್ಯ ಕೊಂಡಿಗಳು",
   "resourcesTitle": "ಸಂಪನ್ಮೂಲ ಕೇಂದ್ರ",
   "quickLinks": [
-    { "label": "ಸ್ಥಾಪಕರು", "url": "/about-us/founders" },
-    { "label": "ನಿರ್ದೇಶಕರ ಮಂಡಳಿ", "url": "/about-us/directors" },
-    { "label": "ಹಣಕಾಸು", "url": "/about-us/financials" }
+    {
+      "label": "ಸ್ಥಾಪಕರು",
+      "url": "/about-us/founders"
+    },
+    {
+      "label": "ನಿರ್ದೇಶಕರ ಮಂಡಳಿ",
+      "url": "/about-us/directors"
+    },
+    {
+      "label": "ಹಣಕಾಸು",
+      "url": "/about-us/financials"
+    }
   ],
   "retailLinks": [
-    { "label": "ಸೇವಿಂಗ್ಸ್ ಬ್ಯಾಂಕ್ ಖಾತೆ", "url": "/deposits/saving" },
-    { "label": "ಕರಂಟ್ ಖಾತೆ", "url": "/deposits/current" },
-    { "label": "ಸೇಫ್ ಡಿಪಾಜಿಟ್ ಲಾಕರ್‌ಗಳು", "url": "/service/locker" },
-    { "label": "RTGS / NEFT", "url": "/service/rtgs-neft" }
+    {
+      "label": "ಸೇವಿಂಗ್ಸ್ ಬ್ಯಾಂಕ್ ಖಾತೆ",
+      "url": "/deposits/saving"
+    },
+    {
+      "label": "ಕರಂಟ್ ಖಾತೆ",
+      "url": "/deposits/current"
+    },
+    {
+      "label": "ಸೇಫ್ ಡಿಪಾಜಿಟ್ ಲಾಕರ್‌ಗಳು",
+      "url": "/service/locker"
+    },
+    {
+      "label": "RTGS / NEFT",
+      "url": "/service/rtgs-neft"
+    }
   ],
   "importantLinks": [
-    { "label": "ದೂರು ದಾಖಲಿಸಿ", "url": "/misc/lodge-a-complaint" },
-    { "label": "ವಿಚಾರಣೆ ಫಾರ್ಮ್", "url": "/misc/inquiry" },
-    { "label": "ಕರಿಯರ್ ಫಾರ್ಮ್", "url": "/misc/career" }
+    {
+      "label": "ದೂರು ದಾಖಲಿಸಿ",
+      "url": "/misc/lodge-a-complaint"
+    },
+    {
+      "label": "ವಿಚಾರಣೆ ಫಾರ್ಮ್",
+      "url": "/misc/inquiry"
+    },
+    {
+      "label": "ಕರಿಯರ್ ಫಾರ್ಮ್",
+      "url": "/misc/career"
+    }
   ],
   "resourceLinks": [
-    { "label": "ರಿಸರ್ವ್ ಬ್ಯಾಂಕ್ ಆಫ್ ಇಂಡಿಯಾ", "url": "https://www.rbi.org.in/", "external": true },
-    { "label": "RBI – ಗ್ರಾಹಕರ ಉಪಯುಕ್ತ ಮಾಹಿತಿ", "url": "https://rbi.org.in/Scripts/FS_UsefulInfoCustomer.aspx?fn=2745", "external": true },
-    { "label": "ರಾಷ್ಟ್ರೀಯ ಹಣಕಾಸು ಶಿಕ್ಷಣ ಕೇಂದ್ರ", "url": "https://ncfe.org.in/", "external": true },
-    { "label": "ಸ್ಟೇಟ್ ಅರ್ಭನ್ ಬ್ಯಾಂಕ್ ಫೆಡರೇಶನ್", "url": "https://www.kubfed.com/", "external": true },
-    { "label": "NAFCUB", "url": "https://nafcub.org/", "external": true },
-    { "label": "ನ್ಯಾಷನಲ್ ಕೂಪರೇಟಿವ್ ಡೇಟಾಬೇಸ್", "url": "https://cooperatives.gov.in/", "external": true },
-    { "label": "ರೀಜನಲ್ ಇನ್ಸ್ಟಿಟ್ಯೂಟ್ ಆಫ್ ಕೂಪರೇಟಿವ್ ಮ್ಯಾನೇಜ್ಮೆಂಟ್", "url": "https://ricmb.ac.in/", "external": true },
-    { "label": "ಸೈಬರ್ ಕ್ರೈಮ್ ಪೋರ್ಟಲ್", "url": "https://cybercrime.gov.in/", "external": true }
+    {
+      "label": "ರಿಸರ್ವ್ ಬ್ಯಾಂಕ್ ಆಫ್ ಇಂಡಿಯಾ",
+      "url": "https://www.rbi.org.in/",
+      "external": true
+    },
+    {
+      "label": "RBI – ಗ್ರಾಹಕರ ಉಪಯುಕ್ತ ಮಾಹಿತಿ",
+      "url": "https://rbi.org.in/Scripts/FS_UsefulInfoCustomer.aspx?fn=2745",
+      "external": true
+    },
+    {
+      "label": "ರಾಷ್ಟ್ರೀಯ ಹಣಕಾಸು ಶಿಕ್ಷಣ ಕೇಂದ್ರ",
+      "url": "https://ncfe.org.in/",
+      "external": true
+    },
+    {
+      "label": "ಸ್ಟೇಟ್ ಅರ್ಭನ್ ಬ್ಯಾಂಕ್ ಫೆಡರೇಶನ್",
+      "url": "https://www.kubfed.com/",
+      "external": true
+    },
+    {
+      "label": "NAFCUB",
+      "url": "https://nafcub.org/",
+      "external": true
+    },
+    {
+      "label": "ನ್ಯಾಷನಲ್ ಕೂಪರೇಟಿವ್ ಡೇಟಾಬೇಸ್",
+      "url": "https://cooperatives.gov.in/",
+      "external": true
+    },
+    {
+      "label": "ರೀಜನಲ್ ಇನ್ಸ್ಟಿಟ್ಯೂಟ್ ಆಫ್ ಕೂಪರೇಟಿವ್ ಮ್ಯಾನೇಜ್ಮೆಂಟ್",
+      "url": "https://ricmb.ac.in/",
+      "external": true
+    },
+    {
+      "label": "ಸೈಬರ್ ಕ್ರೈಮ್ ಪೋರ್ಟಲ್",
+      "url": "https://cybercrime.gov.in/",
+      "external": true
+    }
   ],
   "socialLinks": [
-    { "label": "Facebook", "url": "#", "iconText": "f" },
-    { "label": "X", "url": "#", "iconText": "x" },
-    { "label": "Instagram", "url": "#", "iconText": "ig" },
-    { "label": "LinkedIn", "url": "#", "iconText": "in" }
+    {
+      "label": "Facebook",
+      "url": "#",
+      "iconText": "f"
+    },
+    {
+      "label": "X",
+      "url": "#",
+      "iconText": "x"
+    },
+    {
+      "label": "Instagram",
+      "url": "#",
+      "iconText": "ig"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "#",
+      "iconText": "in"
+    }
   ],
   "storeBadges": [
     {
       "href": "https://play.google.com/store/apps/details?id=in.sarvatra.ilkalcoop.mobilebanking",
       "ariaLabel": "Ilkal Bank app on Google Play",
-      "qrImage": "assets/playstore.qr.svg",
-      "badgeImage": "/assets/playstore.png"
+      "qrImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/playstore.qr.svg",
+      "badgeImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/playstore.png"
     }
   ],
   "storeQrAlt": "ಆಪ್ ಡೌನ್‌ಲೋಡ್ QR",
@@ -50,17 +128,29 @@
   "dicgc": {
     "href": "https://www.dicgc.org.in/",
     "ariaLabel": "ನಾವು DICGC ನೋಂದಾಯಿತ ಸದಸ್ಯರು ಮತ್ತು ನಿಮ್ಮ ಠೇವಣಿಗಳು ವಿಮೆಗೊಂಡಿವೆ",
-    "logoImage": "/assets/dicgc.jpg",
+    "logoImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/dicgc.jpg",
     "logoAlt": "DICGC ಲೋಗೋ",
-    "qrImage": "/assets/dicgc-qr.jpeg",
+    "qrImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/dicgc-qr.jpeg",
     "qrAlt": "DICGC QR ಕೋಡ್",
     "message": "ನಾವು DICGC ನೋಂದಾಯಿತ ಸದಸ್ಯರು ಮತ್ತು ನಿಮ್ಮ ಠೇವಣಿಗಳು ವಿಮೆಗೊಂಡಿವೆ"
   },
   "legalLabel": "ಕಾನೂನು",
   "legalLinks": [
-    { "label": "ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳು", "url": "/assets/terms-and-conditions.pdf", "external": true },
-    { "label": "ಗೌಪ್ಯತಾ ನೀತಿ", "url": "/assets/privacy-policy.pdf", "external": true },
-    { "label": "ಸೈಟ್ ಮ್ಯಾಪ್", "url": "/sitemap", "external": false }
+    {
+      "label": "ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳು",
+      "url": "/assets/terms-and-conditions.pdf",
+      "external": true
+    },
+    {
+      "label": "ಗೌಪ್ಯತಾ ನೀತಿ",
+      "url": "/assets/privacy-policy.pdf",
+      "external": true
+    },
+    {
+      "label": "ಸೈಟ್ ಮ್ಯಾಪ್",
+      "url": "/sitemap",
+      "external": false
+    }
   ],
   "smallNote": "ಈ ಸೈಟ್ 1024x768 ಅಥವಾ ಹೆಚ್ಚಿನ ರೆಸಲ್ಯೂಶನ್‌ನ ಆಧುನಿಕ ಬ್ರೌಸರ್‌ಗಳಲ್ಲಿ ಉತ್ತಮವಾಗಿ ಕಾಣುತ್ತದೆ",
   "languageLabel": "ಭಾಷೆ:",

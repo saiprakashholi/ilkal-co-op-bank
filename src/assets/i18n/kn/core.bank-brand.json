@@ -1,9 +1,9 @@
 {
-  "logoImage": "/assets/logo_128.png",
+  "logoImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/logo_128.png",
   "logoAlt": "ಬ್ಯಾಂಕ್ ಲೋಗೋ",
   "logoTitle": "ಮುಖಪುಟಕ್ಕೆ ಹೋಗಿ",
   "bankTitle": "ILKAL CO-OPERATIVE BANK LTD.",
   "bankSubBefore": "ಸಮುದಾಯಕ್ಕೆ ಸೇವೆ ಸಲ್ಲಿಸುತ್ತಿದೆ",
-  "celebrationImage": "/assets/50years-logo.png",
+  "celebrationImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/50years-logo.png",
   "celebrationAlt": "50 ವರ್ಷಗಳ ಆಚರಣೆ"
 }

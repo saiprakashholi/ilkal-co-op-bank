@@ -1,7 +1,11 @@
 <section class="atm-root">
   <!-- Title with UPI logo -->
   <h1 class="title title-with-logo">
-    <img src="/assets/atm.png" alt="UPI" class="upi-logo" />
+    <img
+      [src]="lang.t('services.atm', 'logoImage')"
+      [attr.alt]="lang.t('services.atm', 'logoAlt')"
+      class="upi-logo"
+    />
     {{ lang.t('services.atm', 'TITLE') }}
   </h1>
 

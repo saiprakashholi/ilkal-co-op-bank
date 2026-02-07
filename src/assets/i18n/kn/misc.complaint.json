@@ -17,6 +17,6 @@
   "successTitle": "ದೂರು ಸಲ್ಲಿಸಲಾಗಿದೆ",
   "successMsg": "ಧನ್ಯವಾದಗಳು. ನಿಮ್ಮ ದೂರು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ. ನಮ್ಮ ತಂಡ ಶೀಘ್ರದಲ್ಲೇ ಪರಿಶೀಲಿಸುತ್ತದೆ.",
   "newComplaint": "ಮತ್ತೊಂದು ದೂರು ಸಲ್ಲಿಸಿ",
-  "illustrationImage": "assets/complaint-illustration.svg",
+  "illustrationImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/complaint-illustration.svg",
   "illustrationAlt": "ದೂರು ಚಿತ್ರಣ"
 }

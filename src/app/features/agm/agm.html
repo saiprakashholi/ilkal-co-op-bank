@@ -40,7 +40,10 @@
 <div class="image-section">
   <h2>10 Years Financial Performance</h2>
   <br />
-  <img src="assets/finance/10 Years Bank Profit Chart.jpg" alt="10 Years Bank Profit Chart" />
+  <img
+    [src]="lang.t('agm', 'chartImage')"
+    [attr.alt]="lang.t('agm', 'chartAlt')"
+  />
 
   <p class="note">*This chart is provided for reference and transparency.</p>
 </div>

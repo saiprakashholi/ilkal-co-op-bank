@@ -4,7 +4,7 @@
   "heroSubtitle": "ಸುರಕ್ಷಿತ, ವಿಶ್ವಾಸಾರ್ಹ ಮತ್ತು ಆಧುನಿಕ ಬ್ಯಾಂಕಿಂಗ್ — ನಿಮ್ಮ ಎಲ್ಲಾ ಹಣಕಾಸು ಅಗತ್ಯಗಳಿಗೆ ಡಿಜಿಟಲ್ ಪರಿಹಾರಗಳು ಮತ್ತು ವೈಯಕ್ತಿಕ ಸೇವೆ.",
   "heroPrimaryCta": "ಸೇವೆಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
   "heroSecondaryCta": "ಶಾಖೆಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ",
-  "heroImageSrc": "assets/hero-480.jpg",
+  "heroImageSrc": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/hero-480.jpg",
   "heroImageSrcset": "assets/hero-480.jpg 480w, assets/hero-800.jpg 800w, assets/hero-800.jpg 1200w",
   "heroImageSizes": "(max-width:480px) 100vw, (max-width:900px) 50vw, 600px",
   "heroImageAlt": "",
@@ -16,39 +16,39 @@
   "servicesListAriaLabel": "ಶೀಘ್ರ ಸೇವೆಗಳು",
   "services": [
     {
-      "icon": "/assets/upi-icon.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/upi-icon.png",
       "title": "UPI ಪಾವತಿಗಳು",
       "description": "UPI ಮೂಲಕ ತ್ವರಿತ ಮತ್ತು ಸುರಕ್ಷಿತ ಹಣ ವರ್ಗಾವಣೆ. Ilkal Co-Operative Bank ನ ಜನಪ್ರಿಯ UPI ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಮೂಲಕ ಯಾವಾಗ ಬೇಕಾದರೂ ಹಣ ಕಳುಹಿಸಿ ಅಥವಾ ಸ್ವೀಕರಿಸಿ."
     },
     {
-      "icon": "/assets/atm.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/atm.png",
       "title": "ಎಟಿಎಮ್ ಬ್ಯಾಂಕಿಂಗ್",
       "description": "24×7 ನಗದು ವಿತರಣಾ, ಶೇಷ ವಿಚಾರಣೆ, ಮಿನಿ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಮತ್ತು ಇತರೆ ಅಗತ್ಯ ಎಟಿಎಮ್ ಸೇವೆಗಳ ಪ್ರವೇಶ."
     },
     {
-      "icon": "/assets/mobile-banking.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/mobile-banking.png",
       "title": "ಮೊಬೈಲ್ ಬ್ಯಾಂಕಿಂಗ್",
       "description": "ನಮ್ಮ ಮೊಬೈಲ್ ಆ್ಯಪ್ ಮೂಲಕ ಯಾವಾಗ ಬೇಕಾದರೂ ಖಾತೆಯನ್ನು ಪ್ರವೇಶಿಸಿ. ಶೇಷ ಪರಿಶೀಲಿಸಿ, ಹಣ ವರ್ಗಾಯಿಸಿ ಮತ್ತು ಸುರಕ್ಷಿತ ಡಿಜಿಟಲ್ ಬ್ಯಾಂಕಿಂಗ್ ಅನುಭವಿಸಿ."
     },
     {
-      "icon": "/assets/rtgs-neft.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/rtgs-neft.png",
       "title": "RTGS / NEFT",
       "description": "RTGS ಮತ್ತು NEFT ಸೌಲಭ್ಯಗಳ ಮೂಲಕ ಭಾರತದ ಯಾವುದೇ ಬ್ಯಾಂಕ್‌ಗೆ ವೇಗವಾದ ಮತ್ತು ವಿಶ್ವಾಸಾರ್ಹ ಹಣ ವರ್ಗಾವಣೆ."
     },
     {
-      "icon": "/assets/imps.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/imps.png",
       "title": "IMPS",
       "description": "ತ್ವರಿತ ಅಂತರ್ ಬ್ಯಾಂಕ್ ಹಣ ವರ್ಗಾವಣೆ ಸೇವೆ."
     },
     {
-      "icon": "/assets/locker-logo.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/locker-logo.png",
       "title": "ಸೇಫ್ ಡಿಪಾಜಿಟ್ ಲಾಕರ್‌ಗಳು",
       "description": "ನಿಮ್ಮ ಮೌಲ್ಯವಾದ ವಸ್ತುಗಳು ಮತ್ತು ಪ್ರಮುಖ ದಾಖಲೆಗಳನ್ನು ಸಂಪೂರ್ಣ ಮನಶಾಂತಿಯೊಂದಿಗೆ ರಕ್ಷಿಸಲು ಸುರಕ್ಷಿತ ಲಾಕರ್ ಸೌಲಭ್ಯಗಳು."
     }
   ],
   "sareeSectionAriaLabel": "ಇಲ್ಕಲ್ ಸೀರೆಗಳು GI ಟ್ಯಾಗ್",
   "sareeTitle": "ಇಲ್ಕಲ್ ಸೀರೆಗಳು – ಹೆಮ್ಮೆಯ ಪರಂಪರೆ",
-  "sareeBannerImage": "assets/ilkal-gi/ilkal-gi-banner.jpeg",
+  "sareeBannerImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/ilkal-gi/ilkal-gi-banner.jpeg",
   "sareeBannerAlt": "ಭಾರತದ ಭೌಗೋಳಿಕ ಸೂಚ್ಯಂಕಗಳು",
   "sareeIntroBefore": "ಉತ್ತರ ಕರ್ನಾಟಕದ ಬಾಗಲಕೋಟೆ ಜಿಲ್ಲೆಯ ಪಿಟ್ ಲೂಮ್‌ಗಳಲ್ಲಿ ಉದ್ಭವಿಸಿದ ಆಕರ್ಷಕ ಇಲ್ಕಲ್ ಸೀರೆಗಳು ವಿಶಿಷ್ಟ",
   "sareeIntroEmphasis": "ಟೋಪೆ ತೆನಿ",
@@ -63,6 +63,6 @@
   "sareeGiTextBetween": "NABARD ಬೆಂಬಲದೊಂದಿಗೆ ನೀಡಲಾಗಿದೆ.",
   "sareeGiBankName": "Ilkal Co-Operative Bank Ltd.",
   "sareeGiTextAfter": "ಈ ಶ್ರೀಮಂತ ಸಾಂಸ್ಕೃತಿಕ ಪರಂಪರೆಯನ್ನು ಬೆಂಬಲಿಸುವುದಕ್ಕೂ ಸಂರಕ್ಷಿಸುವುದಕ್ಕೂ ಹೆಮ್ಮೆಪಡುತ್ತದೆ.",
-  "sareeCertificateImage": "assets/ilkal-gi/ilkal-gi-certificate.jpeg",
+  "sareeCertificateImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/ilkal-gi/ilkal-gi-certificate.jpeg",
   "sareeCertificateAlt": "ಇಲ್ಕಲ್ ಸೀರೆ GI ನೋಂದಣಿ ಪ್ರಮಾಣಪತ್ರ"
 }

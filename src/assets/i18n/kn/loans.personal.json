@@ -2,15 +2,21 @@
   "pageTitle": "ವೈಯಕ್ತಿಕ ಸಾಲ",
   "pageSubtitle": "ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಅಗತ್ಯಗಳಿಗೆ ತ್ವರಿತ ಹಣಕಾಸು ಸಹಾಯ",
   "pageDescription": "ಕಡಿಮೆ ದಾಖಲೆಗಳು ಮತ್ತು ಲವಚಿಕ ಮರುಪಾವತಿಯನ್ನು ಹೊಂದಿರುವ ಭದ್ರತಾ ರಹಿತ ಸಾಲ.",
-  "heroImage": "/assets/loans/personal-loan.jpg",
+  "heroImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/personal-loan.jpg",
   "highlights": [
     {
       "label": "ಗರಿಷ್ಠ ಮೊತ್ತ",
       "value": "₹5.00 ಲಕ್ಷ",
       "valueLabel": "(ಮೂಲ ವೇತನದ 10 ಪಟ್ಟು)"
     },
-    { "label": "ಅವಧಿ", "value": "3 ವರ್ಷ" },
-    { "label": "ಪೂರ್ವಪಾವತಿ", "value": "ಯಾವುದೇ ದಂಡ ಇಲ್ಲ" }
+    {
+      "label": "ಅವಧಿ",
+      "value": "3 ವರ್ಷ"
+    },
+    {
+      "label": "ಪೂರ್ವಪಾವತಿ",
+      "value": "ಯಾವುದೇ ದಂಡ ಇಲ್ಲ"
+    }
   ],
   "useCasesTitle": "ವೈಯಕ್ತಿಕ ಸಾಲ ಯಾವಾಗ ಉಪಯುಕ್ತ?",
   "useCases": [],

@@ -17,6 +17,6 @@
   "successTitle": "Complaint Submitted",
   "successMsg": "Thank you. Your complaint has been submitted successfully. Our team will review it shortly.",
   "newComplaint": "Submit another complaint",
-  "illustrationImage": "assets/complaint-illustration.svg",
+  "illustrationImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/complaint-illustration.svg",
   "illustrationAlt": "Complaint illustration"
 }

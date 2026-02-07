@@ -1,5 +1,5 @@
 {
-  "heroImage": "/assets/about-us-bgm.png",
+  "heroImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/about-us-bgm.png",
   "heroImageAlt": "hero",
   "sidebarTitle": "About Us",
   "executivesTitle": "Executives",

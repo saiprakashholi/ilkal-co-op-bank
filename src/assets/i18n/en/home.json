@@ -4,7 +4,7 @@
   "heroSubtitle": "Secure, reliable and modern banking — digital solutions and personal service for all your financial needs.",
   "heroPrimaryCta": "Explore Services",
   "heroSecondaryCta": "Locate Branches",
-  "heroImageSrc": "assets/hero-480.jpg",
+  "heroImageSrc": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/hero-480.jpg",
   "heroImageSrcset": "assets/hero-480.jpg 480w, assets/hero-800.jpg 800w, assets/hero-800.jpg 1200w",
   "heroImageSizes": "(max-width:480px) 100vw, (max-width:900px) 50vw, 600px",
   "heroImageAlt": "",
@@ -16,39 +16,39 @@
   "servicesListAriaLabel": "Quick services",
   "services": [
     {
-      "icon": "/assets/upi-icon.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/upi-icon.png",
       "title": "UPI Payments",
       "description": "Instant and secure money transfers using UPI. Send or receive money anytime using popular UPI apps with Ilkal Co-Operative Bank."
     },
     {
-      "icon": "/assets/atm.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/atm.png",
       "title": "ATM Banking",
       "description": "24×7 access to cash withdrawal, balance enquiry, mini statements, and other essential ATM banking services."
     },
     {
-      "icon": "/assets/mobile-banking.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/mobile-banking.png",
       "title": "Mobile Banking",
       "description": "Access your account anytime through our mobile app. Check balances, transfer funds, and enjoy secure digital banking."
     },
     {
-      "icon": "/assets/rtgs-neft.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/rtgs-neft.png",
       "title": "RTGS / NEFT",
       "description": "Fast and reliable fund transfers to any bank in India using RTGS and NEFT facilities."
     },
     {
-      "icon": "/assets/imps.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/imps.png",
       "title": "IMPS",
       "description": "Instant interbank money transfer service."
     },
     {
-      "icon": "/assets/locker-logo.png",
+      "icon": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/locker-logo.png",
       "title": "Safe Deposit Lockers",
       "description": "Secure locker facilities to protect your valuables and important documents with complete peace of mind."
     }
   ],
   "sareeSectionAriaLabel": "Ilkal Sarees GI Tag",
   "sareeTitle": "Ilkal Sarees – A Proud Heritage",
-  "sareeBannerImage": "assets/ilkal-gi/ilkal-gi-banner.jpeg",
+  "sareeBannerImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/ilkal-gi/ilkal-gi-banner.jpeg",
   "sareeBannerAlt": "Geographical Indications of India",
   "sareeIntroBefore": "Originating in the pit looms of the Bagalkot district of North Karnataka, the elegant Ilkal sarees are woven using the unique",
   "sareeIntroEmphasis": "Tope Teni",
@@ -63,6 +63,6 @@
   "sareeGiTextBetween": "with support from NABARD.",
   "sareeGiBankName": "Ilkal Co-Operative Bank Ltd.",
   "sareeGiTextAfter": "takes pride in supporting and preserving this rich cultural heritage.",
-  "sareeCertificateImage": "assets/ilkal-gi/ilkal-gi-certificate.jpeg",
+  "sareeCertificateImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/ilkal-gi/ilkal-gi-certificate.jpeg",
   "sareeCertificateAlt": "Ilkal Saree GI Registration Certificate"
 }

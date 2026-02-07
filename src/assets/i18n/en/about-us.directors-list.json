@@ -3,23 +3,113 @@
   "description": "Our Board of Directors plays a vital role in governing the bank with transparency, accountability, and long-term vision. Their insights and expertise help us deliver reliable and customer-centric financial services.",
   "placeholderImage": "https://via.placeholder.com/600x600?text=No+Image",
   "members": [
-    { "id": 1, "name": "Satish Sapparad", "photo": "assets/managementImages/1.Satish.Sapparad.(President).jpg", "designation": "President" },
-    { "id": 2, "name": "Mahantesh Kampli", "photo": "assets/managementImages/2.Mahantesh.Kampli(Vice-President).jpg", "designation": "Vice President" },
-    { "id": 3, "name": "Pampapati Kalagi", "photo": "assets/managementImages/3 Pampapati Kalagi .jpg", "designation": "Director" },
-    { "id": 4, "name": "Lachamayya Guram", "photo": "assets/managementImages/4 Lachamayya Guram.jpg", "designation": "Director" },
-    { "id": 51, "name": "Mallikarjunagouda S Patil", "photo": "assets/managementImages/MSPATIL NEW.jpg", "designation": "Director" },
-    { "id": 5, "name": "Goutham Bora", "photo": "assets/managementImages/5 Goutam Bora.jpg", "designation": "Director" },
-    { "id": 6, "name": "Mahantappa Angadi", "photo": "assets/managementImages/6 Mahantappa Angadi.jpg", "designation": "Director" },
-    { "id": 7, "name": "Vijay Giraddi", "photo": "assets/managementImages/7 Vijay Giraddi.jpg", "designation": "Director" },
-    { "id": 8, "name": "Mallikarjun Agni", "photo": "assets/managementImages/8 Mallikarjun Agni.jpg", "designation": "Director" },
-    { "id": 9, "name": "Aravind Mangalur", "photo": "assets/managementImages/9 Aravind Mangalur.jpg", "designation": "Director" },
-    { "id": 10, "name": "Basavaraj Talikoti", "photo": "assets/managementImages/10 Basavaraj Talikoti.jpg", "designation": "Director" },
-    { "id": 11, "name": "Manjunath Shetter", "photo": "assets/managementImages/11 Manjunath Shetter.png", "designation": "Director" },
-    { "id": 12, "name": "Charalingappa Akki", "photo": "assets/managementImages/12 Charalingappa Akki.jpg", "designation": "Director" },
-    { "id": 13, "name": "Praveen Hoolageri", "photo": "assets/managementImages/13 Praveen Hoolageri.jpeg", "designation": "Director" },
-    { "id": 14, "name": "Shantkumar Surpur", "photo": "assets/managementImages/14 Shantkumar Surpur.jpg", "designation": "Director" },
-    { "id": 15, "name": "Dr.Aruna Akki", "photo": "assets/managementImages/15 Dr.Aruna Akki.jpg", "designation": "Director" },
-    { "id": 16, "name": "Lata Herur", "photo": "assets/managementImages/16 Lata Herur.jpg", "designation": "Director" },
-    { "id": 17, "name": "Nagaraj Kutagamari", "photo": "assets/managementImages/Nagaraj Kutagamari (General Manager).jpg", "designation": "General Manager" }
+    {
+      "id": 1,
+      "name": "Satish Sapparad",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/1.Satish.Sapparad.%28President%29.jpg",
+      "designation": "President"
+    },
+    {
+      "id": 2,
+      "name": "Mahantesh Kampli",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/2.Mahantesh.Kampli%28Vice-President%29.jpg",
+      "designation": "Vice President"
+    },
+    {
+      "id": 3,
+      "name": "Pampapati Kalagi",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/3%20Pampapati%20Kalagi%20.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 4,
+      "name": "Lachamayya Guram",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/4%20Lachamayya%20Guram.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 51,
+      "name": "Mallikarjunagouda S Patil",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/MSPATIL%20NEW.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 5,
+      "name": "Goutham Bora",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/5%20Goutam%20Bora.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 6,
+      "name": "Mahantappa Angadi",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/6%20Mahantappa%20Angadi.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 7,
+      "name": "Vijay Giraddi",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/7%20Vijay%20Giraddi.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 8,
+      "name": "Mallikarjun Agni",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/8%20Mallikarjun%20Agni.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 9,
+      "name": "Aravind Mangalur",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/9%20Aravind%20Mangalur.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 10,
+      "name": "Basavaraj Talikoti",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/10%20Basavaraj%20Talikoti.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 11,
+      "name": "Manjunath Shetter",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/11%20Manjunath%20Shetter.png",
+      "designation": "Director"
+    },
+    {
+      "id": 12,
+      "name": "Charalingappa Akki",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/12%20Charalingappa%20Akki.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 13,
+      "name": "Praveen Hoolageri",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/13%20Praveen%20Hoolageri.jpeg",
+      "designation": "Director"
+    },
+    {
+      "id": 14,
+      "name": "Shantkumar Surpur",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/14%20Shantkumar%20Surpur.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 15,
+      "name": "Dr.Aruna Akki",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/15%20Dr.Aruna%20Akki.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 16,
+      "name": "Lata Herur",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/16%20Lata%20Herur.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 17,
+      "name": "Nagaraj Kutagamari",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/Nagaraj%20Kutagamari%20%28General%20Manager%29.jpg",
+      "designation": "General Manager"
+    }
   ]
 }

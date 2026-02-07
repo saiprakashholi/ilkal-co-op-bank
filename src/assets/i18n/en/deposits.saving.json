@@ -1,7 +1,7 @@
 {
   "pageTitle": "Savings Deposit",
   "pageDescription": "A Savings Bank Account helps you securely set aside your savings while enjoying easy access to funds and earning steady interest.",
-  "heroImage": "/assets/deposits/saving-account.jpg",
+  "heroImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/deposits/saving-account.jpg",
   "interestRateLabel": "Rate of Interest",
   "interestRateValue": "3.0% p.a.",
   "benefitsTitle": "Benefits",

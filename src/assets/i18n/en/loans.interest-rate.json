@@ -2,12 +2,27 @@
   "pageTitle": "Loan Interest Rates",
   "pageSubtitle": "Category wise interest details",
   "chartTitle": "Loan Interest Rate Chart",
-  "chartImage": "/assets/loans2/loan-interest-chart.jpg",
+  "chartImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans2/loan-interest-chart.jpg",
   "loans": [
-    { "name": "Home Loan", "rate": 11.0 },
-    { "name": "Vehicle Loan", "rate": 13.5 },
-    { "name": "Business Loan", "rate": 13.0 },
-    { "name": "Gold Loan", "rate": 11.0 },
-    { "name": "Salaried Loan", "rate": 13.5 }
+    {
+      "name": "Home Loan",
+      "rate": 11.0
+    },
+    {
+      "name": "Vehicle Loan",
+      "rate": 13.5
+    },
+    {
+      "name": "Business Loan",
+      "rate": 13.0
+    },
+    {
+      "name": "Gold Loan",
+      "rate": 11.0
+    },
+    {
+      "name": "Salaried Loan",
+      "rate": 13.5
+    }
   ]
 }

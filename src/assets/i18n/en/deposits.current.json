@@ -1,7 +1,7 @@
 {
   "pageTitle": "Current Deposit",
   "pageDescription": "A Current Account is designed for businesses and individuals with frequent transactions, offering flexibility, convenience, and seamless banking operations.",
-  "heroImage": "/assets/deposits/current-deposit.jpg",
+  "heroImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/deposits/current-deposit.jpg",
   "benefitsTitle": "Benefits",
   "benefits": [
     "No restriction on transactions either in number or amount",

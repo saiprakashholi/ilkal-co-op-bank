@@ -1,266 +1,266 @@
 {
-    "pageTitle": "Business Loans",
-    "pageSubtitle": "Working capital support for growing businesses",
-    "pageDescription": "Our Business Loans are designed to support working capital needs, expansion plans, and operational requirements of small and medium enterprises with simple documentation and quick processing.",
-    "documentsTitle": "Documents Required",
-    "loans": [
+  "pageTitle": "Business Loans",
+  "pageSubtitle": "Working capital support for growing businesses",
+  "pageDescription": "Our Business Loans are designed to support working capital needs, expansion plans, and operational requirements of small and medium enterprises with simple documentation and quick processing.",
+  "documentsTitle": "Documents Required",
+  "loans": [
+    {
+      "key": "1. Over Draft Loan (ODL)",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans2/over-draft-loan.jpg",
+      "stats": [
         {
-            "key": "1. Over Draft Loan (ODL)",
-            "image": "/assets/loans2/over-draft-loan.jpg",
-            "stats": [
-                {
-                    "labelKey": "Maximum Loan",
-                    "value": "Up to ₹3 Crore"
-                },
-                {
-                    "labelKey": "Repayment Period",
-                    "value": "Up to 1 Year"
-                },
-                {
-                    "labelKey": "Interest Rate",
-                    "value": "13% p.a."
-                }
-            ],
-            "requiredDocs": [
-                "Duly filled loan application form",
-                "Engineer valuation report and legal opinion",
-                "Original sale deed bond",
-                "Income tax returns (minimum 3 years)",
-                "GST registration copy",
-                "Financial statements, balance sheet, trading account and profit & loss account",
-                "Registered partnership deed",
-                "Computer utar or RTC",
-                "N.A. order and layout map",
-                "Encumbrance certificate (EC – 30 years)",
-                "Income proof of applicant(s) and guarantor(s)",
-                "Residential proof of applicant(s) and guarantor(s)",
-                "PAN card of applicant(s) and guarantor(s)",
-                "KYC documents of applicant(s) and guarantor(s)",
-                "Any other documents as required by the bank"
-            ]
+          "labelKey": "Maximum Loan",
+          "value": "Up to ₹3 Crore"
         },
         {
-            "key": "2. Hypothecation (Goods) Cash Credit",
-            "image": "/assets/loans/hypothication-goods.jpg",
-            "stats": [
-                {
-                    "labelKey": "Maximum Loan",
-                    "value": "Up to ₹10 Lakhs"
-                },
-                {
-                    "labelKey": "Repayment Period",
-                    "value": "Up to 1 Year"
-                },
-                {
-                    "labelKey": "Interest Rate",
-                    "value": "13% p.a."
-                }
-            ],
-            "requiredDocs": [
-                "Duly filled loan application form",
-                "Engineer valuation report and legal opinion",
-                "Registered partnership deed",
-                "Stock list",
-                "Firm license",
-                "GST registration copy",
-                "Income tax returns (minimum 3 years)",
-                "Computer utar or RTC",
-                "Encumbrance certificate (EC – 30 years)",
-                "Income proof of applicant(s) and guarantor(s)",
-                "Residential proof of applicant(s) and guarantor(s)",
-                "PAN card of applicant(s) and guarantor(s)",
-                "KYC documents of applicant(s) and guarantor(s)",
-                "Any other documents as required by the bank"
-            ]
+          "labelKey": "Repayment Period",
+          "value": "Up to 1 Year"
         },
         {
-            "key": "3. Hypothecation (Goods) CC Firm",
-            "image": "/assets/loans2/hypotication-firmloan.jpg",
-            "stats": [
-                {
-                    "labelKey": "Maximum Loan",
-                    "value": "Up to ₹25 Lakhs"
-                },
-                {
-                    "labelKey": "Repayment Period",
-                    "value": "Up to 1 Year"
-                },
-                {
-                    "labelKey": "Interest Rate",
-                    "value": "13% p.a."
-                }
-            ],
-            "requiredDocs": [
-                "Duly filled loan application form",
-                "Engineer valuation report and legal opinion",
-                "Registered partnership deed",
-                "Stock list",
-                "Firm license",
-                "GST registration copy",
-                "Income tax returns (minimum 3 years)",
-                "Computer utar or RTC",
-                "Encumbrance certificate (EC – 30 years)",
-                "Income proof of applicant(s) and guarantor(s)",
-                "Residential proof of applicant(s) and guarantor(s)",
-                "PAN card of applicant(s) and guarantor(s)",
-                "KYC documents of applicant(s) and guarantor(s)",
-                "Any other documents as required by the bank"
-            ]
-        },
-        {
-            "key": "4. Mortgage Loan",
-            "image": "/assets/loans/mortgage-loan.jpg",
-            "stats": [
-                {
-                    "labelKey": "Maximum Loan",
-                    "value": "Up to ₹5 Lakhs"
-                },
-                {
-                    "labelKey": "Repayment Period",
-                    "value": "Up to 1 Year"
-                },
-                {
-                    "labelKey": "Interest Rate",
-                    "value": "13% p.a."
-                }
-            ],
-            "requiredDocs": [
-                "Duly filled loan application form",
-                "Engineer valuation report and legal opinion",
-                "Income tax returns (minimum 3 years)",
-                "Computer utar or RTC",
-                "Encumbrance certificate (EC – 30 years)",
-                "Income proof of applicant(s) and guarantor(s)",
-                "Residential proof of applicant(s) and guarantor(s)",
-                "PAN card of applicant(s) and guarantor(s)",
-                "KYC documents of applicant(s) and guarantor(s)",
-                "Any other documents as required by the bank"
-            ]
-        },
-        {
-            "key": "5. Weavers Loan",
-            "image": "/assets/loans/weavers-loan-final.jpg",
-            "stats": [
-                {
-                    "labelKey": "Maximum Loan",
-                    "value": "Up to ₹5 Lakhs"
-                },
-                {
-                    "labelKey": "Repayment Period",
-                    "value": "Up to 1 Year"
-                },
-                {
-                    "labelKey": "Interest Rate",
-                    "value": "13% p.a."
-                }
-            ],
-            "requiredDocs": [
-                "Duly filled loan application form",
-                "Engineer valuation report and legal opinion",
-                "Computer utar or RTC",
-                "Weavers License",
-                "Encumbrance certificate (EC – 30 years)",
-                "Income proof of applicant(s) and guarantor(s)",
-                "Residential proof of applicant(s) and guarantor(s)",
-                "PAN card of applicant(s) and guarantor(s)",
-                "KYC documents of applicant(s) and guarantor(s)",
-                "Any other documents as required by the bank"
-            ]
-        },
-        {
-            "key": "6. Ware House Receipt Loan",
-            "image": "/assets/loans/ware-house-final.jpg",
-            "stats": [
-                {
-                    "labelKey": "Maximum Loan",
-                    "value": "Up to ₹50 Lakhs"
-                },
-                {
-                    "labelKey": "Repayment Period",
-                    "value": "As Per Ware House Receipt"
-                },
-                {
-                    "labelKey": "Interest Rate",
-                    "value": "11% p.a."
-                }
-            ],
-            "requiredDocs": [
-                "Duly filled loan application form",
-                "Firm License",
-                "GST registration copy",
-                "Ware House Original Receipt",
-                "Income tax returns (minimum 3 years)",
-                "Income proof of applicant(s) and guarantor(s)",
-                "Residential proof of applicant(s) and guarantor(s)",
-                "PAN card of applicant(s) and guarantor(s)",
-                "KYC documents of applicant(s) and guarantor(s)",
-                "Any other documents as required by the bank"
-            ]
-        },
-        {
-            "key": "7. Hypothecation Machinery Loan",
-            "image": "/assets/loans/machinery-loan.jpg",
-            "stats": [
-                {
-                    "labelKey": "Maximum Loan",
-                    "value": "Up to ₹30 Lakhs"
-                },
-                {
-                    "labelKey": "Repayment Period",
-                    "value": "Up to 5 Year"
-                },
-                {
-                    "labelKey": "Interest Rate",
-                    "value": "13% p.a."
-                }
-            ],
-            "requiredDocs": [
-                "Duly filled loan application form",
-                "Pro-forma invoice from authorized Machinery dealer",
-                "Property Valuation Certificate And Legal Opinion",
-                "Income tax returns (minimum 3 years)",
-                "GST Registration Copy",
-                "Annual Business Turnover Authorized by Charted Accountant",
-                "Registered Partnership Deed",
-                "Computer utar or RTC",
-                "N. A Order & Layout MAP",
-                "Encumbrance certificate (EC – 30 years)",
-                "Identity and address proof of applicant(s)",
-                "Income proof of applicant(s) and guarantor(s)",
-                "Residential proof of applicant(s) and guarantor(s)",
-                "PAN card of applicant(s) and guarantor(s)",
-                "KYC documents of applicant(s) and guarantor(s)",
-                "Any other documents as required by the bank"
-            ]
-        },
-        {
-            "key": "8. Mortgage CC Loan",
-            "image": "/assets/loans2/mortagage-cc.jpg",
-            "stats": [
-                {
-                    "labelKey": "Maximum Loan",
-                    "value": "Up to ₹50,000"
-                },
-                {
-                    "labelKey": "Repayment Period",
-                    "value": "Up to 1 Year"
-                },
-                {
-                    "labelKey": "Interest Rate",
-                    "value": "13% p.a."
-                }
-            ],
-            "requiredDocs": [
-                "Duly filled loan application form",
-                "Engineer Valuation Report",
-                "Computer utar or RTC",
-                "Encumbrance certificate (EC – 30 years)",
-                "Income proof of applicant(s) and guarantor(s)",
-                "Residential proof of applicant(s) and guarantor(s)",
-                "PAN card of applicant(s) and guarantor(s)",
-                "KYC documents of applicant(s) and guarantor(s)",
-                "Any other documents as required by the bank"
-            ]
+          "labelKey": "Interest Rate",
+          "value": "13% p.a."
         }
-    ]
+      ],
+      "requiredDocs": [
+        "Duly filled loan application form",
+        "Engineer valuation report and legal opinion",
+        "Original sale deed bond",
+        "Income tax returns (minimum 3 years)",
+        "GST registration copy",
+        "Financial statements, balance sheet, trading account and profit & loss account",
+        "Registered partnership deed",
+        "Computer utar or RTC",
+        "N.A. order and layout map",
+        "Encumbrance certificate (EC – 30 years)",
+        "Income proof of applicant(s) and guarantor(s)",
+        "Residential proof of applicant(s) and guarantor(s)",
+        "PAN card of applicant(s) and guarantor(s)",
+        "KYC documents of applicant(s) and guarantor(s)",
+        "Any other documents as required by the bank"
+      ]
+    },
+    {
+      "key": "2. Hypothecation (Goods) Cash Credit",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/hypothication-goods.jpg",
+      "stats": [
+        {
+          "labelKey": "Maximum Loan",
+          "value": "Up to ₹10 Lakhs"
+        },
+        {
+          "labelKey": "Repayment Period",
+          "value": "Up to 1 Year"
+        },
+        {
+          "labelKey": "Interest Rate",
+          "value": "13% p.a."
+        }
+      ],
+      "requiredDocs": [
+        "Duly filled loan application form",
+        "Engineer valuation report and legal opinion",
+        "Registered partnership deed",
+        "Stock list",
+        "Firm license",
+        "GST registration copy",
+        "Income tax returns (minimum 3 years)",
+        "Computer utar or RTC",
+        "Encumbrance certificate (EC – 30 years)",
+        "Income proof of applicant(s) and guarantor(s)",
+        "Residential proof of applicant(s) and guarantor(s)",
+        "PAN card of applicant(s) and guarantor(s)",
+        "KYC documents of applicant(s) and guarantor(s)",
+        "Any other documents as required by the bank"
+      ]
+    },
+    {
+      "key": "3. Hypothecation (Goods) CC Firm",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans2/hypotication-firmloan.jpg",
+      "stats": [
+        {
+          "labelKey": "Maximum Loan",
+          "value": "Up to ₹25 Lakhs"
+        },
+        {
+          "labelKey": "Repayment Period",
+          "value": "Up to 1 Year"
+        },
+        {
+          "labelKey": "Interest Rate",
+          "value": "13% p.a."
+        }
+      ],
+      "requiredDocs": [
+        "Duly filled loan application form",
+        "Engineer valuation report and legal opinion",
+        "Registered partnership deed",
+        "Stock list",
+        "Firm license",
+        "GST registration copy",
+        "Income tax returns (minimum 3 years)",
+        "Computer utar or RTC",
+        "Encumbrance certificate (EC – 30 years)",
+        "Income proof of applicant(s) and guarantor(s)",
+        "Residential proof of applicant(s) and guarantor(s)",
+        "PAN card of applicant(s) and guarantor(s)",
+        "KYC documents of applicant(s) and guarantor(s)",
+        "Any other documents as required by the bank"
+      ]
+    },
+    {
+      "key": "4. Mortgage Loan",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/mortgage-loan.jpg",
+      "stats": [
+        {
+          "labelKey": "Maximum Loan",
+          "value": "Up to ₹5 Lakhs"
+        },
+        {
+          "labelKey": "Repayment Period",
+          "value": "Up to 1 Year"
+        },
+        {
+          "labelKey": "Interest Rate",
+          "value": "13% p.a."
+        }
+      ],
+      "requiredDocs": [
+        "Duly filled loan application form",
+        "Engineer valuation report and legal opinion",
+        "Income tax returns (minimum 3 years)",
+        "Computer utar or RTC",
+        "Encumbrance certificate (EC – 30 years)",
+        "Income proof of applicant(s) and guarantor(s)",
+        "Residential proof of applicant(s) and guarantor(s)",
+        "PAN card of applicant(s) and guarantor(s)",
+        "KYC documents of applicant(s) and guarantor(s)",
+        "Any other documents as required by the bank"
+      ]
+    },
+    {
+      "key": "5. Weavers Loan",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/weavers-loan-final.jpg",
+      "stats": [
+        {
+          "labelKey": "Maximum Loan",
+          "value": "Up to ₹5 Lakhs"
+        },
+        {
+          "labelKey": "Repayment Period",
+          "value": "Up to 1 Year"
+        },
+        {
+          "labelKey": "Interest Rate",
+          "value": "13% p.a."
+        }
+      ],
+      "requiredDocs": [
+        "Duly filled loan application form",
+        "Engineer valuation report and legal opinion",
+        "Computer utar or RTC",
+        "Weavers License",
+        "Encumbrance certificate (EC – 30 years)",
+        "Income proof of applicant(s) and guarantor(s)",
+        "Residential proof of applicant(s) and guarantor(s)",
+        "PAN card of applicant(s) and guarantor(s)",
+        "KYC documents of applicant(s) and guarantor(s)",
+        "Any other documents as required by the bank"
+      ]
+    },
+    {
+      "key": "6. Ware House Receipt Loan",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/ware-house-final.jpg",
+      "stats": [
+        {
+          "labelKey": "Maximum Loan",
+          "value": "Up to ₹50 Lakhs"
+        },
+        {
+          "labelKey": "Repayment Period",
+          "value": "As Per Ware House Receipt"
+        },
+        {
+          "labelKey": "Interest Rate",
+          "value": "11% p.a."
+        }
+      ],
+      "requiredDocs": [
+        "Duly filled loan application form",
+        "Firm License",
+        "GST registration copy",
+        "Ware House Original Receipt",
+        "Income tax returns (minimum 3 years)",
+        "Income proof of applicant(s) and guarantor(s)",
+        "Residential proof of applicant(s) and guarantor(s)",
+        "PAN card of applicant(s) and guarantor(s)",
+        "KYC documents of applicant(s) and guarantor(s)",
+        "Any other documents as required by the bank"
+      ]
+    },
+    {
+      "key": "7. Hypothecation Machinery Loan",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/machinery-loan.jpg",
+      "stats": [
+        {
+          "labelKey": "Maximum Loan",
+          "value": "Up to ₹30 Lakhs"
+        },
+        {
+          "labelKey": "Repayment Period",
+          "value": "Up to 5 Year"
+        },
+        {
+          "labelKey": "Interest Rate",
+          "value": "13% p.a."
+        }
+      ],
+      "requiredDocs": [
+        "Duly filled loan application form",
+        "Pro-forma invoice from authorized Machinery dealer",
+        "Property Valuation Certificate And Legal Opinion",
+        "Income tax returns (minimum 3 years)",
+        "GST Registration Copy",
+        "Annual Business Turnover Authorized by Charted Accountant",
+        "Registered Partnership Deed",
+        "Computer utar or RTC",
+        "N. A Order & Layout MAP",
+        "Encumbrance certificate (EC – 30 years)",
+        "Identity and address proof of applicant(s)",
+        "Income proof of applicant(s) and guarantor(s)",
+        "Residential proof of applicant(s) and guarantor(s)",
+        "PAN card of applicant(s) and guarantor(s)",
+        "KYC documents of applicant(s) and guarantor(s)",
+        "Any other documents as required by the bank"
+      ]
+    },
+    {
+      "key": "8. Mortgage CC Loan",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans2/mortagage-cc.jpg",
+      "stats": [
+        {
+          "labelKey": "Maximum Loan",
+          "value": "Up to ₹50,000"
+        },
+        {
+          "labelKey": "Repayment Period",
+          "value": "Up to 1 Year"
+        },
+        {
+          "labelKey": "Interest Rate",
+          "value": "13% p.a."
+        }
+      ],
+      "requiredDocs": [
+        "Duly filled loan application form",
+        "Engineer Valuation Report",
+        "Computer utar or RTC",
+        "Encumbrance certificate (EC – 30 years)",
+        "Income proof of applicant(s) and guarantor(s)",
+        "Residential proof of applicant(s) and guarantor(s)",
+        "PAN card of applicant(s) and guarantor(s)",
+        "KYC documents of applicant(s) and guarantor(s)",
+        "Any other documents as required by the bank"
+      ]
+    }
+  ]
 }

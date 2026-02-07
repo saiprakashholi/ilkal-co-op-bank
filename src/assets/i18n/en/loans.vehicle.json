@@ -2,50 +2,42 @@
   "title": "Vehicle Loan",
   "subtitle": "Easy financing for two and four wheelers",
   "description": "Vehicle Loan helps you purchase new or used vehicles with affordable EMIs and fixed repayment tenure.",
-
   "twoTitle": "1. Two-Wheeler Loan",
   "fourTitle": "2. Four-Wheeler Loan",
-
   "labelEligible": "Eligible Applicant",
   "labelPurpose": "Purpose",
   "labelAmount": "Loan Amount",
   "labelRepayment": "Repayment Period",
   "labelFeatures": "Key Features",
-
   "twoEligible": "Individuals",
   "twoPurpose": "Purchase of New Vehicle",
   "twoAmount": "Up to 85% of Ex-Showroom Cost",
   "twoRepayment": "Up to 36 Months",
-
   "twoFeature1": "Loan amount financed up to 85% of Ex-Showroom vehicle cost",
   "twoFeature2": "Fixed repayment tenure of up to 36 months",
-
   "fourEligible": "Individuals / Firms",
   "fourPurpose1": "Purchase of New Vehicle",
   "fourPurpose2": "Purchase of Used Vehicle (not more than 4 years old)",
   "fourAmount1": "New Vehicle – Up to 85% of Ex-Showroom Cost  ",
   "fourAmount2": "Used Vehicle – Up to 50%",
-
   "fourRepayment": "Up to 60 Months",
-
   "fourFeature1": "Loan amount financed for new vehicle up to 85% of Ex-Showroom cost",
   "fourFeature2": "Fixed repayment tenure of up to 60 months",
-
   "securityTitle": "Security & Guarantees",
   "security1": "Hypothecation of the vehicle",
   "security2": "Two acceptable guarantors required",
   "security3": "Immovable property security is mandatory",
-
   "chargesTitle": "Charges & Insurance",
   "charge1": "Processing fee as per bank norms",
   "charge2": "Share holding of 2.5% of the loan amount",
   "charge3": "Insurance of the vehicle to be assigned in favour of the bank",
-
   "documentsTitle": "Documents Required",
   "doc1": "Duly filled loan application form",
   "doc2": "Pro-forma invoice from authorized vehicle dealer",
   "doc3": "Identity and address proof of applicant(s)",
   "doc4": "Income proof of applicant(s) and guarantor(s)",
   "doc5": "Applicant Driving License",
-  "doc6": "Any other documents as required by the bank"
+  "doc6": "Any other documents as required by the bank",
+  "heroImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans2/vehicle-loan.jpg",
+  "heroAlt": "Vehicle Loan"
 }

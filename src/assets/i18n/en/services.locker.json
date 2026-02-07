@@ -1,18 +1,16 @@
 {
   "TITLE": "Locker Facility",
-
   "INTRO_1": "The bank provides locker facilities to customers for the safe keeping of valuables such as jewellery, documents, and other important items.",
   "INTRO_2": "Lockers are available in different sizes to suit customer requirements, subject to availability at the branch.",
-
   "SIZE": "Locker Size",
   "DIMENSIONS": "Dimensions (H × W × D in ft)",
   "RENT": "Locker Rent (Per Year)",
-
   "SMALL": "Small",
-  "MEDIUM" : "Medium",
+  "MEDIUM": "Medium",
   "BIG": "Big",
   "LARGE": "Large",
-
   "NOTE_1": "Locker rent is payable annually in advance along with applicable GST.",
-  "NOTE_2": "Allotment of lockers is subject to availability and bank rules."
+  "NOTE_2": "Allotment of lockers is subject to availability and bank rules.",
+  "logoImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/locker-logo.png",
+  "logoAlt": "Locker"
 }

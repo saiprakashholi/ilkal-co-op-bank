@@ -1,31 +1,31 @@
 {
   "items": [
     {
-      "image": "/assets/home-page-banner/50years.jpg",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/50years.jpg",
       "title": "ಸುವರ್ಣ ಸಂಭ್ರಮ – ಸುವರ್ಣ ಮಹೋತ್ಸವ ✨",
       "subtitle": "ನಂಬಿಕೆ, ಬೆಳವಣಿಗೆ ಮತ್ತು ಸಮುದಾಯ ಸೇವೆಯ 50 ಸುವರ್ಣ ವರ್ಷಗಳ ಆಚರಣೆ."
     },
     {
-      "image": "/assets/home-page-banner/home-page-insurance.jpg"
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/home-page-insurance.jpg"
     },
     {
-      "image": "/assets/home-page-banner/mobile-banking.jpg"
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/mobile-banking.jpg"
     },
     {
-      "image": "/assets/home-page-banner/ilkal-saree.jpg"
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/ilkal-saree.jpg"
     },
     {
-      "image": "/assets/loans/gold-loan.png",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/gold-loan.png",
       "title": "ಪ್ರತಿ ಅಗತ್ಯಕ್ಕೂ ಸಾಲಗಳು",
       "subtitle": "ಚಿನ್ನ, ವ್ಯಾಪಾರ ಮತ್ತು ವೈಯಕ್ತಿಕ ಸಾಲಗಳು"
     },
     {
-      "image": "/assets/home-page-banner/Untitled-3.jpg",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/Untitled-3.jpg",
       "title": "ಡಿಜಿಟಲ್ ಬ್ಯಾಂಕಿಂಗ್ ಸೇವೆಗಳು",
       "subtitle": "UPI, IMPS ಮತ್ತು ಮೊಬೈಲ್ ಬ್ಯಾಂಕಿಂಗ್"
     },
     {
-      "image": "/assets/home-page-banner/Untitled-1.jpg",
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/Untitled-1.jpg",
       "title": "ಪಾರದರ್ಶಕ ಸಹಕಾರಿ ಬ್ಯಾಂಕ್",
       "subtitle": "ನಂಬಿಕೆ ಮತ್ತು ಪಾರದರ್ಶಕತೆಯೊಂದಿಗೆ ಗ್ರಾಹಕರಿಗೆ ಸೇವೆ"
     }

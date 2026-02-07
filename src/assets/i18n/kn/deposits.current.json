@@ -1,7 +1,7 @@
 {
   "pageTitle": "ಕರಂಟ್ ಠೇವಣಿ",
   "pageDescription": "ಕರಂಟ್ ಖಾತೆವು ಹೆಚ್ಚು ವ್ಯವಹಾರಗಳು ಇರುವ ವ್ಯವಹಾರಸ್ಥರು ಮತ್ತು ವ್ಯಕ್ತಿಗಳಿಗೆ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ; ಇದು ಲವಚಿಕತೆ, ಅನುಕೂಲತೆ ಮತ್ತು ಸುಗಮ ಬ್ಯಾಂಕಿಂಗ್ ಕಾರ್ಯಾಚರಣೆಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ.",
-  "heroImage": "/assets/deposits/current-deposit.jpg",
+  "heroImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/deposits/current-deposit.jpg",
   "benefitsTitle": "ಲಾಭಗಳು",
   "benefits": [
     "ವಹಿವಾಟಿನ ಸಂಖ್ಯೆಯಲ್ಲಿ ಅಥವಾ ಮೊತ್ತದಲ್ಲಿ ಯಾವುದೇ ನಿರ್ಬಂಧ ಇಲ್ಲ",

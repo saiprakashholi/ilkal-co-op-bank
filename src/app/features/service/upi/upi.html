@@ -2,7 +2,11 @@
 
   <!-- Title with UPI logo -->
   <h1 class="title title-with-logo">
-    <img src="/assets/upi-icon.png" alt="UPI" class="upi-logo" />
+    <img
+      [src]="lang.t('services.upi', 'logoImage')"
+      [attr.alt]="lang.t('services.upi', 'logoAlt')"
+      class="upi-logo"
+    />
     {{ lang.t('services.upi', 'TITLE') }}
   </h1>
 

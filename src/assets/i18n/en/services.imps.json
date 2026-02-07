@@ -1,14 +1,13 @@
 {
   "TITLE": "IMPS (Immediate Payment Service)",
-
   "INTRO_1": "IMPS (Immediate Payment Service) is an instant interbank electronic fund transfer service that enables customers to send and receive money in real time.",
   "INTRO_2": "IMPS is available 24x7 throughout the year, including Sundays and bank holidays.",
-
   "FEATURES_TITLE": "Key Features of IMPS",
-
   "REAL_TIME": "Real-time fund transfer with immediate credit to the beneficiary account.",
   "ROUND_THE_CLOCK": "Available 24x7, including Sundays and holidays.",
   "INSTANT_CREDIT": "Funds are credited instantly to the receiver’s bank account.",
   "INTERBANK": "Supports interbank transactions across India.",
-  "MAX_LIMIT": "The maximum limit for IMPS transactions is INR 5 Lakh."
+  "MAX_LIMIT": "The maximum limit for IMPS transactions is INR 5 Lakh.",
+  "logoImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/imps.png",
+  "logoAlt": "IMPS"
 }

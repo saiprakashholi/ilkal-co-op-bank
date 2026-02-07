@@ -76,6 +76,9 @@ export class LanguageService {
       // locations
       'locations.locations',
 
+      // agm
+      'agm',
+
       // Service module
       'services',
       'services.upi',

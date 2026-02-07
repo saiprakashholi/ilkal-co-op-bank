@@ -75,7 +75,10 @@
 
     <!-- RIGHT : IMAGE -->
     <div class="image-section">
-      <img src="assets/career-illustration.svg" alt="Career opportunities" />
+      <img
+        [src]="lang.t('misc.career', 'illustrationImage')"
+        [attr.alt]="lang.t('misc.career', 'illustrationAlt')"
+      />
     </div>
   </div>
 </section>

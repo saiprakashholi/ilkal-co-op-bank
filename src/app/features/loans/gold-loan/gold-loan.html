@@ -1,7 +1,11 @@
 <section class="loan-page">
   <!-- HERO -->
   <header class="hero">
-    <img src="/assets/loans2/gold-loan.jpg" alt="Gold Loan" class="hero-image" />
+    <img
+      [src]="lang.t('loans.gold', 'heroImage')"
+      [attr.alt]="lang.t('loans.gold', 'heroAlt')"
+      class="hero-image"
+    />
 
     <h1>{{ lang.t('loans.gold', 'title') }}</h1>
     <p class="subtitle">{{ lang.t('loans.gold', 'subtitle') }}</p>

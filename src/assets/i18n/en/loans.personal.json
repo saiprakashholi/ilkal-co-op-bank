@@ -2,15 +2,21 @@
   "pageTitle": "Personal Loan",
   "pageSubtitle": "Quick financial support for your personal needs",
   "pageDescription": "An unsecured loan with minimal documentation and flexible repayment.",
-  "heroImage": "/assets/loans/personal-loan.jpg",
+  "heroImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/personal-loan.jpg",
   "highlights": [
     {
       "label": "Maximum Amount",
       "value": "₹5.00 Lakhs",
       "valueLabel": "(10 Times of Basic Salary)"
     },
-    { "label": "Tenure", "value": "3 Years" },
-    { "label": "Prepayment", "value": "No Penalty" }
+    {
+      "label": "Tenure",
+      "value": "3 Years"
+    },
+    {
+      "label": "Prepayment",
+      "value": "No Penalty"
+    }
   ],
   "useCasesTitle": "When is a Personal Loan useful?",
   "useCases": [],

@@ -2,12 +2,24 @@
   "pageTitle": "ಗೃಹ ಸಾಲ",
   "pageSubtitle": "ಸ್ವಂತ ಮನೆ ಕನಸನ್ನು ನನಸಾಗಿಸಿಕೊಳ್ಳಿ",
   "pageDescription": "ಸರಳ ದಾಖಲೆಗಳು ಮತ್ತು ಲವಚಿಕ ಮರುಪಾವತಿ ಆಯ್ಕೆಗಳೊಂದಿಗೆ ನಾವು ಗೃಹ ಸಾಲ ಮತ್ತು ಮನೆ ನಿರ್ಮಾಣ ಸಾಲಗಳನ್ನು ಒದಗಿಸುತ್ತೇವೆ, ನಿಮ್ಮ ಕನಸಿನ ಮನೆ ನಿರ್ಮಾಣಕ್ಕೆ ವಿಶ್ವಾಸ ನೀಡುತ್ತೇವೆ.",
-  "heroImage": "/assets/loans/housing-loan-final.jpg",
+  "heroImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/housing-loan-final.jpg",
   "highlights": [
-    { "label": "ಗರಿಷ್ಠ ಸಾಲ", "value": "₹1.4 ಕೋಟಿ" },
-    { "label": "ಮರುಪಾವತಿ ಅವಧಿ", "value": "15 ವರ್ಷಗಳವರೆಗೆ" },
-    { "label": "ಬಡ್ಡಿದರ", "value": "11% ವರ್ಷಕ್ಕೆ" },
-    { "label": "ಮಾರ್ಜಿನ್", "value": "25%" }
+    {
+      "label": "ಗರಿಷ್ಠ ಸಾಲ",
+      "value": "₹1.4 ಕೋಟಿ"
+    },
+    {
+      "label": "ಮರುಪಾವತಿ ಅವಧಿ",
+      "value": "15 ವರ್ಷಗಳವರೆಗೆ"
+    },
+    {
+      "label": "ಬಡ್ಡಿದರ",
+      "value": "11% ವರ್ಷಕ್ಕೆ"
+    },
+    {
+      "label": "ಮಾರ್ಜಿನ್",
+      "value": "25%"
+    }
   ],
   "useCasesTitle": "ಗೃಹ ಸಾಲ ಹೇಗೆ ಸಹಾಯಕವಾಗಬಹುದು?",
   "useCases": [

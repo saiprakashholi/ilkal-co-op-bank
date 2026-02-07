@@ -1,7 +1,11 @@
 <section class="loan-page">
   <!-- HERO -->
   <header class="hero">
-    <img src="/assets/loans2/vehicle-loan.jpg" alt="Vehicle Loan" class="hero-image" />
+    <img
+      [src]="lang.t('loans.vehicle', 'heroImage')"
+      [attr.alt]="lang.t('loans.vehicle', 'heroAlt')"
+      class="hero-image"
+    />
 
     <h1>{{ lang.t('loans.vehicle', 'title') }}</h1>
     <p class="subtitle">{{ lang.t('loans.vehicle', 'subtitle') }}</p>

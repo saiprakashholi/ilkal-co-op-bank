@@ -1,7 +1,7 @@
 {
   "pageTitle": "ಸೇವಿಂಗ್ಸ್ ಠೇವಣಿ",
   "pageDescription": "ಸೇವಿಂಗ್ಸ್ ಬ್ಯಾಂಕ್ ಖಾತೆ ನಿಮ್ಮ ಉಳಿತಾಯವನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಸಂಗ್ರಹಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ; ಹಣಕ್ಕೆ ಸುಲಭ ಪ್ರವೇಶ ಹಾಗೂ ಸ್ಥಿರ ಬಡ್ಡಿಯ ಲಾಭವನ್ನು ನೀಡುತ್ತದೆ.",
-  "heroImage": "/assets/deposits/saving-account.jpg",
+  "heroImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/deposits/saving-account.jpg",
   "interestRateLabel": "ಬಡ್ಡಿದರ",
   "interestRateValue": "3.0% ವರ್ಷಕ್ಕೆ",
   "benefitsTitle": "ಲಾಭಗಳು",

@@ -2,7 +2,11 @@
   <!-- Title -->
 
   <header class="hero">
-    <img src="/assets/mobile-banking.jpg" alt="Mobile Banking" class="hero-image" />
+    <img
+      [src]="lang.t('services.mobile', 'heroImage')"
+      [attr.alt]="lang.t('services.mobile', 'heroAlt')"
+      class="hero-image"
+    />
 
     <h1>{{ lang.t('services.mobile', 'TITLE') }}</h1>
     <p class="subtitle">{{ lang.t('services.mobile', 'INTRO_1') }}</p>

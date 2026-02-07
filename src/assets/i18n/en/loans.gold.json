@@ -2,33 +2,29 @@
   "title": "Gold Loan",
   "subtitle": "Unlock the value of your gold",
   "description": "A Gold Loan allows you to meet your financial needs by pledging gold jewellery as collateral. The bank safely keeps your gold and returns it once the loan is fully repaid.",
-
   "labelPurpose": "Purpose",
   "labelAmount": "Loan Amount",
   "labelMargin": "Margin",
   "labelInterest": "Interest Rate",
-
   "purpose": "Loan against pledge of gold jewellery",
   "amount": "Up to 75% of gold valuation",
   "margin": "25% of gold valuation",
   "interest": "11% p.a.",
-
   "repaymentTitle": "Repayment Details",
   "repayment1": "Loan period up to 1 year",
   "repayment2": "Monthly repayment facility available",
   "repayment3": "Maximum repayment tenure of 12 months",
-
   "securityTitle": "Security",
   "security1": "Pledge of gold jewellery",
   "security2": "Gold is securely stored with the bank",
-
   "chargesTitle": "Charges & Membership",
   "charge1": "Processing fee as per bank norms",
   "charge2": "Nominal membership / share holding as applicable",
-
   "documentsTitle": "Documents Required",
   "doc1": "Latest passport size photograph",
   "doc2": "Photo identity proof of applicant",
   "doc3": "Residential proof of applicant",
-  "doc4": "Identity and address proof of guarantor(s)"
+  "doc4": "Identity and address proof of guarantor(s)",
+  "heroImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans2/gold-loan.jpg",
+  "heroAlt": "Gold Loan"
 }

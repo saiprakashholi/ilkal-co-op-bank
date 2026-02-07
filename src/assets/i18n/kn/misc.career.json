@@ -9,5 +9,7 @@
   "submit": "ಸಲ್ಲಿಸು",
   "submitting": "ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ...",
   "success": "ನಿಮ್ಮ ರೆಸ್ಯೂಮ್ ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ.",
-  "error": "ಏನೋ ತಪ್ಪಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  "error": "ಏನೋ ತಪ್ಪಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+  "illustrationImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/career-illustration.svg",
+  "illustrationAlt": "ಉದ್ಯೋಗ ಅವಕಾಶಗಳು"
 }

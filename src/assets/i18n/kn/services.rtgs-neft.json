@@ -1,6 +1,6 @@
 {
   "TITLE": "ಆರ್‌ಟಿಜಿಎಸ್ / ನೆಫ್ಟ್",
-  "logoImage": "/assets/rtgs-neft.png",
+  "logoImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/rtgs-neft.png",
   "logoAlt": "RTGS NEFT",
   "RTGS_TITLE": "RTGS (ರಿಯಲ್ ಟೈಮ್ ಗ್ರೋಸ್ ಸೆಟ್ಲ್‌ಮೆಂಟ್)",
   "RTGS_DESC_1": "RTGS ಒಂದು ತಕ್ಷಣದ ಹಣ ವರ್ಗಾವಣೆ ವ್ಯವಸ್ಥೆಯಾಗಿದ್ದು, ಪ್ರತಿ ವಹಿವಾಟನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ನೈಜ ಸಮಯದಲ್ಲಿ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಿ ಪೂರ್ಣಗೊಳಿಸುತ್ತದೆ.",

@@ -1,7 +1,11 @@
 <section class="locker-root">
   <!-- Title with UPI logo -->
   <h1 class="title title-with-logo">
-    <img src="/assets/locker-logo.png" alt="UPI" class="upi-logo" />
+    <img
+      [src]="lang.t('services.locker', 'logoImage')"
+      [attr.alt]="lang.t('services.locker', 'logoAlt')"
+      class="upi-logo"
+    />
     {{ lang.t('services.locker', 'TITLE') }}
   </h1>
 

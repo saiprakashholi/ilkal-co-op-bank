@@ -1,48 +1,126 @@
 {
   "ariaLabel": "Site footer",
-  "backgroundImage": "/assets/about-us-bgm.png",
+  "backgroundImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/about-us-bgm.png",
   "quickLinksTitle": "About Us",
   "retailTitle": "Retail Banking",
   "importantTitle": "Important Links",
   "resourcesTitle": "Resources Center",
   "quickLinks": [
-    { "label": "Founders", "url": "/about-us/founders" },
-    { "label": "Board of Directors", "url": "/about-us/directors" },
-    { "label": "Financials", "url": "/about-us/financials" }
+    {
+      "label": "Founders",
+      "url": "/about-us/founders"
+    },
+    {
+      "label": "Board of Directors",
+      "url": "/about-us/directors"
+    },
+    {
+      "label": "Financials",
+      "url": "/about-us/financials"
+    }
   ],
   "retailLinks": [
-    { "label": "Savings Bank Account", "url": "/deposits/saving" },
-    { "label": "Current Account", "url": "/deposits/current" },
-    { "label": "Safe Deposit Lockers", "url": "/service/locker" },
-    { "label": "RTGS / NEFT", "url": "/service/rtgs-neft" }
+    {
+      "label": "Savings Bank Account",
+      "url": "/deposits/saving"
+    },
+    {
+      "label": "Current Account",
+      "url": "/deposits/current"
+    },
+    {
+      "label": "Safe Deposit Lockers",
+      "url": "/service/locker"
+    },
+    {
+      "label": "RTGS / NEFT",
+      "url": "/service/rtgs-neft"
+    }
   ],
   "importantLinks": [
-    { "label": "Lodge a Complaint", "url": "/misc/lodge-a-complaint" },
-    { "label": "Inquiry Form", "url": "/misc/inquiry" },
-    { "label": "Career Form", "url": "/misc/career" }
+    {
+      "label": "Lodge a Complaint",
+      "url": "/misc/lodge-a-complaint"
+    },
+    {
+      "label": "Inquiry Form",
+      "url": "/misc/inquiry"
+    },
+    {
+      "label": "Career Form",
+      "url": "/misc/career"
+    }
   ],
   "resourceLinks": [
-    { "label": "Reserve Bank of India", "url": "https://www.rbi.org.in/", "external": true },
-    { "label": "RBI – Consumer Useful Information", "url": "https://rbi.org.in/Scripts/FS_UsefulInfoCustomer.aspx?fn=2745", "external": true },
-    { "label": "National Centre for Financial Education", "url": "https://ncfe.org.in/", "external": true },
-    { "label": "State Urban Bank Federation", "url": "https://www.kubfed.com/", "external": true },
-    { "label": "NAFCUB", "url": "https://nafcub.org/", "external": true },
-    { "label": "National Cooperative Database", "url": "https://cooperatives.gov.in/", "external": true },
-    { "label": "Regional Institute of Cooperative Management", "url": "https://ricmb.ac.in/", "external": true },
-    { "label": "Cyber Crime Portal", "url": "https://cybercrime.gov.in/", "external": true }
+    {
+      "label": "Reserve Bank of India",
+      "url": "https://www.rbi.org.in/",
+      "external": true
+    },
+    {
+      "label": "RBI – Consumer Useful Information",
+      "url": "https://rbi.org.in/Scripts/FS_UsefulInfoCustomer.aspx?fn=2745",
+      "external": true
+    },
+    {
+      "label": "National Centre for Financial Education",
+      "url": "https://ncfe.org.in/",
+      "external": true
+    },
+    {
+      "label": "State Urban Bank Federation",
+      "url": "https://www.kubfed.com/",
+      "external": true
+    },
+    {
+      "label": "NAFCUB",
+      "url": "https://nafcub.org/",
+      "external": true
+    },
+    {
+      "label": "National Cooperative Database",
+      "url": "https://cooperatives.gov.in/",
+      "external": true
+    },
+    {
+      "label": "Regional Institute of Cooperative Management",
+      "url": "https://ricmb.ac.in/",
+      "external": true
+    },
+    {
+      "label": "Cyber Crime Portal",
+      "url": "https://cybercrime.gov.in/",
+      "external": true
+    }
   ],
   "socialLinks": [
-    { "label": "Facebook", "url": "#", "iconText": "f" },
-    { "label": "X", "url": "#", "iconText": "x" },
-    { "label": "Instagram", "url": "#", "iconText": "ig" },
-    { "label": "LinkedIn", "url": "#", "iconText": "in" }
+    {
+      "label": "Facebook",
+      "url": "#",
+      "iconText": "f"
+    },
+    {
+      "label": "X",
+      "url": "#",
+      "iconText": "x"
+    },
+    {
+      "label": "Instagram",
+      "url": "#",
+      "iconText": "ig"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "#",
+      "iconText": "in"
+    }
   ],
   "storeBadges": [
     {
       "href": "https://play.google.com/store/apps/details?id=in.sarvatra.ilkalcoop.mobilebanking",
       "ariaLabel": "Ilkal Bank app on Google Play",
-      "qrImage": "assets/playstore.qr.svg",
-      "badgeImage": "/assets/playstore.png"
+      "qrImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/playstore.qr.svg",
+      "badgeImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/playstore.png"
     }
   ],
   "storeQrAlt": "Download App QR",
@@ -50,17 +128,29 @@
   "dicgc": {
     "href": "https://www.dicgc.org.in/",
     "ariaLabel": "We are a Registered Member of the DICGC and Your deposits are insured",
-    "logoImage": "/assets/dicgc.jpg",
+    "logoImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/dicgc.jpg",
     "logoAlt": "DICGC Logo",
-    "qrImage": "/assets/dicgc-qr.jpeg",
+    "qrImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/dicgc-qr.jpeg",
     "qrAlt": "DICGC QR Code",
     "message": "We are a Registered Member of the DICGC and Your deposits are insured"
   },
   "legalLabel": "Legal",
   "legalLinks": [
-    { "label": "Terms & Conditions", "url": "/assets/terms-and-conditions.pdf", "external": true },
-    { "label": "Privacy Policy", "url": "/assets/privacy-policy.pdf", "external": true },
-    { "label": "Sitemap", "url": "/sitemap", "external": false }
+    {
+      "label": "Terms & Conditions",
+      "url": "/assets/terms-and-conditions.pdf",
+      "external": true
+    },
+    {
+      "label": "Privacy Policy",
+      "url": "/assets/privacy-policy.pdf",
+      "external": true
+    },
+    {
+      "label": "Sitemap",
+      "url": "/sitemap",
+      "external": false
+    }
   ],
   "smallNote": "Site best viewed in modern browsers at 1024x768 or higher",
   "languageLabel": "Language:",

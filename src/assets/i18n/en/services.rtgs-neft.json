@@ -1,6 +1,6 @@
 {
   "TITLE": "RTGS / NEFT",
-  "logoImage": "/assets/rtgs-neft.png",
+  "logoImage": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/rtgs-neft.png",
   "logoAlt": "RTGS NEFT",
   "RTGS_TITLE": "RTGS (Real Time Gross Settlement)",
   "RTGS_DESC_1": "RTGS is a real-time fund transfer system where the processing and settlement of transactions take place instantly on a transaction-by-transaction basis.",
