@@ -52,14 +52,23 @@ export class Home implements AfterViewInit, OnDestroy {
       elements.forEach(el => el.classList.add('reveal-ready'));
     }
 
+    const revealNow = (el: HTMLElement) => {
+      el.classList.add('reveal-show');
+      el.classList.remove('reveal-ready');
+    };
+
+    if (!('IntersectionObserver' in window)) {
+      elements.forEach(revealNow);
+      return;
+    }
+
     this.observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           if (!entry.isIntersecting) return;
           this.zone.run(() => {
             const el = entry.target as HTMLElement;
-            el.classList.add('reveal-show');
-            el.classList.remove('reveal-ready');
+            revealNow(el);
             this.observer?.unobserve(entry.target);
           });
         });
@@ -68,6 +77,17 @@ export class Home implements AfterViewInit, OnDestroy {
     );
 
     elements.forEach(el => this.observer?.observe(el));
+
+    // Kickstart above-the-fold reveals in case IO doesn't trigger immediately
+    requestAnimationFrame(() => {
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.9) {
+          revealNow(el);
+          this.observer?.unobserve(el);
+        }
+      });
+    });
   }
 
   ngOnDestroy(): void {

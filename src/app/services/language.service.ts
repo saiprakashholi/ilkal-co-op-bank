@@ -16,6 +16,9 @@ export class LanguageService {
   readonly loaded$ = this.loadedSubject.asObservable();
   private cache = new Map<string, any>();
   private readonly debug = !!environment.i18nDebug;
+  private pending = 0;
+  private allLoadedSubject = new Subject<void>();
+  readonly allLoaded$ = this.allLoadedSubject.asObservable();
 
   // GitHub RAW base URL
   private readonly GITHUB_I18N_BASE =
@@ -124,11 +127,17 @@ export class LanguageService {
 
     const shouldFallbackToLocal = environment.i18nSource !== 'local';
 
+    this.pending = modules.length;
+
     modules.forEach(module => {
       const cacheKey = `${lang}:${module}`;
       if (this.cache.has(cacheKey)) {
         this.translations[module] = this.cache.get(cacheKey);
         this.loadedSubject.next(module);
+        this.pending -= 1;
+        if (this.pending === 0) {
+          this.allLoadedSubject.next();
+        }
         return;
       }
 
@@ -161,6 +170,10 @@ export class LanguageService {
               console.log(`✅ i18n loaded: ${module} (${primaryBase})`);
             }
             this.loadedSubject.next(module);
+            this.pending -= 1;
+            if (this.pending === 0) {
+              this.allLoadedSubject.next();
+            }
           },
           error: () => {
             // no-op; handled by retry/catchError
@@ -175,8 +188,20 @@ export class LanguageService {
                     console.log(`✅ i18n loaded: ${module} (${this.LOCAL_I18N_BASE})`);
                   }
                   this.loadedSubject.next(module);
+                  this.pending -= 1;
+                  if (this.pending === 0) {
+                    this.allLoadedSubject.next();
+                  }
                 }
               });
+              return;
+            }
+
+            if (!this.translations[module]) {
+              this.pending -= 1;
+              if (this.pending === 0) {
+                this.allLoadedSubject.next();
+              }
             }
           }
         });

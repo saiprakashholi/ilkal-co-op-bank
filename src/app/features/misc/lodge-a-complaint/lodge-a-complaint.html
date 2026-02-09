@@ -21,17 +21,37 @@
         </p>
 
         <div class="row">
-          <input type="text" [placeholder]="lang.t('misc.complaint', 'name')" />
-          <input type="email" [placeholder]="lang.t('misc.complaint', 'email')" />
+          <input
+            type="text"
+            name="name"
+            [(ngModel)]="form.name"
+            [placeholder]="lang.t('misc.complaint', 'name')"
+          />
+          <input
+            type="email"
+            name="email"
+            [(ngModel)]="form.email"
+            [placeholder]="lang.t('misc.complaint', 'email')"
+          />
         </div>
 
         <div class="row">
-          <input type="tel" [placeholder]="lang.t('misc.complaint', 'phone')" />
-          <input type="text" [placeholder]="lang.t('misc.complaint', 'accountNo')" />
+          <input
+            type="tel"
+            name="phone"
+            [(ngModel)]="form.phone"
+            [placeholder]="lang.t('misc.complaint', 'phone')"
+          />
+          <input
+            type="text"
+            name="accountNo"
+            [(ngModel)]="form.accountNo"
+            [placeholder]="lang.t('misc.complaint', 'accountNo')"
+          />
         </div>
 
         <div class="row">
-          <select>
+          <select name="type" [(ngModel)]="form.type">
             <option value="">
               {{ lang.t('misc.complaint', 'selectType') }}
             </option>
@@ -40,18 +60,28 @@
             </option>
           </select>
 
-          <input type="text" [placeholder]="lang.t('misc.complaint', 'rrn')" />
+          <input
+            type="text"
+            name="rrn"
+            [(ngModel)]="form.rrn"
+            [placeholder]="lang.t('misc.complaint', 'rrn')"
+          />
         </div>
 
         <div class="row full">
-          <input type="file" />
+          <textarea
+            rows="4"
+            name="message"
+            [(ngModel)]="form.message"
+            [placeholder]="lang.t('misc.complaint', 'message')"
+          ></textarea>
         </div>
 
         <div class="row full">
-          <textarea rows="4" [placeholder]="lang.t('misc.complaint', 'message')"></textarea>
+          <input type="file" disabled />
         </div>
 
-        <button type="submit" class="primary">
+        <button type="submit" class="primary" [disabled]="loading">
           {{ lang.t('misc.complaint', 'submit') }}
         </button>
       </form>

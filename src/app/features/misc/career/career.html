@@ -43,9 +43,7 @@
         </div>
 
         <div class="row full">
-          <ng-container *ngIf="showFileInput">
-            <input type="file" (change)="onFileChange($event)" accept=".pdf,.doc,.docx" />
-          </ng-container>
+          <input type="file" disabled />
         </div>
 
         <div class="row full">

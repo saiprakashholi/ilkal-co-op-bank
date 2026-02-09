@@ -3,6 +3,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { LanguageService } from '../../../services/language.service';
 import { MiscService } from '../../../services/misc-service';
 import { FormsModule } from '@angular/forms';
+import { LoadingService } from '../../../core/loading/loading.service';
 
 
 @Component({
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
 export class Career {
   constructor(
     public lang: LanguageService,
-    private miscService: MiscService
+    private miscService: MiscService,
+    private loadingService: LoadingService
   ) { }
 
 
@@ -23,29 +25,20 @@ export class Career {
   success = false;
   error = false;
 
-  showFileInput = true;
-
-
   form = {
     name: '',
     email: '',
     phone: '',
     subject: '',
     message: '',
-    resume: null as File | null,
+    resume: null as File | null
   };
-
-  onFileChange(event: Event) {
-    const input = event.target as HTMLInputElement;
-    if (input.files && input.files.length > 0) {
-      this.form.resume = input.files[0];
-    }
-  }
 
   submit() {
     this.loading = true;
     this.success = false;
     this.error = false;
+    this.loadingService.show();
 
     const payload = new FormData();
     payload.append('name', this.form.name);
@@ -53,13 +46,11 @@ export class Career {
     payload.append('phone', this.form.phone);
     payload.append('subject', this.form.subject);
     payload.append('message', this.form.message);
-    if (this.form.resume) {
-      payload.append('resume', this.form.resume);
-    }
 
     this.miscService.submitCareer(payload).subscribe({
       next: () => {
         this.loading = false;
+        this.loadingService.hide();
         this.success = true;
 
         // reset form data
@@ -69,18 +60,13 @@ export class Career {
           phone: '',
           subject: '',
           message: '',
-          resume: null,
+          resume: null
         };
-
-        this.showFileInput = false;
-        // 🔥 FORCE file input recreation
-        setTimeout(() => {
-          this.showFileInput = true;
-        }, 1);
       },
 
       error: () => {
         this.loading = false;
+        this.loadingService.hide();
         this.error = true;
       },
     });

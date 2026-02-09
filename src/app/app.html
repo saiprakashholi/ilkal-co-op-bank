@@ -7,10 +7,13 @@
 <!-- BANK NAME ENDS -->
 
 <!-- EMERGENCY NOTICE STARTS-->
-<app-emergency-notice></app-emergency-notice>
+<app-emergency-notice *ngIf="showEmergencyNotice"></app-emergency-notice>
 <!-- EMERGENCY NOTICE ENDS-->
 
-<router-outlet />
+<!-- GLOBAL LOADING -->
+<app-loading></app-loading>
+
+<router-outlet></router-outlet>
 
 <!-- FOOTER STARTS -->
 <app-footer></app-footer>

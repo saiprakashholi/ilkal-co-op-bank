@@ -1,3 +1,5 @@
+@use "sass:color";
+
 /* Mobile-first theme tokens */
 $primary: #0171ab;
 $primary-dark: #015c8b;
@@ -504,7 +506,7 @@ img {
 
             .desc {
                 font-size: 13px;
-                color: darken($text, 8%);
+                color: color.adjust($text, $lightness: -8%);
                 line-height: 1.3;
             }
         }

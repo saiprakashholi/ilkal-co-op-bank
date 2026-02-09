@@ -13,7 +13,8 @@
         <h4>{{ lang.t('core.footer', 'quickLinksTitle') }}</h4>
         <ul>
           <li *ngFor="let link of quickLinks">
-            <a [href]="link.url">{{ link.label }}</a>
+            <a *ngIf="isExternal(link.url)" [href]="link.url">{{ link.label }}</a>
+            <a *ngIf="!isExternal(link.url)" [routerLink]="link.url">{{ link.label }}</a>
           </li>
         </ul>
       </div>
@@ -23,7 +24,8 @@
         <h4>{{ lang.t('core.footer', 'retailTitle') }}</h4>
         <ul>
           <li *ngFor="let link of retailLinks">
-            <a [href]="link.url">{{ link.label }}</a>
+            <a *ngIf="isExternal(link.url)" [href]="link.url">{{ link.label }}</a>
+            <a *ngIf="!isExternal(link.url)" [routerLink]="link.url">{{ link.label }}</a>
           </li>
         </ul>
       </div>
@@ -33,7 +35,8 @@
         <h4>{{ lang.t('core.footer', 'importantTitle') }}</h4>
         <ul>
           <li *ngFor="let link of importantLinks">
-            <a [href]="link.url">{{ link.label }}</a>
+            <a *ngIf="isExternal(link.url)" [href]="link.url">{{ link.label }}</a>
+            <a *ngIf="!isExternal(link.url)" [routerLink]="link.url">{{ link.label }}</a>
           </li>
         </ul>
       </div>
@@ -114,14 +117,22 @@
     <div class="footer-bottom">
       <div class="left">
         <nav class="legal-links" [attr.aria-label]="lang.t('core.footer', 'legalLabel')">
-          <a
-            *ngFor="let link of legalLinks"
-            [href]="link.url"
-            [attr.target]="link.external ? '_blank' : null"
-            rel="noopener"
-          >
-            {{ link.label }}
-          </a>
+          <ng-container *ngFor="let link of legalLinks">
+            <a
+              *ngIf="isExternal(link.url, link.external)"
+              [href]="link.url"
+              [attr.target]="link.external ? '_blank' : null"
+              rel="noopener"
+            >
+              {{ link.label }}
+            </a>
+            <a
+              *ngIf="!isExternal(link.url, link.external)"
+              [routerLink]="link.url"
+            >
+              {{ link.label }}
+            </a>
+          </ng-container>
         </nav>
         <div class="small-note">{{ lang.t('core.footer', 'smallNote') }}</div>
       </div>

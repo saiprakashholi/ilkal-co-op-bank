@@ -83,6 +83,12 @@ input[type='file'] {
   cursor: pointer;
 }
 
+input[disabled],
+textarea[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 button {
   width: 170px;
   padding: 12px 0;

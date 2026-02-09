@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { LanguageService } from '../../../services/language.service';
 import { MiscService } from '../../../services/misc-service';
 import { FormsModule } from '@angular/forms';
+import { LoadingService } from '../../../core/loading/loading.service';
 
 
 @Component({
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
 export class Inquiry {
   constructor(
     public lang: LanguageService,
-    private miscService: MiscService
+    private miscService: MiscService,
+    private loadingService: LoadingService
   ) { }
 
   loading = false;
@@ -36,10 +38,12 @@ export class Inquiry {
     this.loading = true;
     this.success = false;
     this.error = false;
+    this.loadingService.show();
 
     this.miscService.submitEnquiry(this.form).subscribe({
       next: () => {
         this.loading = false;
+        this.loadingService.hide();
         this.success = true;
         this.form = {
           name: '',
@@ -51,6 +55,7 @@ export class Inquiry {
       },
       error: () => {
         this.loading = false;
+        this.loadingService.hide();
         this.error = true;
       },
     });

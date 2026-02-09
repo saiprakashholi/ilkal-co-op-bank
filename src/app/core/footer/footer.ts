@@ -1,11 +1,12 @@
 import { CommonModule, DatePipe } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
+import { RouterLink } from "@angular/router";
 // import { VisitorService } from '../../services/visitors.service';
 
 @Component({
   selector: 'app-footer',
-  imports: [CommonModule, DatePipe],
+  imports: [CommonModule, DatePipe, RouterLink],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
@@ -86,6 +87,15 @@ export class Footer implements OnInit {
 
   get legalLinks(): Array<{ label: string; url: string; external?: boolean }> {
     return this.lang.tArray<{ label: string; url: string; external?: boolean }>('core.footer', 'legalLinks');
+  }
+
+  isExternal(url: string, external?: boolean): boolean {
+    if (external) return true;
+    if (!url) return false;
+    if (url.startsWith('http://') || url.startsWith('https://')) return true;
+    if (url.startsWith('mailto:') || url.startsWith('tel:')) return true;
+    if (url.startsWith('/assets/') || url.endsWith('.pdf')) return true;
+    return false;
   }
 
 

@@ -1,0 +1,14 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { LoadingService } from './loading.service';
+
+@Component({
+  selector: 'app-loading',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './loading.html',
+  styleUrl: './loading.scss',
+})
+export class LoadingComponent {
+  constructor(public loading: LoadingService) {}
+}
