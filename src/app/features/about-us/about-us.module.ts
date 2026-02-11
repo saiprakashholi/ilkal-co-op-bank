@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 import { AboutUs } from './about-us';
 import { DirectorsList } from './directors-list/directors-list';
 import { FoundersList } from './founders-list/founders-list';
-import { FinKeyIndicators } from './fin-key-indicators/fin-key-indicators';
 
 
 @NgModule({
@@ -20,8 +19,7 @@ import { FinKeyIndicators } from './fin-key-indicators/fin-key-indicators';
           { path: '', redirectTo: 'founders', pathMatch: 'full' },
          
           { path: 'directors', component: DirectorsList },
-          { path: 'founders', component: FoundersList },
-          { path: 'financials', component: FinKeyIndicators }
+          { path: 'founders', component: FoundersList }
          
         ]
       }
