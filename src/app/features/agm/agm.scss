@@ -67,6 +67,13 @@ td {
 .chart-wrapper {
   position: relative;
   height: 420px;
+  width: 100%;
+}
+
+.chart-wrapper canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 @media (max-width: 768px) {

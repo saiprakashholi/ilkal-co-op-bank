@@ -1,6 +1,7 @@
 import {
   Component,
   AfterViewInit,
+  AfterViewChecked,
   ViewChild,
   ElementRef,
   OnDestroy,
@@ -19,10 +20,14 @@ import { LanguageService } from '../../services/language.service';
   templateUrl: './agm.html',
   styleUrl: './agm.scss',
 })
-export class Agm implements AfterViewInit, OnDestroy {
+export class Agm implements AfterViewInit, AfterViewChecked, OnDestroy {
 
   @ViewChild('financeChart') canvasRef!: ElementRef<HTMLCanvasElement>;
-  chart!: Chart;
+  @ViewChild('financeBarChart') barCanvasRef!: ElementRef<HTMLCanvasElement>;
+  lineChart?: Chart;
+  barChart?: Chart;
+  private chartInitTimeout?: ReturnType<typeof setTimeout>;
+  private chartInitAttempts = 0;
 
   constructor(
     public lang: LanguageService,
@@ -52,12 +57,42 @@ export class Agm implements AfterViewInit, OnDestroy {
       return;
     }
 
-    const ctx = this.canvasRef.nativeElement.getContext('2d');
-    if (!ctx) return;
+    this.initCharts();
+  }
 
+  ngAfterViewChecked() {
+    if (!isPlatformBrowser(this.platformId) || (this.lineChart && this.barChart)) {
+      return;
+    }
+
+    this.initCharts();
+  }
+
+  private initCharts() {
+    const lineCanvas = this.canvasRef?.nativeElement;
+    const barCanvas = this.barCanvasRef?.nativeElement;
+
+    if (!lineCanvas || !barCanvas || lineCanvas.clientWidth === 0 || barCanvas.clientWidth === 0) {
+      if (this.chartInitAttempts < 10) {
+        this.chartInitAttempts += 1;
+        this.chartInitTimeout = setTimeout(() => this.initCharts(), 100);
+      }
+      return;
+    }
+
+    if (!this.lineChart) {
+      this.createLineChart(lineCanvas);
+    }
+
+    if (!this.barChart) {
+      this.createBarChart(barCanvas);
+    }
+  }
+
+  private createLineChart(canvas: HTMLCanvasElement) {
     const labels = this.lang.t('agm', 'labels') as any;
 
-    this.chart = new Chart(ctx, {
+    this.lineChart = new Chart(canvas, {
       type: 'line',
       data: {
         labels: this.reports.map(r => r.year),
@@ -65,16 +100,22 @@ export class Agm implements AfterViewInit, OnDestroy {
           {
             label: labels?.deposits ?? 'Deposits (₹ Lakhs)',
             data: this.reports.map(r => r.deposits),
+            borderColor: '#c62828',
+            backgroundColor: 'rgba(198, 40, 40, 0.12)',
             tension: 0.4
           },
           {
             label: labels?.loans ?? 'Loans (₹ Lakhs)',
             data: this.reports.map(r => r.loans),
+            borderColor: '#2e7d32',
+            backgroundColor: 'rgba(46, 125, 50, 0.12)',
             tension: 0.4
           },
           {
             label: labels?.profit ?? 'Profit (₹ Lakhs)',
             data: this.reports.map(r => r.profit),
+            borderColor: '#fb8c00',
+            backgroundColor: 'rgba(251, 140, 0, 0.12)',
             tension: 0.4
           }
         ]
@@ -89,7 +130,54 @@ export class Agm implements AfterViewInit, OnDestroy {
     });
   }
 
+  private createBarChart(canvas: HTMLCanvasElement) {
+    const labels = this.lang.t('agm', 'labels') as any;
+
+    this.barChart = new Chart(canvas, {
+      type: 'bar',
+      data: {
+        labels: this.reports.map(r => r.year),
+        datasets: [
+          {
+            label: labels?.deposits ?? 'Deposits (₹ Lakhs)',
+            data: this.reports.map(r => r.deposits),
+            backgroundColor: 'rgba(198, 40, 40, 0.72)'
+          },
+          {
+            label: labels?.loans ?? 'Loans (₹ Lakhs)',
+            data: this.reports.map(r => r.loans),
+            backgroundColor: 'rgba(46, 125, 50, 0.72)'
+          },
+          {
+            label: labels?.profit ?? 'Profit (₹ Lakhs)',
+            data: this.reports.map(r => r.profit),
+            backgroundColor: 'rgba(251, 140, 0, 0.72)'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'bottom' }
+        },
+        scales: {
+          x: {
+            ticks: {
+              maxRotation: 45,
+              minRotation: 0
+            }
+          }
+        }
+      }
+    });
+  }
+
   ngOnDestroy() {
-    this.chart?.destroy();
+    if (this.chartInitTimeout) {
+      clearTimeout(this.chartInitTimeout);
+    }
+    this.lineChart?.destroy();
+    this.barChart?.destroy();
   }
 }
