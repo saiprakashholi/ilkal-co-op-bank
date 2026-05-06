@@ -1,18 +1,21 @@
 {
   "items": [
     {
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/ilkal-head-office.jpg"
+    },
+    {
       "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/50years.jpg",
       "title": "ಸುವರ್ಣ ಸಂಭ್ರಮ – ಸುವರ್ಣ ಮಹೋತ್ಸವ ✨",
       "subtitle": "ನಂಬಿಕೆ, ಬೆಳವಣಿಗೆ ಮತ್ತು ಸಮುದಾಯ ಸೇವೆಯ 50 ಸುವರ್ಣ ವರ್ಷಗಳ ಆಚರಣೆ."
+    },
+    {
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/ilkal-saree.jpg"
     },
     {
       "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/home-page-insurance.jpg"
     },
     {
       "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/mobile-banking.jpg"
-    },
-    {
-      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/ilkal-saree.jpg"
     },
     {
       "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/gold-loan.png",

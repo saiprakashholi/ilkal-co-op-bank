@@ -26,7 +26,7 @@ Karnataka, India`,
     rbiLicenceNo: 'UBD/K.A.P/721 (08-12-1986)',
 
     email: ['admin@ilkalcoopbank.com', 'ilkalcoop@hotmail.com'],
-    website: 'https://ilkalcoopbank.com/',
+    website: 'https://ilkal.bank.in',
 
     mapLink: 'https://maps.app.goo.gl/rC4ukBmdHf5oecYk7',
     mapEmbed:

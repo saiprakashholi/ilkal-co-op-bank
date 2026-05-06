@@ -44,6 +44,10 @@ $max: 1100px;
       outline: none;
     }
 
+    .ann-link.disabled {
+      cursor: default;
+    }
+
     /* Non-highlight style (simple row) */
     &[data-highlight="false"] .ann-link .ann-body {
       background: transparent;

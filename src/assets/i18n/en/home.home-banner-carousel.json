@@ -1,21 +1,21 @@
 {
   "items": [
     {
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/ilkal-head-office.jpg"
+    },
+    {
       "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/50years.jpg",
       "title": "Suvarna Sambrama – Golden Jubilee ✨",
       "subtitle": "Celebrating 50 Golden Years of trust, growth, and service to our community."
+    },
+    {
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/ilkal-saree.jpg"
     },
     {
       "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/home-page-insurance.jpg"
     },
     {
       "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/mobile-banking.jpg"
-    },
-    {
-      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/ilkal-saree.jpg"
-    },
-    {
-      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/home-page-banner/ilkal-head-office.jpg"
     },
     {
       "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/loans/gold-loan.png",

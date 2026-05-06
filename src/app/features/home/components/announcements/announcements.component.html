@@ -10,10 +10,12 @@
       <li *ngFor="let a of items" class="ann-item" [attr.data-highlight]="a.highlight ? 'true' : 'false'">
         <a
           class="ann-link"
-          [href]="a.href || '#'"
-          [target]="isExternal(a.href) ? '_blank' : '_self'"
+          [href]="announcementHref(a)"
+          [attr.target]="hasLink(a) ? '_blank' : null"
           rel="noopener"
-          (click)="a.href === '#' && $event.preventDefault()"
+          [class.disabled]="!hasLink(a)"
+          [attr.aria-disabled]="!hasLink(a) ? 'true' : null"
+          (click)="onAnnouncementClick($event, a)"
         >
           <div class="ann-body">
             <div class="ann-left">

@@ -29,8 +29,24 @@ export class AnnouncementsComponent {
       : this.lang.tArray<Announcement>('home.announcements', 'items');
   }
 
+  hasLink(announcement: Announcement): boolean {
+    const href = announcement.href?.trim();
+    return !!href && href !== '#';
+  }
+
+  announcementHref(announcement: Announcement): string {
+    return this.hasLink(announcement) ? announcement.href!.trim() : '#';
+  }
+
+  onAnnouncementClick(event: MouseEvent, announcement: Announcement): void {
+    if (!this.hasLink(announcement)) {
+      event.preventDefault();
+    }
+  }
+
   // sanitize simple href usage: open external links in new tab
   isExternal(href?: string) {
-    return !!href && (href.startsWith('http://') || href.startsWith('https://'));
+    const value = href?.trim();
+    return !!value && (value.startsWith('http://') || value.startsWith('https://'));
   }
 }
