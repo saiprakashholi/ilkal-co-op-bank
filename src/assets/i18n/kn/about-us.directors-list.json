@@ -4,15 +4,15 @@
   "placeholderImage": "https://via.placeholder.com/600x600?text=No+Image",
   "members": [
     {
-      "id": 1,
-      "name": "Satish Sapparad",
-      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/1.Satish.Sapparad.%28President%29.jpg",
+      "id": 11,
+      "name": "Manjunath Shetter",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/11%20Manjunath%20Shetter.png",
       "designation": "ಅಧ್ಯಕ್ಷ"
     },
     {
-      "id": 2,
-      "name": "Mahantesh Kampli",
-      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/2.Mahantesh.Kampli%28Vice-President%29.jpg",
+      "id": 13,
+      "name": "Praveen Hoolageri",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/13%20Praveen%20Hoolageri.jpeg",
       "designation": "ಉಪಾಧ್ಯಕ್ಷ"
     },
     {
@@ -70,9 +70,9 @@
       "designation": "ನಿರ್ದೇಶಕ"
     },
     {
-      "id": 11,
-      "name": "Manjunath Shetter",
-      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/11%20Manjunath%20Shetter.png",
+      "id": 1,
+      "name": "Satish Sapparad",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/1.Satish.Sapparad.%28President%29.jpg",
       "designation": "ನಿರ್ದೇಶಕ"
     },
     {
@@ -82,9 +82,9 @@
       "designation": "ನಿರ್ದೇಶಕ"
     },
     {
-      "id": 13,
-      "name": "Praveen Hoolageri",
-      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/13%20Praveen%20Hoolageri.jpeg",
+      "id": 2,
+      "name": "Mahantesh Kampli",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/2.Mahantesh.Kampli%28Vice-President%29.jpg",
       "designation": "ನಿರ್ದೇಶಕ"
     },
     {

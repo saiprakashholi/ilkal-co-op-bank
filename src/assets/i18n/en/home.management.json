@@ -6,21 +6,21 @@
   "members": [
     {
       "id": 1,
-      "name": "Sri Satish Sapparad",
+      "name": "Sri Manjunath Shetter",
       "role": "President",
-      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/1.Satish.Sapparad.%28President%29.jpg",
-      "aboutTitle": "About Sri Satish Sapparad",
-      "aboutText": "Sri Satish Sapparad is currently serving as the President of Ilkal Co-Operative Bank Ltd. With a strong background in public service and community development, he brings a wealth of experience to the bank.",
-      "description": "Sri Satish Sapparad is a respected leader with a clear vision for cooperative banking."
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/11%20Manjunath%20Shetter.png",
+      "aboutTitle": "About Sri Manjunath Shetter",
+      "aboutText": "Sri Manjunath Shetter is currently serving as the President of Ilkal Co-Operative Bank Ltd. With a strong background in public service and community development, he brings a wealth of experience to the bank.",
+      "description": "Sri Manjunath Shetter is a respected leader with a clear vision for cooperative banking."
     },
     {
       "id": 2,
-      "name": "Sri Mahantesh Kampli",
+      "name": "Sri Praveen Hoolageri",
       "role": "Vice President",
-      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/2.Mahantesh.Kampli%28Vice-President%29.jpg",
-      "aboutTitle": "About Sri Mahantesh Kampli",
-      "aboutText": "Sri Mahantesh Kampli is currently serving as the Vice President of Ilkal Co-Operative Bank Ltd. Known for his dedication to public service and community development, he contributes significantly to the bank’s growth and strategic initiatives.",
-      "description": "Sri Mahantesh Kampli is a committed leader with strong administrative and cooperative banking experience."
+      "image": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/13%20Praveen%20Hoolageri.jpeg",
+     "aboutTitle": "About Sri Praveen Hoolageri",
+      "aboutText": "Sri Praveen Hoolageri is currently serving as the Vice President of Ilkal Co-Operative Bank Ltd. Known for his dedication to public service and community development, he contributes significantly to the bank’s growth and strategic initiatives.",
+      "description": "Sri Praveen Hoolageri is a committed leader with strong administrative and cooperative banking experience."
     }
   ]
 }
