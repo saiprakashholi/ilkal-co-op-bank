@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -18,27 +18,31 @@
     <app-root></app-root>
 
     <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+      // FIREBASE code starts
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyBw1giQVAYKQ8VEWeCoPQAS0PXEP27Fyo8",
-    authDomain: "llkal-co-op-bank.firebaseapp.com",
-    projectId: "llkal-co-op-bank",
-    storageBucket: "llkal-co-op-bank.firebasestorage.app",
-    messagingSenderId: "934573885282",
-    appId: "1:934573885282:web:4de21c19beea06aeec4e3b",
-    measurementId: "G-HNG53R8WMB"
-  };
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js';
+      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js';
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: 'AIzaSyBw1giQVAYKQ8VEWeCoPQAS0PXEP27Fyo8',
+        authDomain: 'llkal-co-op-bank.firebaseapp.com',
+        projectId: 'llkal-co-op-bank',
+        storageBucket: 'llkal-co-op-bank.firebasestorage.app',
+        messagingSenderId: '934573885282',
+        appId: '1:934573885282:web:4de21c19beea06aeec4e3b',
+        measurementId: 'G-HNG53R8WMB',
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      // FIREBASE code ends
+    </script>
   </body>
 </html>

@@ -138,13 +138,25 @@
   "legalLinks": [
     {
       "label": "Terms & Conditions",
-      "url": "/assets/terms-and-conditions.pdf",
-      "external": true
+      "url": "/terms-and-conditions",
+      "external": false
     },
     {
       "label": "Privacy Policy",
+      "url": "/privacy-policy",
+      "external": false
+    },
+    {
+      "label": "Terms & Conditions 2",
+      "url": "/assets/terms-and-conditions.pdf",
+      "external": true,
+      "hidden": true
+    },
+    {
+      "label": "Privacy Policy 2",
       "url": "/assets/privacy-policy.pdf",
-      "external": true
+      "external": true,
+      "hidden": true
     },
     {
       "label": "Sitemap",

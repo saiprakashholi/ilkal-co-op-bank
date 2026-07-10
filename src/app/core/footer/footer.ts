@@ -85,8 +85,9 @@ export class Footer implements OnInit {
     };
   }
 
-  get legalLinks(): Array<{ label: string; url: string; external?: boolean }> {
-    return this.lang.tArray<{ label: string; url: string; external?: boolean }>('core.footer', 'legalLinks');
+  get legalLinks(): Array<{ label: string; url: string; external?: boolean; hidden?: boolean }> {
+    const links = this.lang.tArray<{ label: string; url: string; external?: boolean; hidden?: boolean }>('core.footer', 'legalLinks');
+    return links.filter(link => !link.hidden);
   }
 
   isExternal(url: string, external?: boolean): boolean {

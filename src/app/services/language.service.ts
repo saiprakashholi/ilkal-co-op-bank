@@ -104,6 +104,10 @@ export class LanguageService {
       'misc.enquiry',
       'misc.career',
 
+      // legal
+      'legal.terms',
+      'legal.privacy',
+
       // loans
       'loans',
       'loans.vehicle',
@@ -167,7 +171,7 @@ export class LanguageService {
             this.cache.set(cacheKey, data);
             this.translations[module] = data;
             if (this.debug) {
-              console.log(`✅ i18n loaded: ${module} (${primaryBase})`);
+              // console.log(`✅ i18n loaded: ${module} (${primaryBase})`);
             }
             this.loadedSubject.next(module);
             this.pending -= 1;
@@ -185,7 +189,7 @@ export class LanguageService {
                   this.cache.set(cacheKey, data);
                   this.translations[module] = data;
                   if (this.debug) {
-                    console.log(`✅ i18n loaded: ${module} (${this.LOCAL_I18N_BASE})`);
+                    // console.log(`✅ i18n loaded: ${module} (${this.LOCAL_I18N_BASE})`);
                   }
                   this.loadedSubject.next(module);
                   this.pending -= 1;

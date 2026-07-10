@@ -1,0 +1,25 @@
+<section class="legal-page">
+  <div class="legal-hero">
+    <div class="hero-inner">
+      <h1>{{ title }}</h1>
+      <p *ngIf="subtitle" class="subtitle">{{ subtitle }}</p>
+      <p *ngIf="updatedOn" class="updated">{{ updatedOn }}</p>
+    </div>
+  </div>
+
+  <div class="legal-wrap">
+    <article class="legal-document">
+      <section *ngFor="let section of sections" class="legal-section">
+        <h2 *ngIf="section.heading">{{ section.heading }}</h2>
+
+        <p *ngFor="let paragraph of section.paragraphs">
+          {{ paragraph }}
+        </p>
+
+        <ul *ngIf="section.items?.length">
+          <li *ngFor="let item of section.items">{{ item }}</li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</section>

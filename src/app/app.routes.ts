@@ -18,6 +18,16 @@ export const routes: Routes = [
     { path: 'locations', loadComponent: () => import('./features/locations/locations').then(m => m.Locations) },
     { path: 'agm', loadComponent: () => import('./features/agm/agm').then(m => m.Agm) },
     {
+        path: 'terms-and-conditions',
+        loadComponent: () => import('./features/legal/legal-page').then(m => m.LegalPage),
+        data: { documentType: 'terms' }
+    },
+    {
+        path: 'privacy-policy',
+        loadComponent: () => import('./features/legal/legal-page').then(m => m.LegalPage),
+        data: { documentType: 'privacy' }
+    },
+    {
         path: 'deposits',
         loadChildren: () => import('./features/deposits/deposits.module').then(m => m.DepositsModule)
     },
