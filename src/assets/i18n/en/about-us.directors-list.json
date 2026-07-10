@@ -28,12 +28,6 @@
       "designation": "Director"
     },
     {
-      "id": 51,
-      "name": "Mallikarjunagouda S Patil",
-      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/MSPATIL%20NEW.jpg",
-      "designation": "Director"
-    },
-    {
       "id": 5,
       "name": "Goutham Bora",
       "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/5%20Goutam%20Bora.jpg",
@@ -103,6 +97,12 @@
       "id": 16,
       "name": "Lata Herur",
       "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/16%20Lata%20Herur.jpg",
+      "designation": "Director"
+    },
+    {
+      "id": 19,
+      "name": "Vijaykumar Patil",
+      "photo": "https://raw.githubusercontent.com/saiprakashholi/ilkal-co-op-bank-i18n/prod/assets/managementImages/19.VijaykumarPatil.jpeg",
       "designation": "Director"
     },
     {
