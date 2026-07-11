@@ -22,7 +22,7 @@ import { Career } from './career/career';
 
                     { path: 'inquiry', component: Inquiry },
                     { path: 'lodge-a-complaint', component: LodgeAComplaint },
-                    { path: 'career', component: Career }
+                    // { path: 'career', component: Career }
 
                 ]
             }

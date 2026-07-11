@@ -47,28 +47,28 @@ export class Career {
     payload.append('subject', this.form.subject);
     payload.append('message', this.form.message);
 
-    this.miscService.submitCareer(payload).subscribe({
-      next: () => {
-        this.loading = false;
-        this.loadingService.hide();
-        this.success = true;
+    // this.miscService.submitCareer(payload).subscribe({
+    //   next: () => {
+    //     this.loading = false;
+    //     this.loadingService.hide();
+    //     this.success = true;
 
-        // reset form data
-        this.form = {
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: '',
-          resume: null
-        };
-      },
+    //     // reset form data
+    //     this.form = {
+    //       name: '',
+    //       email: '',
+    //       phone: '',
+    //       subject: '',
+    //       message: '',
+    //       resume: null
+    //     };
+    //   },
 
-      error: () => {
-        this.loading = false;
-        this.loadingService.hide();
-        this.error = true;
-      },
-    });
+    //   error: () => {
+    //     this.loading = false;
+    //     this.loadingService.hide();
+    //     this.error = true;
+    //   },
+    // });
   }
 }

@@ -29,9 +29,9 @@ export class MiscService {
   submitCareer(payload: FormData) {
     payload.append('formType', 'career');
     payload.append('_subject', 'Career Form');
-    return this.http.post(environment.formspreeCareerEndpoint, payload, {
-      headers: { Accept: 'application/json' }
-    });
+    // return this.http.post(environment.formspreeCareerEndpoint, payload, {
+    //   headers: { Accept: 'application/json' }
+    // });
   }
 
 }
