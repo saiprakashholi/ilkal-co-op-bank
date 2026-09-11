@@ -16,6 +16,8 @@ export const routes: Routes = [
     },
     { path: 'contact-us', loadComponent: () => import('./features/contact-us/contact-us').then(m => m.ContactUs) },
     { path: 'locations', loadComponent: () => import('./features/locations/locations').then(m => m.Locations) },
+    { path: 'search', loadComponent: () => import('./features/search/search').then(m => m.Search) },
+    { path: 'calculators', loadComponent: () => import('./features/calculators/calculators').then(m => m.Calculators) },
     { path: 'agm', loadComponent: () => import('./features/agm/agm').then(m => m.Agm) },
     {
         path: 'terms-and-conditions',

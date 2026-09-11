@@ -1,0 +1,105 @@
+{
+  "eyebrow": "ತ್ವರಿತ ಹುಡುಕಾಟ",
+  "pageTitle": "ಬ್ಯಾಂಕ್ ಮಾಹಿತಿಯನ್ನು ಬೇಗ ಹುಡುಕಿ",
+  "pageSubtitle": "ಬಡ್ಡಿದರಗಳು, IFSC, ದೂರು, ಲಾಕರ್, ಶಾಖೆಗಳು ಮತ್ತು ಸೇವೆಗಳಿಗೆ ನೇರವಾಗಿ ಹೋಗಿ.",
+  "searchLabel": "ಹುಡುಕಿ",
+  "searchPlaceholder": "FD rates, IFSC, complaint...",
+  "popularAriaLabel": "ಜನಪ್ರಿಯ ಹುಡುಕಾಟಗಳು",
+  "resultsLabel": "ಫಲಿತಾಂಶಗಳು",
+  "commonSearchesLabel": "ಸಾಮಾನ್ಯ ಹುಡುಕಾಟಗಳು",
+  "noResultsTitle": "ಯಾವುದೇ ಫಲಿತಾಂಶ ಸಿಕ್ಕಿಲ್ಲ",
+  "noResultsText": "FD rates, IFSC, loan, complaint ಅಥವಾ locker ಎಂದು ಹುಡುಕಿ.",
+  "popularSearches": ["FD rates", "IFSC", "Loan interest", "Complaint", "Locker"],
+  "entries": [
+    {
+      "title": "ಠೇವಣಿ ಬಡ್ಡಿದರಗಳು",
+      "description": "ಸೇವಿಂಗ್ಸ್, ಸ್ಥಿರ ಠೇವಣಿ ಮತ್ತು ಇತರೆ ಠೇವಣಿ ಬಡ್ಡಿದರಗಳನ್ನು ನೋಡಿ.",
+      "url": "/deposits/interest-rate",
+      "keywords": ["fd", "fixed deposit", "deposit", "rd", "interest", "rates", "saving", "ಠೇವಣಿ", "ಬಡ್ಡಿ"]
+    },
+    {
+      "title": "ಸಾಲ ಬಡ್ಡಿದರಗಳು",
+      "description": "ವೈಯಕ್ತಿಕ, ಗೃಹ, ವಾಹನ, ಚಿನ್ನ ಮತ್ತು ವ್ಯಾಪಾರ ಸಾಲಗಳ ಬಡ್ಡಿದರಗಳನ್ನು ನೋಡಿ.",
+      "url": "/loans/interest-rate",
+      "keywords": ["loan", "emi", "interest", "rates", "personal", "housing", "vehicle", "gold", "business", "ಸಾಲ", "ಬಡ್ಡಿ"]
+    },
+    {
+      "title": "ಬ್ಯಾಂಕ್ ಕ್ಯಾಲ್ಕುಲೇಟರ್‌ಗಳು",
+      "description": "FD/RD ಮೆಚ್ಯೂರಿಟಿ, ಸಾಲ EMI ಮತ್ತು ಚಿನ್ನ ಸಾಲ ಅಂದಾಜು ಮಾಡಿ.",
+      "url": "/calculators",
+      "keywords": ["calculator", "fd calculator", "rd calculator", "emi calculator", "gold loan calculator", "ಕ್ಯಾಲ್ಕುಲೇಟರ್"]
+    },
+    {
+      "title": "IFSC ಮತ್ತು ಸಂಪರ್ಕ ವಿವರಗಳು",
+      "description": "IFSC ಕೋಡ್, ಫೋನ್ ಸಂಖ್ಯೆ, ಇಮೇಲ್, ವಿಳಾಸ, ಕೆಲಸದ ಸಮಯ ಮತ್ತು ನಕ್ಷೆ ನೋಡಿ.",
+      "url": "/contact-us",
+      "keywords": ["ifsc", "contact", "phone", "email", "address", "map", "hours", "ಸಂಪರ್ಕ"]
+    },
+    {
+      "title": "ಶಾಖೆಗಳು",
+      "description": "ಶಾಖೆಗಳ ವಿಳಾಸ, ಫೋನ್ ಸಂಖ್ಯೆ ಮತ್ತು ದಿಕ್ಕುಗಳನ್ನು ನೋಡಿ.",
+      "url": "/locations",
+      "keywords": ["branch", "branches", "location", "directions", "near me", "ಶಾಖೆ"]
+    },
+    {
+      "title": "ದೂರು ದಾಖಲಿಸಿ",
+      "description": "ದೂರು ಫಾರ್ಮ್ ಮೂಲಕ ಬ್ಯಾಂಕಿಗೆ ದೂರು ಸಲ್ಲಿಸಿ.",
+      "url": "/misc/lodge-a-complaint",
+      "keywords": ["complaint", "grievance", "problem", "issue", "support", "ದೂರು"]
+    },
+    {
+      "title": "ವಿಚಾರಣೆ ಫಾರ್ಮ್",
+      "description": "ಸಾಮಾನ್ಯ, ಸಾಲ, ಠೇವಣಿ, ಖಾತೆ ಅಥವಾ ಇತರೆ ವಿಚಾರಣೆ ಕಳುಹಿಸಿ.",
+      "url": "/misc/inquiry",
+      "keywords": ["enquiry", "inquiry", "ask", "question", "loan enquiry", "deposit enquiry", "ವಿಚಾರಣೆ"]
+    },
+    {
+      "title": "ಲಾಕರ್ ಸೇವೆ",
+      "description": "ಲಾಕರ್ ಸೌಲಭ್ಯದ ವಿವರಗಳನ್ನು ತಿಳಿದುಕೊಳ್ಳಿ.",
+      "url": "/service/locker",
+      "keywords": ["locker", "safe deposit", "vault", "ಲಾಕರ್"]
+    },
+    {
+      "title": "ಮೊಬೈಲ್ ಬ್ಯಾಂಕಿಂಗ್",
+      "description": "ಮೊಬೈಲ್ ಬ್ಯಾಂಕಿಂಗ್ ವೈಶಿಷ್ಟ್ಯಗಳು, ನೀತಿಗಳು, ನಿಯಮಗಳು ಮತ್ತು ಸುರಕ್ಷತಾ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ನೋಡಿ.",
+      "url": "/service/mobile",
+      "keywords": ["mobile banking", "app", "android", "policy", "secure usage", "ಮೊಬೈಲ್"]
+    },
+    {
+      "title": "UPI ಸೇವೆ",
+      "description": "UPI ಬ್ಯಾಂಕಿಂಗ್ ಸೇವೆಯ ಮಾಹಿತಿಯನ್ನು ನೋಡಿ.",
+      "url": "/service/upi",
+      "keywords": ["upi", "payment", "bhim"]
+    },
+    {
+      "title": "IMPS ಸೇವೆ",
+      "description": "IMPS ವರ್ಗಾವಣೆ ವಿವರಗಳನ್ನು ನೋಡಿ.",
+      "url": "/service/imps",
+      "keywords": ["imps", "transfer", "fund transfer"]
+    },
+    {
+      "title": "RTGS/NEFT ಸೇವೆ",
+      "description": "RTGS ಮತ್ತು NEFT ವರ್ಗಾವಣೆ ವಿವರಗಳನ್ನು ನೋಡಿ.",
+      "url": "/service/rtgs-neft",
+      "keywords": ["rtgs", "neft", "transfer"]
+    },
+    {
+      "title": "ಸೇವಾ ಶುಲ್ಕಗಳು",
+      "description": "ಬ್ಯಾಂಕ್ ಸೇವಾ ಶುಲ್ಕಗಳನ್ನು ನೋಡಿ.",
+      "url": "/others/service-charges",
+      "keywords": ["charges", "fees", "service charge", "ಶುಲ್ಕ"]
+    },
+    {
+      "title": "ಡೌನ್‌ಲೋಡ್‌ಗಳು",
+      "description": "ಫಾರ್ಮ್‌ಗಳು, ನೀತಿಗಳು, ನಿಯಮಗಳು ಮತ್ತು ಇತರೆ ದಾಖಲೆಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ.",
+      "url": "/others/download",
+      "keywords": ["download", "forms", "pdf", "policy", "terms"]
+    },
+    {
+      "title": "ಸುರಕ್ಷಿತ ಬ್ಯಾಂಕಿಂಗ್",
+      "description": "ಸುರಕ್ಷಿತ ಬ್ಯಾಂಕಿಂಗ್ ಮಾರ್ಗದರ್ಶನವನ್ನು ಓದಿ.",
+      "url": "/others/safe-banking",
+      "keywords": ["safe banking", "security", "fraud", "secure", "ಸುರಕ್ಷಿತ"]
+    }
+  ]
+}

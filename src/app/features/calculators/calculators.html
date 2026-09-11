@@ -1,0 +1,132 @@
+<section class="calculators-page">
+  <div class="page-header">
+    <p class="eyebrow">{{ lang.t('calculators', 'eyebrow') }}</p>
+    <h1>{{ lang.t('calculators', 'pageTitle') }}</h1>
+    <p>{{ lang.t('calculators', 'pageSubtitle') }}</p>
+  </div>
+
+  <div class="calculator-grid">
+    <section id="deposit" class="calculator-panel" aria-labelledby="depositCalculatorTitle">
+      <div class="panel-heading">
+        <h2 id="depositCalculatorTitle">{{ lang.t('calculators', 'depositTitle') }}</h2>
+        <div class="mode-toggle" role="group" [attr.aria-label]="lang.t('calculators', 'depositTypeAriaLabel')">
+          <button type="button" [class.active]="depositMode === 'fd'" (click)="depositMode = 'fd'">FD</button>
+          <button type="button" [class.active]="depositMode === 'rd'" (click)="depositMode = 'rd'">RD</button>
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <label *ngIf="depositMode === 'fd'">
+          {{ lang.t('calculators', 'principalLabel') }}
+          <input type="number" min="0" [(ngModel)]="fdPrincipal" />
+        </label>
+
+        <label *ngIf="depositMode === 'rd'">
+          {{ lang.t('calculators', 'monthlyDepositLabel') }}
+          <input type="number" min="0" [(ngModel)]="rdMonthlyDeposit" />
+        </label>
+
+        <label>
+          {{ lang.t('calculators', 'interestRateLabel') }}
+          <input type="number" min="0" max="30" step="0.1" [(ngModel)]="depositRate" />
+        </label>
+
+        <label>
+          {{ lang.t('calculators', 'tenureMonthsLabel') }}
+          <input type="number" min="1" max="240" [(ngModel)]="depositMonths" />
+        </label>
+      </div>
+
+      <div class="summary-row">
+        <div>
+          <span>{{ lang.t('calculators', 'totalDepositLabel') }}</span>
+          <strong>{{ formatCurrency(depositPrincipal) }}</strong>
+        </div>
+        <div>
+          <span>{{ lang.t('calculators', 'interestEarnedLabel') }}</span>
+          <strong>{{ formatCurrency(depositInterest) }}</strong>
+        </div>
+        <div class="highlight">
+          <span>{{ lang.t('calculators', 'maturityAmountLabel') }}</span>
+          <strong>{{ formatCurrency(depositMaturity) }}</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="emi" class="calculator-panel" aria-labelledby="emiCalculatorTitle">
+      <div class="panel-heading">
+        <h2 id="emiCalculatorTitle">{{ lang.t('calculators', 'emiTitle') }}</h2>
+      </div>
+
+      <div class="form-grid">
+        <label>
+          {{ lang.t('calculators', 'loanAmountLabel') }}
+          <input type="number" min="0" [(ngModel)]="loanAmount" />
+        </label>
+
+        <label>
+          {{ lang.t('calculators', 'interestRateLabel') }}
+          <input type="number" min="0" max="40" step="0.1" [(ngModel)]="loanRate" />
+        </label>
+
+        <label>
+          {{ lang.t('calculators', 'tenureMonthsLabel') }}
+          <input type="number" min="1" max="360" [(ngModel)]="loanMonths" />
+        </label>
+      </div>
+
+      <div class="summary-row">
+        <div class="highlight">
+          <span>{{ lang.t('calculators', 'monthlyEmiLabel') }}</span>
+          <strong>{{ formatCurrency(loanEmi) }}</strong>
+        </div>
+        <div>
+          <span>{{ lang.t('calculators', 'totalInterestLabel') }}</span>
+          <strong>{{ formatCurrency(loanInterest) }}</strong>
+        </div>
+        <div>
+          <span>{{ lang.t('calculators', 'totalPaymentLabel') }}</span>
+          <strong>{{ formatCurrency(loanTotalPayment) }}</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="gold" class="calculator-panel gold-panel" aria-labelledby="goldCalculatorTitle">
+      <div class="panel-heading">
+        <h2 id="goldCalculatorTitle">{{ lang.t('calculators', 'goldTitle') }}</h2>
+      </div>
+
+      <div class="form-grid">
+        <label>
+          {{ lang.t('calculators', 'goldWeightLabel') }}
+          <input type="number" min="0" step="0.1" [(ngModel)]="goldWeight" />
+        </label>
+
+        <label>
+          {{ lang.t('calculators', 'goldRateLabel') }}
+          <input type="number" min="0" [(ngModel)]="goldRatePerGram" />
+        </label>
+
+        <label>
+          {{ lang.t('calculators', 'loanToValueLabel') }}
+          <input type="number" min="1" max="100" [(ngModel)]="goldLoanToValue" />
+        </label>
+      </div>
+
+      <div class="summary-row">
+        <div>
+          <span>{{ lang.t('calculators', 'goldValueLabel') }}</span>
+          <strong>{{ formatCurrency(goldValue) }}</strong>
+        </div>
+        <div class="highlight">
+          <span>{{ lang.t('calculators', 'estimatedLoanLabel') }}</span>
+          <strong>{{ formatCurrency(goldEstimate) }}</strong>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <p class="disclaimer">
+    {{ lang.t('calculators', 'disclaimer') }}
+  </p>
+</section>

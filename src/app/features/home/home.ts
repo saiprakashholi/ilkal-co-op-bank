@@ -14,6 +14,14 @@ interface BankService {
   description: string;
 }
 
+interface HomeTool {
+  title: string;
+  description: string;
+  url: string;
+  fragment?: string;
+  icon: string;
+}
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -26,6 +34,10 @@ interface BankService {
 export class Home implements AfterViewInit, OnDestroy {
   get services(): BankService[] {
     return this.lang.tArray<BankService>('home', 'services');
+  }
+
+  get quickTools(): HomeTool[] {
+    return this.lang.tArray<HomeTool>('home.quick-tools', 'items');
   }
 
   public mobileMenuOpen = false;

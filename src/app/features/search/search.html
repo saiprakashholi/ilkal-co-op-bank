@@ -1,0 +1,48 @@
+<section class="search-page">
+  <div class="search-hero">
+    <p class="eyebrow">{{ lang.t('search', 'eyebrow') }}</p>
+    <h1>{{ lang.t('search', 'pageTitle') }}</h1>
+    <p>{{ lang.t('search', 'pageSubtitle') }}</p>
+  </div>
+
+  <div class="search-box" role="search">
+    <label for="siteSearch">{{ lang.t('search', 'searchLabel') }}</label>
+    <input
+      id="siteSearch"
+      type="search"
+      [(ngModel)]="query"
+      [placeholder]="lang.t('search', 'searchPlaceholder')"
+      autocomplete="off"
+    />
+  </div>
+
+  <div class="popular" [attr.aria-label]="lang.t('search', 'popularAriaLabel')">
+    <button type="button" *ngFor="let term of popularSearches" (click)="searchFor(term)">
+      {{ term }}
+    </button>
+  </div>
+
+  <div class="result-summary">
+    {{
+      normalizedQuery
+        ? lang.t('search', 'resultsLabel')
+        : lang.t('search', 'commonSearchesLabel')
+    }}
+    <span *ngIf="normalizedQuery">({{ results.length }})</span>
+  </div>
+
+  <div class="results" *ngIf="results.length; else noResults">
+    <a class="result-card" *ngFor="let result of results" [routerLink]="result.url">
+      <span class="result-path">{{ result.url }}</span>
+      <h2>{{ result.title }}</h2>
+      <p>{{ result.description }}</p>
+    </a>
+  </div>
+
+  <ng-template #noResults>
+    <div class="empty-state">
+      <h2>{{ lang.t('search', 'noResultsTitle') }}</h2>
+      <p>{{ lang.t('search', 'noResultsText') }}</p>
+    </div>
+  </ng-template>
+</section>

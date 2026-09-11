@@ -51,6 +51,7 @@ export class LanguageService {
       'home.management',
       'home.home-banner-carousel',
       'home.financial-strength',
+      'home.quick-tools',
 
       // footer 
       'footer',
@@ -89,6 +90,10 @@ export class LanguageService {
 
       // notices
       'notices.notices',
+
+      // search and calculators
+      'search',
+      'calculators',
 
       // Service module
       'services',

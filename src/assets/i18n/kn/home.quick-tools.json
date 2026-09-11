@@ -1,0 +1,34 @@
+{
+  "ariaLabel": "ಉಪಯುಕ್ತ ಬ್ಯಾಂಕಿಂಗ್ ಸಾಧನಗಳು",
+  "quickToolsTitle": "ತ್ವರಿತ ಸೇವೆಗಳು",
+  "quickToolsSubtitle": "ಅಗತ್ಯ ಬ್ಯಾಂಕಿಂಗ್ ಸೇವೆಗಳನ್ನು ತ್ವರಿತವಾಗಿ ಪಡೆಯಿರಿ.",
+  "items": [
+    {
+      "title": "ಹುಡುಕಿ",
+      "description": "FD rates, IFSC, ದೂರು, ಲಾಕರ್ ಮತ್ತು ಸೇವೆಗಳನ್ನು ಹುಡುಕಿ.",
+      "url": "/search",
+      "icon": "⌕"
+    },
+    {
+      "title": "FD/RD",
+      "description": "ಠೇವಣಿ ಮೆಚ್ಯೂರಿಟಿ ಮತ್ತು ಬಡ್ಡಿ ಅಂದಾಜು ಮಾಡಿ.",
+      "url": "/calculators",
+      "fragment": "deposit",
+      "icon": "FD"
+    },
+    {
+      "title": "ಸಾಲ EMI",
+      "description": "ಮಾಸಿಕ EMI ಮತ್ತು ಒಟ್ಟು ಬಡ್ಡಿ ಲೆಕ್ಕಿಸಿ.",
+      "url": "/calculators",
+      "fragment": "emi",
+      "icon": "₹"
+    },
+    {
+      "title": "ಚಿನ್ನ ಸಾಲ",
+      "description": "ಚಿನ್ನದ ತೂಕ ಮತ್ತು ದರದಿಂದ ಸಾಲದ ಮೌಲ್ಯ ಅಂದಾಜು ಮಾಡಿ.",
+      "url": "/calculators",
+      "fragment": "gold",
+      "icon": "Au"
+    }
+  ]
+}

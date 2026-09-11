@@ -1,0 +1,34 @@
+{
+  "ariaLabel": "Useful banking tools",
+  "quickToolsTitle": "Quick Tools",
+  "quickToolsSubtitle": "Access essential banking services quickly.",
+  "items": [
+    {
+      "title": "Search",
+      "description": "Find FD rates, IFSC, complaints, locker and services.",
+      "url": "/search",
+      "icon": "⌕"
+    },
+    {
+      "title": "FD/RD",
+      "description": "Estimate deposit maturity and interest earned.",
+      "url": "/calculators",
+      "fragment": "deposit",
+      "icon": "FD"
+    },
+    {
+      "title": "Loan EMI",
+      "description": "Calculate monthly EMI and total interest.",
+      "url": "/calculators",
+      "fragment": "emi",
+      "icon": "₹"
+    },
+    {
+      "title": "Gold Loan",
+      "description": "Estimate loan value from gold weight and rate.",
+      "url": "/calculators",
+      "fragment": "gold",
+      "icon": "Au"
+    }
+  ]
+}

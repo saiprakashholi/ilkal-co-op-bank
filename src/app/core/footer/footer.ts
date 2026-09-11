@@ -111,5 +111,6 @@ export class Footer implements OnInit {
 
   switchLang(l: 'en' | 'kn') {
     this.lang.loadLanguage(l);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

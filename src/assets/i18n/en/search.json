@@ -1,0 +1,105 @@
+{
+  "eyebrow": "Quick search",
+  "pageTitle": "Find bank information faster",
+  "pageSubtitle": "Jump directly to rates, IFSC, complaints, locker, branches, and services.",
+  "searchLabel": "Search",
+  "searchPlaceholder": "FD rates, IFSC, complaint...",
+  "popularAriaLabel": "Popular searches",
+  "resultsLabel": "Results",
+  "commonSearchesLabel": "Common searches",
+  "noResultsTitle": "No results found",
+  "noResultsText": "Try searching for FD rates, IFSC, loan, complaint, or locker.",
+  "popularSearches": ["FD rates", "IFSC", "Loan interest", "Complaint", "Locker"],
+  "entries": [
+    {
+      "title": "Deposit Interest Rates",
+      "description": "Check savings, fixed deposit, and other deposit rates.",
+      "url": "/deposits/interest-rate",
+      "keywords": ["fd", "fixed deposit", "deposit", "rd", "interest", "rates", "saving"]
+    },
+    {
+      "title": "Loan Interest Rates",
+      "description": "View current loan interest rates for personal, housing, vehicle, gold, and business loans.",
+      "url": "/loans/interest-rate",
+      "keywords": ["loan", "emi", "interest", "rates", "personal", "housing", "vehicle", "gold", "business"]
+    },
+    {
+      "title": "Bank Calculators",
+      "description": "Calculate FD/RD maturity, loan EMI, and gold loan estimate.",
+      "url": "/calculators",
+      "keywords": ["calculator", "fd calculator", "rd calculator", "emi calculator", "gold loan calculator"]
+    },
+    {
+      "title": "IFSC and Contact Details",
+      "description": "Find IFSC code, phone numbers, email, address, working hours, and map.",
+      "url": "/contact-us",
+      "keywords": ["ifsc", "contact", "phone", "email", "address", "map", "hours"]
+    },
+    {
+      "title": "Branches",
+      "description": "Find branch addresses, phone numbers, and directions.",
+      "url": "/locations",
+      "keywords": ["branch", "branches", "location", "directions", "near me"]
+    },
+    {
+      "title": "Lodge a Complaint",
+      "description": "Submit a complaint to the bank through the complaint form.",
+      "url": "/misc/lodge-a-complaint",
+      "keywords": ["complaint", "grievance", "problem", "issue", "support"]
+    },
+    {
+      "title": "Enquiry Form",
+      "description": "Send a general, loan, deposit, account, or other enquiry.",
+      "url": "/misc/inquiry",
+      "keywords": ["enquiry", "inquiry", "ask", "question", "loan enquiry", "deposit enquiry"]
+    },
+    {
+      "title": "Locker Service",
+      "description": "Learn about locker facility details.",
+      "url": "/service/locker",
+      "keywords": ["locker", "safe deposit", "vault"]
+    },
+    {
+      "title": "Mobile Banking",
+      "description": "Read mobile banking features, policies, terms, and secure usage guidance.",
+      "url": "/service/mobile",
+      "keywords": ["mobile banking", "app", "android", "policy", "secure usage"]
+    },
+    {
+      "title": "UPI Service",
+      "description": "Find UPI banking service information.",
+      "url": "/service/upi",
+      "keywords": ["upi", "payment", "bhim"]
+    },
+    {
+      "title": "IMPS Service",
+      "description": "Find IMPS transfer details.",
+      "url": "/service/imps",
+      "keywords": ["imps", "transfer", "fund transfer"]
+    },
+    {
+      "title": "RTGS/NEFT Service",
+      "description": "Find RTGS and NEFT transfer details.",
+      "url": "/service/rtgs-neft",
+      "keywords": ["rtgs", "neft", "transfer"]
+    },
+    {
+      "title": "Service Charges",
+      "description": "View bank service charges.",
+      "url": "/others/service-charges",
+      "keywords": ["charges", "fees", "service charge"]
+    },
+    {
+      "title": "Downloads",
+      "description": "Download forms, policies, terms, and other documents.",
+      "url": "/others/download",
+      "keywords": ["download", "forms", "pdf", "policy", "terms"]
+    },
+    {
+      "title": "Safe Banking",
+      "description": "Read secure and safe banking guidance.",
+      "url": "/others/safe-banking",
+      "keywords": ["safe banking", "security", "fraud", "secure"]
+    }
+  ]
+}
