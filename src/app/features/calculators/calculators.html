@@ -5,8 +5,47 @@
     <p>{{ lang.t('calculators', 'pageSubtitle') }}</p>
   </div>
 
+  <div class="calculator-tabs" role="tablist" [attr.aria-label]="lang.t('calculators', 'tabsAriaLabel')">
+    <button
+      type="button"
+      role="tab"
+      [class.active]="activeTab === 'deposit'"
+      [attr.aria-selected]="activeTab === 'deposit'"
+      aria-controls="deposit-panel"
+      (click)="activeTab = 'deposit'"
+    >
+      {{ lang.t('calculators', 'depositTabLabel') }}
+    </button>
+    <button
+      type="button"
+      role="tab"
+      [class.active]="activeTab === 'emi'"
+      [attr.aria-selected]="activeTab === 'emi'"
+      aria-controls="emi-panel"
+      (click)="activeTab = 'emi'"
+    >
+      {{ lang.t('calculators', 'emiTabLabel') }}
+    </button>
+    <button
+      type="button"
+      role="tab"
+      [class.active]="activeTab === 'gold'"
+      [attr.aria-selected]="activeTab === 'gold'"
+      aria-controls="gold-panel"
+      (click)="activeTab = 'gold'"
+    >
+      {{ lang.t('calculators', 'goldTabLabel') }}
+    </button>
+  </div>
+
   <div class="calculator-grid">
-    <section id="deposit" class="calculator-panel" aria-labelledby="depositCalculatorTitle">
+    <section
+      *ngIf="activeTab === 'deposit'"
+      id="deposit-panel"
+      class="calculator-panel"
+      role="tabpanel"
+      aria-labelledby="depositCalculatorTitle"
+    >
       <div class="panel-heading">
         <h2 id="depositCalculatorTitle">{{ lang.t('calculators', 'depositTitle') }}</h2>
         <div class="mode-toggle" role="group" [attr.aria-label]="lang.t('calculators', 'depositTypeAriaLabel')">
@@ -53,7 +92,13 @@
       </div>
     </section>
 
-    <section id="emi" class="calculator-panel" aria-labelledby="emiCalculatorTitle">
+    <section
+      *ngIf="activeTab === 'emi'"
+      id="emi-panel"
+      class="calculator-panel"
+      role="tabpanel"
+      aria-labelledby="emiCalculatorTitle"
+    >
       <div class="panel-heading">
         <h2 id="emiCalculatorTitle">{{ lang.t('calculators', 'emiTitle') }}</h2>
       </div>
@@ -91,7 +136,13 @@
       </div>
     </section>
 
-    <section id="gold" class="calculator-panel gold-panel" aria-labelledby="goldCalculatorTitle">
+    <section
+      *ngIf="activeTab === 'gold'"
+      id="gold-panel"
+      class="calculator-panel"
+      role="tabpanel"
+      aria-labelledby="goldCalculatorTitle"
+    >
       <div class="panel-heading">
         <h2 id="goldCalculatorTitle">{{ lang.t('calculators', 'goldTitle') }}</h2>
       </div>

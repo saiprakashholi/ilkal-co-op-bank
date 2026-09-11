@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 import { LanguageService } from '../../services/language.service';
 
 type DepositMode = 'fd' | 'rd';
+type CalculatorTab = 'deposit' | 'emi' | 'gold';
 
 @Component({
   selector: 'app-calculators',
@@ -13,6 +15,8 @@ type DepositMode = 'fd' | 'rd';
   styleUrl: './calculators.scss',
 })
 export class Calculators {
+  activeTab: CalculatorTab = 'deposit';
+
   depositMode: DepositMode = 'fd';
   fdPrincipal = 100000;
   rdMonthlyDeposit = 5000;
@@ -27,7 +31,16 @@ export class Calculators {
   goldRatePerGram = 6000;
   goldLoanToValue = 75;
 
-  constructor(public lang: LanguageService) {}
+  constructor(
+    public lang: LanguageService,
+    private route: ActivatedRoute
+  ) {
+    this.route.fragment.subscribe(fragment => {
+      if (fragment === 'deposit' || fragment === 'emi' || fragment === 'gold') {
+        this.activeTab = fragment;
+      }
+    });
+  }
 
   get isKannada(): boolean {
     return this.lang.currentLang === 'kn';
